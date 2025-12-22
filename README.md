@@ -8,15 +8,15 @@ Hands-on experience across **CubeSat payloads, UAV design, and medical image ana
 ## HyCUBE: CubeSat Thermal & Instrumentation Payload
 *NASA Minnesota Space Grant*
 
-<p align="center">
-<img src="assets/HyCubeINAir.png" width="32%">
-<img src="assets/HyCubeThermoPlot_needupdate.png" width="32%">
-<img src="assets/hycube_mission_graphic.webp" width="32%">
-</p>
+<div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 15px;">
+  <img src="assets/HyCubeINAir.png" width="32%">
+  <img src="assets/HyCubeThermoPlot_needupdate.png" width="32%">
+  <img src="assets/hycube_mission_graphic.webp" width="32%">
+</div>
 
-<p align="center">
-<img src="assets/NASA_MN_SpaceGrantLogo.jpg" width="120">
-</p>
+<div style="text-align: right; margin-top: -10px;">
+  <img src="assets/NASA_MN_SpaceGrantLogo.jpg" width="90">
+</div>
 
 **Role:** Mechanical / Thermal Engineering
 **Overview:**
@@ -34,16 +34,17 @@ Work focused on **thermal behavior, instrumentation integration, and mission-lev
 ## Stroke Detection from Non-Contrast Head CT
 *Machine Learning + Medical Imaging*
 
-<p align="center">
-<img src="assets/ROC_curve_scratch.png" width="23%">
-<img src="assets/ROC_curve_imagenet.png" width="23%">
-<img src="assets/ROC_curve_jepa.png" width="23%">
-<img src="assets/ROC_curve_imageNet.png" width="23%">
-</p>
+<!-- Grad-CAM hero image -->
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="assets/GradCam_StrokeUnlabeled.png" width="60%">
+</div>
 
-<p align="center">
-<img src="assets/GradCam_StrokeUnlabeled.png" width="45%">
-</p>
+<!-- ROC curves row -->
+<div style="display: flex; gap: 20px; justify-content: center;">
+  <img src="assets/ROC_curve_scratch.png" width="30%">
+  <img src="assets/ROC_curve_imagenet.png" width="30%">
+  <img src="assets/ROC_curve_jepa.png" width="30%">
+</div>
 
 **Task:** Binary hemorrhage detection from head CT
 **Model:** ResNet-18 (scratch, ImageNet pretrained, JEPA-style initialization)
@@ -62,13 +63,17 @@ Emphasis on **model validation, interpretability, and robustness**, not just acc
 
 ## Blended Wing Body UAV — *Aquila-S*
 *Aerodynamics & Vehicle Design*
+<!-- Flow visualization hero -->
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="assets/Figure4_FlowView.jpg" width="60%">
+</div>
 
-<p align="center">
-<img src="assets/Figure4_FlowView.jpg" width="32%">
-<img src="assets/ClvA_BWB.png" width="32%">
-<img src="assets/Cm_vs_aplot.jpg" width="32%">
-  
-</p>
+<!-- Performance plots -->
+<div style="display: flex; gap: 20px; justify-content: center;">
+  <img src="assets/CvA_BWB.png" width="35%">
+  <img src="assets/Cm_vs_aplot.jpg" width="35%">
+</div>
+
 
 **Overview:**
 Designed and analyzed a custom **blended wing body UAV** for aerodynamic efficiency and stability studies.
