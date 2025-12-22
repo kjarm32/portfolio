@@ -1,0 +1,27 @@
+@import "{{ site.theme }}";
+
+/* Global dark theme */
+body {
+  background-color: #0e0e0e;
+  color: #e6e6e6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+/* Links */
+a {
+  color: #7dd3fc;
+}
+
+/* Images */
+img {
+  border-radius: 6px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 3rem;
+}
