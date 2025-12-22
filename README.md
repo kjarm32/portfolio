@@ -64,9 +64,10 @@ Emphasis on **model validation, interpretability, and robustness**, not just acc
 *Aerodynamics & Vehicle Design*
 
 <p align="center">
-<img src="assets/CvA_BWB.png" width="32%">
-<img src="assets/Cm_vs_aplot.jpg" width="32%">
 <img src="assets/Figure4_FlowView.jpg" width="32%">
+<img src="assets/ClvA_BWB.png" width="32%">
+<img src="assets/Cm_vs_aplot.jpg" width="32%">
+  
 </p>
 
 **Overview:**
