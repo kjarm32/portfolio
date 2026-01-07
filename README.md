@@ -193,44 +193,84 @@ margin: 50px 0;
 
 ---
 
-## Stroke Detection from Non-Contrast Head CT
+## StrokeNet — Hemorrhage Detection from Non-Contrast Head CT (Lab-Mentored ML Project)
 
 <p style="margin-top: -8px; color: #6b7280; font-style: italic;">
-Machine Learning + Medical Imaging
+UC Berkeley (Mofrad Lab context) • Medical Imaging + Applied Deep Learning • Interpretability + Validation Focus
 </p>
 
 <p align="center">
-  <img src="assets/GradCam_StrokeUnlabeled.png" width="70%">
+  <img src="assets/gradcam_grid_imagenet_maskedcrop.png" width="86%">
 </p>
 
-> **Model interpretability via Grad-CAM.**  
-> Activation maps verify spatial focus on clinically relevant regions rather than skull/background artifacts.
+> **Model interpretability (Grad-CAM).**  
+> Attention maps are used as a validation tool: do predictions rely on anatomically plausible regions (brain/bleed) rather than skull edges or background artifacts?
 
-<div style="display: flex; gap: 20px; justify-content: center;">
-<img src="assets/ROC_curve_scratch.png" width="30%">
-<img src="assets/ROC_curve_imagenet.png" width="30%">
-<img src="assets/ROC_curve_jepa.png" width="30%">
-</div>
+---
 
-> **Quantitative comparison.**  
-> ROC-AUC curves comparing training from scratch, ImageNet pretraining, and JEPA-style initialization.
+### What this is
+Non-contrast head CT is a frontline imaging modality for suspected intracranial hemorrhage.  
+This project builds a **reproducible baseline** for binary hemorrhage detection and, critically, evaluates whether model behavior is **clinically plausible** using interpretability, not accuracy alone.
 
-<p style="color:#6b7280; margin-bottom: 6px;">
-Task — Binary hemorrhage detection from head CT
+I developed this work in a lab-mentored setting with iterative feedback from graduate researchers (design reviews, experimental direction, and evaluation framing). After an initial supervised baseline, I independently read and implemented a student-teacher self-supervision approach from a recent paper discussed with the team, then tested whether CT-native pretraining meaningfully shifts performance or operating characteristics.
+
+---
+
+### Methods (high-level)
+- **Data pipeline:** DICOM → Hounsfield Units → brain windowing (W=80/L=40) → normalization → 224×224 tensors  
+- **Model:** ResNet-18 binary classifier  
+- **Training regimes compared:**
+  1. **Scratch** (random initialization)  
+  2. **ImageNet initialization** (transfer learning baseline)  
+  3. **CT-native self-supervision (JEPA-style)** student/teacher pretraining on unlabeled slices, then fine-tuned for hemorrhage detection
+- **Validation focus:** ROC-AUC + sensitivity/specificity trade-offs + interpretability checks (Grad-CAM)
+
+---
+
+### Results snapshot (held-out validation)
+<p align="center">
+  <img src="assets/roc_overlay_init_compare.png" width="78%">
 </p>
 
-<p style="color:#6b7280; margin-bottom: 6px;">
-Model — ResNet-18 (scratch, ImageNet pretrained, JEPA-style initialization)
+- **Best overall discrimination:** ImageNet-initialized ResNet-18 achieved **ROC-AUC ≈ 0.884** on a held-out validation split.  
+- **Operating point example (threshold = 0.5):** **Sensitivity ≈ 0.775**, **Specificity ≈ 0.838** (confusion matrix below).  
+- **Self-supervision insight:** JEPA-style CT pretraining shifted the **sensitivity/specificity trade-off** (more sensitive in some runs, less specific), consistent with the practical observation that SSL methods may not outperform strong CNN baselines “out of the box,” but can change *how* the model makes errors.
+
+<p align="center">
+  <img src="assets/confusion_matrices_init_compare.png" width="78%">
 </p>
 
-Built and evaluated convolutional neural networks for hemorrhage detection using non-contrast head CT scans.  
-Emphasis on validation and interpretability rather than accuracy alone.
+---
 
-### Key Contributions
-- Compared initialization/training strategies via ROC-AUC evaluation
-- Assessed generalization across training regimes
-- Applied Grad-CAM to validate spatial reasoning and detect bias
-- Focused on interpretability for real-world deployment
+### What I contributed (engineering signal)
+- Built an end-to-end, reproducible **CT preprocessing + training pipeline** (DICOM handling, HU conversion, windowing, augmentation, stratified splits)
+- Implemented **balanced training** for class imbalance (weighted sampling / loss weighting) and stable fine-tuning (separate LR for trunk vs head)
+- Designed evaluation that goes beyond accuracy: **ROC-AUC + sensitivity/specificity + threshold behavior**
+- Developed **portfolio-grade interpretability visualizations** (Grad-CAM TP/FP/FN/TN grid with head-masked cropping to avoid background artifacts)
+- Independently implemented and tested a **student-teacher self-supervision (JEPA-style)** pretraining experiment on unlabeled CT slices and compared initialization strategies
+
+---
+
+### Why this matters (plain English)
+In high-stakes medical imaging, a model can score well while learning shortcuts (scanner artifacts, skull boundaries, black padding).  
+This project emphasizes **trustworthy evaluation**: comparing training regimes *and* checking whether the model’s “attention” is plausibly aligned with anatomy—an important step toward models that can be validated and improved for real clinical workflows.
+
+---
+
+### Repo contents
+- `notebooks/` — Colab notebook with full pipeline (data understanding → training → evaluation → Grad-CAM)
+- `assets/` — exported figures used in this README (ROC, confusion matrices, Grad-CAM grid)
+- `checkpoints/` (optional) — saved model weights for reproducible plotting without retraining
+
+---
+
+### Notes on scope & next steps
+This is a **slice-level baseline** built for research iteration and interpretability, not a deployed diagnostic tool.  
+Next improvements I would pursue:
+- patient-level aggregation across slices (study-level decisions)
+- stronger CT-native pretraining (larger unlabeled pool, better augmentations, longer SSL schedule)
+- subgroup/generalization checks (scanner/site shifts) and calibration
+
 
 ---
 
