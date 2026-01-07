@@ -8,11 +8,14 @@ Hands-on experience across CubeSat payloads, UAV design, and medical image analy
 ## Blended-Wing-Body CFD — Concept-to-Coefficients (SOLIDWORKS Flow Simulation 2024)
 
 <p align="center">
-  <img src="assets/BWB_Plane_RelPresIso4deg.png" width="80%">
+  <a href="assets/BWB%20Executive%20Summary.pdf">
+    <img src="assets/BWB_Plane_RelPresIso4deg.png" width="80%">
+  </a>
 </p>
 
 <p align="center">
-  <em>Relative static pressure on the BWB upper surface (α = 4°, V∞ ≈ 40 mph).</em>
+  <em>Relative static pressure on the BWB upper surface (α = 4°, V∞ ≈ 40 mph).</em><br>
+  📄 <a href="assets/BWB%20Executive%20Summary.pdf"><b>Open the executive summary (PDF)</b></a>
 </p>
 
 **What this is:** Concept-level aerodynamic characterization of a blended-wing-body (BWB) using steady-state CFD in SOLIDWORKS Flow Simulation 2024, including verification checks (convergence, domain independence, mesh sensitivity) and an AoA sweep at ~40 mph.
@@ -24,24 +27,25 @@ Hands-on experience across CubeSat payloads, UAV design, and medical image analy
 - **Post-processing standard:** consistent views + fixed legend scales for clean visual comparisons
 
 **Report**
-- 📄 **BWB Executive Summary (PDF):** [BWB Executive Summary.pdf](assets/BWB%20Executive%20Summary.pdf)
+- 📄 **BWB Executive Summary (PDF):** [Open PDF](assets/BWB%20Executive%20Summary.pdf)
 
 ### Selected Figures
 
-**Streamwise velocity montage (Vx)**
+<p align="center"><b>Streamwise velocity montage (Vx)</b></p>
 <p align="center">
-  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20(1).png" width="73%">
+  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20(1).png" width="62%">
 </p>
 
-**Surface relative pressure montage (0°, 4°, 8°)**
+<p align="center"><b>Surface relative pressure montage (0°, 4°, 8°)</b></p>
 <p align="center">
-  <img src="assets/CombinedRelPres_montage_0_4_8_PORTFOLIO.png" width="85%">
+  <img src="assets/CombinedRelPres_montage_0_4_8_PORTFOLIO.png" width="78%">
 </p>
 
-**Mesh sensitivity (α = 4° baseline)**
+<p align="center"><b>Mesh sensitivity (α = 4° baseline)</b></p>
 <p align="center">
-  <img src="assets/ES3_mesh_sensitivity.png" width="70%">
+  <img src="assets/ES3_mesh_sensitivity.png" width="68%">
 </p>
+
 
 ---
 
