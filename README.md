@@ -30,7 +30,7 @@ Hands-on experience across CubeSat payloads, UAV design, and medical image analy
 
 **Streamwise velocity montage (Vx)**
 <p align="center">
-  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20(1).png" width="85%">
+  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20(1).png" width="73%">
 </p>
 
 **Surface relative pressure montage (0°, 4°, 8°)**
