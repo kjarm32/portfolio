@@ -57,19 +57,19 @@ margin: 50px 0;
 ">
 
 <h2 style="display: flex; align-items: center; gap: 10px;">
-HyCUBE: CubeSat Thermal & Instrumentation Payload
-<img src="assets/NASA_MN_SpaceGrantLogo.jpg" width="28" style="opacity: 0.9;">
+  HyCUBE: CubeSat Thermal &amp; Instrumentation Payload
+  <img src="assets/NASA_MN_SpaceGrantLogo.jpg" width="28" style="opacity: 0.9;">
 </h2>
 
 <p style="margin-top: -8px; color: #b0b0b0; font-style: italic;">
-NASA’s Minnesota Space Grant Consortium &amp; University of Minnesota SmallSat Program
+  NASA’s Minnesota Space Grant Consortium &amp; University of Minnesota SmallSat Program
 </p>
 
-<!-- Overview / mission context images (from your original section) -->
-<div style="display: flex; gap: 20px; justify-content: center; margin: 14px 0 8px 0;">
+<!-- Top-row overview visuals (keeps mission + balloon context) -->
+<div style="display: flex; gap: 16px; justify-content: center; align-items: center; margin: 14px 0 10px 0;">
   <img src="assets/HyCubeINAir.png" width="32%">
   <img src="assets/hycube_mission_graphic.webp" width="32%">
-  <img src="assets/HyCubeThermoPlot_needupdate.png" width="32%">
+  <img src="assets/hycube_parity_plot.png" width="32%">
 </div>
 
 <div style="
@@ -80,69 +80,83 @@ background: #111;
 border-left: 3px solid #7dd3fc;
 color: #cbd5e1;
 font-size: 0.95rem;
+line-height: 1.45;
 ">
-<strong>Payload integration + validation pipeline.</strong>
-Built an end-to-end experiment and analysis workflow to quantify thermocouple sensitivity and measurement agreement versus a reference thermometer (with cold-junction compensation), supporting sensor selection and flight-readiness checks for HyCUBE testing (including high-altitude balloon operations).
+  <strong>Payload integration + validation pipeline.</strong>
+  Built an end-to-end experiment and analysis workflow to quantify thermocouple sensitivity and measurement agreement versus a reference thermometer
+  (with cold-junction compensation), supporting sensor selection and flight-readiness checks for HyCUBE testing (including high-altitude balloon operations).
 </div>
 
-<p style="color:#9ca3af; margin-bottom: 6px;">
-Role — Mechanical / Thermal Engineering (Instrumentation &amp; Data)
+<p style="color:#9ca3af; margin: 0 0 8px 0;">
+  Role — <strong>Aerospace Systems Research Intern</strong> (Mechanical / Thermal Engineering — Instrumentation &amp; Data)
 </p>
 
-<p>
-Designed and executed thermocouple qualification experiments and built reproducible analysis outputs (plots + summary tables) for HyCUBE’s instrumentation assurance. The workflow converts raw voltage/temperature measurements into calibration fits with confidence bounds and validates agreement using parity and Bland–Altman methods—making results reviewable and decision-ready.
+<p style="max-width: 980px; line-height: 1.55; margin: 0 0 12px 0;">
+  Designed and executed thermocouple qualification experiments and produced decision-ready calibration outputs.
+  The workflow converts raw voltage/temperature measurements into regression-based fits (with confidence bounds) and validates agreement using
+  parity + Bland–Altman methods—making results reviewable, reproducible, and ready for documentation/design reviews.
 </p>
 
-<h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
-Results Snapshot (from current dataset)
+<h4 style="margin-top: 16px; border-bottom: 1px solid #333; padding-bottom: 6px;">
+  Results Snapshot (current dataset)
 </h4>
 
-<ul>
-  <li><strong>Estimated sensitivity (slope):</strong> 19 in ≈ 44.51 µV/°C (R² ≈ 0.499), 25 in ≈ 33.84 µV/°C (R² ≈ 0.377), 30 in ≈ 45.05 µV/°C (R² ≈ 0.542)</li>
-  <li><strong>Agreement vs reference:</strong> overall bias ≈ 0.00°C with limits of agreement ≈ ±3.60°C (Bland–Altman)</li>
-  <li><strong>Deliverable:</strong> calibration summary + plots suitable for documentation and design reviews</li>
+<ul style="max-width: 980px; line-height: 1.55; margin-top: 10px;">
+  <li>
+    <strong>Estimated sensitivity (slope):</strong>
+    19 in ≈ 44.51 µV/°C (R² ≈ 0.499),
+    25 in ≈ 33.84 µV/°C (R² ≈ 0.377),
+    30 in ≈ 45.05 µV/°C (R² ≈ 0.542)
+  </li>
+  <li>
+    <strong>Agreement vs reference:</strong>
+    overall bias ≈ 0.00°C with limits of agreement ≈ ±3.60°C (Bland–Altman)
+  </li>
+  <li>
+    <strong>Deliverable:</strong> calibration summary + figures exported as PNGs suitable for reports and review decks
+  </li>
 </ul>
 
 <h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
-Selected Figures
+  Selected Figures
 </h4>
 
-<p style="color:#9ca3af; margin: 10px 0 6px 0;"><strong>Centered calibration fits + 95% confidence bands (shared axes)</strong></p>
-<p align="center">
-  <img src="assets/hycube_centered_fit_ci_shared_axes.png" width="92%">
+<p style="color:#9ca3af; margin: 10px 0 6px 0;">
+  <strong>Centered calibration fits + 95% confidence bands (shared axes)</strong>
+</p>
+<p align="center" style="margin: 0 0 10px 0;">
+  <img src="assets/hycube_centered_fit_ci_shared_axes.png" width="88%">
 </p>
 
-<p style="color:#9ca3af; margin: 14px 0 6px 0;"><strong>Thermocouple-estimated temperature vs reference (parity)</strong></p>
-<p align="center">
-  <img src="assets/hycube_parity_plot.png" width="78%">
+<!-- Two-up layout to reduce scroll -->
+<p style="color:#9ca3af; margin: 14px 0 6px 0;">
+  <strong>Validation views (parity + error)</strong>
+</p>
+<p align="center" style="margin: 0;">
+  <img src="assets/hycube_parity_plot.png" width="46%">
+  <img src="assets/hycube_error_vs_reference.png" width="46%">
 </p>
 
-<p style="color:#9ca3af; margin: 14px 0 6px 0;"><strong>Error vs reference temperature</strong></p>
-<p align="center">
-  <img src="assets/hycube_error_vs_reference.png" width="78%">
+<p style="color:#9ca3af; margin: 14px 0 6px 0;">
+  <strong>Agreement + sensitivity</strong>
 </p>
-
-<p style="color:#9ca3af; margin: 14px 0 6px 0;"><strong>Bland–Altman agreement (all data)</strong></p>
-<p align="center">
-  <img src="assets/hycube_bland_altman_all.png" width="78%">
-</p>
-
-<p style="color:#9ca3af; margin: 14px 0 6px 0;"><strong>Sensitivity vs probe length (± ~95% CI)</strong></p>
-<p align="center">
-  <img src="assets/hycube_sensitivity_vs_length.png" width="78%">
+<p align="center" style="margin: 0 0 6px 0;">
+  <img src="assets/hycube_bland_altman_all.png" width="46%">
+  <img src="assets/hycube_sensitivity_vs_length.png" width="46%">
 </p>
 
 <h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
-Key Contributions
+  Key Contributions
 </h4>
 
-<ul>
+<ul style="max-width: 980px; line-height: 1.55;">
   <li>Designed thermocouple calibration experiments and produced decision-ready plots for sensor selection</li>
   <li>Implemented cold-junction compensation and regression-based calibration with confidence bounds</li>
-  <li>Validated error behavior with parity + Bland–Altman agreement (bias and limits-of-agreement)</li>
-  <li>Supported high-altitude balloon flight operations (payload integration, ground station setup, flight monitoring, recovery, and post-flight data validation)</li>
-  <li>Automated analysis outputs (tables + PNG exports) to make results reproducible and reviewable</li>
+  <li>Validated measurement behavior with parity + Bland–Altman agreement (bias and limits-of-agreement)</li>
+  <li>Automated analysis outputs (tables + PNG exports) to keep results reproducible and reviewable</li>
+  <li>Supported flight-readiness testing workflows, including high-altitude balloon operations and post-flight validation</li>
 </ul>
+
 
 ---
 
