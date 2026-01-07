@@ -1,4 +1,5 @@
-title: Kevin Armstrong II
-#logo /assets/img/headshot_circle.png
-show_downloads: False
+title: "Kevin Armstrong II"
+description: "University of California, Berkeley<br>Mechanical Engineering ’28 | Dean’s List<br>Student-Athlete, Men’s Basketball"
+logo: /assets/img/headshot_circle.png
+show_downloads: false
 theme: jekyll-theme-minimal
