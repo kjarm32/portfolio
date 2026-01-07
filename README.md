@@ -5,7 +5,7 @@ Hands-on experience across CubeSat payloads, aerodynamic analysis, and medical i
 
 ---
 
-## Blended-Wing-Body CFD — Concept-to-Coefficients (SOLIDWORKS Flow Simulation 2024)
+## Blended-Wing-Body CFD: Concept-to-Coefficients (SOLIDWORKS Flow Simulation 2024)
 
 <p style="margin-top:-6px;"><em>Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + clean post-processing</em></p>
 
@@ -48,9 +48,9 @@ Hands-on experience across CubeSat payloads, aerodynamic analysis, and medical i
 
 ---
 
-## HyCUBE — CubeSat Thermal & Instrumentation Payload (NASA MN Space Grant / UMN SmallSat)
+## HyCUBE: CubeSat Thermal & Instrumentation Payload (NASA MN Space Grant / UMN SmallSat)
 
-<p style="margin-top:-6px;"><em>Space Systems • Instrumentation • Calibration + validation (cold-junction compensated thermocouples)</em></p>
+<p style="margin-top:-6px;"><em>Aerospace Systems + Instrumentation </em></p>
 
 <div align="center">
   <h3 style="margin-bottom:6px;">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload <img src="assets/NASA_MN_SpaceGrantLogo.jpg" width="24" style="vertical-align:middle;"></h3>
@@ -70,12 +70,12 @@ Hands-on experience across CubeSat payloads, aerodynamic analysis, and medical i
 
 > **Payload integration + validation pipeline.** Built an end-to-end experiment + analysis workflow to quantify thermocouple sensitivity and measurement agreement versus a reference thermometer (with cold-junction compensation), supporting sensor selection and flight-readiness checks for HyCUBE testing (including high-altitude balloon operations).
 
-**What I did (high-signal):**
+**What I did:**
 - Designed and executed thermocouple qualification experiments and produced decision-ready calibration outputs.
 - Converted raw voltage/temperature measurements into regression-based fits (with confidence bounds).
 - Validated agreement using parity + Bland–Altman methods so results are reviewable, reproducible, and ready for documentation/design reviews.
 
-**Results Snapshot (current dataset)**
+**Results Snapshot**
 - **Estimated sensitivity (slope):** 19 in ≈ **44.51 µV/°C** (R² ≈ 0.499), 25 in ≈ **33.84 µV/°C** (R² ≈ 0.377), 30 in ≈ **45.05 µV/°C** (R² ≈ 0.542)
 - **Agreement vs reference:** overall bias ≈ **0.00°C** with limits of agreement ≈ **±3.60°C** (Bland–Altman)
 - **Deliverable:** calibration summary + figures exported as PNGs suitable for reports and review decks
@@ -110,7 +110,7 @@ Hands-on experience across CubeSat payloads, aerodynamic analysis, and medical i
 
 ## StrokeNet — Hemorrhage Detection from Non-Contrast Head CT (Lab-Mentored ML Project)
 
-<p style="margin-top:-6px;"><em>Medical Imaging • Applied Deep Learning • Interpretability + validation focus</em></p>
+<p style="margin-top:-6px;"><em>Medical Imaging + Applied Deep Learning </em></p>
 
 <p align="center">
   <img src="assets/gradcam_grid_imagenet_maskedcrop.png" width="86%">
@@ -120,22 +120,21 @@ Hands-on experience across CubeSat payloads, aerodynamic analysis, and medical i
 
 **What this is:** A reproducible baseline for slice-level hemorrhage detection from head CT, comparing initialization strategies and evaluating performance with **ROC-AUC + operating-point tradeoffs**, plus interpretability checks.
 
-**Methods (high-level)**
+**Methods**
 - DICOM → Hounsfield Units → brain windowing → normalization → 224×224 tensors  
 - ResNet-18 binary classifier  
 - Compared: scratch vs ImageNet initialization vs CT-native student/teacher self-supervision (JEPA-style) pretraining + fine-tuning
 
-**Results snapshot**
+### Results snapshot (ROC curves)
 <p align="center">
-  <img src="assets/roc_overlay_init_compare.png" width="78%">
+  <img src="assets/ROC_curve_scratch.png" width="31%">
+  <img src="assets/ROC_curve_imagenet.png" width="31%">
+  <img src="assets/ROC_curve_jepa.png" width="31%">
 </p>
 
 - Best overall discrimination: ImageNet-initialized ResNet-18 achieved **ROC-AUC ≈ 0.884** on held-out validation.
 - JEPA-style CT pretraining shifted the sensitivity/specificity trade-off in some runs, highlighting how pretraining can change error behavior even when it doesn’t dominate a strong baseline.
 
-<p align="center">
-  <img src="assets/confusion_matrices_init_compare.png" width="78%">
-</p>
 
 **What I contributed**
 - Built an end-to-end CT preprocessing + training pipeline (HU conversion/windowing, augmentation, stratified splits)
