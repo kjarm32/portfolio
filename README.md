@@ -107,9 +107,9 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 ### Results snapshot (ROC curves)
 
 <p align="center">
-  <img src="assets/ROC_curve_scratch.png" width="32%">
-  <img src="assets/ROC_curve_imagenet.png" width="32%">
-  <img src="assets/ROC_curve_jepa.png" width="32%">
+  <img src="assets/ROC_curve_scratch.png" style="width:32%; height:240px; object-fit:cover; object-position:50% 100%;" />
+  <img src="assets/ROC_curve_imagenet.png" style="width:32%; height:240px; object-fit:cover; object-position:50% 100%;" />
+  <img src="assets/ROC_curve_jepa.png" style="width:32%; height:240px; object-fit:cover; object-position:50% 100%;" />
 </p>
 
 **Engineering contributions**
