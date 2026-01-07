@@ -1,21 +1,58 @@
 # Engineering Portfolio
 
-Mechanical Engineering student focused on aerospace systems, thermal modeling, and applied machine learning.
+Mechanical Engineering student focused on aerospace systems, thermal modeling, and applied machine learning.  
 Hands-on experience across CubeSat payloads, UAV design, and medical image analysis.
 
-<hr style="
-border: none;
-height: 1px;
-background: linear-gradient(to right, transparent, #444, transparent);
-margin: 50px 0;
-">
+---
+
+## Blended-Wing-Body CFD — Concept-to-Coefficients (SOLIDWORKS Flow Simulation 2024)
+
+<p align="center">
+  <img src="assets/BWB_Plane_RelPresIso4deg.png" width="80%">
+</p>
+
+<p align="center">
+  <em>Relative static pressure on the BWB upper surface (α = 4°, V∞ ≈ 40 mph).</em>
+</p>
+
+**What this is:** Concept-level aerodynamic characterization of a blended-wing-body (BWB) using steady-state CFD in SOLIDWORKS Flow Simulation 2024, including verification checks (convergence, domain independence, mesh sensitivity) and an AoA sweep at ~40 mph.
+
+**Key outputs:** Lift coefficient (CL), drag coefficient (CD), lift-to-drag ratio (L/D), plus qualitative flow interpretation from streamwise velocity (Vx) cuts and surface relative pressure / Cp scaling.
+
+- **AoA sweep:** −2°, 0°, 2°, 4°, 6°, 8° at **V∞ ≈ 40 mph**
+- **Verification workflow:** convergence (+100-iteration stability window), domain sensitivity, mesh sensitivity
+- **Post-processing standard:** consistent views + fixed legend scales for clean visual comparisons
+
+**Report**
+- 📄 **BWB Executive Summary (PDF):** [BWB Executive Summary.pdf](assets/BWB%20Executive%20Summary.pdf)
+
+### Selected Figures
+
+**Streamwise velocity montage (Vx)**
+<p align="center">
+  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20(1).png" width="85%">
+</p>
+
+**Surface relative pressure montage (0°, 4°, 8°)**
+<p align="center">
+  <img src="assets/CombinedRelPres_montage_0_4_8_PORTFOLIO.png" width="85%">
+</p>
+
+**Mesh sensitivity (α = 4° baseline)**
+<p align="center">
+  <img src="assets/ES3_mesh_sensitivity.png" width="70%">
+</p>
+
+---
+
+<hr>
 
 <h2 style="display: flex; align-items: center; gap: 10px;">
 HyCUBE: CubeSat Thermal & Instrumentation Payload
 <img src="assets/NASA_MN_SpaceGrantLogo.jpg" width="28" style="opacity: 0.9;">
 </h2>
 
-<p style="margin-top: -8px; color: #b0b0b0; font-style: italic;">
+<p style="margin-top: -8px; color: #6b7280; font-style: italic;">
 NASA Minnesota Space Grant
 </p>
 
@@ -25,68 +62,36 @@ NASA Minnesota Space Grant
 <img src="assets/hycube_mission_graphic.webp" width="32%">
 </div>
 
-<div style="
-margin: 10px auto 25px auto;
-max-width: 900px;
-padding: 10px 14px;
-background: #111;
-border-left: 3px solid #7dd3fc;
-color: #cbd5e1;
-font-size: 0.9rem;
-">
-<strong>Payload integration and mission context.</strong>
-Flight hardware, thermal response trends, and orbital mission phases used to define environmental and design constraints.
-</div>
+> **Payload integration and mission context.**  
+> Flight hardware, thermal response trends, and orbital mission phases used to define environmental and design constraints.
 
-<p style="color:#9ca3af; margin-bottom: 6px;">
+<p style="color:#6b7280; margin-bottom: 6px;">
 Role — Mechanical / Thermal Engineering
 </p>
 
-<p>
-Designed and analyzed a CubeSat payload for atmospheric sensing under the NASA Minnesota Space Grant program.
+Designed and analyzed a CubeSat payload for atmospheric sensing under the NASA Minnesota Space Grant program.  
 Work focused on thermal behavior, instrumentation integration, and mission-level constraints.
-</p>
 
-<h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
-Key Contributions
-</h4>
+### Key Contributions
+- Thermal modeling of payload components under orbital boundary conditions
+- Instrument packaging and environmental considerations
+- Data visualization of temperature response and mission profiles
+- Collaboration with aerospace systems and electrical teams
 
-<ul>
-<li>Thermal modeling of payload components under orbital boundary conditions</li>
-<li>Instrument packaging and environmental considerations</li>
-<li>Data visualization of temperature response and mission profiles</li>
-<li>Collaboration with aerospace systems and electrical teams</li>
-</ul>
-
-<hr style="
-border: none;
-height: 1px;
-background: linear-gradient(to right, transparent, #444, transparent);
-margin: 60px 0;
-">
+---
 
 ## Stroke Detection from Non-Contrast Head CT
 
-<p style="margin-top: -8px; color: #b0b0b0; font-style: italic;">
+<p style="margin-top: -8px; color: #6b7280; font-style: italic;">
 Machine Learning + Medical Imaging
 </p>
 
-<div style="text-align: center; margin-bottom: 10px;">
-<img src="assets/GradCam_StrokeUnlabeled.png" width="60%">
-</div>
+<p align="center">
+  <img src="assets/GradCam_StrokeUnlabeled.png" width="70%">
+</p>
 
-<div style="
-margin: 10px auto 25px auto;
-max-width: 900px;
-padding: 10px 14px;
-background: #111;
-border-left: 3px solid #a78bfa;
-color: #cbd5e1;
-font-size: 0.9rem;
-">
-<strong>Model interpretability via Grad-CAM.</strong>
-Activation maps confirm spatial focus on clinically relevant hemorrhage regions rather than skull or background artifacts.
-</div>
+> **Model interpretability via Grad-CAM.**  
+> Activation maps verify spatial focus on clinically relevant regions rather than skull/background artifacts.
 
 <div style="display: flex; gap: 20px; justify-content: center;">
 <img src="assets/ROC_curve_scratch.png" width="30%">
@@ -94,102 +99,53 @@ Activation maps confirm spatial focus on clinically relevant hemorrhage regions 
 <img src="assets/ROC_curve_jepa.png" width="30%">
 </div>
 
-<div style="
-margin: 10px auto 25px auto;
-max-width: 900px;
-padding: 10px 14px;
-background: #111;
-border-left: 3px solid #a78bfa;
-color: #cbd5e1;
-font-size: 0.9rem;
-">
-<strong>Quantitative model comparison.</strong>
-ROC-AUC curves comparing training from scratch, ImageNet pretraining, and JEPA-style initialization.
-</div>
+> **Quantitative comparison.**  
+> ROC-AUC curves comparing training from scratch, ImageNet pretraining, and JEPA-style initialization.
 
-<p style="color:#9ca3af; margin-bottom: 6px;">
+<p style="color:#6b7280; margin-bottom: 6px;">
 Task — Binary hemorrhage detection from head CT
 </p>
 
-<p style="color:#9ca3af; margin-bottom: 6px;">
+<p style="color:#6b7280; margin-bottom: 6px;">
 Model — ResNet-18 (scratch, ImageNet pretrained, JEPA-style initialization)
 </p>
 
-<p>
-Built and evaluated convolutional neural networks for stroke detection using non-contrast head CT scans.
-Emphasis on model validation, interpretability, and robustness rather than accuracy alone.
-</p>
+Built and evaluated convolutional neural networks for hemorrhage detection using non-contrast head CT scans.  
+Emphasis on validation and interpretability rather than accuracy alone.
 
-<h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
-Key Contributions
-</h4>
+### Key Contributions
+- Compared initialization/training strategies via ROC-AUC evaluation
+- Assessed generalization across training regimes
+- Applied Grad-CAM to validate spatial reasoning and detect bias
+- Focused on interpretability for real-world deployment
 
-<ul>
-<li>Compared training strategies via ROC-AUC evaluation</li>
-<li>Analyzed generalization across initialization methods</li>
-<li>Applied Grad-CAM to validate spatial reasoning and detect bias</li>
-<li>Focused on interpretability for real-world medical deployment</li>
-</ul>
-
-<hr style="
-border: none;
-height: 1px;
-background: linear-gradient(to right, transparent, #444, transparent);
-margin: 60px 0;
-">
+---
 
 ## Blended Wing Body UAV — <em>Aquila-S</em>
 
-<p style="margin-top: -8px; color: #b0b0b0; font-style: italic;">
+<p style="margin-top: -8px; color: #6b7280; font-style: italic;">
 Aerodynamics & Vehicle Design
 </p>
 
-<div style="text-align: center; margin-bottom: 10px;">
-<img src="assets/Figure4_FlowView.jpg" width="60%">
-</div>
+<p align="center">
+  <img src="assets/Figure4_FlowView.jpg" width="70%">
+</p>
 
-<div style="
-margin: 10px auto 25px auto;
-max-width: 900px;
-padding: 10px 14px;
-background: #111;
-border-left: 3px solid #22c55e;
-color: #cbd5e1;
-font-size: 0.9rem;
-">
-<strong>Flow-field visualization.</strong>
-Surface pressure and velocity distributions used to evaluate lift generation and aerodynamic efficiency.
-</div>
+> **Flow-field visualization.**  
+> Surface pressure and velocity distributions used to evaluate lift generation and aerodynamic efficiency.
 
 <div style="display: flex; gap: 20px; justify-content: center;">
 <img src="assets/CLvA_BWB.png" width="35%">
 <img src="assets/Cm_vs_aplot.jpg" width="35%">
 </div>
 
-<div style="
-margin: 10px auto 25px auto;
-max-width: 900px;
-padding: 10px 14px;
-background: #111;
-border-left: 3px solid #22c55e;
-color: #cbd5e1;
-font-size: 0.9rem;
-">
-<strong>Stability characterization.</strong>
-Lift and pitching moment trends used to assess trim behavior and longitudinal stability.
-</div>
+> **Stability characterization.**  
+> Lift and pitching-moment trends used to assess trim behavior and longitudinal stability.
 
-<p>
 Designed and analyzed a custom blended wing body UAV for aerodynamic efficiency and stability studies.
-</p>
 
-<h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
-Key Contributions
-</h4>
-
-<ul>
-<li>Blended wing geometry development and refinement</li>
-<li>Aerodynamic analysis of lift, moment, and flow behavior</li>
-<li>Stability assessment via pitching moment trends</li>
-<li>Integration of analysis results into design iteration</li>
-</ul>
+### Key Contributions
+- Blended-wing geometry development and refinement
+- Aerodynamic analysis of lift, moment, and flow behavior
+- Stability assessment via pitching moment trends
+- Integration of analysis results into design iteration
