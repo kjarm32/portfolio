@@ -19,10 +19,10 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
   📄 <a href="assets/BWB%20Executive%20Summary.pdf"><strong>Open the executive summary (PDF)</strong></a>
 </p>
 
-**What this is:** Concept-level aerodynamic characterization of a blended-wing-body (BWB) using steady-state CFD in SOLIDWORKS Flow Simulation 2024, with disciplined verification (convergence, domain independence, mesh sensitivity) and an AoA sweep at ~40 mph.
+Concept-level aerodynamic characterization of a blended-wing-body (BWB) using steady-state CFD in SOLIDWORKS Flow Simulation 2024, with disciplined verification (convergence, domain independence, mesh sensitivity) and an AoA sweep at ~40 mph.
 
 **Highlights**
-- AoA sweep: −2°, 0°, 2°, 4°, 6°, 8° at **V∞ ≈ 40 mph**
+- AoA sweep: −2°, 0°, 2°, 4°, 6°, 8° at V∞ ≈ 40 mph
 - Verification workflow: convergence (+100-iteration stability window), domain sensitivity, mesh sensitivity
 - Post-processing standard: consistent views + fixed legend scales for clean visual comparisons
 
@@ -59,11 +59,11 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
   <img src="assets/hycube_mission_graphic.webp" width="48%">
 </p>
 
-**What this is:** Thermocouple calibration + validation workflow to support sensor selection and flight-readiness checks for HyCUBE testing (including high-altitude balloon operations). The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates measurement agreement using parity and Bland–Altman analysis.
+Thermocouple calibration + validation workflow to support sensor selection and flight-readiness checks for HyCUBE testing (including high-altitude balloon operations). The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates measurement agreement using parity and Bland–Altman analysis.
 
 **Results snapshot**
-- Estimated sensitivity (slope): **19 in ≈ 44.51 µV/°C (R² ≈ 0.499)**, **25 in ≈ 33.84 µV/°C (R² ≈ 0.377)**, **30 in ≈ 45.05 µV/°C (R² ≈ 0.542)**
-- Agreement vs reference: overall bias ≈ **0.00°C** with limits of agreement ≈ **±3.60°C** (Bland–Altman)
+- Estimated sensitivity (slope): 19 in ≈ 44.51 µV/°C (R² ≈ 0.499), 25 in ≈ 33.84 µV/°C (R² ≈ 0.377), 30 in ≈ 45.05 µV/°C (R² ≈ 0.542)
+- Agreement vs reference: overall bias ≈ 0.00°C with limits of agreement ≈ ±3.60°C (Bland–Altman)
 - Deliverable: calibration summary + figures exported as PNGs suitable for reports and review decks
 
 ### Selected figures
@@ -102,7 +102,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
   <img src="assets/gradcam_grid_imagenet_maskedcrop (1).png" width="86%">
 </p>
 
-**What this is:** A reproducible slice-level baseline for hemorrhage detection from head CT. Compared initialization strategies (scratch vs ImageNet vs CT-native student/teacher self-supervision) and evaluated performance with ROC behavior plus interpretability checks.
+A reproducible slice-level baseline for hemorrhage detection from head CT. Compared initialization strategies (scratch vs ImageNet vs CT-native student/teacher self-supervision) and evaluated performance with ROC behavior plus interpretability checks.
 
 ### Results snapshot (ROC curves)
 
