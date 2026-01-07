@@ -49,38 +49,100 @@ Hands-on experience across CubeSat payloads, UAV design, and medical image analy
 
 ---
 
-<hr>
+<hr style="
+border: none;
+height: 1px;
+background: linear-gradient(to right, transparent, #444, transparent);
+margin: 50px 0;
+">
 
 <h2 style="display: flex; align-items: center; gap: 10px;">
 HyCUBE: CubeSat Thermal & Instrumentation Payload
 <img src="assets/NASA_MN_SpaceGrantLogo.jpg" width="28" style="opacity: 0.9;">
 </h2>
 
-<p style="margin-top: -8px; color: #6b7280; font-style: italic;">
-NASA Minnesota Space Grant
+<p style="margin-top: -8px; color: #b0b0b0; font-style: italic;">
+NASA’s Minnesota Space Grant Consortium &amp; University of Minnesota SmallSat Program
 </p>
 
-<div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 10px;">
-<img src="assets/HyCubeINAir.png" width="32%">
-<img src="assets/HyCubeThermoPlot_needupdate.png" width="32%">
-<img src="assets/hycube_mission_graphic.webp" width="32%">
+<!-- Overview / mission context images (from your original section) -->
+<div style="display: flex; gap: 20px; justify-content: center; margin: 14px 0 8px 0;">
+  <img src="assets/HyCubeINAir.png" width="32%">
+  <img src="assets/hycube_mission_graphic.webp" width="32%">
+  <img src="assets/HyCubeThermoPlot_needupdate.png" width="32%">
 </div>
 
-> **Payload integration and mission context.**  
-> Flight hardware, thermal response trends, and orbital mission phases used to define environmental and design constraints.
+<div style="
+margin: 10px auto 18px auto;
+max-width: 980px;
+padding: 10px 14px;
+background: #111;
+border-left: 3px solid #7dd3fc;
+color: #cbd5e1;
+font-size: 0.95rem;
+">
+<strong>Payload integration + validation pipeline.</strong>
+Built an end-to-end experiment and analysis workflow to quantify thermocouple sensitivity and measurement agreement versus a reference thermometer (with cold-junction compensation), supporting sensor selection and flight-readiness checks for HyCUBE testing (including high-altitude balloon operations).
+</div>
 
-<p style="color:#6b7280; margin-bottom: 6px;">
-Role — Mechanical / Thermal Engineering
+<p style="color:#9ca3af; margin-bottom: 6px;">
+Role — Mechanical / Thermal Engineering (Instrumentation &amp; Data)
 </p>
 
-Designed and analyzed a CubeSat payload for atmospheric sensing under the NASA Minnesota Space Grant program.  
-Work focused on thermal behavior, instrumentation integration, and mission-level constraints.
+<p>
+Designed and executed thermocouple qualification experiments and built reproducible analysis outputs (plots + summary tables) for HyCUBE’s instrumentation assurance. The workflow converts raw voltage/temperature measurements into calibration fits with confidence bounds and validates agreement using parity and Bland–Altman methods—making results reviewable and decision-ready.
+</p>
 
-### Key Contributions
-- Thermal modeling of payload components under orbital boundary conditions
-- Instrument packaging and environmental considerations
-- Data visualization of temperature response and mission profiles
-- Collaboration with aerospace systems and electrical teams
+<h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
+Results Snapshot (from current dataset)
+</h4>
+
+<ul>
+  <li><strong>Estimated sensitivity (slope):</strong> 19 in ≈ 44.51 µV/°C (R² ≈ 0.499), 25 in ≈ 33.84 µV/°C (R² ≈ 0.377), 30 in ≈ 45.05 µV/°C (R² ≈ 0.542)</li>
+  <li><strong>Agreement vs reference:</strong> overall bias ≈ 0.00°C with limits of agreement ≈ ±3.60°C (Bland–Altman)</li>
+  <li><strong>Deliverable:</strong> calibration summary + plots suitable for documentation and design reviews</li>
+</ul>
+
+<h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
+Selected Figures
+</h4>
+
+<p style="color:#9ca3af; margin: 10px 0 6px 0;"><strong>Centered calibration fits + 95% confidence bands (shared axes)</strong></p>
+<p align="center">
+  <img src="assets/hycube_centered_fit_ci_shared_axes.png" width="92%">
+</p>
+
+<p style="color:#9ca3af; margin: 14px 0 6px 0;"><strong>Thermocouple-estimated temperature vs reference (parity)</strong></p>
+<p align="center">
+  <img src="assets/hycube_parity_plot.png" width="78%">
+</p>
+
+<p style="color:#9ca3af; margin: 14px 0 6px 0;"><strong>Error vs reference temperature</strong></p>
+<p align="center">
+  <img src="assets/hycube_error_vs_reference.png" width="78%">
+</p>
+
+<p style="color:#9ca3af; margin: 14px 0 6px 0;"><strong>Bland–Altman agreement (all data)</strong></p>
+<p align="center">
+  <img src="assets/hycube_bland_altman_all.png" width="78%">
+</p>
+
+<p style="color:#9ca3af; margin: 14px 0 6px 0;"><strong>Sensitivity vs probe length (± ~95% CI)</strong></p>
+<p align="center">
+  <img src="assets/hycube_sensitivity_vs_length.png" width="78%">
+</p>
+
+<h4 style="margin-top: 18px; border-bottom: 1px solid #333; padding-bottom: 6px;">
+Key Contributions
+</h4>
+
+<ul>
+  <li>Designed thermocouple calibration experiments and produced decision-ready plots for sensor selection</li>
+  <li>Implemented cold-junction compensation and regression-based calibration with confidence bounds</li>
+  <li>Validated error behavior with parity + Bland–Altman agreement (bias and limits-of-agreement)</li>
+  <li>Supported high-altitude balloon flight operations (payload integration, ground station setup, flight monitoring, recovery, and post-flight data validation)</li>
+  <li>Automated analysis outputs (tables + PNG exports) to make results reproducible and reviewable</li>
+</ul>
 
 ---
 
