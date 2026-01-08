@@ -68,32 +68,20 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 
 ### Selected figures
 
-<p align="center"><strong>Validation views (parity + error)</strong></p>
+<p align="center"><strong>Centered calibration fits + 95% confidence bands (shared axes)</strong></p>
+<p align="center">
+  <img src="assets/hycube_centered_fit_ci_shared_axes.png" width="86%">
+</p>
 
-<table width="100%" cellpadding="14">
-  <tr>
-    <td width="50%" align="center">
-      <img src="assets/hycube_parity_plot.png" width="100%">
-    </td>
-    <td width="50%" align="center">
-      <img src="assets/hycube_error_vs_reference.png" width="100%">
-    </td>
-  </tr>
-</table>
+<p align="center"><strong>Validation views (parity + error)</strong></p>
+<p align="center">
+  <img src="assets/hycube_validation_2up.png" width="92%">
+</p>
 
 <p align="center"><strong>Agreement + sensitivity</strong></p>
-
-<table width="100%" cellpadding="14">
-  <tr>
-    <td width="50%" align="center">
-      <img src="assets/hycube_bland_altman_all.png" width="100%">
-    </td>
-    <td width="50%" align="center">
-      <img src="assets/hycube_sensitivity_vs_length.png" width="100%">
-    </td>
-  </tr>
-</table>
-
+<p align="center">
+  <img src="assets/hycube_agreement_2up.png" width="92%">
+</p>
 
 
 
