@@ -26,6 +26,19 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 - Verification workflow: convergence (+100-iteration stability window), domain sensitivity, mesh sensitivity
 - Post-processing standard: consistent views + fixed legend scales for clean visual comparisons
 
+<h3 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h3>
+
+<p align="center"><em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em></p>
+
+<p align="center">
+  <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
+  <strong>Role:</strong> Aerospace Systems Research Intern (Mechanical/Thermal — Instrumentation &amp; Data)
+</p>
+
+<p align="center">
+  <img src="assets/HyCubeINAir.png" width="48%">
+  <img src="assets/hycube_mission_graphic.webp" width="48%">
+</p>
 
 ### Selected figures
 
