@@ -26,7 +26,7 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 - Verification workflow: convergence (+100-iteration stability window), domain sensitivity, mesh sensitivity
 - Post-processing standard: consistent views + fixed legend scales for clean visual comparisons
 
-### Selected figures
+
 
 ### Selected figures
 
