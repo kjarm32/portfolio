@@ -75,14 +75,15 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 
 <p align="center"><strong>Validation views (parity + error)</strong></p>
 <p align="center">
-  <img src="assets/hycube_parity_plot.png" width="47%">
-  <img src="assets/hycube_error_vs_reference.png" width="47%">
+  <img src="assets/hycube_parity_plot.png" height="250" style="width:auto; margin:0 10px;" />
+  <img src="assets/hycube_error_vs_reference.png" height="250" style="width:auto; margin:0 10px;" />
 </p>
+
 
 <p align="center"><strong>Agreement + sensitivity</strong></p>
 <p align="center">
-  <img src="assets/hycube_bland_altman_all.png" width="47%">
-  <img src="assets/hycube_sensitivity_vs_length.png" width="47%">
+  <img src="assets/hycube_bland_altman_all.png" height="250" style="width:auto; margin:0 10px;" />
+  <img src="assets/hycube_sensitivity_vs_length.png" height="250" style="width:auto; margin:0 10px;" />
 </p>
 
 **Key contributions**
@@ -110,15 +111,15 @@ Rapid identification of intracranial hemorrhage on non-contrast head CT can acce
   📄 <a href="assets/_CT%20(Non-Contrast)%20Hemorrhage%20Detection%20with%20CT-Native%20Self-Supervised%20Pretraining%20(JEPA)%20vs%20ImageNet%20(1).pdf"><strong>Open the 1-page project summary (PDF)</strong></a>
 </p>
 
-> [!NOTE]
-> **Validation (held-out 20% split, n = 240 slices)**  
-> Same supervised training recipe across runs; only the initialization changed.
->
-> | Initialization | ROC AUC | Sensitivity | Specificity |
-> |---|---:|---:|---:|
-> | ImageNet-pretrained | 0.878 | 0.70 | 0.89 |
-> | Scratch (random init) | 0.829 | 0.79 | 0.74 |
-> | JEPA (CT self-supervised) | 0.752 | 0.85 | 0.53 |
+**Validation (held-out 20% split, n = 240 slices)**  
+Same supervised training recipe across runs; only the initialization changed.
+
+| Initialization | ROC AUC | Sensitivity | Specificity |
+|---|---:|---:|---:|
+| ImageNet-pretrained | 0.878 | 0.70 | 0.89 |
+| Scratch (random init) | 0.829 | 0.79 | 0.74 |
+| JEPA (CT self-supervised) | 0.752 | 0.85 | 0.53 |
+
 
 **What this shows**
 - On this small RSNA subset and a lightweight JEPA run, ImageNet pretraining preserved the best overall AUC and specificity.
