@@ -42,7 +42,9 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 <p align="center"><strong>Mesh sensitivity (α = 4° baseline)</strong></p>
 <p align="center">
   <img src="assets/ES3_mesh_sensitivity.png" width="92%">
+</p>
 
+---
 
 <h2 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h2>
 
@@ -50,7 +52,7 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 
 <p align="center">
   <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
-  <strong>Role:</strong> Aerospace Systems Research Intern 
+  <strong>Role:</strong> Aerospace Systems Research Intern
 </p>
 
 <p align="center">
@@ -113,15 +115,36 @@ Rapid identification of intracranial hemorrhage on non-contrast head CT can acce
 **Validation (held-out 20% split, n = 240 slices)**  
 Same supervised training recipe across runs; only the initialization changed.
 
-<div align="center">
-
-| Initialization | ROC AUC | Sensitivity | Specificity |
-|---|---:|---:|---:|
-| ImageNet-pretrained | 0.878 | 0.70 | 0.89 |
-| Scratch (random init) | 0.829 | 0.79 | 0.74 |
-| JEPA (CT self-supervised) | 0.752 | 0.85 | 0.53 |
-
-</div>
+<table align="center">
+  <thead>
+    <tr>
+      <th>Initialization</th>
+      <th>ROC AUC</th>
+      <th>Sensitivity</th>
+      <th>Specificity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ImageNet-pretrained</td>
+      <td>0.878</td>
+      <td>0.70</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>Scratch (random init)</td>
+      <td>0.829</td>
+      <td>0.79</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>JEPA (CT self-supervised)</td>
+      <td>0.752</td>
+      <td>0.85</td>
+      <td>0.53</td>
+    </tr>
+  </tbody>
+</table>>
 
 
 
