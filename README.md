@@ -79,7 +79,7 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 
 <p align="center"><strong>Centered calibration fits + 95% confidence bands (shared axes)</strong></p>
 <p align="center">
-  <img src="assets/hycube_centered_fit_ci_shared_axes.png" width="86%">
+  <img src="assets/hycube_centered_fit_ci_shared_axes.png(1)" width="86%">
 </p>
 
 
