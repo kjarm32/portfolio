@@ -4,7 +4,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 
 ---
 
-<h3 align="center">Blended-Wing-Body CFD: Aerodynamic Coefficients & Flowfield (SOLIDWORKS Flow Simulation 2024)</h3>
+<h2 align="center">Blended-Wing-Body CFD: Aerodynamic Coefficients & Flowfield (SOLIDWORKS Flow Simulation 2024)</h2>
 
 <p align="center"><em>Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + clean post-processing</em></p>
 
@@ -44,7 +44,7 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
   <img src="assets/ES3_mesh_sensitivity.png" width="92%">
 
 
-<h3 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h3>
+<h2 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h2>
 
 <p align="center"><em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em></p>
 
@@ -94,7 +94,7 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 
 ---
 
-<h3 align="center">StrokeNet: Hemorrhage Detection on Non-Contrast Head CT (Mofrad Lab-Mentored ML Project)</h3>
+<h2 align="center">StrokeNet: Hemorrhage Detection on Non-Contrast Head CT (Mofrad Lab-Mentored ML Project)</h2>
 
 <p align="center"><em>Medical Imaging • Applied Deep Learning • Interpretability + validation focus</em></p>
 
@@ -113,11 +113,16 @@ Rapid identification of intracranial hemorrhage on non-contrast head CT can acce
 **Validation (held-out 20% split, n = 240 slices)**  
 Same supervised training recipe across runs; only the initialization changed.
 
+<div align="center">
+
 | Initialization | ROC AUC | Sensitivity | Specificity |
 |---|---:|---:|---:|
 | ImageNet-pretrained | 0.878 | 0.70 | 0.89 |
 | Scratch (random init) | 0.829 | 0.79 | 0.74 |
 | JEPA (CT self-supervised) | 0.752 | 0.85 | 0.53 |
+
+</div>
+
 
 
 **What this shows**
