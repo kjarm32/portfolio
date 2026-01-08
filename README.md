@@ -27,39 +27,22 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 - Post-processing standard: consistent views + fixed legend scales for clean visual comparisons
 
 
-
 ### Selected figures
 
-<p align="center"><strong>Validation views (parity + error)</strong></p>
+<p align="center"><strong>Streamwise velocity montage (Vx)</strong></p>
 <p align="center">
-  <img src="assets/hycube_validation_2up.png" width="92%">
+  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20%281%29.png" width="50%">
 </p>
 
-<p align="center"><strong>Agreement + sensitivity</strong></p>
+<p align="center"><strong>Surface relative pressure montage (0°, 4°, 8°)</strong></p>
 <p align="center">
-  <img src="assets/hycube_agreement_2up.png" width="92%">
+  <img src="assets/CombinedRelPres_montage_0_4_8_PORTFOLIO.png" width="92%">
 </p>
 
-<p align="center"><strong>Centered calibration fits + 95% confidence bands (shared axes)</strong></p>
+<p align="center"><strong>Mesh sensitivity (α = 4° baseline)</strong></p>
 <p align="center">
-  <img src="assets/hycube_centered_fit_ci_shared_axes.png" width="86%">
-</p>
-
----
-
-<h3 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h3>
-
-<p align="center"><em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em></p>
-
-<p align="center">
-  <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
-  <strong>Role:</strong> Aerospace Systems Research Intern
-</p>
-
-<p align="center">
-  <img src="assets/HyCubeINAir.png" width="48%">
-  <img src="assets/hycube_mission_graphic.webp" width="48%">
-</p>
+  <img src="assets/ES3_mesh_sensitivity.png" width="92%">
+</p>>
 
 Reliable temperature sensing is critical for thermal testing and flight readiness. I built a thermocouple calibration + validation workflow for HyCUBE (Hypersonic Configurable Unit Ballistic Experiment) to support sensor selection and pre-flight verification. The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates measurement agreement using parity and Bland–Altman analysis.
 
