@@ -26,19 +26,6 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 - Verification workflow: convergence (+100-iteration stability window), domain sensitivity, mesh sensitivity
 - Post-processing standard: consistent views + fixed legend scales for clean visual comparisons
 
-<h3 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h3>
-
-<p align="center"><em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em></p>
-
-<p align="center">
-  <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
-  <strong>Role:</strong> Aerospace Systems Research Intern (Mechanical/Thermal — Instrumentation &amp; Data)
-</p>
-
-<p align="center">
-  <img src="assets/HyCubeINAir.png" width="48%">
-  <img src="assets/hycube_mission_graphic.webp" width="48%">
-</p>
 
 ### Selected figures
 
@@ -56,6 +43,20 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 <p align="center">
   <img src="assets/ES3_mesh_sensitivity.png" width="92%">
 
+
+<h3 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h3>
+
+<p align="center"><em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em></p>
+
+<p align="center">
+  <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
+  <strong>Role:</strong> Aerospace Systems Research Intern (Mechanical/Thermal — Instrumentation &amp; Data)
+</p>
+
+<p align="center">
+  <img src="assets/HyCubeINAir.png" width="48%">
+  <img src="assets/hycube_mission_graphic.webp" width="48%">
+</p>
 
 Reliable temperature sensing is critical for thermal testing and flight readiness. I built a thermocouple calibration + validation workflow for HyCUBE (Hypersonic Configurable Unit Ballistic Experiment) to support sensor selection and pre-flight verification. The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates measurement agreement using parity and Bland–Altman analysis.
 
