@@ -75,16 +75,17 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 
 <p align="center"><strong>Validation views (parity + error)</strong></p>
 <p align="center">
-  <img src="assets/hycube_parity_plot.png" height="250" style="width:auto; margin:0 10px;" />
-  <img src="assets/hycube_error_vs_reference.png" height="250" style="width:auto; margin:0 10px;" />
+  <img src="assets/hycube_parity_plot.png" width="48%" style="margin: 0 1.5%;" />
+  <img src="assets/hycube_error_vs_reference.png" width="48%" style="margin: 0 1.5%;" />
 </p>
 
 
-<p align="center"><strong>Agreement + sensitivity</strong></p>
+<<p align="center"><strong>Agreement + sensitivity</strong></p>
 <p align="center">
-  <img src="assets/hycube_bland_altman_all.png" height="250" style="width:auto; margin:0 10px;" />
-  <img src="assets/hycube_sensitivity_vs_length.png" height="250" style="width:auto; margin:0 10px;" />
+  <img src="assets/hycube_bland_altman_all.png" width="48%" style="margin: 0 1.5%;" />
+  <img src="assets/hycube_sensitivity_vs_length.png" width="48%" style="margin: 0 1.5%;" />
 </p>
+
 
 **Key contributions**
 - Designed thermocouple calibration experiments and produced decision-ready plots for sensor selection
