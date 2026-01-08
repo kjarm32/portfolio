@@ -4,7 +4,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 
 ---
 
-<h2 align="center">Blended-Wing-Body CFD: Concept-to-Coefficients (SOLIDWORKS Flow Simulation 2024)</h2>
+<h3 align="center">Blended-Wing-Body CFD: Aerodynamic Coefficients & Flowfield (SOLIDWORKS Flow Simulation 2024)</h3>
 
 <p align="center"><em>Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + clean post-processing</em></p>
 
@@ -19,7 +19,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
   📄 <a href="assets/BWB%20Executive%20Summary.pdf"><strong>Open the executive summary (PDF)</strong></a>
 </p>
 
-Concept-level aerodynamic characterization of a blended-wing-body (BWB) using steady-state CFD in SOLIDWORKS Flow Simulation 2024, with disciplined verification (convergence, domain independence, mesh sensitivity) and an AoA sweep at ~40 mph.
+A blended-wing-body can reduce drag by generating lift with more of the airframe (not just the wings), which is why it’s a recurring concept in efficiency-focused aircraft design. In this study, I used steady-state CFD in SOLIDWORKS Flow Simulation 2024 to estimate lift/drag coefficients across angle-of-attack and to produce clean, comparable flow/pressure visualizations—while backing the results with basic verification (convergence, domain, and mesh sensitivity checks).
 
 **Highlights**
 - AoA sweep: −2°, 0°, 2°, 4°, 6°, 8° at V∞ ≈ 40 mph
@@ -45,13 +45,13 @@ Concept-level aerodynamic characterization of a blended-wing-body (BWB) using st
 
 ---
 
-<h2 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h2>
+<h3 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h3>
 
 <p align="center"><em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em></p>
 
 <p align="center">
-  <em>NASA’s Minnesota Space Grant Consortium &amp; University of Minnesota SmallSat Program</em><br>
-  <strong>Role:</strong> Aerospace Systems Research Intern (Mechanical / Thermal Engineering — Instrumentation &amp; Data)
+  <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
+  <strong>Role:</strong> Aerospace Systems Research Intern (Mechanical/Thermal — Instrumentation &amp; Data)
 </p>
 
 <p align="center">
@@ -59,7 +59,7 @@ Concept-level aerodynamic characterization of a blended-wing-body (BWB) using st
   <img src="assets/hycube_mission_graphic.webp" width="48%">
 </p>
 
-Thermocouple calibration + validation workflow to support sensor selection and flight-readiness checks for HyCUBE testing (including high-altitude balloon operations). The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates measurement agreement using parity and Bland–Altman analysis.
+Reliable temperature sensing is a make-or-break input for thermal testing and flight readiness. I built a thermocouple calibration + validation workflow for HyCUBE (including high-altitude balloon operations) to support sensor selection and pre-flight verification. The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates measurement agreement using parity and Bland–Altman analysis.
 
 **Results snapshot**
 - Estimated sensitivity (slope): 19 in ≈ 44.51 µV/°C (R² ≈ 0.499), 25 in ≈ 33.84 µV/°C (R² ≈ 0.377), 30 in ≈ 45.05 µV/°C (R² ≈ 0.542)
@@ -94,7 +94,7 @@ Thermocouple calibration + validation workflow to support sensor selection and f
 
 ---
 
-<h2 align="center">StrokeNet: Hemorrhage Detection from Non-Contrast Head CT (Mofrad Lab-Mentored ML Project)</h2>
+<h3 align="center">StrokeNet: Hemorrhage Detection on Non-Contrast Head CT (Lab-Mentored ML Project)</h3>
 
 <p align="center"><em>Medical Imaging • Applied Deep Learning • Interpretability + validation focus</em></p>
 
@@ -102,15 +102,25 @@ Thermocouple calibration + validation workflow to support sensor selection and f
   <img src="assets/gradcam_grid_imagenet_maskedcrop (1).png" width="86%">
 </p>
 
-A reproducible slice-level baseline for hemorrhage detection from head CT. Compared initialization strategies (scratch vs ImageNet vs CT-native student/teacher self-supervision) and evaluated performance with ROC behavior plus interpretability checks.
+Rapid hemorrhage detection on non-contrast head CT can support faster triage by flagging scans likely to contain intracranial bleeding. I built a reproducible slice-level baseline and compared three initialization strategies—scratch, ImageNet pretraining, and CT-native student/teacher self-supervised pretraining (JEPA)—using the same supervised pipeline and interpretability checks (Grad-CAM).
 
-### Results snapshot (ROC curves)
+### 1-page summary + validation results
 
 <p align="center">
-  <img src="assets/ROC_curve_scratch.png" height="240" style="width:auto; margin:0 6px;" />
-  <img src="assets/ROC_curve_imagenet.png" height="240" style="width:auto; margin:0 6px;" />
-  <img src="assets/ROC_curve_jepa.png" height="240" style="width:auto; margin:0 6px;" />
+  📄 <a href="assets/_CT%20(Non-Contrast)%20Hemorrhage%20Detection%20with%20CT-Native%20Self-Supervised%20Pretraining%20(JEPA)%20vs%20ImageNet%20(1).pdf"><strong>Open the 1-page project summary (PDF)</strong></a>
 </p>
+
+**Validation (held-out 20% split, n = 240 slices)**
+
+| Initialization | ROC AUC | Sensitivity | Specificity |
+|---|---:|---:|---:|
+| ImageNet-pretrained | 0.878 | 0.70 | 0.89 |
+| Scratch (random init) | 0.829 | 0.79 | 0.74 |
+| JEPA (CT self-supervised) | 0.752 | 0.85 | 0.53 |
+
+**What this shows**
+- On this small RSNA subset and a lightweight JEPA run, **ImageNet pretraining** preserved the best overall AUC/specificity.
+- **CT-native JEPA** increased sensitivity (fewer missed hemorrhage slices) but traded off specificity—useful as a baseline and a pointer toward longer pretraining / tighter SSL tuning.
 
 **Engineering contributions**
 - Built an end-to-end CT preprocessing + training pipeline (HU conversion/windowing, normalization, augmentation, stratified splits)
