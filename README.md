@@ -50,7 +50,7 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 
 <p align="center">
   <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
-  <strong>Role:</strong> Aerospace Systems Research Intern (Mechanical/Thermal — Instrumentation &amp; Data)
+  <strong>Role:</strong> Aerospace Systems Research Intern 
 </p>
 
 <p align="center">
@@ -67,11 +67,6 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 
 ### Selected figures
 
-<p align="center"><strong>Centered calibration fits + 95% confidence bands (shared axes)</strong></p>
-<p align="center">
-  <img src="assets/hycube_centered_fit_ci_shared_axes(1).png" width="86%">
-</p>
-
 <p align="center"><strong>Validation views (parity + error)</strong></p>
 <p align="center">
   <img src="assets/hycube_validation_2up.png" width="92%">
@@ -81,6 +76,12 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 <p align="center">
   <img src="assets/hycube_agreement_2up.png" width="92%">
 </p>
+
+<p align="center"><strong>Centered calibration fits + 95% confidence bands (shared axes)</strong></p>
+<p align="center">
+  <img src="assets/hycube_centered_fit_ci_shared_axes.png" width="86%">
+</p>
+
 
 
 
