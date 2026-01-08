@@ -42,7 +42,7 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 <p align="center"><strong>Mesh sensitivity (α = 4° baseline)</strong></p>
 <p align="center">
   <img src="assets/ES3_mesh_sensitivity.png" width="92%">
-</p>>
+
 
 Reliable temperature sensing is critical for thermal testing and flight readiness. I built a thermocouple calibration + validation workflow for HyCUBE (Hypersonic Configurable Unit Ballistic Experiment) to support sensor selection and pre-flight verification. The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates measurement agreement using parity and Bland–Altman analysis.
 
