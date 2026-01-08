@@ -81,7 +81,6 @@ Reliable temperature sensing is critical for thermal testing and flight readines
   </tr>
 </table>
 
-
 <p align="center"><strong>Agreement + sensitivity</strong></p>
 
 <table width="100%" cellpadding="14">
@@ -96,12 +95,6 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 </table>
 
 
-
-<<p align="center"><strong>Agreement + sensitivity</strong></p>
-<p align="center">
-  <img src="assets/hycube_bland_altman_all.png" width="48%" style="margin: 0 1.5%;" />
-  <img src="assets/hycube_sensitivity_vs_length.png" width="48%" style="margin: 0 1.5%;" />
-</p>
 
 
 **Key contributions**
