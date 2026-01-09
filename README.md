@@ -191,11 +191,6 @@ FEA (led by a teammate) and reviewed by the team.
 <p align="center">Selected figures</p>
 
 <p align="center">
-  <img src="assets/windturbine_test_setup.png" width="92%" alt="Wind turbine test setup">
-</p>
-<p align="center"><em>Wind-tunnel-style test setup used to measure turbine electrical output (voltage/current) under controlled airflow.</em></p>
-
-<p align="center">
   <img src="assets/windturbine_fea_triptych.png" width="92%" alt="FEA results: displacement, stress, and factor of safety">
 </p>
 <p align="center"><em>Linear-static FEA sanity check on the tower: displacement, von Mises stress, and factor of safety under representative loading.</em></p>
@@ -205,6 +200,10 @@ FEA (led by a teammate) and reviewed by the team.
 </p>
 <p align="center"><em>Measured power output vs current from testing; used to compare iterations and rank the final design.</em></p>
 
+<p align="center">
+  <img src="assets/windturbine_test_setup.png" width="92%" alt="Wind turbine test setup">
+</p>
+<p align="center"><em>Wind-tunnel-style test setup used to measure turbine electrical output (voltage/current) under controlled airflow.</em></p>
 
 
 <!-- ===================== Trading System Project ===================== -->
