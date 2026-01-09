@@ -109,8 +109,9 @@ Rapid identification of intracranial hemorrhage on non-contrast head CT can acce
 ### 1-page summary + validation results
 
 <p align="center">
-  📄 <a href="assets/_CT%20(Non-Contrast)%20Hemorrhage%20Detection%20with%20CT-Native%20Self-Supervised%20Pretraining%20(JEPA)%20vs%20ImageNet%20(1).pdf"><strong>Open the 1-page project summary (PDF)</strong></a>
+  📄 <a href="assets/CT_Hemorrhage_1page_summary.pdf">Open the 1-page project summary (PDF)</a>
 </p>
+
 
 **Validation (held-out 20% split, n = 240 slices)**  
 Same supervised training recipe across runs; only the initialization changed.
