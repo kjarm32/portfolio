@@ -211,9 +211,9 @@ FEA (led by a teammate) and reviewed by the team.
 
 <!-- ===================== Trading System Project ===================== -->
 
-<h2 align="center">Automated Market-Open Execution Bot (UPRO/SPXU) — Reliability-First Automation</h2>
+<h2 align="center">Automated Market-Open Execution Bot (UPRO/SPXU): Reliability-First Automation</h2>
 
-<p align="center"><em>Systems engineering • Deterministic state machine • Guardrails + audit logs • Cloud-ready execution</em></p>
+<p align="center"><em>Systems engineering • Deterministic state machine • Cloud-ready execution</em></p>
 
 <p align="center">
   <em>Paper-trading implementation focused on robust execution, constraints, and monitoring.</em>
