@@ -9,7 +9,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 <p align="center"><em>Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + clean post-processing</em></p>
 
 <p align="center">
-  <a href="assets/BWB%20Executive%20Summary.pdf">
+  <a href="assets/BWB%20Executive%20Summary (2).pdf">
     <img src="assets/BWB_Plane_RelPresIso4deg.png" width="82%">
   </a>
 </p>
@@ -22,9 +22,9 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 A blended-wing-body aircraft can reduce drag by generating lift with more of the airframe, not just the wings, which is why it’s a recurring concept in efficiency-focused aircraft design. In this study, I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and to produce clean, comparable flow/pressure visualizations while backing the results with basic verification (convergence, domain, and mesh sensitivity checks).
 
 **Highlights**
-- AoA sweep: −2°, 0°, 2°, 4°, 6°, 8° at V∞ ≈ 40 mph
-- Verification workflow: convergence (+100-iteration stability window), domain sensitivity, mesh sensitivity
-- Post-processing standard: consistent views + fixed legend scales for clean visual comparisons
+- Quantified performance: AoA sweep (−2° → +8° at ~40 mph); peak efficiency L/D ≈ 7.3 near ~6°
+- Credibility checks: convergence stability window; domain <0.5% effect; mesh medium→fine ΔCL ≈ 1.25%
+- Communication: fixed views/scales for honest cross-case comparison (velocity cuts + pressure maps)
 
 
 ### Selected figures
