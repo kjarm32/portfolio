@@ -182,19 +182,22 @@ I built a reliability-first automation system that runs at the U.S. market open,
 <!-- ===== Highlights (engineering bullets) ===== -->
 <p><strong>Highlights</strong></p>
 <ul>
-  <li>Deterministic decision logic:</strong> fixed open-time observation window + threshold-based winner selection with an explicit end-of-window tie-break.</li>
-  <li>Constraint-aware execution:</strong> whole-share sizing, cash-only allocation, and a dynamic PDT guard that <em>fails closed</em> if account checks can’t be verified.</li>
-  <li>Reliability guardrails:</strong> cancel-stale-orders, fill confirmation with timeouts, and “morning cleanup” to flatten leftover positions safely before a new run.</li>
+  <li>Deterministic decision logic: fixed open-time observation window + threshold-based winner selection with an explicit end-of-window tie-break.</li>
+  <li>Constraint-aware execution: whole-share sizing, cash-only allocation, and a dynamic PDT guard that <em>fails closed</em> if account checks can’t be verified.</li>
+  <li>Reliability guardrails: cancel-stale-orders, fill confirmation with timeouts, and “morning cleanup” to flatten leftover positions safely before a new run.</li>
   <li>Auditability: timestamped logs at each state transition (open → observe → decide → route order → confirm fill → hold/exit) for post-run traceability.</li>
 </ul>
 
 <!-- ===== Engineering notes (kept readable) ===== -->
-<p><strong>Engineering notes</strong>
+<p><strong>Engineering notes</strong></p>
 <ul>
-  <li>State machine design:</strong> the script is structured as discrete states with explicit pass/fail branches rather than “one long script,” which makes failure modes predictable.</li>
-  <li>Fail-closed philosophy:</strong> when critical checks fail (market closed, API unreachable, fill not confirmed), the system exits without trading and logs why.</li>
-  <li>Reproducible evidence:</strong> logs are designed to be “audit trails” (what the system believed, what it did, and when).</li>
+  <li>State machine design: the script is structured as discrete states with explicit pass/fail branches rather than “one long script,” which makes failure modes predictable.</li>
+  <li>Fail-closed philosophy: when critical checks fail (market closed, API unreachable, fill not confirmed), the system exits without trading and logs why.</li>
+  <li>Reproducible evidence: logs are designed to be “audit trails” (what the system believed, what it did, and when).</li>
 </ul>
+
+<!-- ===================== End Trading System Project ===================== -->
+>
 
 
 
