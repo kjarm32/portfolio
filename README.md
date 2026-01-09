@@ -175,7 +175,7 @@ I built a reliability-first automation system that runs at the U.S. market open,
 <!-- ===== System diagram ===== -->
 <p align="center"><strong>System diagram (end-to-end execution flow)</strong></p>
 <p align="center">
-  <img src="assets/trading_system_diagram.png" width="96%" alt="Reliability-first execution flow diagram">
+  <img src="assets/trading_system_diagram(2).png" width="96%" alt="Reliability-first execution flow diagram">
 </p>
 
 
