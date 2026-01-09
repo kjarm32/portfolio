@@ -250,6 +250,3 @@ I built a reliability-first automation system that runs at the U.S. market open,
 <!-- ===================== End Trading System Project ===================== -->
 >
 
-
-
-<!-- ===================== End Trading System Project ===================== -->
