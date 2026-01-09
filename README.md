@@ -4,7 +4,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 
 ---
 
-<h2 align="center">Blended-Wing-Body CFD: Aerodynamic Coefficients & Flowfield (SOLIDWORKS Flow Simulation 2024)</h2>
+<h2 align="center">Validated Low-Speed CFD of a Blended-Wing-Body Aircraft (SOLIDWORKS Flow Simulation 2024)</h2>
 
 <p align="center"><em>Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + clean post-processing</em></p>
 
@@ -16,7 +16,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 
 <p align="center">
   <em>Relative static pressure on the BWB upper surface (α = 4°, V∞ ≈ 40 mph).</em><br>
-  📄 <a href="assets/BWB%20Executive%20Summary.pdf"><strong>Open the executive summary (PDF)</strong></a>
+  📄 <a href="assets/BWB%20Executive%20Summary (2).pdf"><strong>Open the executive summary (PDF)</strong></a>
 </p>
 
 A blended-wing-body aircraft can reduce drag by generating lift with more of the airframe, not just the wings, which is why it’s a recurring concept in efficiency-focused aircraft design. In this study, I used steady-state CFD in SOLIDWORKS Flow Simulation 2024 to estimate lift/drag coefficients across angle-of-attack and to produce clean, comparable flow/pressure visualizations while backing the results with basic verification (convergence, domain, and mesh sensitivity checks).
