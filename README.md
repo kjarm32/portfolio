@@ -169,7 +169,7 @@ Same supervised training recipe across runs; only the initialization changed.
 </p>
 
 <p>
-I built a reliability-first automation system that runs at the U.S. market open, briefly observes two leveraged S&amp;P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. The goal is to demonstrate <strong>engineering-grade automation</strong>: clear state transitions, fail-closed behavior, and auditability—so the system behaves predictably even when external APIs or market conditions are imperfect.
+I built a reliability-first automation system that runs at the U.S. market open, briefly observes two leveraged S&amp;P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. The goal is to demonstrate robust automation: clear state transitions, fail-closed behavior, and auditability—so the system behaves predictably even when external APIs or market conditions are imperfect.
 </p>
 
 <!-- ===== System diagram ===== -->
@@ -179,27 +179,23 @@ I built a reliability-first automation system that runs at the U.S. market open,
 </p>
 
 
-<!-- ===== Highlights (high-signal engineering bullets) ===== -->
+<!-- ===== Highlights (engineering bullets) ===== -->
 <p><strong>Highlights</strong></p>
 <ul>
-  <li><strong>Deterministic decision logic:</strong> fixed open-time observation window + threshold-based winner selection with an explicit end-of-window tie-break.</li>
-  <li><strong>Constraint-aware execution:</strong> whole-share sizing, cash-only allocation, and a dynamic PDT guard that <em>fails closed</em> if account checks can’t be verified.</li>
-  <li><strong>Reliability guardrails:</strong> cancel-stale-orders, fill confirmation with timeouts, and “morning cleanup” to flatten leftover positions safely before a new run.</li>
-  <li><strong>Auditability:</strong> timestamped logs at each state transition (open → observe → decide → route order → confirm fill → hold/exit) for post-run traceability.</li>
+  <li>Deterministic decision logic:</strong> fixed open-time observation window + threshold-based winner selection with an explicit end-of-window tie-break.</li>
+  <li>Constraint-aware execution:</strong> whole-share sizing, cash-only allocation, and a dynamic PDT guard that <em>fails closed</em> if account checks can’t be verified.</li>
+  <li>Reliability guardrails:</strong> cancel-stale-orders, fill confirmation with timeouts, and “morning cleanup” to flatten leftover positions safely before a new run.</li>
+  <li>Auditability: timestamped logs at each state transition (open → observe → decide → route order → confirm fill → hold/exit) for post-run traceability.</li>
 </ul>
 
 <!-- ===== Engineering notes (kept readable) ===== -->
 <p><strong>Engineering notes</strong>
 <ul>
-  <li><strong>State machine design:</strong> the script is structured as discrete states with explicit pass/fail branches rather than “one long script,” which makes failure modes predictable.</li>
-  <li><strong>Fail-closed philosophy:</strong> when critical checks fail (market closed, API unreachable, fill not confirmed), the system exits without trading and logs why.</li>
-  <li><strong>Reproducible evidence:</strong> logs are designed to be “audit trails” (what the system believed, what it did, and when).</li>
+  <li>State machine design:</strong> the script is structured as discrete states with explicit pass/fail branches rather than “one long script,” which makes failure modes predictable.</li>
+  <li>Fail-closed philosophy:</strong> when critical checks fail (market closed, API unreachable, fill not confirmed), the system exits without trading and logs why.</li>
+  <li>Reproducible evidence:</strong> logs are designed to be “audit trails” (what the system believed, what it did, and when).</li>
 </ul>
 
-<!-- ===== Tech stack ===== -->
-<p><strong>Tech stack:</strong> Python • Alpaca API • scheduling/automation ready (local cron or cloud scheduler) • structured logging</p>
 
-<!-- Optional: link to code folder if you have it -->
-<!-- <p align="center">📄 <a href="trading_bot/"><strong>View implementation</strong></a></p> -->
 
 <!-- ===================== End Trading System Project ===================== -->
