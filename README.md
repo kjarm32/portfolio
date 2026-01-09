@@ -158,26 +158,48 @@ Same supervised training recipe across runs; only the initialization changed.
 - Produced interpretability visuals (Grad-CAM grids with artifact-aware cropping) to sanity-check model behavior
 - Implemented and tested student/teacher self-supervised pretraining and compared initialization strategies
 
-<h2 align="center">Automated Market-Open Execution Bot (UPRO/SPXU) — Reliability-First Trading System</h2>
+<!-- ===================== Trading System Project ===================== -->
 
-<p align="center"><em>Systems engineering • Deterministic state machine • Guardrails + audit logs • Cloud-ready automation</em></p>
+<h2 align="center">Automated Market-Open Execution Bot (UPRO/SPXU) — Reliability-First Automation</h2>
+
+<p align="center"><em>Systems engineering • Deterministic state machine • Guardrails + audit logs • Cloud-ready execution</em></p>
 
 <p align="center">
   <em>Paper-trading implementation focused on robust execution, constraints, and monitoring—not performance marketing.</em>
 </p>
 
-I built a reliability-first automation system that runs at the U.S. market open, observes two leveraged S&P 500 ETFs (UPRO, SPXU) for a fixed time window, selects the leader using deterministic rules, and executes a single cash-only order with explicit guardrails. The emphasis is on <strong>safe automation</strong>: constraints (PDT awareness, whole-share sizing), failure handling (timeouts, cancel stale orders), and auditability (timestamped state-transition logs).
+<p>
+I built a reliability-first automation system that runs at the U.S. market open, briefly observes two leveraged S&amp;P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. The goal is to demonstrate <strong>engineering-grade automation</strong>: clear state transitions, fail-closed behavior, and auditability—so the system behaves predictably even when external APIs or market conditions are imperfect.
+</p>
 
-<p align="center">
-  <strong>System diagram (end-to-end execution flow)</strong>
+<!-- ===== System diagram ===== -->
+<p align="center"><strong>System diagram (end-to-end execution flow)</strong></p>
 <p align="center">
   <img src="assets/trading_system_diagram.png" width="96%" alt="Reliability-first execution flow diagram">
 </p>
 
 
+<!-- ===== Highlights (high-signal engineering bullets) ===== -->
+<p><strong>Highlights</strong></p>
+<ul>
+  <li><strong>Deterministic decision logic:</strong> fixed open-time observation window + threshold-based winner selection with an explicit end-of-window tie-break.</li>
+  <li><strong>Constraint-aware execution:</strong> whole-share sizing, cash-only allocation, and a dynamic PDT guard that <em>fails closed</em> if account checks can’t be verified.</li>
+  <li><strong>Reliability guardrails:</strong> cancel-stale-orders, fill confirmation with timeouts, and “morning cleanup” to flatten leftover positions safely before a new run.</li>
+  <li><strong>Auditability:</strong> timestamped logs at each state transition (open → observe → decide → route order → confirm fill → hold/exit) for post-run traceability.</li>
+</ul>
 
-**Highlights**
-- Deterministic decision logic: fixed open-time observation window + threshold-based winner selection with a clear end-of-window tie-break
-- Constraint-aware execution: whole-share sizing, cash-only allocation, and a dynamic PDT guard (fail-closed if checks cannot be verified)
-- Reliability guardrails: cancel-stale-orders, fill confirmation with timeouts, and “morning cleanup” to flatten leftover positions safely
-- Auditability: timestamped logs at each state transition (open → observe → decide → route order → confirm fill → hold) for post-run review
+<!-- ===== Engineering notes (kept readable) ===== -->
+<p><strong>Engineering notes</strong> <em>(kept readable)</em></p>
+<ul>
+  <li><strong>State machine design:</strong> the script is structured as discrete states with explicit pass/fail branches rather than “one long script,” which makes failure modes predictable.</li>
+  <li><strong>Fail-closed philosophy:</strong> when critical checks fail (market closed, API unreachable, fill not confirmed), the system exits without trading and logs why.</li>
+  <li><strong>Reproducible evidence:</strong> logs are designed to be “audit trails” (what the system believed, what it did, and when).</li>
+</ul>
+
+<!-- ===== Tech stack ===== -->
+<p><strong>Tech stack:</strong> Python • Alpaca API • scheduling/automation ready (local cron or cloud scheduler) • structured logging</p>
+
+<!-- Optional: link to code folder if you have it -->
+<!-- <p align="center">📄 <a href="trading_bot/"><strong>View implementation</strong></a></p> -->
+
+<!-- ===================== End Trading System Project ===================== -->
