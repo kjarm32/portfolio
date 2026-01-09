@@ -144,7 +144,7 @@ Same supervised training recipe across runs; only the initialization changed.
       <td>0.53</td>
     </tr>
   </tbody>
-</table>>
+</table>
 
 
 
