@@ -157,3 +157,53 @@ Same supervised training recipe across runs; only the initialization changed.
 - Implemented balanced training for class imbalance and stable fine-tuning
 - Produced interpretability visuals (Grad-CAM grids with artifact-aware cropping) to sanity-check model behavior
 - Implemented and tested student/teacher self-supervised pretraining and compared initialization strategies
+
+<h2 align="center">Automated Market-Open Execution Bot (UPRO/SPXU) — Reliability-First Trading System</h2>
+
+<p align="center"><em>Systems engineering • Deterministic state machine • Guardrails + audit logs • Cloud-ready automation</em></p>
+
+<p align="center">
+  <em>Paper-trading implementation focused on robust execution, constraints, and monitoring—not performance marketing.</em>
+</p>
+
+I built a reliability-first automation system that runs at the U.S. market open, observes two leveraged S&P 500 ETFs (UPRO, SPXU) for a fixed time window, selects the leader using deterministic rules, and executes a single cash-only order with explicit guardrails. The emphasis is on <strong>safe automation</strong>: constraints (PDT awareness, whole-share sizing), failure handling (timeouts, cancel stale orders), and auditability (timestamped state-transition logs).
+
+<p align="center">
+  <strong>System diagram (end-to-end execution flow)</strong>
+</p>
+
+```mermaid
+flowchart TD
+  A[Scheduler / Entry Point<br/>Runs at 09:30 ET] --> B[Preflight Checks<br/>Clock open? API reachable?]
+  B -->|Fail| X[Fail-closed: exit safely<br/>Log reason]
+  B -->|Pass| C[Morning Cleanup<br/>Flatten leftover UPRO/SPXU<br/>Cancel open orders]
+  C --> D[PDT / Constraints Gate<br/>Equity + daytrade_count check]
+  D -->|Blocked| X
+  D -->|Pass| E[Observation Window (fixed)<br/>Sample UPRO + SPXU prices]
+  E --> F{Decision Logic<br/>Spread ≥ threshold?}
+  F -->|Yes| G[Winner selected early]
+  F -->|No| H[Pick leader at window end]
+  G --> I[Position Sizing<br/>Cash-only allocation<br/>Whole-share floor]
+  H --> I
+  I --> J[Order Routing<br/>Market buy winner]
+  J --> K[Fill Confirmation<br/>Timeout + retry logic]
+  K -->|Unfilled| X
+  K -->|Filled| L[Hold Overnight<br/>State recorded in logs]
+  L --> M[Next Run: Cleanup Sell<br/>Compute realized P&L from fill]
+  
+  subgraph Auditability
+    N[Timestamped Logs<br/>open → observe → decide → order → fill → hold → cleanup]
+  end
+  A --> N
+  C --> N
+  E --> N
+  F --> N
+  J --> N
+  K --> N
+  M --> N
+
+**Highlights**
+- Deterministic decision logic: fixed open-time observation window + threshold-based winner selection with a clear end-of-window tie-break
+- Constraint-aware execution: whole-share sizing, cash-only allocation, and a dynamic PDT guard (fail-closed if checks cannot be verified)
+- Reliability guardrails: cancel-stale-orders, fill confirmation with timeouts, and “morning cleanup” to flatten leftover positions safely
+- Auditability: timestamped logs at each state transition (open → observe → decide → route order → confirm fill → hold) for post-run review
