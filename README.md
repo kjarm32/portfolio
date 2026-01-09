@@ -189,7 +189,7 @@ I built a reliability-first automation system that runs at the U.S. market open,
 </ul>
 
 <!-- ===== Engineering notes (kept readable) ===== -->
-<p><strong>Engineering notes</strong> <em>(kept readable)</em></p>
+<p><strong>Engineering notes</strong>
 <ul>
   <li><strong>State machine design:</strong> the script is structured as discrete states with explicit pass/fail branches rather than “one long script,” which makes failure modes predictable.</li>
   <li><strong>Fail-closed philosophy:</strong> when critical checks fail (market closed, API unreachable, fill not confirmed), the system exits without trading and logs why.</li>
