@@ -165,7 +165,7 @@ Same supervised training recipe across runs; only the initialization changed.
 <p align="center"><em>Systems engineering • Deterministic state machine • Guardrails + audit logs • Cloud-ready execution</em></p>
 
 <p align="center">
-  <em>Paper-trading implementation focused on robust execution, constraints, and monitoring—not performance marketing.</em>
+  <em>Paper-trading implementation focused on robust execution, constraints, and monitoring.</em>
 </p>
 
 <p>
