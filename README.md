@@ -158,6 +158,55 @@ Same supervised training recipe across runs; only the initialization changed.
 - Produced interpretability visuals (Grad-CAM grids with artifact-aware cropping) to sanity-check model behavior
 - Implemented and tested student/teacher self-supervised pretraining and compared initialization strategies
 
+
+<!-- ===================== Wind Turbine Project ===================== -->
+
+<h2 align="center">Wind Turbine Design–Build–Test (E26: 3D Modeling for Design)</h2>
+
+<p align="center">
+  <em>Rapid prototyping • Wind-tunnel testing • Power characterization • FEA-informed structural check</em>
+</p>
+
+<p align="center">
+  Result: Ranked #1 / 40 teams in measured electrical power output (final course test).
+</p>
+
+<p>
+In a 4-person team project, we designed and tested a small wind turbine under manufacturability and performance constraints.
+We compared candidate blade concepts, fabricated prototypes via 3D printing, and evaluated designs in a wind-tunnel-style setup
+using voltage/current measurements to quantify electrical power output. Structural sanity checks were performed with linear-static
+FEA (led by a teammate) and reviewed by the team.
+</p>
+
+<p>My contributions (team of 4)</p>
+<ul>
+  <li>Measurement owner: captured and hand-logged most of the voltage/current data during testing across runs and iterations.</li>
+  <li>Performance characterization: converted V–I measurements into comparable power results (curves/peak power) to rank iterations and support the final configuration.</li>
+  <li>Design input: conducted independent blade/airfoil research and contributed to group selection of blade geometry (airfoil/twist/profile tradeoffs).</li>
+  <li>Verification review: double-checked a teammate’s linear-static FEA assumptions/results to confirm stiffness/strength constraints were reasonable.</li>
+</ul>
+
+<hr>
+
+<p align="center">Selected figures</p>
+
+<p align="center">
+  <img src="assets/windturbine_test_setup.png" width="92%" alt="Wind turbine test setup">
+</p>
+<p align="center"><em>Wind-tunnel-style test setup used to measure turbine electrical output (voltage/current) under controlled airflow.</em></p>
+
+<p align="center">
+  <img src="assets/windturbine_fea_triptych.png" width="92%" alt="FEA results: displacement, stress, and factor of safety">
+</p>
+<p align="center"><em>Linear-static FEA sanity check on the tower: displacement, von Mises stress, and factor of safety under representative loading.</em></p>
+
+<p align="center">
+  <img src="assets/windturbine_power_vs_current.png" width="92%" alt="Power vs current">
+</p>
+<p align="center"><em>Measured power output vs current from testing; used to compare iterations and rank the final design.</em></p>
+
+
+
 <!-- ===================== Trading System Project ===================== -->
 
 <h2 align="center">Automated Market-Open Execution Bot (UPRO/SPXU) — Reliability-First Automation</h2>
