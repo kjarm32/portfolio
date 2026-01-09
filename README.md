@@ -198,12 +198,12 @@ FEA (led by a teammate) and reviewed by the team.
 <p align="center"><em>Linear-static FEA sanity check on the tower: displacement, von Mises stress, and factor of safety under representative loading.</em></p>
 
 <!-- Power + test setup (2-up) -->
-<div style="display:flex; gap:16px; justify-content:center; align-items:center; flex-wrap:wrap; margin: 10px 0;">
+<div style="max-width: 980px; margin: 12px auto; display:flex; gap:16px; justify-content:center; align-items:center; flex-wrap:wrap;">
   <img src="assets/windturbine_power_vs_current.png"
-       style="height:260px; max-width:48%; width:auto; object-fit:contain;"
+       style="height:320px; width:auto; max-width:58%; object-fit:contain; display:block;"
        alt="Power vs current">
   <img src="assets/windturbine_test_setup.png"
-       style="height:260px; max-width:48%; width:auto; object-fit:cover; object-position:50% 35%;"
+       style="height:320px; width:auto; max-width:38%; object-fit:cover; object-position:50% 35%; display:block;"
        alt="Wind turbine test setup">
 </div>
 <p align="center"><em>Measured electrical output (power vs current) and the wind-tunnel-style test setup used to capture voltage/current under controlled airflow.</em></p>
