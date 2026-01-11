@@ -255,12 +255,8 @@ FEA (led by a teammate) and reviewed by the team.
 </p>
 
 
-<p align="center">
-  <em>Paper-trading implementation focused on robust execution, constraints, and monitoring.</em>
-</p>
-
 <p>
-I built a reliability-first automation system that runs at the U.S. market open, briefly observes two leveraged S&amp;P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. The goal is to demonstrate robust automation: clear state transitions, fail-closed behavior, and auditability—so the system behaves predictably even when external APIs or market conditions are imperfect.
+I built a reliability-first paper-trading automation system that runs at the U.S. market open, briefly observes two leveraged S&amp;P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. The goal is to demonstrate robust automation: clear state transitions, fail-closed behavior, and auditability—so the system behaves predictably even when external APIs or market conditions are imperfect.
 </p>
 
 <!-- ===== System diagram ===== -->
