@@ -68,10 +68,18 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 </p>
 
 
-<p align="center">
-  <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
-  <strong>Role:</strong> Aerospace Systems Research Intern
+<h2 align="center" style="margin-top:8px; margin-bottom:10px;">
+  Making CubeSat Thermal Data Trustworthy
+</h2>
+
+<p align="center" style="margin:0; font-weight:700; font-size:1.02rem; opacity:0.92;">
+  HyCUBE: CubeSat Thermal &amp; Instrumentation Payload
 </p>
+
+<p align="center" style="margin-top:4px; margin-bottom:14px; opacity:0.85;">
+  <em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em>
+</p>
+
 
 <p align="center">
   <img src="assets/HyCubeINAir.png" width="48%">
@@ -114,13 +122,15 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 
 ---
 
-<h2 align="center" style="margin-bottom:10px;">Hemorrhage Detection on Head CT, With Interpretable ML</h2>
+<h2 align="center" style="margin-top:8px; margin-bottom:10px;">
+  Interpretable Hemorrhage Detection on Head CT
+</h2>
 
-<p align="center" style="margin:0; font-weight:700; font-size:1.05rem;">
+<p align="center" style="margin:0; font-weight:700; font-size:1.02rem; opacity:0.92;">
   StrokeNet: Hemorrhage Detection on Non-Contrast Head CT (Mofrad Lab-Mentored ML Project)
 </p>
 
-<p align="center" style="margin-top:6px; margin-bottom:18px; opacity:0.85;">
+<p align="center" style="margin-top:4px; margin-bottom:14px; opacity:0.85;">
   <em>Medical Imaging • Applied Deep Learning • Interpretability + validation focus</em>
 </p>
 
@@ -187,15 +197,18 @@ Same supervised training recipe across runs; only the initialization changed.
 
 <!-- ===================== Wind Turbine Project ===================== -->
 
-<h2 align="center" style="margin-bottom:10px;">Measuring and Improving Small Wind-Turbine Power Output</h2>
+<h2 align="center" style="margin-top:8px; margin-bottom:10px;">
+  Improving Small Wind-Turbine Power Through Iterative Testing
+</h2>
 
-<p align="center" style="margin:0; font-weight:700; font-size:1.05rem;">
+<p align="center" style="margin:0; font-weight:700; font-size:1.02rem; opacity:0.92;">
   Wind Turbine Design–Build–Test (E26: 3D Modeling for Design)
 </p>
 
-<p align="center" style="margin-top:6px; margin-bottom:18px; opacity:0.85;">
+<p align="center" style="margin-top:4px; margin-bottom:14px; opacity:0.85;">
   <em>Rapid prototyping • Wind-tunnel testing • Power characterization • FEA-informed structural check</em>
 </p>
+
 
 
 <p align="center">
@@ -242,15 +255,18 @@ FEA (led by a teammate) and reviewed by the team.
 
 <!-- ===================== Trading System Project ===================== -->
 
-<h2 align="center" style="margin-bottom:10px;">Reliability-First Automation Under Real-World Constraints</h2>
+<h2 align="center" style="margin-top:8px; margin-bottom:10px;">
+  Reliability-First Automation Under Real-World Constraints
+</h2>
 
-<p align="center" style="margin:0; font-weight:700; font-size:1.05rem;">
+<p align="center" style="margin:0; font-weight:700; font-size:1.02rem; opacity:0.92;">
   Automated Market-Open Execution Bot (UPRO/SPXU): Reliability-First Automation
 </p>
 
-<p align="center" style="margin-top:6px; margin-bottom:18px; opacity:0.85;">
+<p align="center" style="margin-top:4px; margin-bottom:14px; opacity:0.85;">
   <em>Systems engineering • Deterministic state machine • Cloud-ready execution</em>
 </p>
+
 
 <p align="center">
   <em>Paper-trading implementation focused on robust execution, constraints, and monitoring.</em>
