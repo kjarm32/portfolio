@@ -40,19 +40,19 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 
 ### Selected figures
 
+<p align="center"><strong>Aerodynamic results summary</strong></p>
+<p align="center">
+  <img src="assets/bwb_cfd_summary.png" width="92%">
+</p>
+
 <p align="center"><strong>Streamwise velocity montage (Vx)</strong></p>
 <p align="center">
-  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20%281%29.png" width="50%">
+  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20%281%29.png" width="58%">
 </p>
 
 <p align="center"><strong>Surface relative pressure montage (0°, 4°, 8°)</strong></p>
 <p align="center">
   <img src="assets/CombinedRelPres_montage_0_4_8_PORTFOLIO.png" width="92%">
-</p>
-
-<p align="center"><strong>Mesh sensitivity (α = 4° baseline)</strong></p>
-<p align="center">
-  <img src="assets/ES3_mesh_sensitivity.png" width="92%">
 </p>
 
 ---
