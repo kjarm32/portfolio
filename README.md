@@ -5,7 +5,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 ---
 
 <h2 align="center" style="margin-top:8px; margin-bottom:10px;">
-  Blended-Wing-Body Aerodynamics: Lift/Drag Across Angle of Attack
+  Concept Aircraft Aimed at Increased Efficiency: Blended-Wing-Body Aerodynamics
 </h2>
 
 <p align="center" style="margin:0; font-weight:700; font-size:1.02rem; opacity:0.92;">
