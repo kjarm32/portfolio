@@ -1,19 +1,30 @@
+---
+---
+
 @import "{{ site.theme }}";
 
-/* Global dark theme */
+/* ===== Light theme + darker text overrides ===== */
 body {
-  background-color: #0e0e0e;
-  color: #e6e6e6;
+  background: #ffffff;
+  color: #111111;
+}
+
+/* Make sure common elements aren't forced gray by the theme */
+p, li, ul, ol, blockquote, table, th, td, span, div, section {
+  color: #111111;
 }
 
 /* Headings */
-h1, h2, h3 {
-  color: #ffffff;
+h1, h2, h3, h4, h5, h6 {
+  color: #111111;
 }
 
-/* Links */
+/* Links (keep the theme vibe but readable) */
 a {
-  color: #7dd3fc;
+  color: #1f6feb;
+}
+a:hover {
+  opacity: 0.9;
 }
 
 /* Images */
@@ -25,5 +36,3 @@ img {
 section {
   margin-bottom: 3rem;
 }
-
---
