@@ -4,15 +4,19 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 
 ---
 
-<h2 align="center">Validated Low-Speed CFD of a Blended-Wing-Body Aircraft </h2>
+<h2 align="center" style="margin-top:8px; margin-bottom:10px;">
+  Blended-Wing-Body Aerodynamics: Lift/Drag Across Angle of Attack
+</h2>
 
-<p align="center"><em>Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + clean post-processing</em></p>
-
-<p align="center">
-  <a href="assets/BWB%20Executive%20Summary (2).pdf">
-    <img src="assets/BWB_Plane_RelPresIso4deg.png" width="82%">
-  </a>
+<p align="center" style="margin:0; font-weight:700; font-size:1.02rem; opacity:0.92;">
+  Validated Low-Speed CFD of a Blended-Wing-Body Aircraft
 </p>
+
+<p align="center" style="margin-top:4px; margin-bottom:14px; opacity:0.85;">
+  <em>Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + clean post-processing</em>
+</p>
+
+
 
 <p align="center">
   <em>Relative static pressure on the BWB upper surface (α = 4°, V∞ ≈ 40 mph).</em><br>
@@ -46,9 +50,16 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 
 ---
 
-<h2 align="center">HyCUBE: CubeSat Thermal &amp; Instrumentation Payload</h2>
+<h2 align="center" style="margin-bottom:10px;">Making CubeSat Thermal Data Trustworthy</h2>
 
-<p align="center"><em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em></p>
+<p align="center" style="margin:0; font-weight:700; font-size:1.05rem;">
+  HyCUBE: CubeSat Thermal &amp; Instrumentation Payload
+</p>
+
+<p align="center" style="margin-top:6px; margin-bottom:18px; opacity:0.85;">
+  <em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em>
+</p>
+
 
 <p align="center">
   <strong>Program:</strong> NASA Minnesota Space Grant Consortium × University of Minnesota SmallSat Program<br>
@@ -96,9 +107,16 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 
 ---
 
-<h2 align="center">StrokeNet: Hemorrhage Detection on Non-Contrast Head CT (Mofrad Lab-Mentored ML Project)</h2>
+<h2 align="center" style="margin-bottom:10px;">Hemorrhage Detection on Head CT, With Interpretable ML</h2>
 
-<p align="center"><em>Medical Imaging • Applied Deep Learning • Interpretability + validation focus</em></p>
+<p align="center" style="margin:0; font-weight:700; font-size:1.05rem;">
+  StrokeNet: Hemorrhage Detection on Non-Contrast Head CT (Mofrad Lab-Mentored ML Project)
+</p>
+
+<p align="center" style="margin-top:6px; margin-bottom:18px; opacity:0.85;">
+  <em>Medical Imaging • Applied Deep Learning • Interpretability + validation focus</em>
+</p>
+
 
 <p align="center">
   <img src="assets/gradcam_grid_imagenet_maskedcrop (1).png" width="86%">
@@ -162,11 +180,16 @@ Same supervised training recipe across runs; only the initialization changed.
 
 <!-- ===================== Wind Turbine Project ===================== -->
 
-<h2 align="center">Wind Turbine Design–Build–Test (E26: 3D Modeling for Design)</h2>
+<h2 align="center" style="margin-bottom:10px;">Measuring and Improving Small Wind-Turbine Power Output</h2>
 
-<p align="center">
+<p align="center" style="margin:0; font-weight:700; font-size:1.05rem;">
+  Wind Turbine Design–Build–Test (E26: 3D Modeling for Design)
+</p>
+
+<p align="center" style="margin-top:6px; margin-bottom:18px; opacity:0.85;">
   <em>Rapid prototyping • Wind-tunnel testing • Power characterization • FEA-informed structural check</em>
 </p>
+
 
 <p align="center">
   Result: Ranked #1 / 40 teams in measured electrical power output (final course test).
@@ -212,9 +235,15 @@ FEA (led by a teammate) and reviewed by the team.
 
 <!-- ===================== Trading System Project ===================== -->
 
-<h2 align="center">Automated Market-Open Execution Bot (UPRO/SPXU): Reliability-First Automation</h2>
+<h2 align="center" style="margin-bottom:10px;">Reliability-First Automation Under Real-World Constraints</h2>
 
-<p align="center"><em>Systems engineering • Deterministic state machine • Cloud-ready execution</em></p>
+<p align="center" style="margin:0; font-weight:700; font-size:1.05rem;">
+  Automated Market-Open Execution Bot (UPRO/SPXU): Reliability-First Automation
+</p>
+
+<p align="center" style="margin-top:6px; margin-bottom:18px; opacity:0.85;">
+  <em>Systems engineering • Deterministic state machine • Cloud-ready execution</em>
+</p>
 
 <p align="center">
   <em>Paper-trading implementation focused on robust execution, constraints, and monitoring.</em>
