@@ -68,19 +68,6 @@ A blended-wing-body aircraft can reduce drag by generating lift with more of the
 </p>
 
 
-<h2 align="center" style="margin-top:8px; margin-bottom:10px;">
-  Making CubeSat Thermal Data Trustworthy
-</h2>
-
-<p align="center" style="margin:0; font-weight:700; font-size:1.02rem; opacity:0.92;">
-  HyCUBE: CubeSat Thermal &amp; Instrumentation Payload
-</p>
-
-<p align="center" style="margin-top:4px; margin-bottom:14px; opacity:0.85;">
-  <em>Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing</em>
-</p>
-
-
 <p align="center">
   <img src="assets/HyCubeINAir.png" width="48%">
   <img src="assets/hycube_mission_graphic.webp" width="48%">
@@ -194,7 +181,7 @@ Same supervised training recipe across runs; only the initialization changed.
 - Produced interpretability visuals (Grad-CAM grids with artifact-aware cropping) to sanity-check model behavior
 - Implemented and tested student/teacher self-supervised pretraining and compared initialization strategies
 
-
+---
 <!-- ===================== Wind Turbine Project ===================== -->
 
 <h2 align="center" style="margin-top:8px; margin-bottom:10px;">
@@ -252,7 +239,7 @@ FEA (led by a teammate) and reviewed by the team.
 <p align="center"><em>Measured electrical output (power vs current) and the wind-tunnel-style test setup used to capture voltage/current under controlled airflow.</em></p>
 
 
-
+---
 <!-- ===================== Trading System Project ===================== -->
 
 <h2 align="center" style="margin-top:8px; margin-bottom:10px;">
