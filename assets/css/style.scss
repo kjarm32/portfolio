@@ -1,27 +1,75 @@
+---
+---
+
 @import "{{ site.theme }}";
 
-/* Global dark theme */
+/* Make form controls etc. use dark palette where supported */
+:root { color-scheme: dark; }
+
+/* Global */
 body {
-  background-color: #0e0e0e;
-  color: #e6e6e6;
+  background-color: #0d1117; /* GitHub dark */
+  color: #c9d1d9;
+}
+
+/* The Minimal theme’s main content container is usually .wrapper */
+.wrapper {
+  background: transparent; /* remove the light “card” look */
+}
+
+/* Sometimes header gets its own background / border */
+header {
+  background: transparent;
+  border-bottom: 1px solid #30363d;
 }
 
 /* Headings */
-h1, h2, h3 {
-  color: #ffffff;
+h1, h2, h3, h4, h5, h6 {
+  color: #e6edf3;
 }
 
 /* Links */
-a {
-  color: #7dd3fc;
+a, a:visited {
+  color: #58a6ff;
+}
+a:hover {
+  color: #79c0ff;
 }
 
-/* Images */
+/* Paragraph/meta-ish text the theme often renders lighter */
+small, .small {
+  color: #8b949e;
+}
+
+/* Horizontal rules */
+hr {
+  border: 0;
+  border-top: 1px solid #30363d;
+}
+
+/* Code blocks */
+pre, code {
+  background: #161b22;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+}
+
+/* Blockquotes */
+blockquote {
+  color: #8b949e;
+  border-left: 4px solid #30363d;
+}
+
+/* Tables */
+table, th, td {
+  border-color: #30363d;
+}
+
+/* Keep your styling */
 img {
   border-radius: 6px;
 }
 
-/* Section spacing */
 section {
   margin-bottom: 3rem;
 }
