@@ -232,7 +232,7 @@ FEA (led by a teammate) and reviewed by the team.
   <img src="assets/windturbine_power_vs_current.png"
        style="height:320px; width:auto; max-width:58%; object-fit:contain; display:block;"
        alt="Power vs current">
-  <img src="assets/windturbine_test_setup.png"
+  <img src="assets/windturbine_test_setup.jpg"
        style="height:320px; width:auto; max-width:38%; object-fit:cover; object-position:50% 35%; display:block;"
        alt="Wind turbine test setup">
 </div>
