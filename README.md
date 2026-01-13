@@ -197,15 +197,8 @@ Same supervised training recipe across runs; only the initialization changed.
 </p>
 
 
-
-<p align="center">
-  Result: Ranked #1 / 40 teams in measured electrical power output (final course test).
-</p>
-
 <p>
-In a 4-person team project, we designed and tested a small wind turbine under manufacturability and performance constraints.
-We compared candidate blade concepts, fabricated prototypes via 3D printing, and evaluated designs in a wind-tunnel-style setup
-using voltage/current measurements to quantify electrical power output. Structural sanity checks were performed with linear-static
+Ranked #1 / 40 teams in measured electrical power output (final course test). In a 4-person team project, we designed and tested a small wind turbine under manufacturability and performance constraints.We compared candidate blade concepts, fabricated prototypes via 3D printing, and evaluated designs in a wind-tunnel-style setup using voltage/current measurements to quantify electrical power output. Structural sanity checks were performed with linear-static
 FEA (led by a teammate) and reviewed by the team.
 </p>
 
