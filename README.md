@@ -255,7 +255,7 @@ I built a reliability-first paper-trading automation system that runs at the U.S
 <!-- ===== System diagram ===== -->
 <p align="center"><strong>System diagram (end-to-end execution flow)</strong></p>
 <p align="center">
-  <img src="assets/trading_system_diagram(2).png" width="96%" alt="Reliability-first execution flow diagram">
+  <img src="assets/trading_system_diagram(3).svg" width="96%" alt="Reliability-first execution flow diagram">
 </p>
 
 
