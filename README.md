@@ -110,7 +110,7 @@ Reliable temperature sensing is critical for thermal testing and flight readines
 ---
 
 <h2 align="center" style="margin-top:8px; margin-bottom:10px;">
-  Interpretable Hemorrhage Detection on Head CT
+  Post-Stroke Imaging Triage: Identifying Intracranial Bleeding on Head CT
 </h2>
 
 <p align="center" style="margin:0; font-weight:700; font-size:1.02rem; opacity:0.92;">
