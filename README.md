@@ -32,7 +32,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling, a
 
 A blended-wing-body aircraft can reduce drag by generating lift with more of the airframe, not just the wings, which is why it’s a recurring concept in efficiency-focused aircraft design. In this study, I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and to produce clean, comparable flow/pressure visualizations while backing the results with basic verification (convergence, domain, and mesh sensitivity checks).
 
-**Status / next step (in progress): physical validation.**  
+**Next step (in progress): physical validation.**  
 This project is moving from simulation to test. Next, I’m 3D-printing the CAD model and running a small wind-tunnel campaign to compare measured force trends (lift/drag vs. angle of attack) against the CFD sweep and quantify where the model matches and where it breaks.
 
 **Highlights**
