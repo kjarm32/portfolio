@@ -50,16 +50,10 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 ### Selected figures
 
 #### Aerodynamic results summary  
-**Aerodynamic coefficients (V∞ = 40 mph)**
-
-| Metric \ AoA (deg) | -2 | 0 | 2 | 4 | 6 | 8 |
-|---|---:|---:|---:|---:|---:|---:|
-| **CL** | -0.041385 | 0.058617 | 0.161187 | 0.259792 | 0.355393 | 0.447335 |
-| **CD** | 0.028280 | 0.027234 | 0.030716 | 0.037269 | 0.048587 | 0.064402 |
-| **L/D** | -1.46342 | 2.15237 | 5.24760 | 6.97073 | 7.31458 | 6.94595 |
+**Aerodynamic coefficients (V∞ = 40 mph)**|
 
 <p align="center">
-  <img src="assets/aero_plots_only.png" width="92%">
+  <img src="assets/bwb_cfd_summary.png" width="92%">
 </p>
 
 <br>
@@ -271,29 +265,31 @@ I built a reliability-first paper-trading automation system that runs at the U.S
 <!-- ===== System diagram ===== -->
 <p align="center"><strong>System diagram (end-to-end execution flow)</strong></p>
 flowchart TD
-  A[Cloud Scheduler / VM / Cloud Run] --> B[Start bot + init Alpaca client]
-  B --> C{Morning cleanup?\nUPRO/SPXU position exists}
-  C -- Yes --> C1[Cancel open orders\nSell at market\nWait fill + log realized P/L]
-  C -- No --> D
+  A([Start<br/>Cloud Scheduler / VM / Cloud Run]) --> B[Init Alpaca client<br/>+ timezone]
 
-  C1 --> D[Wait until 9:30 ET]
+  B --> C{Morning cleanup?<br/>Leftover UPRO/SPXU?}
+  C -- Yes --> C1[Cancel open orders<br/>Sell at market<br/>Wait fill + log realized P/L]
+  C -- No --> D[Wait until 9:30 ET]
+  C1 --> D
+
   D --> E{Market open?}
-  E -- No --> X[Exit (fail-closed)]
+  E -- No --> X([Exit (fail-closed)])
   E -- Yes --> F{PDT guard OK?}
   F -- No --> X
+  F -- Yes --> G[Read baseline prices<br/>UPRO_base, SPXU_base]
 
-  F -- Yes --> G[Read baseline prices\nUPRO_base, SPXU_base]
-  G --> H[Observe for WAIT_MINUTES\npoll prices + compute returns]
+  G --> H[Observe for WAIT_MINUTES<br/>poll prices + compute returns]
   H --> I{Spread ≥ THRESHOLD?}
   I -- Yes --> J[Pick winner immediately]
   I -- No --> K[At cutoff: pick leader]
 
-  J --> L[Compute cash allocation\ncash_only_allocation()]
+  J --> L[Allocation = cash_only_allocation()]
   K --> L
-  L --> M[Buy whole shares (market)\nretry qty-1 on reject]
+  L --> M[Buy whole shares (market)<br/>retry qty-1 on reject]
   M --> N[Wait fill + log filled_avg_price]
-  N --> O[Hold overnight]
-  O --> P[Next run starts with cleanup]
+  N --> O([Hold overnight])
+  O --> P([Next run starts with cleanup])
+
 
 
 <!-- ===== Highlights (engineering bullets) ===== -->
