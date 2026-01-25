@@ -56,7 +56,7 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 
 <p align="center">
   <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20%281%29.png" width="49%">
-  <img src="assets/13CombinedRelPres_VERTICAL_0_4_8_PORTFOLIO.png" width="49%">
+  <img src="assets/CombinedRelPres_montage_0_4_8_VERTICAL_PORTFOLIO.png" width="49%">
 </p>
 
 <p align="center">
