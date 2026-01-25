@@ -51,27 +51,51 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 
 <p align="center"><strong>Aerodynamic results summary</strong></p>
 
-<!-- Full-width GitHub-rendered table -->
 <p align="center"><strong>Aerodynamic coefficients (V∞ = 40 mph)</strong></p>
 
-<table align="center" width="92%" style="border-collapse: collapse;">
+<table align="center">
   <thead>
     <tr>
-      <th style="border:1px solid #888; padding:10px 12px;">AoA (deg)</th>
-      <th style="border:1px solid #888; padding:10px 12px;">CL</th>
-      <th style="border:1px solid #888; padding:10px 12px;">CD</th>
-      <th style="border:1px solid #888; padding:10px 12px;">L/D</th>
+      <th>Metric \ AoA (deg)</th>
+      <th>-2</th>
+      <th>0</th>
+      <th>2</th>
+      <th>4</th>
+      <th>6</th>
+      <th>8</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td style="border:1px solid #888; padding:10px 12px;" align="center">-2</td><td style="border:1px solid #888; padding:10px 12px;" align="center">-0.041385</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.028280</td><td style="border:1px solid #888; padding:10px 12px;" align="center">-1.46342</td></tr>
-    <tr><td style="border:1px solid #888; padding:10px 12px;" align="center">0</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.058617</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.027234</td><td style="border:1px solid #888; padding:10px 12px;" align="center">2.15237</td></tr>
-    <tr><td style="border:1px solid #888; padding:10px 12px;" align="center">2</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.161187</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.030716</td><td style="border:1px solid #888; padding:10px 12px;" align="center">5.24760</td></tr>
-    <tr><td style="border:1px solid #888; padding:10px 12px;" align="center">4</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.259792</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.037269</td><td style="border:1px solid #888; padding:10px 12px;" align="center">6.97073</td></tr>
-    <tr><td style="border:1px solid #888; padding:10px 12px;" align="center">6</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.355393</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.048587</td><td style="border:1px solid #888; padding:10px 12px;" align="center">7.31458</td></tr>
-    <tr><td style="border:1px solid #888; padding:10px 12px;" align="center">8</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.447335</td><td style="border:1px solid #888; padding:10px 12px;" align="center">0.064402</td><td style="border:1px solid #888; padding:10px 12px;" align="center">6.94595</td></tr>
+    <tr>
+      <td><strong>CL</strong></td>
+      <td>-0.041385</td>
+      <td>0.058617</td>
+      <td>0.161187</td>
+      <td>0.259792</td>
+      <td>0.355393</td>
+      <td>0.447335</td>
+    </tr>
+    <tr>
+      <td><strong>CD</strong></td>
+      <td>0.028280</td>
+      <td>0.027234</td>
+      <td>0.030716</td>
+      <td>0.037269</td>
+      <td>0.048587</td>
+      <td>0.064402</td>
+    </tr>
+    <tr>
+      <td><strong>L/D</strong></td>
+      <td>-1.46342</td>
+      <td>2.15237</td>
+      <td>5.24760</td>
+      <td>6.97073</td>
+      <td>7.31458</td>
+      <td>6.94595</td>
+    </tr>
   </tbody>
 </table>
+
 
 <!-- Plots image -->
 <p align="center">
@@ -88,7 +112,7 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 
 <!-- VelX vs Pressure montage -->
 <p align="center">
-  <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8.png" width="92%">
+  <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
 </p>
 
 <p align="center">
