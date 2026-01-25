@@ -266,6 +266,35 @@ I built a reliability-first paper-trading automation system that runs at the U.S
   <img src="assets/upro_spxu_system_diagram.svg" width="92%">
 </p>
 
+flowchart TB
+
+  %% Row 1 (LR)
+  subgraph R1[""]
+    direction LR
+    A["Scheduler\n09:30 ET"] --> B["Preflight\nMarket open + API reachable"] --> C["Morning cleanup\nFlatten leftovers\nCancel open orders"] --> D{"Constraints gate\nPDT-aware check"}
+  end
+
+  D -->|Blocked| X["Fail-closed exit\nNo trade + log reason"]
+
+  %% Row 2 (LR)
+  subgraph R2[""]
+    direction LR
+    E["Sense\nObserve fixed window\nUPRO + SPXU"] --> F["Decide\nThreshold winner\nor cutoff leader"] --> G["Act\nCash-only sizing\nWhole shares\nMarket order"] --> H{"Fill confirm\nTimeout + retry"}
+  end
+
+  D -->|Pass| E
+  H -->|Unfilled| X
+  H -->|Filled| Y["Hold / Exit\nHold overnight\nNext run cleanup sell\nRealized P&L from fills"]
+
+  NOTE["Auditability (always on)\nTimestamped logs at each transition"]:::note
+  NOTE -.-> B
+  NOTE -.-> E
+  NOTE -.-> G
+  NOTE -.-> Y
+
+  classDef note fill:#ffffff,stroke:#111827,stroke-width:2px,color:#111827;
+  classDef default fill:#ffffff,stroke:#111827,stroke-width:2px,color:#111827;
+
 
 
 
