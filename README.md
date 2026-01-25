@@ -54,15 +54,16 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
   <img src="assets/bwb_cfd_summary.png" width="92%">
 </p>
 
-<p align="center"><strong>Streamwise velocity montage (Vx)</strong></p>
 <p align="center">
-  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20%281%29.png" width="58%">
+  <img src="assets/13CombinedVelX_STACKED_0_4_8_PORTFOLIO%20%281%29.png" width="49%">
+  <img src="assets/13CombinedRelPres_VERTICAL_0_4_8_PORTFOLIO.png" width="49%">
 </p>
 
-<p align="center"><strong>Surface relative pressure montage (0°, 4°, 8°)</strong></p>
 <p align="center">
-  <img src="assets/CombinedRelPres_montage_0_4_8_PORTFOLIO.png" width="92%">
+  <strong>Left:</strong> Streamwise velocity montage (Vx) &nbsp;&nbsp;|&nbsp;&nbsp;
+  <strong>Right:</strong> Surface relative pressure montage (0°, 4°, 8°)
 </p>
+
 
 ---
 
