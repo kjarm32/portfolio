@@ -49,9 +49,6 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 
 ### Selected figures
 
-#### Aerodynamic results summary  
-**Aerodynamic coefficients (V∞ = 40 mph)**|
-
 <p align="center">
   <img src="assets/bwb_cfd_summary.png" width="92%">
 </p>
