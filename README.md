@@ -49,71 +49,25 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 
 ### Selected figures
 
-<p align="center"><strong>Aerodynamic results summary</strong></p>
-<p align="center"><strong>Aerodynamic coefficients (V∞ = 40 mph)</strong></p>
+#### Aerodynamic results summary  
+**Aerodynamic coefficients (V∞ = 40 mph)**
 
-<table align="center" style="border-collapse: collapse; width: 92%; max-width: 1100px; font-variant-numeric: tabular-nums;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid #777; padding: 10px; text-align: center;">Metric \ AoA (deg)</th>
-      <th style="border: 1px solid #777; padding: 10px; text-align: center;">-2</th>
-      <th style="border: 1px solid #777; padding: 10px; text-align: center;">0</th>
-      <th style="border: 1px solid #777; padding: 10px; text-align: center;">2</th>
-      <th style="border: 1px solid #777; padding: 10px; text-align: center;">4</th>
-      <th style="border: 1px solid #777; padding: 10px; text-align: center;">6</th>
-      <th style="border: 1px solid #777; padding: 10px; text-align: center;">8</th>
-    </tr>
-  </thead>
+| Metric \ AoA (deg) | -2 | 0 | 2 | 4 | 6 | 8 |
+|---|---:|---:|---:|---:|---:|---:|
+| **CL** | -0.041385 | 0.058617 | 0.161187 | 0.259792 | 0.355393 | 0.447335 |
+| **CD** | 0.028280 | 0.027234 | 0.030716 | 0.037269 | 0.048587 | 0.064402 |
+| **L/D** | -1.46342 | 2.15237 | 5.24760 | 6.97073 | 7.31458 | 6.94595 |
 
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;"><strong>CL</strong></td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">-0.041385</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.058617</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.161187</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.259792</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.355393</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.447335</td>
-    </tr>
-
-    <tr>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;"><strong>CD</strong></td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.028280</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.027234</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.030716</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.037269</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.048587</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">0.064402</td>
-    </tr>
-
-    <tr>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;"><strong>L/D</strong></td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">-1.46342</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">2.15237</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">5.24760</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">6.97073</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">7.31458</td>
-      <td style="border: 1px solid #777; padding: 10px; text-align: center;">6.94595</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-<!-- Plots image -->
 <p align="center">
   <img src="assets/aero_plots_only.png" width="92%">
 </p>
 
-<!-- Divider / label between figures -->
 <br>
 <p align="center"><strong>Flow-field visualization (fixed legends for cross-case comparison)</strong></p>
 
-<!-- VelX vs Pressure montage -->
 <p align="center">
   <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
 </p>
-
 
 
 
@@ -316,9 +270,30 @@ I built a reliability-first paper-trading automation system that runs at the U.S
 
 <!-- ===== System diagram ===== -->
 <p align="center"><strong>System diagram (end-to-end execution flow)</strong></p>
-<p align="center">
-  <img src="assets/trading_system_diagram(4).svg" width="96%" alt="Reliability-first execution flow diagram">
-</p>
+flowchart TD
+  A[Cloud Scheduler / VM / Cloud Run] --> B[Start bot + init Alpaca client]
+  B --> C{Morning cleanup?\nUPRO/SPXU position exists}
+  C -- Yes --> C1[Cancel open orders\nSell at market\nWait fill + log realized P/L]
+  C -- No --> D
+
+  C1 --> D[Wait until 9:30 ET]
+  D --> E{Market open?}
+  E -- No --> X[Exit (fail-closed)]
+  E -- Yes --> F{PDT guard OK?}
+  F -- No --> X
+
+  F -- Yes --> G[Read baseline prices\nUPRO_base, SPXU_base]
+  G --> H[Observe for WAIT_MINUTES\npoll prices + compute returns]
+  H --> I{Spread ≥ THRESHOLD?}
+  I -- Yes --> J[Pick winner immediately]
+  I -- No --> K[At cutoff: pick leader]
+
+  J --> L[Compute cash allocation\ncash_only_allocation()]
+  K --> L
+  L --> M[Buy whole shares (market)\nretry qty-1 on reject]
+  M --> N[Wait fill + log filled_avg_price]
+  N --> O[Hold overnight]
+  O --> P[Next run starts with cleanup]
 
 
 <!-- ===== Highlights (engineering bullets) ===== -->
