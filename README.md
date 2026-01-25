@@ -53,8 +53,6 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 <p align="center">
   <img src="assets/bwb_cfd_summary1.png" width="92%">
 </p>
-
-<br>
 <p align="center"><strong>Flow-field visualization (fixed legends for cross-case comparison)</strong></p>
 
 <p align="center">
