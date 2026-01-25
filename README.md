@@ -105,10 +105,6 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 <!-- Divider / label between figures -->
 <br>
 <p align="center"><strong>Flow-field visualization (fixed legends for cross-case comparison)</strong></p>
-<p align="center" style="margin-top:-6px;">
-  <em>Velocity (streamwise cut) and surface relative pressure at AoA = 0°, 4°, 8°</em>
-</p>
-<hr style="width:92%;">
 
 <!-- VelX vs Pressure montage -->
 <p align="center">
