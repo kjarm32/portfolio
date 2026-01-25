@@ -111,10 +111,7 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
   <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
 </p>
 
-<p align="center">
-  <strong>Left:</strong> Streamwise velocity (Vx) &nbsp;&nbsp;|&nbsp;&nbsp;
-  <strong>Right:</strong> Surface relative pressure (0°, 4°, 8°)
-</p>
+
 
 
 ---
