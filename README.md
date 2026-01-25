@@ -50,8 +50,30 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 ### Selected figures
 
 <p align="center"><strong>Aerodynamic results summary</strong></p>
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>AoA (deg)</th>
+      <th>CL</th>
+      <th>CD</th>
+      <th>L/D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>-2</td><td>-0.041385</td><td>0.028280</td><td>-1.46342</td></tr>
+    <tr><td>0</td><td>0.058617</td><td>0.027234</td><td>2.15237</td></tr>
+    <tr><td>2</td><td>0.161187</td><td>0.030716</td><td>5.24760</td></tr>
+    <tr><td>4</td><td>0.259792</td><td>0.037269</td><td>6.97073</td></tr>
+    <tr><td>6</td><td>0.355393</td><td>0.048587</td><td>7.31458</td></tr>
+    <tr><td>8</td><td>0.447335</td><td>0.064402</td><td>6.94595</td></tr>
+  </tbody>
+</table>
+
+<br>
+
 <p align="center">
-  <img src="assets/bwb_cfd_summary.png" width="92%">
+  <img src="assets/aero_plots_only.png" width="92%">
 </p>
 
 <p align="center">
@@ -62,7 +84,6 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
   <strong>Left:</strong> Streamwise velocity (Vx) &nbsp;&nbsp;|&nbsp;&nbsp;
   <strong>Right:</strong> Surface relative pressure (0°, 4°, 8°)
 </p>
-
 
 
 ---
