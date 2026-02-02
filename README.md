@@ -20,7 +20,7 @@ Quick links
 ## Concept Aircraft: Blended-Wing-Body Aerodynamics
 
 Validated low-speed CFD of a blended-wing-body aircraft  
-Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + clean post-processing
+Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • Clean post-processing
 
 <p align="center">
   <a href="assets/BWB%20Executive%20Summary%20(2).pdf">
@@ -33,10 +33,20 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction + cle
   <a href="assets/BWB%20Executive%20Summary%20(2).pdf">Open the executive summary (PDF)</a>
 </p>
 
-A blended-wing-body aircraft can reduce drag by generating lift with more of the airframe, not just the wings. In this study, I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and to produce clean, comparable flow/pressure visualizations backed by basic verification (convergence, domain, and mesh sensitivity checks).
+A blended-wing-body aircraft can reduce drag by generating lift with more of the airframe, not just the wings. I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and produce comparable flow/pressure visualizations backed by convergence, domain, and mesh sensitivity checks.
 
-Next step (in progress): physical validation.  
-This project is moving from simulation to test. Next, I’m 3D-printing the final CAD model and running a small wind-tunnel campaign to compare measured force trends (lift/drag vs. angle of attack) against the CFD sweep and quantify where the model matches and where it breaks.
+Highlights
+- AoA sweep: −2° → +8° at ~40 mph; peak efficiency L/D ≈ 7.3 near ~6°
+- Verification: domain effect <0.5%; mesh medium→fine ΔCL ≈ 1.25%
+- Comparison-ready visuals: fixed views/scales across cases (velocity cuts + pressure maps)
+
+My contributions
+- Ran steady-state CFD across AoA and extracted lift/drag trends (CL/CD)
+- Verified results with convergence stability, domain sensitivity, and mesh sensitivity checks
+- Produced clean figure sets for cross-case comparison and packaged results into an executive summary
+
+Next step
+- Physical validation: 3D-printing the final CAD model and running a small wind-tunnel campaign to compare measured lift/drag vs. AoA against the CFD sweep
 
 <p align="center">Physical prototype (first draft)</p>
 <p align="center">
@@ -45,11 +55,6 @@ This project is moving from simulation to test. Next, I’m 3D-printing the fina
 <p align="center">
   <em>First-draft 3D-printed BWB prototype for upcoming wind-tunnel / flow visualization validation.</em>
 </p>
-
-Highlights
-- Quantified performance: AoA sweep (−2° → +8° at ~40 mph); peak efficiency L/D ≈ 7.3 near ~6°
-- Credibility checks: convergence stability window; domain <0.5% effect; mesh medium→fine ΔCL ≈ 1.25%
-- Communication: fixed views/scales for honest cross-case comparison (velocity cuts + pressure maps)
 
 <details>
   <summary>Selected figures</summary>
@@ -69,25 +74,25 @@ Highlights
 
 ## HyCUBE: CubeSat Thermal & Instrumentation Payload
 
-Making CubeSat thermal data trustworthy  
-Aerospace Systems + Instrumentation • Sensor calibration + validation • Flight-readiness testing
+Thermocouple calibration + validation workflow for flight-readiness decisions  
+Aerospace Systems + Instrumentation • Sensor calibration • Validation • Flight-readiness testing
 
 <p align="center">
   <img src="assets/HyCubeINAir.png" width="48%">
   <img src="assets/hycube_mission_graphic.webp" width="48%">
 </p>
 
-Reliable temperature sensing is critical for thermal testing and flight readiness. I built a thermocouple calibration + validation workflow for HyCUBE (Hypersonic Configurable Unit Ballistic Experiment) to support sensor selection and pre-flight verification. The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates measurement agreement using parity and Bland–Altman analysis.
+Reliable temperature sensing is critical for thermal testing and flight readiness. I built a thermocouple calibration + validation workflow for HyCUBE (Hypersonic Configurable Unit Ballistic Experiment) to support sensor selection and pre-flight verification. The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates agreement using parity and Bland–Altman analysis.
 
-Results snapshot
-- Estimated sensitivity (slope): 19 in ≈ 44.51 µV/°C (R² ≈ 0.499), 25 in ≈ 33.84 µV/°C (R² ≈ 0.377), 30 in ≈ 45.05 µV/°C (R² ≈ 0.542)
-- Agreement vs reference: overall bias ≈ 0.00°C with limits of agreement ≈ ±3.60°C (Bland–Altman)
-- Deliverable: calibration summary + figures exported as PNGs suitable for reports and review decks
+Highlights
+- Sensitivity (slope): 19 in ≈ 44.51 µV/°C (R² ≈ 0.499), 25 in ≈ 33.84 µV/°C (R² ≈ 0.377), 30 in ≈ 45.05 µV/°C (R² ≈ 0.542)
+- Agreement vs reference: bias ≈ 0.00°C with limits of agreement ≈ ±3.60°C (Bland–Altman)
+- Deliverable: calibration summary + figures exported as PNGs for reports and review decks
 
-Key contributions
+My contributions
 - Designed thermocouple calibration experiments and produced decision-ready plots for sensor selection
 - Implemented cold-junction compensation and regression-based calibration with confidence bounds
-- Validated measurement behavior with parity + Bland–Altman agreement (bias and limits-of-agreement)
+- Validated measurement behavior with parity plots and Bland–Altman limits-of-agreement
 - Automated analysis outputs (tables + PNG exports) to keep results reproducible and reviewable
 - Supported high-altitude balloon flight operations: payload integration, ground-station setup, flight monitoring, recovery, and post-flight data validation
 
@@ -114,73 +119,80 @@ Key contributions
 
 ## StrokeNet: Hemorrhage Detection on Non-Contrast Head CT
 
-Post-stroke imaging triage: identifying intracranial bleeding on head CT  
-Medical Imaging • Applied Deep Learning • Interpretability + validation focus
+Slice-level hemorrhage detection baseline + initialization comparison (Scratch vs ImageNet vs JEPA)  
+Medical Imaging • Applied Deep Learning • Interpretability • Validation focus
 
 <p align="center">
   <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="86%">
 </p>
 
-Rapid identification of intracranial hemorrhage on non-contrast head CT can accelerate triage because hemorrhagic findings drive time-critical decisions and differ from ischemic pathways. This project was motivated by Mofrad Lab discussions on stroke imaging and a concrete question that came up in mentorship feedback: whether CT-native self-supervised pretraining can provide better representations than standard ImageNet pretraining for CT. I built a reproducible slice-level hemorrhage detection baseline and compared three initialization strategies—random initialization (scratch), ImageNet pretraining, and CT-native student/teacher self-supervised pretraining (JEPA)—using a fixed supervised training pipeline and interpretability checks with Grad-CAM.
+Rapid identification of intracranial hemorrhage on non-contrast head CT can accelerate triage. I built a reproducible slice-level hemorrhage detection baseline and compared three initialization strategies—scratch, ImageNet pretraining, and CT-native student/teacher self-supervised pretraining (JEPA)—using the same supervised training recipe and interpretability checks with Grad-CAM.
 
 1-page summary  
 - [Open the 1-page project summary (PDF)](assets/CT_Hemorrhage_1page_summary.pdf)
 
-Validation (held-out 20% split, n = 240 slices)  
-Same supervised training recipe across runs; only the initialization changed.
+Highlights
+- Validation setup: held-out 20% split, n = 240 slices; same supervised pipeline across runs
+- ImageNet-pretrained: ROC AUC 0.878, Sensitivity 0.70, Specificity 0.89
+- JEPA (CT self-supervised): ROC AUC 0.752, Sensitivity 0.85, Specificity 0.53
 
-<table align="center">
-  <thead>
-    <tr>
-      <th>Initialization</th>
-      <th>ROC AUC</th>
-      <th>Sensitivity</th>
-      <th>Specificity</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ImageNet-pretrained</td>
-      <td>0.878</td>
-      <td>0.70</td>
-      <td>0.89</td>
-    </tr>
-    <tr>
-      <td>Scratch (random init)</td>
-      <td>0.829</td>
-      <td>0.79</td>
-      <td>0.74</td>
-    </tr>
-    <tr>
-      <td>JEPA (CT self-supervised)</td>
-      <td>0.752</td>
-      <td>0.85</td>
-      <td>0.53</td>
-    </tr>
-  </tbody>
-</table>
-
-What this shows
-- On this small RSNA subset and a lightweight JEPA run, ImageNet pretraining preserved the best overall AUC and specificity.
-- CT-native JEPA increased sensitivity (fewer missed hemorrhage slices) but traded off specificity, which is useful as a baseline and a pointer toward longer pretraining and tighter SSL tuning.
-
-Engineering contributions
-- Built an end-to-end CT preprocessing and training pipeline (HU conversion/windowing, normalization, augmentation, stratified splits)
+My contributions
+- Built an end-to-end CT preprocessing + training pipeline (HU conversion/windowing, normalization, augmentation, stratified splits)
 - Implemented balanced training for class imbalance and stable fine-tuning
 - Produced interpretability visuals (Grad-CAM grids with artifact-aware cropping) to sanity-check model behavior
 - Implemented and tested student/teacher self-supervised pretraining and compared initialization strategies
+
+<details>
+  <summary>Validation results</summary>
+
+  <table align="center">
+    <thead>
+      <tr>
+        <th>Initialization</th>
+        <th>ROC AUC</th>
+        <th>Sensitivity</th>
+        <th>Specificity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ImageNet-pretrained</td>
+        <td>0.878</td>
+        <td>0.70</td>
+        <td>0.89</td>
+      </tr>
+      <tr>
+        <td>Scratch (random init)</td>
+        <td>0.829</td>
+        <td>0.79</td>
+        <td>0.74</td>
+      </tr>
+      <tr>
+        <td>JEPA (CT self-supervised)</td>
+        <td>0.752</td>
+        <td>0.85</td>
+        <td>0.53</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
 
 ---
 
 ## Wind Turbine Design–Build–Test (E26)
 
-Improving small wind-turbine power through iterative testing  
+Iterative prototyping + test-based power characterization  
 Rapid prototyping • Wind-tunnel testing • Power characterization • FEA-informed structural check
 
-Ranked #1 / 40 teams in measured electrical power output (final course test). In a 4-person team project, we designed and tested a small wind turbine under manufacturability and performance constraints. We compared candidate blade concepts, fabricated prototypes via 3D printing, and evaluated designs in a wind-tunnel-style setup using voltage/current measurements to quantify electrical power output. Structural sanity checks were performed with linear-static FEA (led by a teammate) and reviewed by the team.
+Ranked #1 / 40 teams in measured electrical power output (final course test). In a 4-person team project, we designed and tested a small wind turbine under manufacturability and performance constraints. We compared candidate blade concepts, fabricated prototypes via 3D printing, and evaluated designs in a wind-tunnel-style setup using voltage/current measurements. Structural sanity checks were performed with linear-static FEA (led by a teammate) and reviewed by the team.
+
+Highlights
+- Ranked #1 / 40 teams in measured electrical power output (final course test)
+- Measured voltage/current across iterations and converted V–I data to comparable power curves/peak power
+- Reviewed linear-static FEA assumptions/results to confirm stiffness/strength constraints were reasonable
 
 My contributions (team of 4)
-- Measurement owner: captured and hand-logged most of the voltage/current data during testing across runs and iterations
+- Measurement owner: captured and hand-logged most voltage/current data during testing across runs and iterations
 - Performance characterization: converted V–I measurements into comparable power results (curves/peak power) to rank iterations and support the final configuration
 - Design input: conducted independent blade/airfoil research and contributed to group selection of blade geometry (airfoil/twist/profile tradeoffs)
 - Verification review: double-checked a teammate’s linear-static FEA assumptions/results to confirm stiffness/strength constraints were reasonable
@@ -215,7 +227,7 @@ My contributions (team of 4)
 Reliability-first automation under real-world constraints  
 Systems engineering • Deterministic state machine • Cloud-ready execution
 
-I built a reliability-first paper-trading automation system that runs at the U.S. market open, briefly observes two leveraged S&P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. The goal is robust automation: clear state transitions, fail-closed behavior, and auditability—so the system behaves predictably even when external APIs or market conditions are imperfect.
+I built a reliability-first paper-trading automation system that runs at the U.S. market open, briefly observes two leveraged S&P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. The goal is predictable behavior under imperfect conditions: clear state transitions, fail-closed behavior, and auditability when APIs or market conditions are unreliable.
 
 <p align="center">
   <img src="assets/upro_spxu_system_diagram1.svg" width="100%">
@@ -227,9 +239,9 @@ Highlights
 - Reliability guardrails: cancel-stale-orders, fill confirmation with timeouts, and “morning cleanup” to flatten leftover positions safely before a new run
 - Auditability: timestamped logs at each state transition (open → observe → decide → route order → confirm fill → hold/exit) for post-run traceability
 
-Engineering notes
-- State machine design: the script is structured as discrete states with explicit pass/fail branches rather than one long script, which makes failure modes predictable
-- Fail-closed philosophy: when critical checks fail (market closed, API unreachable, fill not confirmed), the system exits without trading and logs why
-- Reproducible evidence: logs are designed to be audit trails (what the system believed, what it did, and when)
+My contributions
+- Implemented a state-machine structure with explicit pass/fail branches to make failure modes predictable
+- Implemented fail-closed checks (market closed, API unreachable, fill not confirmed) and explicit logging for each exit path
+- Built log outputs designed as audit trails (what the system believed, what it did, and when)
 
 ---
