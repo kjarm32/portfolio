@@ -4,16 +4,16 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
 
 Quick links  
 - BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)  
-- CT Hemorrhage (StrokeNet) 1-page summary: [PDF](assets/CT_Hemorrhage_1page_summary.pdf)  
+- CT project 1-page summary: [PDF](assets/CT_Hemorrhage_1page_summary.pdf)  
 
 ---
 
 ## Table of contents
 1. [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
 2. [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
-3. [StrokeNet: Hemorrhage Detection on Non-Contrast Head CT](#strokenet-hemorrhage-detection-on-non-contrast-head-ct)
+3. [Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT](#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct)
 4. [Wind Turbine Design–Build–Test (E26)](#wind-turbine-designbuildtest-e26)
-5. [Automated Market-Open Execution Bot (UPRO/SPXU)](#automated-market-open-execution-bot-uprospxu)
+5. [Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)](#reliability-first-automation-under-real-world-constraints-uprospxu)
 
 ---
 
@@ -33,7 +33,7 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • C
   <a href="assets/BWB%20Executive%20Summary%20(2).pdf">Open the executive summary (PDF)</a>
 </p>
 
-A blended-wing-body aircraft can reduce drag by generating lift with more of the airframe, not just the wings. I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and produce comparable flow/pressure visualizations backed by convergence, domain, and mesh sensitivity checks.
+Blended-wing-body concepts aim to improve efficiency by generating lift across more of the airframe, not just the wings. I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and produced comparable flow/pressure visualizations backed by convergence, domain, and mesh sensitivity checks.
 
 Highlights
 - AoA sweep: −2° → +8° at ~40 mph; peak efficiency L/D ≈ 7.3 near ~6°
@@ -82,7 +82,7 @@ Aerospace Systems + Instrumentation • Sensor calibration • Validation • Fl
   <img src="assets/hycube_mission_graphic.webp" width="48%">
 </p>
 
-Reliable temperature sensing is critical for thermal testing and flight readiness. I built a thermocouple calibration + validation workflow for HyCUBE (Hypersonic Configurable Unit Ballistic Experiment) to support sensor selection and pre-flight verification. The pipeline converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates agreement using parity and Bland–Altman analysis.
+Reliable temperature sensing is a prerequisite for flight-readiness decisions. I built a thermocouple calibration + validation workflow for HyCUBE (Hypersonic Configurable Unit Ballistic Experiment) that converts raw voltage/temperature logs into regression-based calibration fits with confidence bounds and evaluates agreement using parity plots and Bland–Altman analysis.
 
 Highlights
 - Sensitivity (slope): 19 in ≈ 44.51 µV/°C (R² ≈ 0.499), 25 in ≈ 33.84 µV/°C (R² ≈ 0.377), 30 in ≈ 45.05 µV/°C (R² ≈ 0.542)
@@ -117,16 +117,16 @@ My contributions
 
 ---
 
-## StrokeNet: Hemorrhage Detection on Non-Contrast Head CT
+## Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT
 
-Slice-level hemorrhage detection baseline + initialization comparison (Scratch vs ImageNet vs JEPA)  
+Slice-level intracranial bleeding detection baseline + initialization comparison (Scratch vs ImageNet vs JEPA)  
 Medical Imaging • Applied Deep Learning • Interpretability • Validation focus
 
 <p align="center">
   <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="86%">
 </p>
 
-Rapid identification of intracranial hemorrhage on non-contrast head CT can accelerate triage. I built a reproducible slice-level hemorrhage detection baseline and compared three initialization strategies—scratch, ImageNet pretraining, and CT-native student/teacher self-supervised pretraining (JEPA)—using the same supervised training recipe and interpretability checks with Grad-CAM.
+Intracranial bleeding on head CT drives time-critical decisions in stroke triage. I built a reproducible slice-level baseline to detect intracranial bleeding on non-contrast head CT and compared three initialization strategies—scratch, ImageNet pretraining, and CT-native student/teacher self-supervised pretraining (JEPA)—using the same supervised training recipe and Grad-CAM checks.
 
 1-page summary  
 - [Open the 1-page project summary (PDF)](assets/CT_Hemorrhage_1page_summary.pdf)
@@ -222,12 +222,12 @@ My contributions (team of 4)
 
 ---
 
-## Automated Market-Open Execution Bot (UPRO/SPXU)
+## Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)
 
-Reliability-first automation under real-world constraints  
+Deterministic market-open execution with explicit safety checks and audit logs  
 Systems engineering • Deterministic state machine • Cloud-ready execution
 
-I built a reliability-first paper-trading automation system that runs at the U.S. market open, briefly observes two leveraged S&P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. The goal is predictable behavior under imperfect conditions: clear state transitions, fail-closed behavior, and auditability when APIs or market conditions are unreliable.
+I built a reliability-first paper-trading automation system that runs at the U.S. market open, briefly observes two leveraged S&P 500 ETFs (UPRO, SPXU), makes a deterministic winner/leader decision, and executes a single cash-only order with explicit safety checks. This was built as a reliability engineering exercise: predictable behavior under imperfect conditions through fail-closed checks, traceable state transitions, and auditability when APIs or market conditions are unreliable.
 
 <p align="center">
   <img src="assets/upro_spxu_system_diagram1.svg" width="100%">
