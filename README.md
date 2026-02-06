@@ -4,7 +4,6 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
 
 **Quick links**
 - BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
-- CT project 1-page summary: [PDF](assets/CT_Hemorrhage_1page_summary.pdf)
 
 ---
 
@@ -123,30 +122,32 @@ Reliable temperature sensing is a prerequisite for flight-readiness decisions. I
 
 ## Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT
 
-Slice-level intracranial bleeding detection baseline + initialization comparison (Scratch vs ImageNet vs JEPA)  
+Slice-level intracranial hemorrhage detection baseline + controlled initialization study (Scratch vs ImageNet vs JEPA)  
 Medical Imaging • Applied Deep Learning • Interpretability • Validation focus
 
 <p align="center">
   <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="86%">
 </p>
 
-Intracranial bleeding on head CT drives time-critical decisions in stroke triage. I built a reproducible slice-level baseline to detect intracranial bleeding on non-contrast head CT and compared three initialization strategies—scratch, ImageNet pretraining, and CT-native student/teacher self-supervised pretraining (JEPA)—using the same supervised training recipe and Grad-CAM checks.
+Intracranial hemorrhage on non-contrast head CT drives time-critical decisions in stroke triage. I built a reproducible slice-level baseline and ran a controlled comparison of three initialization strategies—scratch, ImageNet pretraining, and CT-native student/teacher self-supervised pretraining (JEPA)—using the same supervised training recipe and Grad-CAM checks.
 
-1-page summary: [PDF](assets/CT_Hemorrhage_1page_summary.pdf)
 
-**Highlights**
-- Validation setup: held-out 20% split, n = 240 slices; same supervised pipeline across runs
-- ImageNet-pretrained: ROC AUC 0.878, Sensitivity 0.70, Specificity 0.89
-- JEPA (CT self-supervised): ROC AUC 0.752, Sensitivity 0.85, Specificity 0.53
+### Highlights
+- Fixed labeled split across all runs: 400 positive / 800 negative; held-out validation split (20%), n = 240 slices
+- Matched supervised recipe across runs: ResNet-18, BCEWithLogits + pos_weight, dropout head, early stopping
+- JEPA pretraining scale study: 10k/25k/50k/100k unlabeled CT slices, 5 SSL epochs each
+- Best JEPA result: JEPA-10k achieved val ROC-AUC 0.8465 (eval AUC 0.8463), sensitivity 0.80, specificity 0.706 at threshold 0.5
+- JEPA-100k showed a recall-heavy operating regime (eval AUC ~0.773, sensitivity ~0.875, specificity ~0.456 at threshold 0.5), motivating threshold sweeps as a next step
 
-**My contributions**
-- Built an end-to-end CT preprocessing + training pipeline (HU conversion/windowing, normalization, augmentation, stratified splits)
-- Implemented balanced training for class imbalance and stable fine-tuning
+### My contributions
+- Built an end-to-end CT preprocessing + training pipeline (DICOM ingestion, HU conversion/windowing, normalization, augmentation, stratified splits)
+- Implemented class-imbalance handling (pos_weight and balanced sampling) and a stable fine-tuning setup
+- Implemented student/teacher CT self-supervised pretraining (JEPA-style) and transferred encoder checkpoints into supervised fine-tuning
 - Produced interpretability visuals (Grad-CAM grids with artifact-aware cropping) to sanity-check model behavior
-- Implemented and tested student/teacher self-supervised pretraining and compared initialization strategies
+- Summarized results into a clean deliverable table + run logs for fast lab review
 
 <details>
-  <summary><strong>Validation results</strong></summary>
+  <summary><strong>Validation results (threshold = 0.5)</strong></summary>
 
   <table align="center">
     <thead>
@@ -155,30 +156,43 @@ Intracranial bleeding on head CT drives time-critical decisions in stroke triage
         <th>ROC AUC</th>
         <th>Sensitivity</th>
         <th>Specificity</th>
+        <th>Notes</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>ImageNet-pretrained</td>
-        <td>0.878</td>
-        <td>0.70</td>
-        <td>0.89</td>
+        <td>JEPA-10k</td>
+        <td>0.846</td>
+        <td>0.80</td>
+        <td>0.706</td>
+        <td>Best overall JEPA performance</td>
       </tr>
       <tr>
-        <td>Scratch (random init)</td>
-        <td>0.829</td>
-        <td>0.79</td>
-        <td>0.74</td>
+        <td>JEPA-25k</td>
+        <td>~0.83</td>
+        <td>~0.86</td>
+        <td>~0.57</td>
+        <td>Similar AUC; higher recall tradeoff</td>
       </tr>
       <tr>
-        <td>JEPA (CT self-supervised)</td>
-        <td>0.752</td>
-        <td>0.85</td>
-        <td>0.53</td>
+        <td>JEPA-50k</td>
+        <td>~0.826</td>
+        <td>~0.775</td>
+        <td>~0.681</td>
+        <td>Mid-scale checkpoint</td>
+      </tr>
+      <tr>
+        <td>JEPA-100k</td>
+        <td>~0.773</td>
+        <td>~0.875</td>
+        <td>~0.456</td>
+        <td>Recall-heavy at 0.5 threshold</td>
       </tr>
     </tbody>
   </table>
 </details>
+
+Next experiments: threshold selection per run (e.g., Youden’s J or fixed sensitivity target) and multi-seed robustness reporting.
 
 ---
 
