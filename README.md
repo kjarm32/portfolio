@@ -53,7 +53,7 @@ Blended-wing-body concepts aim to improve efficiency by generating lift across m
 
 <p align="center">Physical prototype (first draft)</p>
 <p align="center">
-  <img src="assets/3DPrinted_BWB.jpg" width="72%">
+  <img src="assets/3DPrintedSilkBWB.jpg" width="72%">
 </p>
 <p align="center">
   <em>First-draft 3D-printed BWB prototype for upcoming wind-tunnel / flow visualization validation.</em>
@@ -120,7 +120,7 @@ Reliable temperature sensing is a prerequisite for flight-readiness decisions. I
 
 ---
 
-## Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT
+## Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT (Mofrad Lab Collaboration)
 
 Slice-level intracranial hemorrhage detection baseline + controlled initialization study (Scratch vs ImageNet vs JEPA)  
 Medical Imaging • Applied Deep Learning • Interpretability • Validation focus
