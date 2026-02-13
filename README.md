@@ -53,7 +53,7 @@ Blended-wing-body concepts aim to improve efficiency by generating lift across m
 
 <p align="center">Physical prototype (first draft)</p>
 <p align="center">
-  <img src="assets/3DPrintedSilkBWB.jpg" width="72%">
+  <img src="assets/3DPrintedSilkBWB.jpeg" width="72%">
 </p>
 <p align="center">
   <em>First-draft 3D-printed BWB prototype for upcoming wind-tunnel / flow visualization validation.</em>
