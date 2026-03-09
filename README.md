@@ -1,4 +1,4 @@
-<img src="assets/4headshotatm.JPG"
+<img src="assets/4headshotatms.JPG"
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
@@ -309,3 +309,9 @@ I built a reliability-first paper-trading automation system that runs at the U.S
 - Built log outputs designed as audit trails (what the system believed, what it did, and when)
 
 ---
+
+## Contact
+
+I’m always happy to connect with researchers, engineers, students, and teams interested in aerospace systems, instrumentation, and applied machine learning. Please feel free to reach out by email or connect with me on [LinkedIn](https://www.linkedin.com/in/kevin-armstrong-ii-647125319/).
+
+**Email:** kevarm2028@berkeley.edu
