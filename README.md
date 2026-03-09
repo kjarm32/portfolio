@@ -2,9 +2,6 @@
 
 Mechanical Engineering student focused on aerospace systems, thermal modeling/instrumentation, and applied machine learning. I build validated, reproducible engineering workflows backed by clear evidence (plots, summaries, verification checks).
 
-# Engineering Portfolio
-
-Mechanical Engineering student working across aerospace systems, thermal instrumentation, and applied machine learning. My projects emphasize validated analysis, reproducible workflows, and decision-ready technical communication through quantified results, verification checks, and clear visual evidence.
 
 <p align="center" style="margin: 10px 0 18px 0;">
   <strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong>
@@ -101,9 +98,6 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
     Representative work spanning aerodynamic simulation and physical validation, aerospace thermal instrumentation, interpretable medical imaging ML, and test-backed mechanical design — unified by a consistent engineering approach: build carefully, verify assumptions, measure outcomes, and communicate results clearly.
   </em>
 </p>
-
-**Quick links**
-- BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
 
 **Quick links**
 - BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
