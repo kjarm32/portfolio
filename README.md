@@ -18,7 +18,7 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
       </p>
     </td>
 
-   <td style="vertical-align:top;">
+  <td style="vertical-align:top;">
       <a href="#hycube-cubesat-thermal--instrumentation-payload">
         <img src="assets/HyCubeINAir.png"
              alt="HyCUBE thermal instrumentation payload"
@@ -46,7 +46,7 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
       </p>
     </td>
 
-  <td style="vertical-align:top;">
+   <td style="vertical-align:top;">
       <div style="background:#081120; border-radius:12px; padding:10px; border:1px solid #2a3542;">
         <a href="#wind-turbine-designbuildtest-e26">
           <img src="assets/windturbine_fea_triptych.png"
@@ -73,6 +73,8 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
 - [Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT](#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct)
 - [Wind Turbine Design–Build–Test (E26)](#wind-turbine-designbuildtest-e26)
 - [Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)](#reliability-first-automation-under-real-world-constraints-uprospxu)
+
+---
 
 
 ---
