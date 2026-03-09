@@ -2,12 +2,18 @@
 
 Mechanical Engineering student focused on aerospace systems, thermal modeling/instrumentation, and applied machine learning. I build validated, reproducible engineering workflows backed by clear evidence (plots, summaries, verification checks).
 
+# Engineering Portfolio
+
+Mechanical Engineering student working across aerospace systems, thermal instrumentation, and applied machine learning. My projects emphasize validated analysis, reproducible workflows, and decision-ready technical communication through quantified results, verification checks, and clear visual evidence.
+
+<p align="center" style="margin: 10px 0 18px 0;">
+  <strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong>
+</p>
 
 <div style="max-width: 1080px; margin: 22px auto 8px auto;">
   <div style="display:grid; grid-template-columns:repeat(2, minmax(280px, 1fr)); gap:18px;">
 
-    <!-- BWB -->
-    <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
+  <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
       <a href="#concept-aircraft-blended-wing-body-aerodynamics" style="text-decoration:none;">
         <div style="height:220px; background:#0b1118; display:flex; align-items:center; justify-content:center;">
           <img src="assets/BWB_Tuftinit.jpeg"
@@ -16,8 +22,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
         </div>
       </a>
       <div style="padding:12px 14px 14px 14px;">
-        <a href="#concept-aircraft-blended-wing-body-aerodynamics"
-           style="text-decoration:none; color:inherit;">
+        <a href="#concept-aircraft-blended-wing-body-aerodynamics" style="text-decoration:none; color:inherit;">
           <div style="font-weight:700; font-size:1.02rem; margin-bottom:4px;">
             Blended-Wing-Body Aerodynamics
           </div>
@@ -28,8 +33,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
       </div>
     </div>
 
-    <!-- HyCUBE -->
-    <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
+  <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
       <a href="#hycube-cubesat-thermal--instrumentation-payload" style="text-decoration:none;">
         <div style="height:220px; background:#0b1118; display:flex; align-items:center; justify-content:center;">
           <img src="assets/HyCubeINAir.png"
@@ -38,8 +42,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
         </div>
       </a>
       <div style="padding:12px 14px 14px 14px;">
-        <a href="#hycube-cubesat-thermal--instrumentation-payload"
-           style="text-decoration:none; color:inherit;">
+        <a href="#hycube-cubesat-thermal--instrumentation-payload" style="text-decoration:none; color:inherit;">
           <div style="font-weight:700; font-size:1.02rem; margin-bottom:4px;">
             HyCUBE Thermal &amp; Instrumentation Payload
           </div>
@@ -50,8 +53,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
       </div>
     </div>
 
-    <!-- CT / ML -->
-    <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
+   <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
       <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" style="text-decoration:none;">
         <div style="height:220px; background:#0b1118; display:flex; align-items:center; justify-content:center; padding:10px;">
           <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png"
@@ -60,8 +62,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
         </div>
       </a>
       <div style="padding:12px 14px 14px 14px;">
-        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct"
-           style="text-decoration:none; color:inherit;">
+        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" style="text-decoration:none; color:inherit;">
           <div style="font-weight:700; font-size:1.02rem; margin-bottom:4px;">
             Medical Imaging ML for Stroke Triage
           </div>
@@ -72,8 +73,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
       </div>
     </div>
 
-    <!-- Wind turbine -->
-    <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
+  <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
       <a href="#wind-turbine-designbuildtest-e26" style="text-decoration:none;">
         <div style="height:220px; background:#0b1118; display:flex; align-items:center; justify-content:center; padding:10px;">
           <img src="assets/windturbine_fea_triptych.png"
@@ -82,8 +82,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
         </div>
       </a>
       <div style="padding:12px 14px 14px 14px;">
-        <a href="#wind-turbine-designbuildtest-e26"
-           style="text-decoration:none; color:inherit;">
+        <a href="#wind-turbine-designbuildtest-e26" style="text-decoration:none; color:inherit;">
           <div style="font-weight:700; font-size:1.02rem; margin-bottom:4px;">
             Wind Turbine Design–Build–Test
           </div>
@@ -103,12 +102,8 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
   </em>
 </p>
 
-<p align="center" style="margin-top: 8px; margin-bottom: 18px;">
-  <em>
-    Overview of representative work across validated aerodynamics, CubeSat thermal instrumentation, interpretable medical imaging ML, and test-backed mechanical design—organized around a consistent engineering approach: build, verify, measure, and communicate results clearly.
-  </em>
-</p>
-
+**Quick links**
+- BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
 
 **Quick links**
 - BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
