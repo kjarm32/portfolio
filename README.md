@@ -25,7 +25,7 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
           </div>
         </a>
         <div style="font-size:0.88rem; line-height:1.42; color:#c7d1db;">
-          Validated CFD and planned wind-tunnel comparison.
+          Validated CFD and planned tufting comparison.
         </div>
       </div>
     </div>
