@@ -18,7 +18,7 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
       </p>
     </td>
 
-   <td style="vertical-align:top;">
+  <td style="vertical-align:top;">
       <a href="#hycube-cubesat-thermal--instrumentation-payload">
         <img src="assets/HyCubeINAir.png"
              alt="HyCUBE thermal instrumentation payload"
@@ -46,7 +46,7 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
       </p>
     </td>
 
-  <td style="vertical-align:top;">
+   <td style="vertical-align:top;">
       <div class="dark-figure-frame">
         <a href="#wind-turbine-designbuildtest-e26">
           <img src="assets/windturbine_fea_triptych.png"
@@ -83,12 +83,11 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • C
 
 <p align="center">
   <a href="assets/BWB%20Executive%20Summary%20(2).pdf">
-    <img src="assets/BWB_Plane_RelPresIso4deg.png" width="82%">
+    <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
   </a>
 </p>
 
 <p align="center">
-  <em>Relative static pressure on the BWB upper surface (α = 4°, V∞ ≈ 40 mph).</em><br>
   <a href="assets/BWB%20Executive%20Summary%20(2).pdf">Open the executive summary (PDF)</a>
 </p>
 
@@ -105,29 +104,25 @@ Blended-wing-body concepts aim to improve efficiency by generating lift across m
 - Produced clean figure sets for cross-case comparison and packaged results into an executive summary
 
 **Next step**
-- Physical validation: 3D-printing the final CAD model and running a small wind-tunnel campaign to compare measured lift/drag vs. AoA against the CFD sweep
+- Physical validation: preparing a tufted prototype and running a small wind-tunnel campaign to compare measured lift/drag vs. AoA against the CFD sweep
 
-<p align="center">Physical prototype (first draft)</p>
+<p align="center">Tufting preparation for physical validation</p>
 <p align="center">
-  <img src="assets/3DPrintedSilkBWB.jpeg" width="72%">
+  <img src="assets/BWB_Tuftinit.jpeg" width="72%">
 </p>
 <p align="center">
-  <em>First-draft 3D-printed BWB prototype for upcoming wind-tunnel / flow visualization validation.</em>
+  <em>Tufted BWB prototype prepared for upcoming wind-tunnel / flow-visualization validation.</em>
 </p>
 
-<details>
-  <summary><strong>Selected figures</strong></summary>
+<p align="center">Aerodynamic Coefficients vs. Angle of Attack</p>
+<p align="center">
+  <img src="assets/bwb_cfd_summary1.png" width="92%">
+</p>
 
-  <p align="center">Aerodynamic Coefficients vs. Angle of Attack</p>
-  <p align="center">
-    <img src="assets/bwb_cfd_summary1.png" width="92%">
-  </p>
-
-  <p align="center">Flow-field visualization (fixed legends for cross-case comparison)</p>
-  <p align="center">
-    <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
-  </p>
-</details>
+<p align="center">Flow-field visualization (fixed legends for cross-case comparison)</p>
+<p align="center">
+  <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
+</p>
 
 ---
 
@@ -155,38 +150,34 @@ Reliable temperature sensing is a prerequisite for flight-readiness decisions. I
 - Automated analysis outputs (tables + PNG exports) to keep results reproducible and reviewable
 - Supported high-altitude balloon flight operations: payload integration, ground-station setup, flight monitoring, recovery, and post-flight data validation
 
-<details>
-  <summary><strong>Selected figures</strong></summary>
+<p align="center">Validation views (parity + error)</p>
+<p align="center">
+  <img src="assets/hycube_validation_2up.png" width="92%">
+</p>
 
-  <p align="center">Validation views (parity + error)</p>
-  <p align="center">
-    <img src="assets/hycube_validation_2up.png" width="92%">
-  </p>
+<p align="center">Agreement + sensitivity</p>
+<p align="center">
+  <img src="assets/hycube_agreement_2up.png" width="92%">
+</p>
 
-  <p align="center">Agreement + sensitivity</p>
-  <p align="center">
-    <img src="assets/hycube_agreement_2up.png" width="92%">
-  </p>
-
-  <p align="center">Centered calibration fits + 95% confidence bands (shared axes)</p>
-  <p align="center">
-    <img src="assets/hycube_centered_fit_ci_shared_axes(1).png" width="86%">
-  </p>
-</details>
+<p align="center">Centered calibration fits + 95% confidence bands (shared axes)</p>
+<p align="center">
+  <img src="assets/hycube_centered_fit_ci_shared_axes(1).png" width="86%">
+</p>
 
 ---
 
-## Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT (Mofrad Lab Collaboration)
+## Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT
 
 Slice-level intracranial hemorrhage detection baseline + controlled initialization study (Scratch vs ImageNet vs JEPA)  
-Medical Imaging • Applied Deep Learning • Interpretability • Validation focus
+Medical Imaging • Applied Deep Learning • Interpretability • Validation focus  
+Mofrad Lab collaboration
 
 <p align="center">
   <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="86%">
 </p>
 
 Intracranial hemorrhage on non-contrast head CT drives time-critical decisions in stroke triage. I built a reproducible slice-level baseline and ran a controlled comparison of three initialization strategies—scratch, ImageNet pretraining, and CT-native student/teacher self-supervised pretraining (JEPA)—using the same supervised training recipe and Grad-CAM checks.
-
 
 ### Highlights
 - Fixed labeled split across all runs: 400 positive / 800 negative; held-out validation split (20%), n = 240 slices
@@ -202,51 +193,49 @@ Intracranial hemorrhage on non-contrast head CT drives time-critical decisions i
 - Produced interpretability visuals (Grad-CAM grids with artifact-aware cropping) to sanity-check model behavior
 - Summarized results into a clean deliverable table + run logs for fast lab review
 
-<details>
-  <summary><strong>Validation results (threshold = 0.5)</strong></summary>
+### Validation results (threshold = 0.5)
 
-  <table align="center">
-    <thead>
-      <tr>
-        <th>Initialization</th>
-        <th>ROC AUC</th>
-        <th>Sensitivity</th>
-        <th>Specificity</th>
-        <th>Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>JEPA-10k</td>
-        <td>0.846</td>
-        <td>0.80</td>
-        <td>0.706</td>
-        <td>Best overall JEPA performance</td>
-      </tr>
-      <tr>
-        <td>JEPA-25k</td>
-        <td>~0.83</td>
-        <td>~0.86</td>
-        <td>~0.57</td>
-        <td>Similar AUC; higher recall tradeoff</td>
-      </tr>
-      <tr>
-        <td>JEPA-50k</td>
-        <td>~0.826</td>
-        <td>~0.775</td>
-        <td>~0.681</td>
-        <td>Mid-scale checkpoint</td>
-      </tr>
-      <tr>
-        <td>JEPA-100k</td>
-        <td>~0.773</td>
-        <td>~0.875</td>
-        <td>~0.456</td>
-        <td>Recall-heavy at 0.5 threshold</td>
-      </tr>
-    </tbody>
-  </table>
-</details>
+<table align="center">
+  <thead>
+    <tr>
+      <th>Initialization</th>
+      <th>ROC AUC</th>
+      <th>Sensitivity</th>
+      <th>Specificity</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JEPA-10k</td>
+      <td>0.846</td>
+      <td>0.80</td>
+      <td>0.706</td>
+      <td>Best overall JEPA performance</td>
+    </tr>
+    <tr>
+      <td>JEPA-25k</td>
+      <td>~0.83</td>
+      <td>~0.86</td>
+      <td>~0.57</td>
+      <td>Similar AUC; higher recall tradeoff</td>
+    </tr>
+    <tr>
+      <td>JEPA-50k</td>
+      <td>~0.826</td>
+      <td>~0.775</td>
+      <td>~0.681</td>
+      <td>Mid-scale checkpoint</td>
+    </tr>
+    <tr>
+      <td>JEPA-100k</td>
+      <td>~0.773</td>
+      <td>~0.875</td>
+      <td>~0.456</td>
+      <td>Recall-heavy at 0.5 threshold</td>
+    </tr>
+  </tbody>
+</table>
 
 Next experiments: threshold selection per run (e.g., Youden’s J or fixed sensitivity target) and multi-seed robustness reporting.
 
@@ -270,28 +259,24 @@ Ranked #1 / 40 teams in measured electrical power output (final course test). In
 - Design input: conducted independent blade/airfoil research and contributed to group selection of blade geometry (airfoil/twist/profile tradeoffs)
 - Verification review: double-checked a teammate’s linear-static FEA assumptions/results to confirm stiffness/strength constraints were reasonable
 
-<details>
-  <summary><strong>Selected figures</strong></summary>
+<p align="center">
+  <img src="assets/windturbine_fea_triptych.png" width="92%" alt="FEA results: displacement, stress, and factor of safety">
+</p>
+<p align="center">
+  <em>Linear-static FEA sanity check on the tower: displacement, von Mises stress, and factor of safety under representative loading.</em>
+</p>
 
-  <p align="center">
-    <img src="assets/windturbine_fea_triptych.png" width="92%" alt="FEA results: displacement, stress, and factor of safety">
-  </p>
-  <p align="center">
-    <em>Linear-static FEA sanity check on the tower: displacement, von Mises stress, and factor of safety under representative loading.</em>
-  </p>
-
-  <div style="max-width: 980px; margin: 12px auto; display:flex; gap:16px; justify-content:center; align-items:center; flex-wrap:wrap;">
-    <img src="assets/windturbine_power_vs_current.png"
-         style="height:320px; width:auto; max-width:58%; object-fit:contain; display:block;"
-         alt="Power vs current">
-    <img src="assets/windturbine_test_setup.jpg"
-         style="height:320px; width:auto; max-width:38%; object-fit:cover; object-position:50% 35%; display:block;"
-         alt="Wind turbine test setup">
-  </div>
-  <p align="center">
-    <em>Measured electrical output (power vs current) and the wind-tunnel-style test setup used to capture voltage/current under controlled airflow.</em>
-  </p>
-</details>
+<div style="max-width: 980px; margin: 12px auto; display:flex; gap:16px; justify-content:center; align-items:center; flex-wrap:wrap;">
+  <img src="assets/windturbine_power_vs_current.png"
+       style="height:320px; width:auto; max-width:58%; object-fit:contain; display:block;"
+       alt="Power vs current">
+  <img src="assets/windturbine_test_setup.jpg"
+       style="height:320px; width:auto; max-width:38%; object-fit:cover; object-position:50% 35%; display:block;"
+       alt="Wind turbine test setup">
+</div>
+<p align="center">
+  <em>Measured electrical output (power vs current) and the wind-tunnel-style test setup used to capture voltage/current under controlled airflow.</em>
+</p>
 
 ---
 
