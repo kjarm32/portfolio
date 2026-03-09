@@ -4,7 +4,7 @@ Mechanical Engineering student focused on aerospace systems, thermal modeling/in
 
 
 <div style="margin: 18px 0 10px 0;">
-  <img src="assets/BWB_PlaneTuft.jpeg" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="Blended-wing-body prototype and aerodynamic validation work">
+  <img src="assets/BWB_Tuftinit.jpeg" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="Blended-wing-body prototype and aerodynamic validation work">
   <img src="assets/HyCubeINAir.png" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="HyCUBE CubeSat thermal and instrumentation payload">
   <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="Grad-CAM review for intracranial hemorrhage detection on head CT">
   <img src="assets/windturbine_fea_triptych.png" width="24.2%" style="border-radius:10px;" alt="Wind turbine structural analysis and test-backed design workflow">
