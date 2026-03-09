@@ -1,4 +1,4 @@
-<img src="assets/4headshotatmse.pdf"
+<img src="assets/4headshotasmes.png"
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
