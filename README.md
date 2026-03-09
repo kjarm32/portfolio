@@ -2,9 +2,8 @@
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
-# Engineering Portfolio
 
-Mechanical Engineering student at the University of California, Berkeley, and student-athlete on the Cal men’s basketball team. My work spans aerospace systems, thermal instrumentation, and applied machine learning, with a focus on validated analysis, reproducible workflows, and decision-ready technical communication.
+Mechanical Engineering student at the University of California, Berkeley, and student-athlete. My work spans aerospace systems, thermal instrumentation, and applied machine learning, with a focus on validated analysis, reproducible workflows, and decision-ready technical communication.
 
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong></p>
 
@@ -71,7 +70,7 @@ Mechanical Engineering student at the University of California, Berkeley, and st
 ## Quick links
 - BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
 
-## Project links
+## Explore Projects
 - [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
 - [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
 - [Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT](#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct)
@@ -122,7 +121,7 @@ Blended-wing-body concepts aim to improve efficiency by generating lift across m
 <p align="center">
   <img src="assets/bwb_cfd_summary1.png" width="92%">
 </p>
->
+
 
 ---
 
@@ -280,7 +279,7 @@ Ranked #1 / 40 teams in measured electrical power output (final course test). In
     </td>
   </tr>
 </table>
-</div>
+
 <p align="center">
   <em>Measured electrical output (power vs current) and the wind-tunnel-style test setup used to capture voltage/current under controlled airflow.</em>
 </p>
