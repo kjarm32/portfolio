@@ -118,11 +118,7 @@ Blended-wing-body concepts aim to improve efficiency by generating lift across m
 <p align="center">
   <img src="assets/bwb_cfd_summary1.png" width="92%">
 </p>
-
-<p align="center">Flow-field visualization (fixed legends for cross-case comparison)</p>
-<p align="center">
-  <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
-</p>
+>
 
 ---
 
@@ -266,13 +262,20 @@ Ranked #1 / 40 teams in measured electrical power output (final course test). In
   <em>Linear-static FEA sanity check on the tower: displacement, von Mises stress, and factor of safety under representative loading.</em>
 </p>
 
-<div style="max-width: 980px; margin: 12px auto; display:flex; gap:16px; justify-content:center; align-items:center; flex-wrap:wrap;">
-  <img src="assets/windturbine_power_vs_current.png"
-       style="height:320px; width:auto; max-width:58%; object-fit:contain; display:block;"
-       alt="Power vs current">
-  <img src="assets/windturbine_test_setup.jpg"
-       style="height:320px; width:auto; max-width:38%; object-fit:cover; object-position:50% 35%; display:block;"
-       alt="Wind turbine test setup">
+<table style="width:100%; max-width:980px; margin:12px auto; border-collapse:separate; border-spacing:16px 0;">
+  <tr>
+    <td style="width:62%; vertical-align:middle;">
+      <img src="assets/windturbine_power_vs_current.png"
+           style="width:100%; height:auto; display:block;"
+           alt="Power vs current">
+    </td>
+    <td style="width:38%; vertical-align:middle;">
+      <img src="assets/windturbine_test_setup.jpg"
+           style="width:100%; height:auto; display:block; border-radius:8px;"
+           alt="Wind turbine test setup">
+    </td>
+  </tr>
+</table>
 </div>
 <p align="center">
   <em>Measured electrical output (power vs current) and the wind-tunnel-style test setup used to capture voltage/current under controlled airflow.</em>
