@@ -1,12 +1,10 @@
-<img src="assets/4headshotatm.jpg"
+<img src="assets/4headshotatm.JPG"
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
 # Engineering Portfolio
 
 Mechanical Engineering student at the University of California, Berkeley, and student-athlete on the Cal men’s basketball team. My work spans aerospace systems, thermal instrumentation, and applied machine learning, with a focus on validated analysis, reproducible workflows, and decision-ready technical communication.
-
-<p align="center"><strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong></p>
 
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong></p>
 
