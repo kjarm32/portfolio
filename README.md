@@ -1,6 +1,18 @@
-# Engineering Portfolio
-
-Mechanical Engineering student working across aerospace systems, thermal instrumentation, and applied machine learning. I build validated, reproducible engineering workflows and communicate results through clear figures, verification checks, and decision-ready summaries.
+<table style="width:100%; border-collapse:separate; border-spacing:18px 0; margin-bottom:10px;">
+  <tr>
+    <td style="vertical-align:top; width:78%;">
+      <h1 style="margin-bottom:10px;">Engineering Portfolio</h1>
+      <p style="margin-top:0;">
+        Mechanical Engineering student at the University of California, Berkeley, and student-athlete. My work spans aerospace systems, thermal instrumentation, and applied machine learning, with a focus on validated analysis, reproducible workflows, and decision-ready technical communication.
+      </p>
+    </td>
+    <td style="vertical-align:top; width:22%; text-align:right;">
+      <img src="assets/4headshot.JPG"
+           alt="Headshot"
+           style="width:100%; max-width:160px; height:190px; object-fit:cover; border-radius:10px; display:block; margin-left:auto; border:1px solid #d1d5db;">
+    </td>
+  </tr>
+</table>.
 
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong></p>
 
