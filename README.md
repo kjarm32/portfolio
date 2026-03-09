@@ -1,120 +1,92 @@
 # Engineering Portfolio
 
-Mechanical Engineering student working across aerospace systems, thermal instrumentation, and applied machine learning. My projects emphasize validated analysis, reproducible workflows, and clear technical communication.
+Mechanical Engineering student working across aerospace systems, thermal instrumentation, and applied machine learning. I build validated, reproducible engineering workflows and communicate results through clear figures, verification checks, and decision-ready summaries.
 
-
-<p align="center" style="margin: 8px 0 16px 0; font-size:0.98rem; line-height:1.45;">
+<p align="center" style="margin: 14px 0 18px 0;">
   <strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong>
 </p>
 
-<div style="max-width: 1080px; margin: 18px auto 6px auto;">
-  <div style="display:grid; grid-template-columns:repeat(2, minmax(280px, 1fr)); gap:16px;">
-
-  <div style="background:#0b1220; border:1px solid #223042; border-radius:14px; overflow:hidden;">
-      <a href="#concept-aircraft-blended-wing-body-aerodynamics" style="text-decoration:none;">
-        <div style="height:210px; background:#0a1018; display:flex; align-items:center; justify-content:center;">
-          <img src="assets/BWB_Tuftinit.jpeg"
-               alt="Blended-wing-body prototype for aerodynamic validation"
-               style="width:100%; height:100%; object-fit:cover; display:block;">
-        </div>
+<table style="width:100%; border-collapse:separate; border-spacing:16px 16px; table-layout:fixed;">
+  <tr>
+    <td style="vertical-align:top;">
+      <a href="#concept-aircraft-blended-wing-body-aerodynamics">
+        <img src="assets/BWB_Tuftinit.jpeg"
+             alt="Blended-wing-body aerodynamic validation project"
+             style="width:100%; height:250px; object-fit:cover; border-radius:14px; display:block;">
       </a>
-      <div style="padding:12px 14px 13px 14px;">
-        <a href="#concept-aircraft-blended-wing-body-aerodynamics" style="text-decoration:none; color:inherit;">
-          <div style="font-weight:700; font-size:1.00rem; margin-bottom:5px; line-height:1.3;">
-            Blended-Wing-Body Aerodynamics
-          </div>
-        </a>
-        <div style="font-size:0.88rem; line-height:1.42; color:#c7d1db;">
-          Validated CFD and planned tufting comparison.
-        </div>
+      <div style="margin-top:10px;">
+        <a href="#concept-aircraft-blended-wing-body-aerodynamics" style="text-decoration:none;">
+          <strong style="font-size:1.05rem;">Blended-Wing-Body Aerodynamics</strong>
+        </a><br>
+        <span style="font-size:0.95rem;">Validated CFD and planned tufting comparison.</span>
       </div>
-    </div>
+    </td>
 
-  <div style="background:#0b1220; border:1px solid #223042; border-radius:14px; overflow:hidden;">
-      <a href="#hycube-cubesat-thermal--instrumentation-payload" style="text-decoration:none;">
-        <div style="height:210px; background:#0a1018; display:flex; align-items:center; justify-content:center;">
-          <img src="assets/HyCubeINAir.png"
-               alt="HyCUBE thermal instrumentation payload in flight"
-               style="width:100%; height:100%; object-fit:cover; object-position:center center; display:block;">
-        </div>
+   <td style="vertical-align:top;">
+      <a href="#hycube-cubesat-thermal--instrumentation-payload">
+        <img src="assets/HyCubeINAir.png"
+             alt="HyCUBE thermal instrumentation payload"
+             style="width:100%; height:250px; object-fit:cover; border-radius:14px; display:block;">
       </a>
-      <div style="padding:12px 14px 13px 14px;">
-        <a href="#hycube-cubesat-thermal--instrumentation-payload" style="text-decoration:none; color:inherit;">
-          <div style="font-weight:700; font-size:1.00rem; margin-bottom:5px; line-height:1.3;">
-            HyCUBE Thermal Payload
-          </div>
-        </a>
-        <div style="font-size:0.88rem; line-height:1.42; color:#c7d1db;">
-          Calibration, validation, and flight-ready instrumentation.
-        </div>
+      <div style="margin-top:10px;">
+        <a href="#hycube-cubesat-thermal--instrumentation-payload" style="text-decoration:none;">
+          <strong style="font-size:1.05rem;">HyCUBE Thermal Payload</strong>
+        </a><br>
+        <span style="font-size:0.95rem;">Calibration, validation, and flight-ready instrumentation.</span>
       </div>
-    </div>
+    </td>
+  </tr>
 
-  <div style="background:#0b1220; border:1px solid #223042; border-radius:14px; overflow:hidden;">
-      <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" style="text-decoration:none;">
-        <div style="height:210px; background:#0a1018; display:flex; align-items:center; justify-content:center; padding:10px;">
+  <tr>
+    <td style="vertical-align:top;">
+      <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct">
+        <div style="background:#081120; border-radius:14px; padding:12px;">
           <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png"
-               alt="Grad-CAM visualization for intracranial hemorrhage detection on head CT"
-               style="width:100%; height:100%; object-fit:contain; display:block;">
+               alt="Medical imaging ML project"
+               style="width:100%; height:220px; object-fit:contain; display:block;">
         </div>
       </a>
-      <div style="padding:12px 14px 13px 14px;">
-        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" style="text-decoration:none; color:inherit;">
-          <div style="font-weight:700; font-size:1.00rem; margin-bottom:5px; line-height:1.3;">
-            Medical Imaging ML
-          </div>
-        </a>
-        <div style="font-size:0.88rem; line-height:1.42; color:#c7d1db;">
-          Reproducible CT modeling with interpretability checks.
-        </div>
+      <div style="margin-top:10px;">
+        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" style="text-decoration:none;">
+          <strong style="font-size:1.05rem;">Medical Imaging ML</strong>
+        </a><br>
+        <span style="font-size:0.95rem;">Reproducible CT modeling with interpretability checks.</span>
       </div>
-    </div>
+    </td>
 
-  <div style="background:#0b1220; border:1px solid #223042; border-radius:14px; overflow:hidden;">
-      <a href="#wind-turbine-designbuildtest-e26" style="text-decoration:none;">
-        <div style="height:210px; background:#0a1018; display:flex; align-items:center; justify-content:center; padding:10px;">
+  <td style="vertical-align:top;">
+      <a href="#wind-turbine-designbuildtest-e26">
+        <div style="background:#081120; border-radius:14px; padding:12px;">
           <img src="assets/windturbine_fea_triptych.png"
-               alt="Wind turbine structural FEA and test-backed mechanical design"
-               style="width:100%; height:100%; object-fit:contain; display:block;">
+               alt="Wind turbine design build test project"
+               style="width:100%; height:220px; object-fit:contain; display:block;">
         </div>
       </a>
-      <div style="padding:12px 14px 13px 14px;">
-        <a href="#wind-turbine-designbuildtest-e26" style="text-decoration:none; color:inherit;">
-          <div style="font-weight:700; font-size:1.00rem; margin-bottom:5px; line-height:1.3;">
-            Wind Turbine Design–Build–Test
-          </div>
-        </a>
-        <div style="font-size:0.88rem; line-height:1.42; color:#c7d1db;">
-          Prototype iteration supported by testing and FEA review.
-        </div>
+      <div style="margin-top:10px;">
+        <a href="#wind-turbine-designbuildtest-e26" style="text-decoration:none;">
+          <strong style="font-size:1.05rem;">Wind Turbine Design–Build–Test</strong>
+        </a><br>
+        <span style="font-size:0.95rem;">Prototype iteration supported by testing and FEA review.</span>
       </div>
-    </div>
+    </td>
+  </tr>
+</table>
 
-  </div>
-</div>
-
-<p align="center" style="max-width:900px; margin:12px auto 18px auto; font-size:0.94rem; line-height:1.55; color:#d7dee6;">
-  <em>
-    Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.
-  </em>
+<p align="center" style="margin: 10px 0 20px 0; color:#6b7280;">
+  <em>Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.</em>
 </p>
 
-**Quick links**
+## Quick links
 - BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
 
+## Project links
+- [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
+- [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
+- [Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT](#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct)
+- [Wind Turbine Design–Build–Test (E26)](#wind-turbine-designbuildtest-e26)
+- [Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)](#reliability-first-automation-under-real-world-constraints-uprospxu)
+
 ---
-
-<details>
-  <summary><strong>Projects</strong></summary>
-
-  - [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
-  - [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
-  - [Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT](#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct)
-  - [Wind Turbine Design–Build–Test (E26)](#wind-turbine-designbuildtest-e26)
-  - [Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)](#reliability-first-automation-under-real-world-constraints-uprospxu)
-
-</details>
-
 ---
 
 ## Concept Aircraft: Blended-Wing-Body Aerodynamics
