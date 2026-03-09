@@ -2,6 +2,21 @@
 
 Mechanical Engineering student focused on aerospace systems, thermal modeling/instrumentation, and applied machine learning. I build validated, reproducible engineering workflows backed by clear evidence (plots, summaries, verification checks).
 
+
+<div style="margin: 18px 0 10px 0;">
+  <img src="assets/BWB_PlaneTuf1.jpeg" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="Blended-wing-body prototype and aerodynamic validation work">
+  <img src="assets/HyCubeINAir.png" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="HyCUBE CubeSat thermal and instrumentation payload">
+  <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="Grad-CAM review for intracranial hemorrhage detection on head CT">
+  <img src="assets/windturbine_fea_triptych.png" width="24.2%" style="border-radius:10px;" alt="Wind turbine structural analysis and test-backed design workflow">
+</div>
+
+<p align="center" style="margin-top: 8px; margin-bottom: 18px;">
+  <em>
+    Overview of representative work across validated aerodynamics, CubeSat thermal instrumentation, interpretable medical imaging ML, and test-backed mechanical design—organized around a consistent engineering approach: build, verify, measure, and communicate results clearly.
+  </em>
+</p>
+
+
 **Quick links**
 - BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
 
