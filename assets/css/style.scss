@@ -3,36 +3,51 @@
 
 @import "{{ site.theme }}";
 
-/* ===== Light theme + darker text overrides ===== */
-body {
-  background: #ffffff;
-  color: #111111;
+/* overall spacing / readability */
+.page-content,
+.markdown-body {
+  max-width: 1100px;
 }
 
-/* Make sure common elements aren't forced gray by the theme */
-p, li, ul, ol, blockquote, table, th, td, span, div, section {
-  color: #111111;
+.markdown-body p {
+  line-height: 1.6;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #111111;
+/* project card title links */
+.card-title,
+.card-title:visited,
+.card-title:hover,
+.card-title:active,
+.card-title:focus {
+  color: #111827 !important;
+  text-decoration: none !important;
 }
 
-/* Links (keep the theme vibe but readable) */
-a {
-  color: #1f6feb;
-}
-a:hover {
-  opacity: 0.9;
+/* one-line card descriptions */
+.card-subtitle {
+  color: #111827 !important;
 }
 
-/* Images */
-img {
-  border-radius: 6px;
+/* dark frame used for figure-heavy images */
+.dark-figure-frame {
+  background: #081120;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #2a3542;
 }
 
-/* Section spacing */
-section {
-  margin-bottom: 3rem;
+/* optional: make banner section feel a bit cleaner */
+.portfolio-tagline {
+  color: #6b7280;
+}
+
+/* keep images crisp and consistent */
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* slightly reduce default link-blue dominance inside cards */
+.markdown-body table td a.card-title strong {
+  color: inherit !important;
 }
