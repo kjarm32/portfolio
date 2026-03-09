@@ -10,22 +10,22 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
       <a href="#concept-aircraft-blended-wing-body-aerodynamics">
         <img src="assets/BWB_Tuftinit.jpeg"
              alt="Blended-wing-body aerodynamic validation project"
-             style="width:100%; height:220px; object-fit:cover; border-radius:12px; display:block; border:1px solid #2a3542;">
+             style="width:100%; height:230px; object-fit:cover; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
-        <a href="#concept-aircraft-blended-wing-body-aerodynamics"><strong>Blended-Wing-Body Aerodynamics</strong></a><br>
+        <a href="#concept-aircraft-blended-wing-body-aerodynamics" style="text-decoration:none; color:inherit;"><strong>Blended-Wing-Body Aerodynamics</strong></a><br>
         Validated CFD and planned tufting comparison.
       </p>
     </td>
 
-  <td style="vertical-align:top;">
+   <td style="vertical-align:top;">
       <a href="#hycube-cubesat-thermal--instrumentation-payload">
         <img src="assets/HyCubeINAir.png"
              alt="HyCUBE thermal instrumentation payload"
-             style="width:100%; height:220px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
+             style="width:100%; height:230px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
-        <a href="#hycube-cubesat-thermal--instrumentation-payload"><strong>HyCUBE Thermal Payload</strong></a><br>
+        <a href="#hycube-cubesat-thermal--instrumentation-payload" style="text-decoration:none; color:inherit;"><strong>HyCUBE Thermal Payload</strong></a><br>
         Calibration, validation, and flight-ready instrumentation.
       </p>
     </td>
@@ -41,12 +41,12 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
         </a>
       </div>
       <p style="margin:10px 0 0 0;">
-        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct"><strong>Medical Imaging ML</strong></a><br>
+        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" style="text-decoration:none; color:inherit;"><strong>Medical Imaging ML</strong></a><br>
         Reproducible CT modeling with interpretability checks.
       </p>
     </td>
 
-   <td style="vertical-align:top;">
+  <td style="vertical-align:top;">
       <div style="background:#081120; border-radius:12px; padding:10px; border:1px solid #2a3542;">
         <a href="#wind-turbine-designbuildtest-e26">
           <img src="assets/windturbine_fea_triptych.png"
@@ -55,14 +55,14 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
         </a>
       </div>
       <p style="margin:10px 0 0 0;">
-        <a href="#wind-turbine-designbuildtest-e26"><strong>Wind Turbine Design–Build–Test</strong></a><br>
+        <a href="#wind-turbine-designbuildtest-e26" style="text-decoration:none; color:inherit;"><strong>Wind Turbine Design–Build–Test</strong></a><br>
         Prototype iteration supported by testing and FEA review.
       </p>
     </td>
   </tr>
 </table>
 
-<p align="center"><em>Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.</em></p>
+<p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.</em></p>
 
 ## Quick links
 - BWB CFD executive summary: [PDF](assets/BWB%20Executive%20Summary%20(2).pdf)
@@ -75,7 +75,6 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
 - [Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)](#reliability-first-automation-under-real-world-constraints-uprospxu)
 
 ---
-
 
 ---
 
