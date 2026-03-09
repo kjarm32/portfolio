@@ -1,6 +1,6 @@
 <img src="assets/4headshotatm.jpg"
      alt="Headshot"
-     style="float:right; width:150px; height:180px; object-fit:cover; border-radius:10px; margin: 0 0 12px 18px;">
+     style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
 # Engineering Portfolio
 
