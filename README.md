@@ -3,12 +3,105 @@
 Mechanical Engineering student focused on aerospace systems, thermal modeling/instrumentation, and applied machine learning. I build validated, reproducible engineering workflows backed by clear evidence (plots, summaries, verification checks).
 
 
-<div style="margin: 18px 0 10px 0;">
-  <img src="assets/BWB_Tuftinit.jpeg" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="Blended-wing-body prototype and aerodynamic validation work">
-  <img src="assets/HyCubeINAir.png" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="HyCUBE CubeSat thermal and instrumentation payload">
-  <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="24.2%" style="border-radius:10px; margin-right:0.7%;" alt="Grad-CAM review for intracranial hemorrhage detection on head CT">
-  <img src="assets/windturbine_fea_triptych.png" width="24.2%" style="border-radius:10px;" alt="Wind turbine structural analysis and test-backed design workflow">
+<div style="max-width: 1080px; margin: 22px auto 8px auto;">
+  <div style="display:grid; grid-template-columns:repeat(2, minmax(280px, 1fr)); gap:18px;">
+
+    <!-- BWB -->
+    <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
+      <a href="#concept-aircraft-blended-wing-body-aerodynamics" style="text-decoration:none;">
+        <div style="height:220px; background:#0b1118; display:flex; align-items:center; justify-content:center;">
+          <img src="assets/BWB_Tuftinit.jpeg"
+               alt="Blended-wing-body prototype for aerodynamic validation"
+               style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+      </a>
+      <div style="padding:12px 14px 14px 14px;">
+        <a href="#concept-aircraft-blended-wing-body-aerodynamics"
+           style="text-decoration:none; color:inherit;">
+          <div style="font-weight:700; font-size:1.02rem; margin-bottom:4px;">
+            Blended-Wing-Body Aerodynamics
+          </div>
+        </a>
+        <div style="font-size:0.92rem; line-height:1.45; color:#b9c4d0;">
+          CFD verification, coefficient extraction, and upcoming wind-tunnel validation for a low-speed concept aircraft.
+        </div>
+      </div>
+    </div>
+
+    <!-- HyCUBE -->
+    <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
+      <a href="#hycube-cubesat-thermal--instrumentation-payload" style="text-decoration:none;">
+        <div style="height:220px; background:#0b1118; display:flex; align-items:center; justify-content:center;">
+          <img src="assets/HyCubeINAir.png"
+               alt="HyCUBE thermal instrumentation payload in flight"
+               style="width:100%; height:100%; object-fit:cover; object-position:center center; display:block;">
+        </div>
+      </a>
+      <div style="padding:12px 14px 14px 14px;">
+        <a href="#hycube-cubesat-thermal--instrumentation-payload"
+           style="text-decoration:none; color:inherit;">
+          <div style="font-weight:700; font-size:1.02rem; margin-bottom:4px;">
+            HyCUBE Thermal &amp; Instrumentation Payload
+          </div>
+        </a>
+        <div style="font-size:0.92rem; line-height:1.45; color:#b9c4d0;">
+          Thermocouple calibration, agreement analysis, and flight-readiness testing for a CubeSat-adjacent payload workflow.
+        </div>
+      </div>
+    </div>
+
+    <!-- CT / ML -->
+    <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
+      <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" style="text-decoration:none;">
+        <div style="height:220px; background:#0b1118; display:flex; align-items:center; justify-content:center; padding:10px;">
+          <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png"
+               alt="Grad-CAM visualization for intracranial hemorrhage detection on head CT"
+               style="width:100%; height:100%; object-fit:contain; display:block;">
+        </div>
+      </a>
+      <div style="padding:12px 14px 14px 14px;">
+        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct"
+           style="text-decoration:none; color:inherit;">
+          <div style="font-weight:700; font-size:1.02rem; margin-bottom:4px;">
+            Medical Imaging ML for Stroke Triage
+          </div>
+        </a>
+        <div style="font-size:0.92rem; line-height:1.45; color:#b9c4d0;">
+          Reproducible CT preprocessing, controlled initialization studies, and interpretability checks for hemorrhage detection.
+        </div>
+      </div>
+    </div>
+
+    <!-- Wind turbine -->
+    <div style="background:#0f1720; border:1px solid #223042; border-radius:14px; overflow:hidden;">
+      <a href="#wind-turbine-designbuildtest-e26" style="text-decoration:none;">
+        <div style="height:220px; background:#0b1118; display:flex; align-items:center; justify-content:center; padding:10px;">
+          <img src="assets/windturbine_fea_triptych.png"
+               alt="Wind turbine structural FEA and test-backed mechanical design"
+               style="width:100%; height:100%; object-fit:contain; display:block;">
+        </div>
+      </a>
+      <div style="padding:12px 14px 14px 14px;">
+        <a href="#wind-turbine-designbuildtest-e26"
+           style="text-decoration:none; color:inherit;">
+          <div style="font-weight:700; font-size:1.02rem; margin-bottom:4px;">
+            Wind Turbine Design–Build–Test
+          </div>
+        </a>
+        <div style="font-size:0.92rem; line-height:1.45; color:#b9c4d0;">
+          Test-based power characterization, prototype iteration, and structural sanity checks in a top-ranked team design project.
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+<p align="center" style="max-width:980px; margin:12px auto 20px auto; font-size:0.98rem; line-height:1.6;">
+  <em>
+    Representative work spanning aerodynamic simulation and physical validation, aerospace thermal instrumentation, interpretable medical imaging ML, and test-backed mechanical design — unified by a consistent engineering approach: build carefully, verify assumptions, measure outcomes, and communicate results clearly.
+  </em>
+</p>
 
 <p align="center" style="margin-top: 8px; margin-bottom: 18px;">
   <em>
