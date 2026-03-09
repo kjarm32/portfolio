@@ -13,8 +13,8 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
              style="width:100%; height:230px; object-fit:cover; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
-        <a href="#concept-aircraft-blended-wing-body-aerodynamics" style="text-decoration:none; color:inherit;"><strong>Blended-Wing-Body Aerodynamics</strong></a><br>
-        Validated CFD and planned tufting comparison.
+        <a href="#concept-aircraft-blended-wing-body-aerodynamics" class="card-title"><strong>Blended-Wing-Body Aerodynamics</strong></a><br>
+        <span class="card-subtitle">Validated CFD and planned tufting comparison.</span>
       </p>
     </td>
 
@@ -25,15 +25,15 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
              style="width:100%; height:230px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
-        <a href="#hycube-cubesat-thermal--instrumentation-payload" style="text-decoration:none; color:inherit;"><strong>HyCUBE Thermal Payload</strong></a><br>
-        Calibration, validation, and flight-ready instrumentation.
+        <a href="#hycube-cubesat-thermal--instrumentation-payload" class="card-title"><strong>HyCUBE Thermal Payload</strong></a><br>
+        <span class="card-subtitle">Calibration, validation, and flight-ready instrumentation.</span>
       </p>
     </td>
   </tr>
 
   <tr>
     <td style="vertical-align:top;">
-      <div style="background:#081120; border-radius:12px; padding:10px; border:1px solid #2a3542;">
+      <div class="dark-figure-frame">
         <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct">
           <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png"
                alt="Medical imaging ML project"
@@ -41,13 +41,13 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
         </a>
       </div>
       <p style="margin:10px 0 0 0;">
-        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" style="text-decoration:none; color:inherit;"><strong>Medical Imaging ML</strong></a><br>
-        Reproducible CT modeling with interpretability checks.
+        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" class="card-title"><strong>Medical Imaging ML</strong></a><br>
+        <span class="card-subtitle">Reproducible CT modeling with interpretability checks.</span>
       </p>
     </td>
 
   <td style="vertical-align:top;">
-      <div style="background:#081120; border-radius:12px; padding:10px; border:1px solid #2a3542;">
+      <div class="dark-figure-frame">
         <a href="#wind-turbine-designbuildtest-e26">
           <img src="assets/windturbine_fea_triptych.png"
                alt="Wind turbine design build test project"
@@ -55,8 +55,8 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
         </a>
       </div>
       <p style="margin:10px 0 0 0;">
-        <a href="#wind-turbine-designbuildtest-e26" style="text-decoration:none; color:inherit;"><strong>Wind Turbine Design–Build–Test</strong></a><br>
-        Prototype iteration supported by testing and FEA review.
+        <a href="#wind-turbine-designbuildtest-e26" class="card-title"><strong>Wind Turbine Design–Build–Test</strong></a><br>
+        <span class="card-subtitle">Prototype iteration supported by testing and FEA review.</span>
       </p>
     </td>
   </tr>
@@ -73,8 +73,6 @@ Mechanical Engineering student working across aerospace systems, thermal instrum
 - [Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT](#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct)
 - [Wind Turbine Design–Build–Test (E26)](#wind-turbine-designbuildtest-e26)
 - [Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)](#reliability-first-automation-under-real-world-constraints-uprospxu)
-
----
 
 ---
 
