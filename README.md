@@ -113,14 +113,15 @@ Blended-wing-body concepts aim to improve efficiency by generating lift across m
 <p align="center"><strong>Design-to-prototype path for physical validation</strong></p>
 
 <p align="center">
-  <img src="assets/Cadbwbsketch.png" width="31%" alt="Initial BWB concept sketch">
-  <img src="assets/BWB_plane_planecad.png" width="31%" alt="CAD model of BWB aircraft">
-  <img src="assets/BWB_Tuftinit.jpeg" width="31%" alt="3D-printed tufted BWB prototype">
+  <img src="assets/Cadbwbsketch.png" height="240" alt="Initial BWB concept sketch">
+  <img src="assets/BWB_plane_planecad.png" height="240" alt="CAD model of BWB aircraft">
+  <img src="assets/BWB_Tuftinit.jpeg" height="240" alt="3D-printed tufted BWB prototype">
 </p>
 
 <p align="center">
-  <em>From left to right: initial concept sketch, CAD development, and the 3D-printed tufted prototype prepared for upcoming wind-tunnel / flow-visualization validation.</em>
+  <em>Left to right: concept sketch, CAD model, and 3D-printed tufted prototype for planned wind-tunnel and flow-visualization validation.</em>
 </p>
+
 
 <p align="center">Aerodynamic Coefficients vs. Angle of Attack</p>
 <p align="center">
