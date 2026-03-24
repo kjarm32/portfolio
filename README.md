@@ -117,7 +117,7 @@ Blended-wing-body concepts aim to improve efficiency by generating lift across m
   &nbsp;&nbsp;&nbsp;
   <img src="assets/BWB_Aero_CADd1.png" width="30%" alt="CAD model">
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/BWB_Tuftinit.jpeg" width="26%" alt="3D-printed tufted prototype">
+  <img src="assets/BWB_Tuftinit.jpeg" width="28%" alt="3D-printed tufted prototype">
 </p>
 
 <p align="center">
