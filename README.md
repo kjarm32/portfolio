@@ -175,7 +175,7 @@ Reliable temperature sensing is a prerequisite for flight-readiness decisions. I
 
 ## Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT
 
-Slice-level intracranial hemorrhage detection baseline + controlled initialization study (Scratch vs ImageNet vs JEPA)  
+Slice-level intracranial hemorrhage detection baseline + controlled initialization study (Scratch vs ImageNet vs JEPA) (Mofrad Lab Collaboration)
 Medical Imaging • Applied Deep Learning • Interpretability • Validation focus  
 Mofrad Lab collaboration
 
