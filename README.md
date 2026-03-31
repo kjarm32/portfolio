@@ -68,7 +68,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
 <p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.</em></p>
 
 ## Quick links
-- BWB CFD executive summary: [PDF](assets/BWB_Executive_Summary_v3.pdf)
+- BWB CFD executive summary: [PDF](assets/BWB_Executive_Summary_.pdf)
 
 ## Explore Projects
 - [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
@@ -85,13 +85,13 @@ Validated low-speed CFD of a blended-wing-body aircraft
 Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • Clean post-processing
 
 <p align="center">
-  <a href="assets/BWB%20Executive%20Summary%20(2).pdf">
+  <a href="assets/BWB_Executive_Summary_.pdf">
     <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
   </a>
 </p>
 
 <p align="center">
-  <a href="assets/BWB_Executive_Summary_v3.pdf">Open the executive summary (PDF)</a>
+  <a href="assets/BWB_Executive_Summary_.pdf">Open the executive summary (PDF)</a>
 </p>
 
 Blended-wing-body concepts aim to improve efficiency by generating lift across more of the airframe, not just the wings. I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and produced comparable flow/pressure visualizations backed by convergence, domain, and mesh sensitivity checks.
