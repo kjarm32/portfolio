@@ -44,7 +44,8 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
       </p>
     </td>
   </tr>
-  <tr>
+<tr>
+    <td style="vertical-align:top;"></td>
     <td style="vertical-align:top;">
       <div class="dark-figure-frame">
         <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct">
@@ -71,7 +72,6 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
         <span class="card-subtitle">Prototype iteration supported by testing and FEA review.</span>
       </p>
     </td>
-    <td style="vertical-align:top;"></td>
   </tr>
 </table>
 <p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.</em></p>
