@@ -45,8 +45,8 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
     </td>
   </tr>
 <tr>
-    <td style="vertical-align:top;"></td>
-    <td style="vertical-align:top;">
+    <td colspan="1" style="width:16.5%;"></td>
+    <td colspan="1" style="vertical-align:top; width:33%;">
       <div class="dark-figure-frame">
         <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct">
           <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png"
@@ -59,7 +59,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
         <span class="card-subtitle">Reproducible CT modeling with interpretability checks.</span>
       </p>
     </td>
-    <td style="vertical-align:top;">
+    <td colspan="1" style="vertical-align:top; width:33%;">
       <div class="dark-figure-frame">
         <a href="#wind-turbine-designbuildtest-e26">
           <img src="assets/windturbine_fea_triptych.png"
