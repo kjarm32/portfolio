@@ -7,12 +7,13 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
 
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong></p>
 <table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
+<table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
   <tr>
     <td style="vertical-align:top;">
       <a href="#concept-aircraft-blended-wing-body-aerodynamics">
         <img src="assets/BWB_Tuftinit.jpeg"
              alt="Blended-wing-body aerodynamic validation project"
-             style="width:100%; height:190px; object-fit:cover; border-radius:12px; display:block; border:1px solid #2a3542;">
+             style="width:100%; height:230px; object-fit:cover; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#concept-aircraft-blended-wing-body-aerodynamics" class="card-title"><strong>Blended-Wing-Body Aerodynamics</strong></a><br>
@@ -23,13 +24,15 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
       <a href="#hycube-cubesat-thermal--instrumentation-payload">
         <img src="assets/HyCubeINAir.png"
              alt="HyCUBE thermal instrumentation payload"
-             style="width:100%; height:190px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
+             style="width:100%; height:230px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#hycube-cubesat-thermal--instrumentation-payload" class="card-title"><strong>HyCUBE Thermal Payload</strong></a><br>
         <span class="card-subtitle">Calibration, validation, and flight-ready instrumentation.</span>
       </p>
     </td>
+  </tr>
+  <tr>
     <td style="vertical-align:top;">
       <div class="dark-figure-frame">
         <a href="#flynet-neural-flight-dynamics-modeling">
@@ -43,10 +46,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
         <span class="card-subtitle">Physics-based neural network replication and GRU extension.</span>
       </p>
     </td>
-  </tr>
-<tr>
-    <td colspan="1" style="width:16.5%;"></td>
-    <td colspan="1" style="vertical-align:top; width:33%;">
+    <td style="vertical-align:top;">
       <div class="dark-figure-frame">
         <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct">
           <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png"
@@ -57,19 +57,6 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
       <p style="margin:10px 0 0 0;">
         <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" class="card-title"><strong>Medical Imaging ML</strong></a><br>
         <span class="card-subtitle">Reproducible CT modeling with interpretability checks.</span>
-      </p>
-    </td>
-    <td colspan="1" style="vertical-align:top; width:33%;">
-      <div class="dark-figure-frame">
-        <a href="#wind-turbine-designbuildtest-e26">
-          <img src="assets/windturbine_fea_triptych.png"
-               alt="Wind turbine design build test project"
-               style="width:100%; height:190px; object-fit:contain; display:block;">
-        </a>
-      </div>
-      <p style="margin:10px 0 0 0;">
-        <a href="#wind-turbine-designbuildtest-e26" class="card-title"><strong>Wind Turbine Design–Build–Test</strong></a><br>
-        <span class="card-subtitle">Prototype iteration supported by testing and FEA review.</span>
       </p>
     </td>
   </tr>
