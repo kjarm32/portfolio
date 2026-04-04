@@ -34,6 +34,20 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
     </td>
   </tr>
 
+  <td style="vertical-align:top;">
+      <div class="dark-figure-frame">
+        <a href="#flynet-neural-flight-dynamics-modeling">
+          <img src="assets/flynet_time_history_v2.png"
+               alt="FlyNet neural flight dynamics modeling"
+               style="width:100%; height:190px; object-fit:cover; object-position:center 20%; display:block; border-radius:8px;">
+        </a>
+      </div>
+      <p style="margin:10px 0 0 0;">
+        <a href="#flynet-neural-flight-dynamics-modeling" class="card-title"><strong>FlyNet: Neural Flight Dynamics</strong></a><br>
+        <span class="card-subtitle">Physics-based neural network replication and GRU extension.</span>
+      </p>
+    </td>
+
   <tr>
     <td style="vertical-align:top;">
       <div class="dark-figure-frame">
@@ -73,6 +87,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
 ## Explore Projects
 - [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
 - [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
+- [FlyNet: Neural Flight Dynamics Modeling](#flynet-neural-flight-dynamics-modeling)
 - [Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT](#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct)
 - [Wind Turbine Design–Build–Test (E26)](#wind-turbine-designbuildtest-e26)
 - [Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)](#reliability-first-automation-under-real-world-constraints-uprospxu)
@@ -172,6 +187,85 @@ Reliable temperature sensing is a prerequisite for flight-readiness decisions. I
 </p>
 
 ---
+
+## FlyNet: Neural Flight Dynamics Modeling
+
+Physics-based neural network replication and GRU architecture extension  
+Flight Dynamics • JSBSim Simulation • PyTorch • Closed-Loop Training • Recurrent Networks  
+Mofrad Lab collaboration
+
+<p align="center">
+  <img src="assets/flynet_time_history_v2.png" width="92%" alt="FlyNet closed-loop state time history — all models vs JSBSim ground truth">
+</p>
+
+<p align="center">
+  <em>Closed-loop state time history across all models vs JSBSim ground truth. Shaded regions show elevator deflection phases of the 2-3-1-1 maneuver. RMSE values are test-set averages across 8 held-out trajectories.</em>
+</p>
+
+Replicated the FlyNet architecture (Stachiw et al., 2022) — a physics-based neural network for global flight dynamics modeling — on a Cessna 172p using JSBSim simulation data instead of real flight test data. Extended the replication with a parameter-matched GRU comparison to test whether temporal context improves closed-loop simulation stability over a memoryless feed-forward model.
+
+**Research question:** Does recurrent hidden state (GRU) improve closed-loop integration stability over a feed-forward model when both use identical input features and parameter budgets (~2,000 parameters)?
+
+**Highlights**
+- Generated 56 trajectories across 4 speed bins (80–110 kt) and 7 maneuver types using JSBSim trim oracle
+- Replicated paper's two-stage pipeline: feed-forward pretrain (Stage 1) + closed-loop output-error refinement via Adams-Bashforth EOM integration (Stage 2)
+- FF + closed-loop refinement reduced translational drift by up to 12× vs pretrain alone (v: 45.7 → 3.9 fps), directly replicating the paper's core claim
+- Yaw rate (r) RMSE of 0.030 rad/s matched the paper; physically consistent with C172p's simpler yaw dynamics vs the paper's helicopter
+- GRU without closed-loop training diverges catastrophically, confirming that the closed-loop training objective — not architecture — drives integration stability
+- GRU + closed-loop partially stabilizes lateral channels (w: 55 → 19 fps) but introduces longitudinal divergence in u, revealing an architecture-dependent instability unique to recurrent rollout
+
+**Pipeline**
+
+| Stage | What it does |
+|---|---|
+| `generate_dataset.py` | JSBSim trim oracle → 56 CSV trajectories |
+| `pretrain_model.py` | Stage 1 FF pretrain, 119 second-order features, Xavier init |
+| `train_closedloop.py` | Stage 2 output-error refinement via EOM integration |
+| `train_rnn.py` | GRU pretrain (hidden=8, ~2,000 params, parameter-matched) |
+| `train_closedloop_rnn.py` | Closed-loop refinement with timestep-by-timestep GRU rollout |
+| `evaluate.py` | Closed-loop RMSE across all 8 state channels |
+
+**Closed-loop RMSE — test set (8 trajectories, physical units)**
+
+<table align="center">
+  <thead>
+    <tr>
+      <th>Channel</th>
+      <th>Paper FlyNet</th>
+      <th>FF Pretrain</th>
+      <th>FF + CL</th>
+      <th>RNN (no CL)</th>
+      <th>RNN + CL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>u (fps)</td><td>2.04</td><td>22.18</td><td>20.13</td><td>21.07</td><td>2036</td></tr>
+    <tr><td>v (fps)</td><td>2.70</td><td>45.68</td><td>3.89</td><td>51.31</td><td>42.26</td></tr>
+    <tr><td>w (fps)</td><td>1.77</td><td>56.05</td><td>3.77</td><td>55.00</td><td>19.46</td></tr>
+    <tr><td>p (rad/s)</td><td>0.030</td><td>0.0278</td><td>0.0424</td><td>0.0269</td><td>0.0108</td></tr>
+    <tr><td>q (rad/s)</td><td>0.015</td><td>0.0212</td><td>0.0377</td><td>0.0250</td><td>0.0116</td></tr>
+    <tr><td>r (rad/s)</td><td>0.026</td><td>0.0235</td><td>0.0304</td><td>0.0232</td><td>0.0064</td></tr>
+    <tr><td>θ (rad)</td><td>0.028</td><td>0.151</td><td>0.101</td><td>0.150</td><td>0.092</td></tr>
+    <tr><td>φ (rad)</td><td>0.050</td><td>0.096</td><td>0.082</td><td>0.077</td><td>0.080</td></tr>
+  </tbody>
+</table>
+
+<p align="center"><em>Paper results: Bell 412HP helicopter, 252 real flight test trajectories. Our results: C172p fixed-wing, 56 JSBSim simulation trajectories.</em></p>
+
+**My contributions**
+- Built end-to-end JSBSim data pipeline: trim oracle, multi-speed multi-maneuver trajectory generation, trajectory-level stratified splits
+- Implemented paper's full feature pipeline: range normalization (Eq. 19), second-order expansion (14 → 119 inputs), Xavier initialization
+- Replicated two-stage training: FF pretrain + closed-loop output-error refinement with Adams-Bashforth 2nd-order EOM integrator
+- Extended with parameter-matched GRU comparison and timestep-by-timestep closed-loop GRU rollout
+- Ran full ablation: FF pretrain only → FF+CL → GRU pretrain only → GRU+CL
+- Built evaluation pipeline and produced publication-comparable RMSE table
+
+**Key finding (in progress)**
+
+The closed-loop training objective is the primary driver of integration stability — not model architecture. The GRU's hidden state helps some channels under closed-loop refinement but introduces a longitudinal instability (u-channel divergence) absent in the feed-forward model, pointing to a fundamental difference in how recurrent rollout compounds errors through the EOM integrator.
+
+---
+
 
 ## Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT
 
