@@ -7,7 +7,6 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
 
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong></p>
 <table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
-<table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
   <tr>
     <td style="vertical-align:top;">
       <a href="#concept-aircraft-blended-wing-body-aerodynamics">
