@@ -6,40 +6,36 @@
 Mechanical Engineering student-athlete at the University of California, Berkeley. My work spans aerospace systems, thermal instrumentation, and applied machine learning, with a focus on validated analysis, reproducible workflows, and decision-ready technical communication.
 
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong></p>
-
 <table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
   <tr>
     <td style="vertical-align:top;">
       <a href="#concept-aircraft-blended-wing-body-aerodynamics">
         <img src="assets/BWB_Tuftinit.jpeg"
              alt="Blended-wing-body aerodynamic validation project"
-             style="width:100%; height:230px; object-fit:cover; border-radius:12px; display:block; border:1px solid #2a3542;">
+             style="width:100%; height:190px; object-fit:cover; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#concept-aircraft-blended-wing-body-aerodynamics" class="card-title"><strong>Blended-Wing-Body Aerodynamics</strong></a><br>
         <span class="card-subtitle">Validated CFD and planned tufting comparison.</span>
       </p>
     </td>
-
-  <td style="vertical-align:top;">
+    <td style="vertical-align:top;">
       <a href="#hycube-cubesat-thermal--instrumentation-payload">
         <img src="assets/HyCubeINAir.png"
              alt="HyCUBE thermal instrumentation payload"
-             style="width:100%; height:230px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
+             style="width:100%; height:190px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#hycube-cubesat-thermal--instrumentation-payload" class="card-title"><strong>HyCUBE Thermal Payload</strong></a><br>
         <span class="card-subtitle">Calibration, validation, and flight-ready instrumentation.</span>
       </p>
     </td>
-  </tr>
-
-  <td style="vertical-align:top;">
+    <td style="vertical-align:top;">
       <div class="dark-figure-frame">
         <a href="#flynet-neural-flight-dynamics-modeling">
           <img src="assets/flynet_time_history_v2.png"
                alt="FlyNet neural flight dynamics modeling"
-               style="width:100%; height:190px; object-fit:cover; object-position:center 20%; display:block; border-radius:8px;">
+               style="width:100%; height:190px; object-fit:cover; object-position:center 20%; display:block; border-radius:8px; border:1px solid #2a3542;">
         </a>
       </div>
       <p style="margin:10px 0 0 0;">
@@ -47,7 +43,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
         <span class="card-subtitle">Physics-based neural network replication and GRU extension.</span>
       </p>
     </td>
-
+  </tr>
   <tr>
     <td style="vertical-align:top;">
       <div class="dark-figure-frame">
@@ -62,8 +58,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
         <span class="card-subtitle">Reproducible CT modeling with interpretability checks.</span>
       </p>
     </td>
-
-   <td style="vertical-align:top;">
+    <td style="vertical-align:top;">
       <div class="dark-figure-frame">
         <a href="#wind-turbine-designbuildtest-e26">
           <img src="assets/windturbine_fea_triptych.png"
@@ -76,9 +71,9 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
         <span class="card-subtitle">Prototype iteration supported by testing and FEA review.</span>
       </p>
     </td>
+    <td style="vertical-align:top;"></td>
   </tr>
 </table>
-
 <p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.</em></p>
 
 ## Quick links
@@ -202,7 +197,9 @@ Mofrad Lab collaboration
   <em>Closed-loop state time history across all models vs JSBSim ground truth. Shaded regions show elevator deflection phases of the 2-3-1-1 maneuver. RMSE values are test-set averages across 8 held-out trajectories.</em>
 </p>
 
-Replicated the FlyNet architecture (Stachiw et al., 2022) — a physics-based neural network for global flight dynamics modeling — on a Cessna 172p using JSBSim simulation data instead of real flight test data. Extended the replication with a parameter-matched GRU comparison to test whether temporal context improves closed-loop simulation stability over a memoryless feed-forward model.
+Here it is with regular dashes replaced by commas:
+
+Replicated the FlyNet architecture (Stachiw et al., 2022), a physics-based neural network for global flight dynamics modeling, on a Cessna 172p using JSBSim simulation data instead of real flight test data. Extended the replication with a parameter-matched GRU comparison to test whether temporal context improves closed-loop simulation stability over a memoryless feed-forward model.
 
 **Research question:** Does recurrent hidden state (GRU) improve closed-loop integration stability over a feed-forward model when both use identical input features and parameter budgets (~2,000 parameters)?
 
