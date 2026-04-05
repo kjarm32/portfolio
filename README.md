@@ -203,7 +203,15 @@ Mofrad Lab collaboration
   <em>Closed-loop state time history across all models vs JSBSim ground truth. Shaded regions show elevator deflection phases of the 2-3-1-1 maneuver. RMSE values are test-set averages across 8 held-out trajectories.</em>
 </p>
 
-Here it is with regular dashes replaced by commas:
+<p align="center">
+  <iframe width="72%" height="420"
+    src="https://www.youtube.com/embed/RBWWbZS1y6c"
+    frameborder="0"
+    allowfullscreen
+    style="border-radius:12px; border:1px solid #2a3542;">
+  </iframe>
+</p>
+
 
 Replicated the FlyNet architecture (Stachiw et al., 2022), a physics-based neural network for global flight dynamics modeling, on a Cessna 172p using JSBSim simulation data instead of real flight test data. Extended the replication with a parameter-matched GRU comparison to test whether temporal context improves closed-loop simulation stability over a memoryless feed-forward model.
 
