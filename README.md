@@ -10,7 +10,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
   <tr>
     <td style="vertical-align:top;">
       <a href="#concept-aircraft-blended-wing-body-aerodynamics">
-        <img src="assets/bwb_model_image.jpeg" 
+        <img src="assets/bwb_model_img.jpeg" 
              alt="Blended-wing-body aerodynamic validation project"
              style="width:100%; height:230px; object-fit:cover; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
@@ -101,8 +101,8 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • C
   auto-rotate
   auto-rotate-delay="1000"
   shadow-intensity="1"
-  orientation="-90deg 0deg 0deg"
-  camera-orbit="0deg 40deg 4m"
+  orientation="-90deg 0deg 180deg"
+  camera-orbit="45deg 55deg 4m"
   field-of-view="45deg"
   style="width:72%; height:580px; border-radius:12px; border:1px solid #2a3542; background-color:#1a1f2e;">
 </model-viewer>
