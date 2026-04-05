@@ -100,8 +100,8 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • C
   auto-rotate
   auto-rotate-delay="1000"
   shadow-intensity="1"
-  camera-orbit="135deg 55deg 1.5m"
-  field-of-view="30deg"
+  camera-orbit="135deg 75deg 4m"
+  field-of-view="45deg"
   style="width:72%; height:580px; border-radius:12px; border:1px solid #2a3542; background-color:#1a1f2e;">
 </model-viewer>
 </p>
