@@ -90,6 +90,20 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • C
   <a href="assets/BWB_Executive_Summary_.pdf">Open the executive summary (PDF)</a>
 </p>
 
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<p align="center">
+  <model-viewer
+    src="assets/BWB_Plane_Part2_render.glb"
+    alt="BWB CAD Model"
+    camera-controls
+    auto-rotate
+    auto-rotate-delay="1000"
+    shadow-intensity="1"
+    style="width:92%; height:480px; border-radius:12px; border:1px solid #2a3542;">
+  </model-viewer>
+</p>
+
 Blended-wing-body concepts aim to improve efficiency by generating lift across more of the airframe, not just the wings. I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and produced comparable flow/pressure visualizations backed by convergence, domain, and mesh sensitivity checks.
 
 **Highlights**
