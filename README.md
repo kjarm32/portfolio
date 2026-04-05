@@ -94,7 +94,7 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • C
 
 <p align="center">
 <model-viewer
-  src="assets/bwb_plane_part.glb"
+  src="assets/BWB_Plane_Part.glb"
   alt="BWB CAD Model"
   camera-controls
   auto-rotate
