@@ -10,7 +10,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
   <tr>
     <td style="vertical-align:top;">
       <a href="#concept-aircraft-blended-wing-body-aerodynamics">
-        <img src="assets/bwb_model_img.jpeg" 
+        <img src="assets/BWB_intunnel_tufts.jpeg" 
              alt="Blended-wing-body aerodynamic validation project"
              style="width:100%; height:230px; object-fit:cover; object-position:center 40%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
@@ -90,23 +90,6 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • C
   <a href="assets/BWB_Executive_Summary_.pdf">Open the executive summary (PDF)</a>
 </p>
 
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-
-<p align="center">
-<model-viewer
-  src="assets/BWB_Plane_Part.glb"
-  alt="BWB CAD Model"
-  camera-controls
-  auto-rotate
-  auto-rotate-delay="1000"
-  shadow-intensity="1"
-  orientation="-90deg 0deg 90deg"
-  camera-orbit="45deg 55deg 4m"
-  field-of-view="45deg"
-  style="width:72%; height:580px; border-radius:12px; border:1px solid #2a3542; background-color:#1a1f2e;">
-</model-viewer>
-</p>
 
 
 
@@ -133,7 +116,7 @@ Blended-wing-body concepts aim to improve efficiency by generating lift across m
   &nbsp;&nbsp;&nbsp;
   <img src="assets/BWB_Aero_CADd1.png" width="30%" alt="CAD model">
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/BWB_Tuftinit.jpeg" width="28%" alt="3D-printed tufted prototype">
+  <img src="assets/bwb_model_img.jpeg" width="28%" alt="3D-printed tufted prototype">
 </p>
 
 <p align="center">
