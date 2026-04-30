@@ -10,7 +10,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
   <tr>
     <td style="vertical-align:top;">
       <a href="#concept-aircraft-blended-wing-body-aerodynamics">
-        <img src="assets/BWB_intunnel_tufts.jpeg" 
+        <img src="assets/IMG_3685 (1).jpeg" 
              alt="Blended-wing-body aerodynamic validation project"
              style="width:100%; height:230px; object-fit:cover; object-position:center 40%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
