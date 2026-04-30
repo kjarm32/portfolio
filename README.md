@@ -63,7 +63,7 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
 <p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.</em></p>
 
 ## Quick links
-- BWB CFD executive summary: [PDF](assets/BWB_Executive_Summary_.pdf)
+- BWB CFD executive summary: [HTML](assets/BBWB_Project_Showcase.html)
 
 ## Explore Projects
 - [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
@@ -87,7 +87,7 @@ Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • C
 </p>
 
 <p align="center">
-  <a href="assets/BWB_Executive_Summary_.pdf">Open the executive summary (PDF)</a>
+  <a href="assets/BWB_Project_Showcase.html">Open the executive summary (HTML)</a>
 </p>
 
 
