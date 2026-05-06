@@ -74,59 +74,71 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
 - [Reliability-First Automation Under Real-World Constraints (UPRO/SPXU)](#reliability-first-automation-under-real-world-constraints-uprospxu)
 
 ---
-
 ## Concept Aircraft: Blended-Wing-Body Aerodynamics
 
-Validated low-speed CFD of a blended-wing-body aircraft  
-Aerodynamics • CFD verification (mesh/domain) • Coefficient extraction • Clean post-processing
+**CAD Design · Validated CFD · 3D-Printed Model · Wind Tunnel Force-Balance Testing · Tuft Flow Visualization**
+
+```
+AoA sweep: −2° to +20° · V∞ ≈ 40 mph · Re ≈ 5.6 × 10⁴ · EWT 3-component balance
+```
+
+Blended-wing-body concepts generate lift across more of the airframe rather than concentrating it in the wings — offering potential efficiency gains at the cost of more complex stall behavior. I ran the full pipeline: designed a custom BWB geometry, characterized it computationally, fabricated a 1:1 scale FDM model, and validated predictions in a wind tunnel.
+
+---
+
+### CFD — Pre-stall characterization
+
+Steady-state laminar + turbulent (I = 1%, L = 0.01 m), SolidWorks Flow Simulation. AoA swept −2° to +8° at V∞ = 40 mph. All coefficients reported after +100-iteration post-convergence averaging window and verified with domain and mesh sensitivity checks.
 
 <p align="center">
-  <a href="assets/BWB_Executive_Summary_.pdf">
-    <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20%283%29.png" width="92%">
-  </a>
+  <img src="assets/BWB_CFD_VelX_Pressure_Combined.png" width="96%" alt="Streamwise velocity cut planes and surface pressure maps at AoA = 0°, 4°, 8°">
 </p>
+<p align="center"><em>Left: streamwise velocity Vx (midspan cut plane) at AoA = 0°, 4°, 8° — warm regions show upper-surface acceleration, blue shows stagnation and wake deficit. Right: surface relative pressure (top view, fixed scale −300 to +300 Pa) — leading-edge suction region expands chordwise with increasing AoA.</em></p>
+
+**Coefficient sweep:**
+
+| AoA (°) | C_L | C_D | L/D |
+|--------:|------:|--------:|------:|
+| −2 | −0.0414 | 0.02828 | −1.46 |
+| 0 | 0.0586 | 0.02723 | 2.15 |
+| 2 | 0.1612 | 0.03072 | 5.25 |
+| 4 | 0.2598 | 0.03727 | 6.97 |
+| **6** | **0.3554** | **0.04859** | **7.31 ← peak** |
+| 8 | 0.4473 | 0.06440 | 6.95 |
+
+**Verification:**
+- Domain independence (α = 4°, medium mesh): ΔC_L = +0.17%, ΔC_D = +0.43% — far-field boundaries not biasing results
+- Mesh independence (α = 4°, large domain): medium→fine ΔC_L ≈ 1.25%, ΔC_D ≈ 0.37% — near-converged; medium mesh selected for sweep
+
+---
+
+### Wind tunnel — Stall campaign
+
+EWT three-component force balance (normal force, axial force, pitching moment), 25 Hz sampling, wind-off tare applied. Sweep extended to 20° AoA.
+
+- Gradual stall onset confirmed at **14–16°** — identified simultaneously by normal-force slope collapse and pitching-moment reversal (two independent indicators)
+- Peak normal force **3.36 N at 18°**; soft post-stall drop to 3.33 N at 20° — consistent with a low-Re blended planform resisting abrupt separation
+- CFD (pre-stall) and tunnel data in good agreement through 8°
+- **Tuft flow visualization** confirmed centerbody-first separation: inboard flow detaches at 14–16° while outer-panel tufts remain aligned, progressing outboard through 18–20°
+
+---
+
+### Design-to-test pipeline
 
 <p align="center">
-  <a href="assets/BWB_Project_Showcase.html">Open the executive summary (HTML)</a>
+  <img src="assets/Cadbwbsketch.png" width="28%" alt="Concept sketch">
+  &nbsp;&nbsp;
+  <img src="assets/BWB_Aero_CADd1.png" width="28%" alt="CAD model">
+  &nbsp;&nbsp;
+  <img src="assets/IMG_3685 (1).jpeg" width="28%" alt="Wind tunnel test">
 </p>
+<p align="center"><em>Left to right: concept sketch → SolidWorks loft → 1:1 FDM model on EWT balance sting.</em></p>
 
+---
 
-
-
-Blended-wing-body concepts aim to improve efficiency by generating lift across more of the airframe, not just the wings. I used steady-state CFD in SOLIDWORKS Flow Simulation to estimate lift/drag coefficients across angle-of-attack and produced comparable flow/pressure visualizations backed by convergence, domain, and mesh sensitivity checks.
-
-**Highlights**
-- AoA sweep: −2° → +8° at ~40 mph; peak efficiency L/D ≈ 7.3 near ~6°
-- Verification: domain effect <0.5%; mesh medium→fine ΔCL ≈ 1.25%
-- Comparison-ready visuals: fixed views/scales across cases (velocity cuts + pressure maps)
-
-**My contributions**
-- Ran steady-state CFD across AoA and extracted lift/drag trends (CL/CD)
-- Verified results with convergence stability, domain sensitivity, and mesh sensitivity checks
-- Produced clean figure sets for cross-case comparison and packaged results into an executive summary
-
-**Next step**
-
-- Physical validation: preparing a tufted prototype and running a small wind-tunnel campaign to compare measured lift/drag vs. AoA against the CFD sweep
-
-<p align="center"><strong>Design-to-prototype path for physical validation</strong></p>
-
-<p align="center">
-  <img src="assets/Cadbwbsketch.png" width="30%" alt="Concept sketch">
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/BWB_Aero_CADd1.png" width="30%" alt="CAD model">
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/bwb_model_img.jpeg" width="28%" alt="3D-printed tufted prototype">
-</p>
-
-<p align="center">
-  <em>Left to right: concept sketch, CAD model, and 3D-printed tufted prototype for planned wind-tunnel and flow-visualization validation.</em>
-</p>
-
-<p align="center">Aerodynamic Coefficients vs. Angle of Attack</p>
-<p align="center">
-  <img src="assets/bwb_cfd_summary1.png" width="92%">
-</p>
+### Resources
+- [Executive summary (HTML)](assets/BWB_Project_Showcase.html)
+- [Full project report (PDF)](assets/BWB_Executive_Summary_.pdf)
 
 
 ---
