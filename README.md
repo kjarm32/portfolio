@@ -134,7 +134,7 @@ EWT three-component force balance (normal force, axial force, pitching moment), 
 ---
 
 ### Resources
-- [Executive summary (HTML)](assets/BWB_Project_Showcase_Tufts (3).html)
+- [Executive summary (HTML)](assets/BWB_Project_Showcase_Tufts (4).html)
 - [Full project report (PDF)](assets/BWB_Executive_Summary_.pdf)
 
 ---
