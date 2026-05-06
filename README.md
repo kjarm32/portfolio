@@ -62,9 +62,6 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
 </table>
 <p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in aerodynamics, aerospace instrumentation, applied machine learning, and test-backed mechanical design.</em></p>
 
-## Quick links
-- BWB CFD executive summary: [HTML](assets/BWB_Project_Showcase.html)
-
 ## Explore Projects
 - [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
 - [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
@@ -137,9 +134,8 @@ EWT three-component force balance (normal force, axial force, pitching moment), 
 ---
 
 ### Resources
-- [Executive summary (HTML)](assets/BWB_Project_Showcase.html)
+- [Executive summary (HTML)](assets/BWB_Project_Showcase_Tufts (3).html)
 - [Full project report (PDF)](assets/BWB_Executive_Summary_.pdf)
-
 
 ---
 
