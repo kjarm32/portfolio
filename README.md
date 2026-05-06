@@ -88,7 +88,7 @@ Blended-wing-body concepts generate lift across more of the airframe rather than
 Steady-state laminar + turbulent (I = 1%, L = 0.01 m), SolidWorks Flow Simulation. AoA swept −2° to +8° at V∞ = 40 mph. All coefficients reported after +100-iteration post-convergence averaging window and verified with domain and mesh sensitivity checks.
 
 <p align="center">
-  <img src="assets/BWB_CFD_VelX_Pressure_Combined.png" width="96%" alt="Streamwise velocity cut planes and surface pressure maps at AoA = 0°, 4°, 8°">
+  <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8 (3).png" width="96%" alt="Streamwise velocity cut planes and surface pressure maps at AoA = 0°, 4°, 8°">
 </p>
 <p align="center"><em>Left: streamwise velocity Vx (midspan cut plane) at AoA = 0°, 4°, 8° — warm regions show upper-surface acceleration, blue shows stagnation and wake deficit. Right: surface relative pressure (top view, fixed scale −300 to +300 Pa) — leading-edge suction region expands chordwise with increasing AoA.</em></p>
 
