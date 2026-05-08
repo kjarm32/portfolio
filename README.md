@@ -3,7 +3,7 @@
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
 
-Mechanical Engineering student-athlete at the University of California, Berkeley. My work spans aerospace systems, thermal instrumentation, and applied machine learning, with a focus on validated analysis, reproducible workflows, and decision-ready technical communication.
+I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in aerospace and deeptech. As a sophomore I've run a full aerodynamics design-to-test pipeline on a custom blended-wing-body aircraft, built neural flight dynamics models in the Mofrad Lab, and validated thermocouple instrumentation for a hypersonic reentry payload under NASA's Space Grant program. I care about work that closes the loop between analysis and physical reality.
 
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Thermal Instrumentation</strong> • <strong>Applied ML</strong> • <strong>Verification &amp; Validation</strong></p>
 <table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
@@ -75,11 +75,11 @@ Mechanical Engineering student-athlete at the University of California, Berkeley
 
 **CAD Design · Validated CFD · 3D-Printed Model · Wind Tunnel Force-Balance Testing · Tuft Flow Visualization**
 
-```
-AoA sweep: −2° to +20° · V∞ ≈ 40 mph · Re ≈ 5.6 × 10⁴ · EWT 3-component balance
-```
+<p style="font-family: monospace; background: #f4f4f4; padding: 8px 12px; font-size: 13px; border-radius: 3px;">
+AoA sweep: −2° to +20° &nbsp;·&nbsp; V∞ ≈ 40 mph &nbsp;·&nbsp; Re ≈ 5.6 × 10⁴ &nbsp;·&nbsp; EWT 3-component balance
+</p>
 
-Blended-wing-body concepts generate lift across more of the airframe rather than concentrating it in the wings — offering potential efficiency gains at the cost of more complex stall behavior. I ran the full pipeline: designed a custom BWB geometry, characterized it computationally, fabricated a 1:1 scale FDM model, and validated predictions in a wind tunnel.
+Blended-wing-body concepts generate lift across more of the airframe rather than concentrating it in the wings, offering potential efficiency gains at the cost of more complex stall behavior. I ran the full pipeline from scratch: designed a custom BWB geometry in SOLIDWORKS, characterized it computationally with validated CFD, fabricated a 1:1 scale FDM model, and confirmed predictions in a wind tunnel sweep that extended to stall and beyond.
 
 ---
 
