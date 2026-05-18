@@ -379,9 +379,6 @@ Aerospace Systems + Instrumentation • Sensor calibration • Validation • Fl
 </p>
 
 
-  BALLOON PREFLIGHT — when assets/hycube_balloon_preflight.jpeg is ready:
-  Delete the active 2-up block below and uncomment this one instead.
-
 <p align="center">
   <img src="assets/hycube_balloon_preflight.jpeg" width="46%"
        alt="Pre-launch: kneeling next to HyCUBE payload before balloon release"
