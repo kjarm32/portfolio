@@ -1,9 +1,3 @@
-<!--
-  BEFORE PUBLISHING:
-  - Verify assets/biofilm_abm_report.pdf exists before keeping the Biofilm report link.
-  - Replace the Biofilm and Trading placeholder blocks with one clean image each when available.
--->
-
 <img src="assets/4headshotasmes.png"
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
@@ -113,6 +107,18 @@ The tunnel campaign used a three-component force balance for normal force, axial
 - **Pitching moment peaked before normal force** at 16° vs 18°, indicating an aerodynamic-center shift near stall.
 - Zero-lift angle was about −1.5° to −2°, consistent with the cambered centerbody producing positive loading at zero incidence.
 
+### Aerodynamic Data Summary
+
+<p align="center">
+  <img src="assets/bwb_cfd_sweep_plot.png" width="44%"
+       alt="CFD sweep showing lift coefficient and lift-to-drag ratio versus angle of attack"
+       style="border-radius:8px; border:1px solid #d1d5db; margin-right:10px;">
+  <img src="assets/bwb_wind_tunnel_run4_plot.png" width="44%"
+       alt="Clean Run 4 wind tunnel sweep showing normal force and pitching moment versus angle of attack"
+       style="border-radius:8px; border:1px solid #d1d5db; margin-left:10px;">
+</p>
+<p align="center"><em>Left: pre-stall CFD sweep from −2° to 8° AoA. Right: clean Run 4 wind-tunnel sweep from −2° to 20° AoA, after the tuft-visualization run.</em></p>
+
 ### Tuft Flow Visualization: Surface Separation Sequence
 
 Lightweight yarn tufts, roughly 7 mm long and spaced at about 12% chord, were attached to the upper surface and recorded from above at each AoA. During attached flow, the tufts stayed aligned rearward. In transitional regions, they deflected laterally. During separation, they lifted, reversed, or fluttered.
@@ -157,17 +163,6 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 </p>
 <p align="center"><em>Pre-stall CFD sweep: streamwise velocity cut planes and surface pressure maps at 0°, 4°, and 8° AoA.</em></p>
 
-**Coefficient sweep**
-
-| AoA (°) | C_L | C_D | L/D |
-|--------:|------:|--------:|------:|
-| −2 | −0.0414 | 0.02828 | −1.46 |
-| 0 | 0.0586 | 0.02723 | 2.15 |
-| 2 | 0.1612 | 0.03072 | 5.25 |
-| 4 | 0.2598 | 0.03727 | 6.97 |
-| **6** | **0.3554** | **0.04859** | **7.31 peak** |
-| 8 | 0.4473 | 0.06440 | 6.95 |
-
 **Verification**
 
 - Domain independence at α = 4°: ΔC_L = +0.17%, ΔC_D = +0.43%.
@@ -186,9 +181,14 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 
 
 <p align="center">
-  <img src="assets/flynet_time_history_v2.png" width="86%" alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth">
+  <img src="assets/flynet_time_history_v2.png" width="55%"
+       alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth"
+       style="border-radius:10px; border:1px solid #2a3542; margin-right:10px;">
+  <img src="assets/c172flyhero.png" width="35%"
+       alt="Cessna 172 neural flight dynamics visual"
+       style="border-radius:10px; border:1px solid #2a3542; margin-left:10px;">
 </p>
-<p align="center"><em>Closed-loop state histories across model variants vs JSBSim ground truth. Shaded regions indicate elevator-deflection phases of the 2-3-1-1 maneuver.</em></p>
+<p align="center"><em>Left: closed-loop state histories across model variants vs JSBSim ground truth. Right: Cessna 172 flight-dynamics modeling visual.</em></p>
 
 <p align="center">
   <iframe width="72%" height="420"
@@ -368,9 +368,9 @@ Smaller projects included for range and technical completeness. These sit below 
 In a four-person team project, we designed, built, and tested a small wind turbine under manufacturability and performance constraints, and our final design ranked **#1 of 40 teams** in measured electrical power output. I focused on measurement, power characterization, blade concept research, and verification review, converting voltage and current data into comparable power results to guide iteration while also reviewing structural sanity checks on the design.
 
 <p align="center">
-  <img src="assets/windturbine_power_vs_current.png" width="26%" alt="Power vs current measurement curve" style="vertical-align:middle;">
-  <img src="assets/windturbine_test_setup.jpg" width="26%" alt="Wind turbine test setup" style="border-radius:8px; border:1px solid #2a3542; vertical-align:middle; margin:0 10px;">
-  <img src="assets/windturbine_fea_triptych.png" width="30%" alt="FEA results showing displacement, stress, and factor of safety" style="vertical-align:middle;">
+  <img src="assets/windturbine_power_vs_current.png" width="22%" alt="Power vs current measurement curve" style="vertical-align:middle; border-radius:8px;">
+  <img src="assets/windturbine_test_setup.jpg" width="24%" alt="Wind turbine test setup" style="border-radius:8px; border:1px solid #2a3542; vertical-align:middle; margin:0 10px;">
+  <img src="assets/windturbine_fea_triptych.png" width="24%" alt="FEA results showing displacement, stress, and factor of safety" style="vertical-align:middle; border-radius:8px;">
 </p>
 <p align="center"><em>Measured power curve, wind-tunnel-style test setup, and structural FEA sanity-check results.</em></p>
 
@@ -392,9 +392,10 @@ Built a reproducible slice-level baseline for intracranial hemorrhage detection 
 
 Built a parametric agent-based model in MESA to simulate bacterial biofilm formation on catheter surfaces, including planktonic motion, probabilistic attachment, EPS secretion, nutrient-driven growth, and shear-driven detachment. I used the model to run parameter sweeps over roughness, coating strength, and shear flow, compare five candidate material surfaces under stochastic replicates, and frame the project as a low-cost pre-prototyping screen for medical-device surface design before physical testing.
 
-<div style="width:58%; margin:14px auto; padding:24px 18px; border:1px dashed #9ca3af; border-radius:12px; text-align:center; color:#6b7280;">
-  Placeholder: add one clean simulation image, parameter sweep heatmap, or material comparison plot here.
-</div>
+<p align="center">
+  <img src="assets/AlABMHeatMap_forport.png" width="58%" alt="Agent-based biofilm modeling heatmap" style="border-radius:10px; border:1px solid #2a3542;">
+</p>
+<p align="center"><em>Parameter sweep heatmap from the agent-based biofilm model, used to compare how surface and flow conditions influence attachment behavior.</em></p>
 
 [Full technical report (PDF)](assets/biofilm_abm_report.pdf)
 
@@ -404,9 +405,6 @@ Built a parametric agent-based model in MESA to simulate bacterial biofilm forma
 
 Built a reliability-first paper-trading automation system that observes leveraged S&P 500 ETFs at the U.S. market open, makes a deterministic leader decision, and executes one cash-only order with explicit safety checks. I framed the project as a reliability engineering exercise focused on predictable behavior under imperfect market data, API failures, and account constraints, with fail-closed logic, traceable state transitions, and audit-style logs for each exit path.
 
-<div style="width:58%; margin:14px auto; padding:24px 18px; border:1px dashed #9ca3af; border-radius:12px; text-align:center; color:#6b7280;">
-  Placeholder: add one system diagram, state machine graphic, or audit-log flow chart here.
-</div>
 
 
 ---
