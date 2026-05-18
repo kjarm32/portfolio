@@ -48,8 +48,8 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     <td style="vertical-align:top;">
       <a href="#drone-seed-dispersal-attachment-native-plant-rewilding">
         <img src="assets/dronee29Cadrender.png"
-             alt="Drone seed dispersal attachment CAD render"
-             style="width:100%; height:230px; object-fit:cover; object-position:center 45%; border-radius:12px; display:block; border:1px solid #2a3542;">
+     alt="Drone seed dispersal attachment CAD render"
+     style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#f8fafc; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#drone-seed-dispersal-attachment-native-plant-rewilding" class="card-title"><strong>Drone Seed Dispersal Attachment</strong></a><br>
@@ -125,31 +125,31 @@ Lightweight yarn tufts, roughly 7 mm long and spaced at about 12% chord, were at
 
 **Main finding: separation starts at the centerbody and progresses outward.** The outer panels remain partially attached after centerbody stall begins, which explains why the force curve rolls over gradually instead of collapsing suddenly.
 
-<table style="width:100%; border-collapse:separate; border-spacing:12px 0;">
+<table style="width:100%; border-collapse:separate; border-spacing:12px 0; table-layout:fixed;">
   <tr>
-    <td style="width:25%; vertical-align:top; text-align:center;">
+    <td style="width:25%; vertical-align:top; text-align:center; border:1px solid #d1d5db; padding:10px;">
       <img src="assets/tuft_prestall.png"
-           style="width:100%; border-radius:8px; border:1px solid #2a3542;"
+           style="width:100%; height:145px; object-fit:cover; object-position:center center; border-radius:8px; display:block;"
            alt="Pre-stall: tufts flat and aligned rearward across full planform">
-      <p style="font-size:12px; margin:6px 0 0 0;"><em>0 to 4°: attached flow. Tufts stream rearward across the planform.</em></p>
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;"><em>0 to 4°: attached flow. Tufts stream rearward across the planform.</em></p>
     </td>
-    <td style="width:25%; vertical-align:top; text-align:center;">
+    <td style="width:25%; vertical-align:top; text-align:center; border:1px solid #d1d5db; padding:10px;">
       <img src="assets/tuft_onset.png"
-           style="width:100%; border-radius:8px; border:1px solid #2a3542;"
+           style="width:100%; height:145px; object-fit:cover; object-position:center center; border-radius:8px; display:block;"
            alt="Transition: centerbody tufts curling, outer panel clean">
-      <p style="font-size:12px; margin:6px 0 0 0;"><em>6 to 10°: centerbody tufts begin curling while the outer panel remains clean.</em></p>
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;"><em>6 to 10°: centerbody tufts begin curling while the outer panel remains clean.</em></p>
     </td>
-    <td style="width:25%; vertical-align:top; text-align:center;">
+    <td style="width:25%; vertical-align:top; text-align:center; border:1px solid #d1d5db; padding:10px;">
       <img src="assets/tuft_stall.png"
-           style="width:100%; border-radius:8px; border:1px solid #2a3542;"
+           style="width:100%; height:145px; object-fit:cover; object-position:center center; border-radius:8px; display:block;"
            alt="Stall onset: centerbody separated, outer panel partially attached">
-      <p style="font-size:12px; margin:6px 0 0 0;"><em>14 to 16°: centerbody tufts become disordered. Outer-panel tufts deflect but do not fully reverse.</em></p>
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;"><em>14 to 16°: centerbody tufts become disordered. Outer-panel tufts deflect but do not fully reverse.</em></p>
     </td>
-    <td style="width:25%; vertical-align:top; text-align:center;">
+    <td style="width:25%; vertical-align:top; text-align:center; border:1px solid #d1d5db; padding:10px;">
       <img src="assets/tuft_poststall.png"
-           style="width:100%; border-radius:8px; border:1px solid #2a3542;"
+           style="width:100%; height:145px; object-fit:cover; object-position:center center; border-radius:8px; display:block;"
            alt="Post-stall: widespread centerbody separation, wingtips persist">
-      <p style="font-size:12px; margin:6px 0 0 0;"><em>18 to 20°: widespread centerbody separation. Wingtip tufts remain partially ordered.</em></p>
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;"><em>18 to 20°: widespread centerbody separation. Wingtip tufts remain partially ordered.</em></p>
     </td>
   </tr>
 </table>
@@ -180,14 +180,20 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 *Mofrad Lab collaboration*
 
 
-<p align="center">
-  <img src="assets/flynet_time_history_v2.png" width="55%"
-       alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth"
-       style="border-radius:10px; border:1px solid #2a3542; margin-right:10px;">
-  <img src="assets/c172flyhero.png" width="35%"
-       alt="Cessna 172 neural flight dynamics visual"
-       style="border-radius:10px; border:1px solid #2a3542; margin-left:10px;">
-</p>
+<table style="width:86%; margin:0 auto; border-collapse:separate; border-spacing:16px 0; table-layout:fixed;">
+  <tr>
+    <td style="width:62%; vertical-align:middle; text-align:center;">
+      <img src="assets/flynet_time_history_v2.png"
+           alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth"
+           style="width:100%; height:390px; object-fit:contain; border-radius:10px; border:1px solid #2a3542; display:block;">
+    </td>
+    <td style="width:38%; vertical-align:middle; text-align:center;">
+      <img src="assets/c172flyhero.png"
+           alt="Cessna 172 neural flight dynamics visual"
+           style="width:100%; height:240px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #2a3542; display:block;">
+    </td>
+  </tr>
+</table>
 <p align="center"><em>Left: closed-loop state histories across model variants vs JSBSim ground truth. Right: Cessna 172 flight-dynamics modeling visual.</em></p>
 
 <p align="center">
@@ -315,14 +321,20 @@ Reliable temperature sensing is critical for flight-readiness decisions. I built
 CFD: V∞ = 15 mph forward flight &nbsp;·&nbsp; Drag 3.94 N &nbsp;·&nbsp; Lift 0.926 N &nbsp;·&nbsp; Side force −0.044 N &nbsp;·&nbsp; ABS printed enclosure
 </p>
 
-<p align="center">
-  <img src="assets/dronee29Cadrender.png" width="42%"
-       alt="CAD render of drone seed dispersal attachment mounted under quadcopter"
-       style="border-radius:12px; border:1px solid #2a3542; margin-right:10px;">
-  <img src="assets/drone_flight_photo.jpg" width="42%"
-       alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
-       style="border-radius:12px; border:1px solid #2a3542; margin-left:10px;">
-</p>
+<table style="width:78%; margin:0 auto; border-collapse:separate; border-spacing:16px 0; table-layout:fixed;">
+  <tr>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/dronee29Cadrender.png"
+           alt="CAD render of drone seed dispersal attachment mounted under quadcopter"
+           style="width:100%; height:245px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; display:block;">
+    </td>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/drone_flight_photo.jpg"
+           alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
+           style="width:100%; height:245px; object-fit:cover; object-position:center center; border-radius:12px; border:1px solid #2a3542; display:block;">
+    </td>
+  </tr>
+</table>
 <p align="center"><em>Left: CAD integration of the seed-dispersal attachment. Right: indoor flight test with the attachment mounted on the quadcopter.</em></p>
 
 In a team design project, I helped design and build a seed-dispersal attachment for a quadcopter intended for native plant rewilding. The attachment uses a gravity-fed hopper and motor-driven dispersal mechanism in an ABS printed enclosure. My main contribution was the aerodynamic and mechanical integration work: CFD validation, external geometry refinement, and placement decisions to reduce drag and avoid yaw imbalance.
@@ -337,14 +349,20 @@ In a team design project, I helped design and build a seed-dispersal attachment 
 
 ### CFD Aerodynamic Validation
 
-<p align="center">
-  <img src="assets/e29DronePressure.png" width="42%"
-       alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
-       style="border-radius:8px; border:1px solid #2a3542; margin-right:10px;">
-  <img src="assets/e29dronevel.png" width="42%"
-       alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
-       style="border-radius:8px; border:1px solid #2a3542; margin-left:10px;">
-</p>
+<table style="width:76%; margin:0 auto; border-collapse:separate; border-spacing:16px 0; table-layout:fixed;">
+  <tr>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/e29DronePressure.png"
+           alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
+           style="width:100%; height:250px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
+    </td>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/e29dronevel.png"
+           alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
+           style="width:100%; height:250px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
+    </td>
+  </tr>
+</table>
 <p align="center"><em>Static pressure result, left, and velocity field result, right, from the 15 mph forward-flight CFD study.</em></p>
 
 | Result | Value | Engineering meaning |
@@ -367,11 +385,25 @@ Smaller projects included for range and technical completeness. These sit below 
 
 In a four-person team project, we designed, built, and tested a small wind turbine under manufacturability and performance constraints, and our final design ranked **#1 of 40 teams** in measured electrical power output. I focused on measurement, power characterization, blade concept research, and verification review, converting voltage and current data into comparable power results to guide iteration while also reviewing structural sanity checks on the design.
 
-<p align="center">
-  <img src="assets/windturbine_power_vs_current.png" width="22%" alt="Power vs current measurement curve" style="vertical-align:middle; border-radius:8px;">
-  <img src="assets/windturbine_test_setup.jpg" width="24%" alt="Wind turbine test setup" style="border-radius:8px; border:1px solid #2a3542; vertical-align:middle; margin:0 10px;">
-  <img src="assets/windturbine_fea_triptych.png" width="24%" alt="FEA results showing displacement, stress, and factor of safety" style="vertical-align:middle; border-radius:8px;">
-</p>
+<table style="width:78%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
+  <tr>
+    <td style="width:33%; vertical-align:middle; text-align:center;">
+      <img src="assets/windturbine_power_vs_current.png"
+           alt="Power vs current measurement curve"
+           style="width:100%; height:190px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
+    </td>
+    <td style="width:33%; vertical-align:middle; text-align:center;">
+      <img src="assets/windturbine_test_setup.jpg"
+           alt="Wind turbine test setup"
+           style="width:100%; height:190px; object-fit:cover; object-position:center 45%; border-radius:8px; border:1px solid #2a3542; display:block;">
+    </td>
+    <td style="width:33%; vertical-align:middle; text-align:center;">
+      <img src="assets/windturbine_fea_triptych.png"
+           alt="FEA results showing displacement, stress, and factor of safety"
+           style="width:100%; height:190px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
+    </td>
+  </tr>
+</table>
 <p align="center"><em>Measured power curve, wind-tunnel-style test setup, and structural FEA sanity-check results.</em></p>
 
 ### Post-Stroke Imaging Triage
@@ -393,7 +425,7 @@ Built a reproducible slice-level baseline for intracranial hemorrhage detection 
 Built a parametric agent-based model in MESA to simulate bacterial biofilm formation on catheter surfaces, including planktonic motion, probabilistic attachment, EPS secretion, nutrient-driven growth, and shear-driven detachment. I used the model to run parameter sweeps over roughness, coating strength, and shear flow, compare five candidate material surfaces under stochastic replicates, and frame the project as a low-cost pre-prototyping screen for medical-device surface design before physical testing.
 
 <p align="center">
-  <img src="assets/AlABMHeatMap_forport.png" width="58%" alt="Agent-based biofilm modeling heatmap" style="border-radius:10px; border:1px solid #2a3542;">
+  <img src="assets/ABMHeatMap_forport.png" width="58%" alt="Agent-based biofilm modeling heatmap" style="border-radius:10px; border:1px solid #2a3542;">
 </p>
 <p align="center"><em>Parameter sweep heatmap from the agent-based biofilm model, used to compare how surface and flow conditions influence attachment behavior.</em></p>
 
