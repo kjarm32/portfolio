@@ -393,22 +393,22 @@ Smaller projects included for range and technical completeness. These sit below 
 
 In a four-person team project, we designed, built, and tested a small wind turbine under manufacturability and performance constraints, and our final design ranked **#1 of 40 teams** in measured electrical power output. I focused on measurement, power characterization, blade concept research, and verification review, converting voltage and current data into comparable power results to guide iteration while also reviewing structural sanity checks on the design.
 
-<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:12px 0; table-layout:fixed;">
+<table style="width:76%; margin:0 auto; border-collapse:separate; border-spacing:12px 0; table-layout:fixed;">
   <tr>
-    <td style="width:33%; vertical-align:middle; text-align:center;">
+    <td style="width:28%; vertical-align:middle; text-align:center;">
       <img src="assets/windturbine_power_vs_current.png"
            alt="Power vs current measurement curve"
-           style="width:100%; height:190px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
+           style="width:100%; height:180px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
     </td>
-    <td style="width:33%; vertical-align:middle; text-align:center;">
+    <td style="width:30%; vertical-align:middle; text-align:center;">
       <img src="assets/windturbine_test_setup.jpg"
            alt="Wind turbine test setup"
-           style="width:100%; height:190px; object-fit:cover; object-position:center 45%; border-radius:8px; border:1px solid #2a3542; display:block;">
+           style="width:100%; height:180px; object-fit:cover; object-position:center 45%; border-radius:8px; border:1px solid #2a3542; display:block;">
     </td>
-    <td style="width:33%; vertical-align:middle; text-align:center;">
+    <td style="width:42%; vertical-align:middle; text-align:center;">
       <img src="assets/windturbine_fea_triptych.png"
            alt="FEA results showing displacement, stress, and factor of safety"
-           style="width:100%; height:190px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
+           style="width:100%; height:180px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
     </td>
   </tr>
 </table>
