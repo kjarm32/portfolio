@@ -28,7 +28,7 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     <td style="vertical-align:top;">
       <div class="dark-figure-frame">
         <a href="#flynet-neural-flight-dynamics-modeling">
-          <img src="assets/flynet_time_history_v2.png"
+          <img src="assets/c172flyhero.png"
                alt="FlyNet neural flight dynamics modeling"
                style="width:100%; height:230px; object-fit:cover; object-position:center 20%; border-radius:12px; display:block; border:1px solid #2a3542;">
         </a>
@@ -184,6 +184,7 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 **Flight Dynamics · JSBSim Simulation · PyTorch · Closed-Loop Training · Recurrent Networks**  
 *Mofrad Lab collaboration*
 
+
 <p align="center">
   <img src="assets/flynet_time_history_v2.png" width="86%" alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth">
 </p>
@@ -315,11 +316,14 @@ CFD: V∞ = 15 mph forward flight &nbsp;·&nbsp; Drag 3.94 N &nbsp;·&nbsp; Lift
 </p>
 
 <p align="center">
-  <img src="assets/dronee29Cadrender.png" width="68%"
+  <img src="assets/dronee29Cadrender.png" width="42%"
        alt="CAD render of drone seed dispersal attachment mounted under quadcopter"
-       style="border-radius:12px; border:1px solid #2a3542;">
+       style="border-radius:12px; border:1px solid #2a3542; margin-right:10px;">
+  <img src="assets/drone_flight_photo.jpg" width="42%"
+       alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
+       style="border-radius:12px; border:1px solid #2a3542; margin-left:10px;">
 </p>
-<p align="center"><em>CAD integration of the seed-dispersal attachment on a quadcopter body.</em></p>
+<p align="center"><em>Left: CAD integration of the seed-dispersal attachment. Right: indoor flight test with the attachment mounted on the quadcopter.</em></p>
 
 In a team design project, I helped design and build a seed-dispersal attachment for a quadcopter intended for native plant rewilding. The attachment uses a gravity-fed hopper and motor-driven dispersal mechanism in an ABS printed enclosure. My main contribution was the aerodynamic and mechanical integration work: CFD validation, external geometry refinement, and placement decisions to reduce drag and avoid yaw imbalance.
 
@@ -334,11 +338,14 @@ In a team design project, I helped design and build a seed-dispersal attachment 
 ### CFD Aerodynamic Validation
 
 <p align="center">
-  <img src="assets/drone_cfde29.png" width="72%"
-       alt="CFD study: pressure plot and velocity magnitude at 15 mph forward flight"
-       style="border-radius:8px; border:1px solid #2a3542;">
+  <img src="assets/e29DronePressure.png" width="42%"
+       alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
+       style="border-radius:8px; border:1px solid #2a3542; margin-right:10px;">
+  <img src="assets/e29dronevel.png" width="42%"
+       alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
+       style="border-radius:8px; border:1px solid #2a3542; margin-left:10px;">
 </p>
-<p align="center"><em>CFD at 15 mph forward flight. Left: surface pressure. Right: velocity magnitude streamlines.</em></p>
+<p align="center"><em>Static pressure result, left, and velocity field result, right, from the 15 mph forward-flight CFD study.</em></p>
 
 | Result | Value | Engineering meaning |
 |--------|-------|---------------------|
@@ -352,62 +359,42 @@ The CFD confirmed drag as the main performance concern and guided the final exte
 
 ## Additional Projects
 
+Smaller projects included for range and technical completeness. These sit below the core aerospace and aerodynamics projects so the page stays focused on the roles I am currently targeting.
 
 ### Wind Turbine Design-Build-Test
 
 **Rapid Prototyping · Wind-Tunnel Testing · Power Characterization · Structural Review**
 
-Ranked **#1 of 40 teams** in measured electrical power output during the final course test. In a four-person team, we designed, built, and tested a small wind turbine under manufacturability and performance constraints. I focused on measurement, power characterization, blade concept research, and verification review.
+In a four-person team project, we designed, built, and tested a small wind turbine under manufacturability and performance constraints, and our final design ranked **#1 of 40 teams** in measured electrical power output. I focused on measurement, power characterization, blade concept research, and verification review, converting voltage and current data into comparable power results to guide iteration while also reviewing structural sanity checks on the design.
 
 <p align="center">
-  <img src="assets/windturbine_power_vs_current.png" width="54%" alt="Power vs current measurement curve">
-  <img src="assets/windturbine_test_setup.jpg" width="36%" alt="Wind turbine test setup" style="border-radius:8px; border:1px solid #2a3542;">
+  <img src="assets/windturbine_power_vs_current.png" width="26%" alt="Power vs current measurement curve" style="vertical-align:middle;">
+  <img src="assets/windturbine_test_setup.jpg" width="26%" alt="Wind turbine test setup" style="border-radius:8px; border:1px solid #2a3542; vertical-align:middle; margin:0 10px;">
+  <img src="assets/windturbine_fea_triptych.png" width="30%" alt="FEA results showing displacement, stress, and factor of safety" style="vertical-align:middle;">
 </p>
-<p align="center"><em>Measured electrical output and wind-tunnel-style test setup used for voltage/current characterization.</em></p>
-
-**My contributions**
-
-- Captured and hand-logged most voltage/current data during test runs.
-- Converted V-I data into power results to compare design iterations.
-- Researched blade and airfoil concepts to support group design selection.
-- Reviewed a teammate's linear-static FEA assumptions for stiffness and strength sanity checks.
+<p align="center"><em>Measured power curve, wind-tunnel-style test setup, and structural FEA sanity-check results.</em></p>
 
 ### Post-Stroke Imaging Triage
 
 **Medical Imaging · Applied Deep Learning · CT Preprocessing · Interpretability**  
 *Mofrad Lab collaboration*
 
+Built a reproducible slice-level baseline for intracranial hemorrhage detection on non-contrast head CT and ran a controlled initialization study comparing scratch training, ImageNet pretraining, and CT-native JEPA-style self-supervised pretraining. I built the full preprocessing and training pipeline, implemented class-imbalance handling and stable fine-tuning, and found that the best JEPA-10k model reached validation ROC-AUC of about 0.846 with sensitivity of about 0.80 and specificity of about 0.706 at a 0.5 threshold.
+
 <p align="center">
-  <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="64%" alt="Grad-CAM visualization grid for head CT hemorrhage model" style="border-radius:8px; border:1px solid #2a3542;">
+  <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="52%" alt="Grad-CAM visualization grid for head CT hemorrhage model" style="border-radius:8px; border:1px solid #2a3542;">
 </p>
-<p align="center"><em>Grad-CAM visualizations used to sanity-check slice-level intracranial hemorrhage detection.</em></p>
-
-Built a reproducible slice-level baseline for intracranial hemorrhage detection on non-contrast head CT and ran a controlled initialization study comparing scratch training, ImageNet pretraining, and CT-native JEPA-style self-supervised pretraining.
-
-**Highlights**
-
-- Built the full preprocessing and training pipeline: DICOM ingestion, HU conversion, brain windowing, normalization, augmentation, and stratified splits.
-- Trained matched ResNet-18 models with class-imbalance handling and early stopping.
-- Ran JEPA pretraining scale comparisons using 10k, 25k, 50k, and 100k unlabeled CT slices.
-- Best result: JEPA-10k reached validation ROC-AUC ≈ 0.846 with sensitivity ≈ 0.80 and specificity ≈ 0.706 at threshold 0.5.
 
 ### Agent-Based Biofilm Modeling
 
 **Python · MESA · Agent-Based Simulation · Parametric Design Screening**  
 *Co-developed with a senior mechanical engineering student*
 
-<div style="width:78%; margin:14px auto; padding:34px 22px; border:1px dashed #9ca3af; border-radius:12px; text-align:center; color:#6b7280;">
+Built a parametric agent-based model in MESA to simulate bacterial biofilm formation on catheter surfaces, including planktonic motion, probabilistic attachment, EPS secretion, nutrient-driven growth, and shear-driven detachment. I used the model to run parameter sweeps over roughness, coating strength, and shear flow, compare five candidate material surfaces under stochastic replicates, and frame the project as a low-cost pre-prototyping screen for medical-device surface design before physical testing.
+
+<div style="width:58%; margin:14px auto; padding:24px 18px; border:1px dashed #9ca3af; border-radius:12px; text-align:center; color:#6b7280;">
   Placeholder: add one clean simulation image, parameter sweep heatmap, or material comparison plot here.
 </div>
-
-Built a parametric agent-based model in MESA to simulate bacterial biofilm formation on catheter surfaces. Individual bacterial agents undergo planktonic motion, probabilistic surface attachment, EPS secretion, nutrient-driven growth, and shear-driven detachment on a surface grid. The model was designed as a low-cost pre-prototyping screen for medical-device surface design.
-
-**Highlights**
-
-- Ran parameter sweeps over roughness, coating strength, and shear flow.
-- Compared five candidate material surfaces under stochastic replicates.
-- Found shear flow to be the strongest single protective factor in the model.
-- Identified antimicrobial coating strength as a useful design lever, pending experimental calibration.
 
 [Full technical report (PDF)](assets/biofilm_abm_report.pdf)
 
@@ -415,18 +402,12 @@ Built a parametric agent-based model in MESA to simulate bacterial biofilm forma
 
 **Systems Engineering · Deterministic State Machine · Safety Checks · Audit Logs**
 
-<div style="width:78%; margin:14px auto; padding:34px 22px; border:1px dashed #9ca3af; border-radius:12px; text-align:center; color:#6b7280;">
+Built a reliability-first paper-trading automation system that observes leveraged S&P 500 ETFs at the U.S. market open, makes a deterministic leader decision, and executes one cash-only order with explicit safety checks. I framed the project as a reliability engineering exercise focused on predictable behavior under imperfect market data, API failures, and account constraints, with fail-closed logic, traceable state transitions, and audit-style logs for each exit path.
+
+<div style="width:58%; margin:14px auto; padding:24px 18px; border:1px dashed #9ca3af; border-radius:12px; text-align:center; color:#6b7280;">
   Placeholder: add one system diagram, state machine graphic, or audit-log flow chart here.
 </div>
 
-Built a reliability-first paper-trading automation system that observes leveraged S&P 500 ETFs at the U.S. market open, makes a deterministic leader decision, and executes one cash-only order with explicit safety checks. I framed the project as a reliability engineering exercise: predictable behavior under imperfect market data, API failures, and account constraints.
-
-**Highlights**
-
-- Implemented a deterministic state machine with fixed observation windows and explicit tie-break logic.
-- Added fail-closed checks for market status, API availability, fill confirmation, and account constraints.
-- Built timestamped audit logs for each state transition and exit path.
-- Included cleanup logic to flatten leftover positions before a new run.
 
 ---
 
