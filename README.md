@@ -309,7 +309,7 @@ In a team project, designed and built a seed-dispersal attachment for a quadcopt
 ### CFD — Aerodynamic Validation at 15 mph Forward Flight
 
 <p align="center">
-  <img src="assets/drone_cfd.png" width="88%"
+  <img src="assets/drone_cfde29.png" width="88%"
        alt="CFD study: pressure plot and velocity magnitude at 15 mph forward flight"
        style="border-radius:8px; border:1px solid #2a3542;">
 </p>
@@ -378,7 +378,7 @@ Aerospace Systems + Instrumentation • Sensor calibration • Validation • Fl
   <img src="assets/hycube_mission_graphic.webp" width="46%" alt="HyCUBE mission phases">
 </p>
 
-<!--
+
   BALLOON PREFLIGHT — when assets/hycube_balloon_preflight.jpeg is ready:
   Delete the active 2-up block below and uncomment this one instead.
 
@@ -391,7 +391,7 @@ Aerospace Systems + Instrumentation • Sensor calibration • Validation • Fl
        style="border-radius:10px; border:1px solid #2a3542;">
 </p>
 <p align="center"><em>Left: payload integration before balloon release. Right: soldering thermocouple electronics during bench assembly.</em></p>
--->
+
 
 <p align="center">
   <img src="assets/hycube_soldering.jpeg" width="46%"
