@@ -43,7 +43,7 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
   <tr>
     <td style="vertical-align:top;">
       <a href="#drone-seed-dispersal-attachment-native-plant-rewilding">
-        <img src="assets/drone_hero.jpg"
+        <img src="assets/drone_hero.png"
              alt="Drone seed dispersal attachment for native plant rewilding"
              style="width:100%; height:230px; object-fit:cover; object-position:center 40%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
@@ -283,7 +283,7 @@ CFD: V∞ = 15 mph forward flight &nbsp;·&nbsp; Drag 3.94 N &nbsp;·&nbsp; Lift
 </p>
 
 <p align="center">
-  <img src="assets/drone_hero.jpg" width="60%"
+  <img src="assets/drone_hero.png" width="60%"
        alt="Drone seed dispersal attachment in flight — full assembly mounted on quadcopter"
        style="border-radius:12px; border:1px solid #2a3542;">
 </p>
