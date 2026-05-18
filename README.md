@@ -352,7 +352,6 @@ The CFD confirmed drag as the main performance concern and guided the final exte
 
 ## Additional Projects
 
-Smaller projects included for range and technical completeness. These sit below the core aerospace and aerodynamics projects so the page stays focused on the roles I am currently targeting.
 
 ### Wind Turbine Design-Build-Test
 
