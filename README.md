@@ -129,25 +129,25 @@ Lightweight yarn tufts (~7 mm, ~12% chord spacing) attached to the upper surface
 <table style="width:100%; border-collapse:separate; border-spacing:12px 0;">
   <tr>
     <td style="width:25%; vertical-align:top; text-align:center;">
-      <img src="assets/tuft_prestall.jpg"
+      <img src="assets/tuft_prestall.png"
            style="width:100%; border-radius:8px; border:1px solid #2a3542;"
            alt="Pre-stall: tufts flat and aligned rearward across full planform">
       <p style="font-size:12px; margin:6px 0 0 0;"><em>~0–4°: Fully attached. All tufts streaming rearward uniformly across span.</em></p>
     </td>
     <td style="width:25%; vertical-align:top; text-align:center;">
-      <img src="assets/tuft_onset.jpg"
+      <img src="assets/tuft_onset.png"
            style="width:100%; border-radius:8px; border:1px solid #2a3542;"
            alt="Transition: centerbody tufts curling, outer panel clean">
       <p style="font-size:12px; margin:6px 0 0 0;"><em>~6–10°: Centerbody tufts begin curling near leading-edge junction. Outer panel still clean — earliest separation signal.</em></p>
     </td>
     <td style="width:25%; vertical-align:top; text-align:center;">
-      <img src="assets/tuft_stall.jpg"
+      <img src="assets/tuft_stall.png"
            style="width:100%; border-radius:8px; border:1px solid #2a3542;"
            alt="Stall onset: centerbody separated, outer panel partially attached">
       <p style="font-size:12px; margin:6px 0 0 0;"><em>~14–16°: Centerbody tufts disordered and lifting. Outer-panel tufts deflected but not reversed. Matches both force-balance indicators.</em></p>
     </td>
     <td style="width:25%; vertical-align:top; text-align:center;">
-      <img src="assets/tuft_poststall.jpg"
+      <img src="assets/tuft_poststall.png"
            style="width:100%; border-radius:8px; border:1px solid #2a3542;"
            alt="Post-stall: widespread centerbody separation, wingtips persist">
       <p style="font-size:12px; margin:6px 0 0 0;"><em>~18–20°: Widespread centerbody disruption, some tufts reversed. Wingtip tufts partially ordered. Explains soft 1% NF drop.</em></p>
