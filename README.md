@@ -43,7 +43,7 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
   <tr>
     <td style="vertical-align:top;">
       <a href="#drone-seed-dispersal-attachment-native-plant-rewilding">
-        <img src="assets/drone_hero.png"
+        <img src="assets/dronee29Cadrender.png"
              alt="Drone seed dispersal attachment for native plant rewilding"
              style="width:100%; height:230px; object-fit:cover; object-position:center 40%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
