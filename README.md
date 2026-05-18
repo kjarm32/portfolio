@@ -78,8 +78,12 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
 
 **CAD Design · SolidWorks CFD · 3D-Printed Model · Wind Tunnel Force-Balance Testing · Tuft Flow Visualization**
 
-<p style="font-family: monospace; background: #f4f4f4; padding: 8px 12px; font-size: 13px; border-radius: 3px;">
-AoA sweep: −2° to +20° &nbsp;·&nbsp; V∞ ≈ 40 mph &nbsp;·&nbsp; Re ≈ 5.6 × 10⁴ &nbsp;·&nbsp; EWT 3-component balance &nbsp;·&nbsp; 5.0% blockage
+<p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
+  <strong>AoA sweep:</strong> −2° to +20° &nbsp;·&nbsp;
+  <strong>V∞:</strong> ≈ 40 mph &nbsp;·&nbsp;
+  <strong>Re:</strong> ≈ 5.6 × 10⁴ &nbsp;·&nbsp;
+  <strong>Testing:</strong> EWT 3-component balance &nbsp;·&nbsp;
+  <strong>Blockage:</strong> 5.0%
 </p>
 
 Blended-wing-body aircraft generate lift across more of the airframe instead of concentrating lift in a conventional wing. That creates potential efficiency benefits, but it also makes stall behavior more complex. I designed a custom BWB geometry in SOLIDWORKS, characterized the pre-stall regime with CFD, fabricated a 1:1 FDM model, and ran a wind tunnel stall campaign with simultaneous force-balance and tuft flow visualization.
@@ -180,17 +184,17 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 *Mofrad Lab collaboration*
 
 
-<table style="width:86%; margin:0 auto; border-collapse:separate; border-spacing:16px 0; table-layout:fixed;">
+<table style="width:82%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
   <tr>
-    <td style="width:62%; vertical-align:middle; text-align:center;">
+    <td style="width:58%; vertical-align:middle; text-align:center;">
       <img src="assets/flynet_time_history_v2.png"
            alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth"
-           style="width:100%; height:390px; object-fit:contain; border-radius:10px; border:1px solid #2a3542; display:block;">
+           style="width:100%; height:340px; object-fit:contain; border-radius:10px; border:1px solid #2a3542; display:block;">
     </td>
-    <td style="width:38%; vertical-align:middle; text-align:center;">
+    <td style="width:42%; vertical-align:middle; text-align:center;">
       <img src="assets/c172flyhero.png"
            alt="Cessna 172 neural flight dynamics visual"
-           style="width:100%; height:240px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #2a3542; display:block;">
+           style="width:100%; height:220px; object-fit:cover; object-position:center center; background:#ffffff; border-radius:10px; border:1px solid #2a3542; display:block;">
     </td>
   </tr>
 </table>
@@ -317,21 +321,25 @@ Reliable temperature sensing is critical for flight-readiness decisions. I built
 
 **CAD Design · DfAM · CFD Aerodynamic Validation · Mechanical Integration · Flight Test**
 
-<p style="font-family: monospace; background: #f4f4f4; padding: 8px 12px; font-size: 13px; border-radius: 3px;">
-CFD: V∞ = 15 mph forward flight &nbsp;·&nbsp; Drag 3.94 N &nbsp;·&nbsp; Lift 0.926 N &nbsp;·&nbsp; Side force −0.044 N &nbsp;·&nbsp; ABS printed enclosure
+<p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
+  <strong>CFD condition:</strong> V∞ = 15 mph forward flight &nbsp;·&nbsp;
+  <strong>Drag:</strong> 3.94 N &nbsp;·&nbsp;
+  <strong>Lift:</strong> 0.926 N &nbsp;·&nbsp;
+  <strong>Side force:</strong> −0.044 N &nbsp;·&nbsp;
+  <strong>Build:</strong> ABS printed enclosure
 </p>
 
-<table style="width:78%; margin:0 auto; border-collapse:separate; border-spacing:16px 0; table-layout:fixed;">
+<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
   <tr>
     <td style="width:50%; vertical-align:middle; text-align:center;">
       <img src="assets/dronee29Cadrender.png"
            alt="CAD render of drone seed dispersal attachment mounted under quadcopter"
-           style="width:100%; height:245px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; display:block;">
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; display:block;">
     </td>
     <td style="width:50%; vertical-align:middle; text-align:center;">
       <img src="assets/drone_flight_photo.jpg"
            alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
-           style="width:100%; height:245px; object-fit:cover; object-position:center center; border-radius:12px; border:1px solid #2a3542; display:block;">
+           style="width:100%; height:220px; object-fit:cover; object-position:center center; border-radius:12px; border:1px solid #2a3542; display:block;">
     </td>
   </tr>
 </table>
@@ -349,17 +357,17 @@ In a team design project, I helped design and build a seed-dispersal attachment 
 
 ### CFD Aerodynamic Validation
 
-<table style="width:76%; margin:0 auto; border-collapse:separate; border-spacing:16px 0; table-layout:fixed;">
+<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
   <tr>
     <td style="width:50%; vertical-align:middle; text-align:center;">
       <img src="assets/e29DronePressure.png"
            alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
-           style="width:100%; height:250px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
     </td>
     <td style="width:50%; vertical-align:middle; text-align:center;">
       <img src="assets/e29dronevel.png"
            alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
-           style="width:100%; height:250px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
     </td>
   </tr>
 </table>
@@ -385,7 +393,7 @@ Smaller projects included for range and technical completeness. These sit below 
 
 In a four-person team project, we designed, built, and tested a small wind turbine under manufacturability and performance constraints, and our final design ranked **#1 of 40 teams** in measured electrical power output. I focused on measurement, power characterization, blade concept research, and verification review, converting voltage and current data into comparable power results to guide iteration while also reviewing structural sanity checks on the design.
 
-<table style="width:78%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
+<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:12px 0; table-layout:fixed;">
   <tr>
     <td style="width:33%; vertical-align:middle; text-align:center;">
       <img src="assets/windturbine_power_vs_current.png"
@@ -420,7 +428,8 @@ Built a reproducible slice-level baseline for intracranial hemorrhage detection 
 ### Agent-Based Biofilm Modeling
 
 **Python · MESA · Agent-Based Simulation · Parametric Design Screening**  
-*Co-developed with a senior mechanical engineering student*
+*Co-developed with a senior mechanical engineering student*  
+[Full technical report (PDF)](assets/biofilm_abm_report.pdf)
 
 Built a parametric agent-based model in MESA to simulate bacterial biofilm formation on catheter surfaces, including planktonic motion, probabilistic attachment, EPS secretion, nutrient-driven growth, and shear-driven detachment. I used the model to run parameter sweeps over roughness, coating strength, and shear flow, compare five candidate material surfaces under stochastic replicates, and frame the project as a low-cost pre-prototyping screen for medical-device surface design before physical testing.
 
@@ -429,7 +438,6 @@ Built a parametric agent-based model in MESA to simulate bacterial biofilm forma
 </p>
 <p align="center"><em>Parameter sweep heatmap from the agent-based biofilm model, used to compare how surface and flow conditions influence attachment behavior.</em></p>
 
-[Full technical report (PDF)](assets/biofilm_abm_report.pdf)
 
 ### Reliability-First Trading Automation
 
