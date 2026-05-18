@@ -1,64 +1,15 @@
 <!--
-═══════════════════════════════════════════════════════════════════
-  ASSET CHECKLIST
-═══════════════════════════════════════════════════════════════════
-
-  RENAME BEFORE PUSHING (files exist, just need renaming):
-    HyCubeSoldering.jpeg  →  assets/hycube_soldering.jpeg
-    HyCubeTempSetup.jpeg  →  assets/hycube_calibration_rig.jpeg
-
-  ADD LATER — HYCUBE:
-    assets/hycube_balloon_preflight.jpeg
-      Photo of you kneeling next to payload outside before launch.
-      Then: uncomment the balloon+soldering 2-up block below and
-      delete the active solo 2-up block.
-    HYCUBE_VIDEO_URL
-      YouTube embed URL (https://www.youtube.com/embed/VIDEO_ID).
-      Search HYCUBE_VIDEO_URL in this file to find the iframe.
-
-  ADD LATER — BWB TUFT PHOTOS (then uncomment the grid block):
-    assets/tuft_prestall.jpg      overhead, ~0–4° AoA
-    assets/tuft_onset.jpg         overhead, ~6–10° AoA
-    assets/tuft_stall.jpg         overhead, ~14–16° AoA
-    assets/tuft_poststall.jpg     overhead, ~18–20° AoA
-
-  ADD LATER — DRONE SECTION (then uncomment full section + card + bio):
-    assets/drone_hero.jpg
-      Photos slide → crop "Full Assembly" (drone in air, yellow attachment).
-      Also used for the hero grid card.
-    assets/drone_cfd.png
-      Screenshot of "CFD Study: 15 mph" slide (pressure + velocity).
-    assets/drone_design_decisions.png
-      Screenshot of "Design Decisions" slide (CAD, section view, sketches).
-    assets/drone_drive_system.png
-      Screenshot of "Drive System" slide (section view + Markforged pulley).
-    assets/drone_gdnt.png
-      Screenshot of GD&T engineering drawing slide.
-    assets/drone_flight_photo.jpg
-      Photos slide → crop "Drone Flight" (two people, hallway, drone flying).
-    When ready, also: uncomment drone card in grid, add drone to Explore
-    list, restore drone sentence in bio (instructions inline below).
-
-  ADD LATER — ADDITIONAL:
-    assets/biofilm_abm_report.pdf
-      PDF of the SBIR-style report. Required for the download link.
-
-═══════════════════════════════════════════════════════════════════
+  STILL PENDING (everything else is live):
+  assets/hycube_balloon_preflight.jpeg — uncomment block marked BALLOON PREFLIGHT below
+  HYCUBE_VIDEO_URL — uncomment block marked PAYLOAD VIDEO below, replace placeholder URL
+  assets/biofilm_abm_report.pdf — PDF download link will 404 until added
 -->
 
 <img src="assets/4headshotasmes.png"
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
-I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in aerospace and deeptech. As a sophomore I've run a full aerodynamics design-to-test pipeline — including wind tunnel stall characterization and tuft flow visualization — on a custom blended-wing-body aircraft, built neural flight dynamics models in the Mofrad Lab, and validated thermocouple instrumentation for a hypersonic reentry payload under NASA's Space Grant program. I care about work that closes the loop between analysis and physical reality.
-
-<!--
-  When drone section is uncommented, update the bio sentence above.
-  Replace: "...built neural flight dynamics models in the Mofrad Lab, and..."
-  With:    "...built neural flight dynamics models in the Mofrad Lab,
-             designed and CFD-validated a seed-dispersal attachment for
-             rewilding drones, and..."
--->
+I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in aerospace and deeptech. As a sophomore I've run a full aerodynamics design-to-test pipeline — including wind tunnel stall characterization and tuft flow visualization — on a custom blended-wing-body aircraft, built neural flight dynamics models in the Mofrad Lab, designed and CFD-validated a seed-dispersal attachment for rewilding drones, and validated thermocouple instrumentation for a hypersonic reentry payload under NASA's Space Grant program. I care about work that closes the loop between analysis and physical reality.
 
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Experimental Aerodynamics</strong> • <strong>Mechanical Design</strong> • <strong>Applied ML</strong></p>
 
@@ -90,7 +41,6 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     </td>
   </tr>
   <tr>
-    <!-- DRONE CARD — uncomment when assets/drone_hero.jpg is in assets/
     <td style="vertical-align:top;">
       <a href="#drone-seed-dispersal-attachment-native-plant-rewilding">
         <img src="assets/drone_hero.jpg"
@@ -102,7 +52,6 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
         <span class="card-subtitle">CFD-validated aerodynamic design for native plant rewilding deployment.</span>
       </p>
     </td>
-    -->
     <td style="vertical-align:top;">
       <a href="#hycube-cubesat-thermal--instrumentation-payload">
         <img src="assets/HyCubeINAir.png"
@@ -114,19 +63,6 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
         <span class="card-subtitle">Calibration, validation, and flight operations for a hypersonic reentry CubeSat.</span>
       </p>
     </td>
-    <td style="vertical-align:top;">
-      <div class="dark-figure-frame">
-        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct">
-          <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png"
-               alt="Medical imaging ML project"
-               style="width:100%; height:230px; object-fit:contain; display:block; border-radius:12px;">
-        </a>
-      </div>
-      <p style="margin:10px 0 0 0;">
-        <a href="#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct" class="card-title"><strong>Medical Imaging ML</strong></a><br>
-        <span class="card-subtitle">Reproducible CT hemorrhage detection with initialization study and interpretability checks.</span>
-      </p>
-    </td>
   </tr>
 </table>
 
@@ -135,6 +71,7 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
 ## Explore Projects
 - [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
 - [FlyNet: Neural Flight Dynamics Modeling](#flynet-neural-flight-dynamics-modeling)
+- [Drone Seed Dispersal Attachment: Native Plant Rewilding](#drone-seed-dispersal-attachment-native-plant-rewilding)
 - [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
 - [Post-Stroke Imaging Triage: Detecting Intracranial Bleeding on Head CT](#post-stroke-imaging-triage-detecting-intracranial-bleeding-on-head-ct)
 - [Additional Projects](#additional-projects)
@@ -189,12 +126,6 @@ Lightweight yarn tufts (~7 mm, ~12% chord spacing) attached to the upper surface
 
 **Key result: separation initiates at the centerbody and progresses outboard.** The outer panels remain partially attached well past centerbody stall onset, explaining the gradual force-balance stall character — the BWB sheds lift progressively over a 6° AoA range rather than collapsing suddenly across the full span. Tuft perturbation at the centerbody is visible before the force balance detects slope loss, making tufts a leading indicator of the stall sequence.
 
-Four-frame separation sequence: pre-stall (0–4°, all tufts flat and aligned) → transition onset (6–10°, centerbody tufts begin curling while outer panel remains clean) → stall onset (14–16°, centerbody tufts disordered and lifting, outer panel deflected but not reversed — matches both force-balance indicators) → post-stall (18–20°, widespread centerbody disruption, wingtip tufts partially ordered).
-
-<!--
-  TUFT PHOTO GRID — uncomment when all four images are in assets/
-  Add: tuft_prestall.jpg, tuft_onset.jpg, tuft_stall.jpg, tuft_poststall.jpg
-
 <table style="width:100%; border-collapse:separate; border-spacing:12px 0;">
   <tr>
     <td style="width:25%; vertical-align:top; text-align:center;">
@@ -223,9 +154,6 @@ Four-frame separation sequence: pre-stall (0–4°, all tufts flat and aligned) 
     </td>
   </tr>
 </table>
--->
-
-*Full tuft photo sequence available in the [executive summary](assets/BWB_Project_Showcase_Tufts%20(4).html).*
 
 ---
 
@@ -344,11 +272,6 @@ Replicated the FlyNet architecture (Stachiw et al., 2022), a physics-based neura
 
 The closed-loop training objective is the primary driver of integration stability — not model architecture. The w channel now beats the paper baseline (1.45 vs 1.77 fps), providing additional validation of the closed-loop refinement approach on fixed-wing JSBSim data. The GRU's hidden state helps some channels under closed-loop refinement but introduces a longitudinal instability (u-channel divergence) absent in the feed-forward model, pointing to a fundamental difference in how recurrent rollout compounds errors through the EOM integrator.
 
-<!--
-  DRONE SECTION — uncomment when all six assets are in assets/
-  Also: uncomment drone card in grid above, add drone to Explore list,
-  restore drone sentence in bio (instructions at top of file).
-
 ---
 
 ## Drone Seed Dispersal Attachment: Native Plant Rewilding
@@ -443,8 +366,6 @@ The CFD confirmed drag as the primary flight-performance concern and informed th
 - Reviewed DfAM print orientation decisions to support surface quality on aerodynamic faces
 - Contributed to design reviews for drive system integration and mounting geometry
 
--->
-
 ---
 
 ## HyCUBE: CubeSat Thermal & Instrumentation Payload
@@ -458,8 +379,8 @@ Aerospace Systems + Instrumentation • Sensor calibration • Validation • Fl
 </p>
 
 <!--
-  BALLOON PREFLIGHT 2-UP — uncomment when assets/hycube_balloon_preflight.jpeg is added.
-  When you add it, DELETE the active 2-up block immediately below and use this one instead.
+  BALLOON PREFLIGHT — when assets/hycube_balloon_preflight.jpeg is ready:
+  Delete the active 2-up block below and uncomment this one instead.
 
 <p align="center">
   <img src="assets/hycube_balloon_preflight.jpeg" width="46%"
