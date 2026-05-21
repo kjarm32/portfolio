@@ -1,3 +1,14 @@
+<style>
+@media (max-width: 680px) {
+  table  { display:block !important; width:100% !important; }
+  tr     { display:block !important; width:100% !important; }
+  td     { display:block !important; width:100% !important; box-sizing:border-box !important; padding:6px 0 !important; }
+  td img { height:auto !important; max-width:100% !important; }
+  img[width] { max-width:100% !important; }
+  iframe { width:100% !important; height:240px !important; }
+}
+</style>
+
 <img src="assets/4headshotasmes.png"
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
@@ -184,21 +195,12 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 *Mofrad Lab collaboration*
 
 
-<table style="width:82%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:58%; vertical-align:middle; text-align:center;">
-      <img src="assets/flynet_time_history_v2.png"
-           alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth"
-           style="width:100%; height:340px; object-fit:contain; border-radius:10px; border:1px solid #2a3542; display:block;">
-    </td>
-    <td style="width:42%; vertical-align:middle; text-align:center;">
-      <img src="assets/c172flyhero.png"
-           alt="Cessna 172 neural flight dynamics visual"
-           style="width:100%; height:220px; object-fit:cover; object-position:center center; background:#ffffff; border-radius:10px; border:1px solid #2a3542; display:block;">
-    </td>
-  </tr>
-</table>
-<p align="center"><em>Left: closed-loop state histories across model variants vs JSBSim ground truth. Right: Cessna 172 flight-dynamics modeling visual.</em></p>
+<p align="center">
+  <img src="assets/flynet_time_history_v2.png" width="92%"
+       alt="FlyNet closed-loop state time history — all models vs JSBSim ground truth"
+       style="border-radius:10px; border:1px solid #2a3542;">
+</p>
+<p align="center"><em>Closed-loop state time history across all model variants vs JSBSim ground truth. Shaded regions show elevator deflection phases of the 2-3-1-1 maneuver.</em></p>
 
 <p align="center">
   <iframe width="72%" height="420"
