@@ -187,8 +187,8 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 - Mesh independence at α = 4°: medium-to-fine ΔC_L ≈ 1.25%, ΔC_D ≈ 0.37%.
 
 ### Resources
-- [Executive summary (HTML)](assets/BWB_Project_Showcase_Tufts%20%284%29.html)
-- [Full project report (PDF)](assets/BWB_Executive_Summary_.pdf)
+- [Project Executive summary (HTML)](assets/BWB_Project_Showcase_Tufts%20%284%29.html)
+- [CFD Summary (PDF)](assets/BWB_CFD_Summary_.pdf)
 
 ---
 
