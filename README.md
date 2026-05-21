@@ -1,9 +1,12 @@
 <style>
 @media (max-width: 680px) {
-  table  { display:block !important; width:100% !important; }
-  tr     { display:block !important; width:100% !important; }
-  td     { display:block !important; width:100% !important; box-sizing:border-box !important; padding:6px 0 !important; }
-  td img { height:auto !important; max-width:100% !important; }
+  /* Image layout tables — stack vertically */
+  table:not(:has(thead)) { display:block !important; width:100% !important; }
+  table:not(:has(thead)) tr { display:block !important; }
+  table:not(:has(thead)) td { display:block !important; width:100% !important; box-sizing:border-box !important; padding:6px 0 !important; }
+  table:not(:has(thead)) td img { height:auto !important; max-width:100% !important; }
+  /* Data tables — scroll horizontally instead */
+  table:has(thead) { display:block !important; overflow-x:auto !important; -webkit-overflow-scrolling:touch !important; }
   img[width] { max-width:100% !important; }
   iframe { width:100% !important; height:240px !important; }
 }
