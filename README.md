@@ -59,9 +59,9 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     </td>
     <td style="vertical-align:top;">
       <a href="#wind-turbine-design-build-test">
-        <img src="assets/windturbine_test_setup.jpg"
-             alt="Wind turbine built and tested in wind tunnel"
-             style="width:100%; height:230px; object-fit:cover; object-position:center 30%; border-radius:12px; display:block; border:1px solid #2a3542;">
+        <img src="assets/windturbine_fea_triptych.png"
+             alt="Wind turbine structural FEA results"
+             style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#wind-turbine-design-build-test" class="card-title"><strong>Wind Turbine Design-Build-Test</strong></a><br>
