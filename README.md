@@ -16,7 +16,7 @@
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
-I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in hardware and robotics. As a sophomore, I have run a full design-to-test pipeline on a custom aircraft, built physics-informed neural dynamics models in the Mofrad Lab, designed and GD&T-toleranced a flight-tested drone attachment, and validated sensor instrumentation for a flight-critical payload through NASA Space Grant. I care about work that closes the loop between CAD, simulation, fabrication, and physical test — hardware that actually gets built and validated.
+I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in hardware and robotics. As a sophomore, I have run a full design-to-test pipeline on a custom aircraft, built physics-informed neural dynamics models in the Mofrad Lab, designed and GD&T-toleranced a flight-tested drone attachment, and validated sensor instrumentation for a flight-critical payload through NASA Space Grant. I care about work that closes the loop between CAD, simulation, fabrication, and physical test: hardware that actually gets built and validated.
 
 <p align="center"><strong>Mechanical Design</strong> • <strong>Hardware Integration</strong> • <strong>GD&T and Tolerancing</strong> • <strong>Physical Validation</strong> • <strong>Applied ML for Physical Systems</strong></p>
 
@@ -35,9 +35,9 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     </td>
     <td style="vertical-align:top;">
       <a href="#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware">
-        <img src="assets/Drone_E29_GDandT.png"
-             alt="GD&T engineering drawing for drone body"
-             style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
+        <img src="assets/drone_flight_photo.jpg"
+             alt="Drone seed dispersal attachment mounted and flight-tested on quadcopter"
+             style="width:100%; height:230px; object-fit:cover; object-position:center center; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware" class="card-title"><strong>Drone Mechanical Integration</strong></a><br>
@@ -59,13 +59,13 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     </td>
     <td style="vertical-align:top;">
       <a href="#wind-turbine-design-build-test">
-        <img src="assets/windturbine_test_setup.jpg"
-             alt="Wind turbine test setup"
-             style="width:100%; height:230px; object-fit:cover; object-position:center 45%; border-radius:12px; display:block; border:1px solid #2a3542;">
+        <img src="assets/windturbine_fea_triptych.png"
+             alt="Wind turbine structural FEA results"
+             style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#wind-turbine-design-build-test" class="card-title"><strong>Wind Turbine Design-Build-Test</strong></a><br>
-        <span class="card-subtitle">Rapid prototyping, power characterization, structural FEA — ranked #1 of 40 teams in measured output.</span>
+        <span class="card-subtitle">Rapid prototyping, power characterization, structural FEA, ranked #1 of 40 teams in measured output.</span>
       </p>
     </td>
   </tr>
@@ -98,7 +98,7 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
   <strong>Blockage:</strong> 5.0%
 </p>
 
-I designed a custom blended-wing-body aircraft geometry, fabricated a 1:1 FDM model with DfAM decisions built into the surface and sting-mount geometry, and ran a full physical test campaign — simultaneous force-balance data acquisition and tuft flow visualization — on the EWT three-component balance. The project is a complete design-to-manufacture-to-test loop executed independently.
+I designed a custom blended-wing-body aircraft geometry, fabricated a 1:1 FDM model with DfAM decisions built into the surface and sting-mount geometry, and ran a full physical test campaign with simultaneous force-balance data acquisition and tuft flow visualization on the EWT three-component balance. The project is a complete design-to-manufacture-to-test loop executed independently.
 
 ### Design-to-fabrication-to-test pipeline
 
@@ -113,13 +113,13 @@ I designed a custom blended-wing-body aircraft geometry, fabricated a 1:1 FDM mo
 
 ### Physical Test Campaign
 
-The wind tunnel test used a three-component force balance to capture normal force, axial force, and pitching moment simultaneously. I instrumented the setup for 25 Hz multi-channel data acquisition with wind-off tare correction and real-time pressure correction applied at each angle-of-attack point. I extended the sweep 12° beyond the CFD-characterized range to map the full post-stall regime — the region CFD cannot reliably predict is where physical testing adds the most value.
+The wind tunnel test used a three-component force balance to capture normal force, axial force, and pitching moment simultaneously. I instrumented the setup for 25 Hz multi-channel data acquisition with wind-off tare correction and real-time pressure correction applied at each angle-of-attack point. I extended the sweep 12° beyond the CFD-characterized range to map the full post-stall regime, the region where CFD cannot reliably predict behavior and physical testing adds the most value.
 
 **Key hardware and test results**
 
 - Force-balance data and CFD predictions agreed well through the 8° pre-stall range, validating the simulation setup against physical hardware.
 - Gradual stall onset confirmed at **14 to 16°** by normal-force slope collapse and pitching-moment sign reversal.
-- **Peak normal force: 3.36 N at 18°**, dropping only 1% at 20° — indicating progressive spanwise separation rather than a sudden full-span stall, a result that only becomes visible in physical test.
+- **Peak normal force: 3.36 N at 18°**, dropping only 1% at 20°, indicating progressive spanwise separation rather than a sudden full-span stall, a result that only becomes visible in physical test.
 - Pitching moment peaked before normal force (16° vs 18°), identifying an aerodynamic-center shift that has real consequences for control system design.
 - Zero-lift angle: approximately −1.5° to −2°, consistent with the cambered geometry.
 
@@ -219,7 +219,7 @@ Steady-state SolidWorks Flow Simulation swept −2° to +8° AoA at V∞ = 40 mp
 </table>
 <p align="center"><em>Left: SolidWorks CAD render of the attachment. Right: closed-circuit flight test with the attachment mounted, loaded, and running.</em></p>
 
-In a team project I owned the mechanical integration, tolerancing, and aerodynamic validation of a motor-driven, gravity-fed mechanism that mounts under a quadcopter. The enclosure was designed for FDM production from the start — DfAM constraints, GD&T callouts, and wall thickness decisions were all made before the first print. My contribution was making the attachment work as hardware, not just as a CAD model.
+In a team project I owned the mechanical integration, tolerancing, and aerodynamic validation of a motor-driven, gravity-fed mechanism that mounts under a quadcopter. The enclosure was designed for FDM production from the start: DfAM constraints, GD&T callouts, and wall thickness decisions were all made before the first print. My contribution was making the attachment work as hardware, not just as a CAD model.
 
 **What I owned**
 
@@ -233,7 +233,7 @@ In a team project I owned the mechanical integration, tolerancing, and aerodynam
 
 <p align="center">
   <img src="assets/Drone_E29_GDandT.png" width="62%"
-       alt="GD&T engineering drawing for the E29 drone body — third angle projection, ABS, 1:3 scale"
+       alt="GD&T engineering drawing for the E29 drone body, third angle projection, ABS, 1:3 scale"
        style="border-radius:8px; border:1px solid #d1d5db;">
 </p>
 <p align="center"><em>E29 drone body GD&T drawing. Perpendicularity (0.400) to datum A, angularity (0.400) to datum B, parallelism (0.500 and 0.200) to datum C, and true-position (Ø0.400–Ø0.500) on the motor bore and mounting features.</em></p>
@@ -287,7 +287,7 @@ CFD was used as a design gate before fabricating the final part, not as a post-h
 </p>
 <p align="center"><em>Left: payload integration before balloon release. Right: thermocouple calibration rig with a controlled heat source and measurement circuit.</em></p>
 
-Instrumentation that isn't calibrated isn't useful. I built the thermocouple calibration and validation pipeline for HyCUBE — converting raw sensor logs into calibration fits, error boundary plots, and review-ready validation figures. The output of this work was a documented flight-readiness determination for the thermal sensing subsystem.
+Instrumentation that isn't calibrated isn't useful. I built the thermocouple calibration and validation pipeline for HyCUBE, converting raw sensor logs into calibration fits, error boundary plots, and review-ready validation figures. The output of this work was a documented flight-readiness determination for the thermal sensing subsystem.
 
 **What I built and validated**
 
@@ -318,7 +318,7 @@ Instrumentation that isn't calibrated isn't useful. I built the thermocouple cal
   <strong>Constraints:</strong> Hard manufacturability and performance limits
 </p>
 
-In a four-person team project, we designed, fabricated, and tested a small wind turbine under hard manufacturability and performance constraints. Our design ranked **#1 of 40 teams** in measured electrical power output from wind-tunnel testing. The project required integrating blade aerodynamics, structural integrity, and measurement methodology into a single hardware deliverable — every decision had to survive the test.
+In a four-person team project, we designed, fabricated, and tested a small wind turbine under hard manufacturability and performance constraints. Our design ranked **#1 of 40 teams** in measured electrical power output from wind-tunnel testing. The project required integrating blade aerodynamics, structural integrity, and measurement methodology into a single hardware deliverable where every decision had to survive the test.
 
 **What I owned**
 
@@ -357,7 +357,7 @@ In a four-person team project, we designed, fabricated, and tested a small wind 
 
 <p align="center">
   <img src="assets/flynet_time_history_v2.png" width="92%"
-       alt="FlyNet closed-loop state time history — all models vs JSBSim ground truth"
+       alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth"
        style="border-radius:10px; border:1px solid #2a3542;">
 </p>
 <p align="center"><em>Closed-loop state time history across all model variants versus ground truth. Shaded regions show control input phases of the 2-3-1-1 maneuver.</em></p>
@@ -371,7 +371,7 @@ In a four-person team project, we designed, fabricated, and tested a small wind 
   </iframe>
 </p>
 
-Neural networks that model physical systems are only useful if they stay stable in closed-loop rollout — the same challenge that matters for any robot running a learned dynamics or control model on real hardware. I replicated FlyNet (Stachiw et al., 2022), a physics-based neural network for rigid-body dynamics modeling, then extended the comparison to a parameter-matched recurrent architecture to isolate what actually drives closed-loop stability.
+Neural networks that model physical systems are only useful if they stay stable in closed-loop rollout, the same challenge that matters for any robot running a learned dynamics or control model on real hardware. I replicated FlyNet (Stachiw et al., 2022), a physics-based neural network for rigid-body dynamics modeling, then extended the comparison to a parameter-matched recurrent architecture to isolate what actually drives closed-loop stability.
 
 **Core question:** Is rollout stability driven by the training objective or by the model architecture?
 
@@ -380,7 +380,7 @@ Neural networks that model physical systems are only useful if they stay stable 
 - Built an end-to-end simulation data pipeline generating 56 trajectories across 4 speed conditions and 7 maneuver types.
 - Implemented a two-stage training pipeline: feed-forward pretraining followed by closed-loop output-error refinement with Adams-Bashforth equations-of-motion integration.
 - Closed-loop refinement reduced translational drift substantially, especially in lateral velocity channels. The w-channel RMSE reached **1.45 fps**, beating the paper baseline of 1.77 fps.
-- The recurrent (GRU) model, trained without closed-loop refinement, diverged in rollout — proving the training objective governs stability, not hidden-state architecture alone.
+- The recurrent (GRU) model, trained without closed-loop refinement, diverged in rollout, proving the training objective governs stability, not hidden-state architecture alone.
 - GRU closed-loop training stabilized some channels but introduced longitudinal divergence, revealing an architecture-dependent instability that would not appear in open-loop evaluation.
 
 **Pipeline**
