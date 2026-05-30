@@ -58,14 +58,14 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
       </p>
     </td>
     <td style="vertical-align:top;">
-      <a href="#flynet-physics-informed-neural-dynamics-modeling">
-        <img src="assets/flynet_time_history_v2.png"
-             alt="FlyNet closed-loop state time history"
-             style="width:100%; height:230px; object-fit:cover; object-position:center 20%; border-radius:12px; display:block; border:1px solid #2a3542;">
+      <a href="#wind-turbine-design-build-test">
+        <img src="assets/windturbine_test_setup.jpg"
+             alt="Wind turbine test setup"
+             style="width:100%; height:230px; object-fit:cover; object-position:center 45%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
-        <a href="#flynet-physics-informed-neural-dynamics-modeling" class="card-title"><strong>FlyNet: Physics-Informed Neural Dynamics</strong></a><br>
-        <span class="card-subtitle">Closed-loop neural dynamics modeling with equations-of-motion integration and PyTorch.</span>
+        <a href="#wind-turbine-design-build-test" class="card-title"><strong>Wind Turbine Design-Build-Test</strong></a><br>
+        <span class="card-subtitle">Rapid prototyping, power characterization, structural FEA — ranked #1 of 40 teams in measured output.</span>
       </p>
     </td>
   </tr>
@@ -75,11 +75,11 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
 
 ## Explore Projects
 - [Concept Aircraft: Hardware Design, Fabrication and Physical Test](#concept-aircraft-hardware-design-fabrication-and-physical-test)
-- [Drone Mechanical Integration: CAD, GDandT and Flight-Tested Hardware](#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware)
+- [Drone Mechanical Integration: CAD, GD&T and Flight-Tested Hardware](#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware)
 - [HyCUBE: Flight Instrumentation and Sensor Validation](#hycube-flight-instrumentation-and-sensor-validation)
+- [Wind Turbine: Design-Build-Test](#wind-turbine-design-build-test)
 - [FlyNet: Physics-Informed Neural Dynamics Modeling](#flynet-physics-informed-neural-dynamics-modeling)
 - [Additional Projects](#additional-projects)
-  - [Wind Turbine Design-Build-Test](#wind-turbine-design-build-test)
   - [Post-Stroke Imaging Triage](#post-stroke-imaging-triage)
   - [Agent-Based Biofilm Modeling](#agent-based-biofilm-modeling)
   - [Reliability-First Trading Automation](#reliability-first-trading-automation)
@@ -232,11 +232,11 @@ In a team project I owned the mechanical integration, tolerancing, and aerodynam
 ### GD&T Drawing Package
 
 <p align="center">
-  <img src="assets/Drone_E29_GDandT.png" width="88%"
+  <img src="assets/Drone_E29_GDandT.png" width="62%"
        alt="GD&T engineering drawing for the E29 drone body — third angle projection, ABS, 1:3 scale"
        style="border-radius:8px; border:1px solid #d1d5db;">
 </p>
-<p align="center"><em>Formal GD&T drawing for the E29 drone body. Callouts include perpendicularity (0.400) to datum A, angularity (0.400) to datum B, parallelism (0.500 and 0.200) to datum C, and true-position controls (Ø0.400–Ø0.500) on the motor bore and mounting features referenced to datums A, B, and C.</em></p>
+<p align="center"><em>E29 drone body GD&T drawing. Perpendicularity (0.400) to datum A, angularity (0.400) to datum B, parallelism (0.500 and 0.200) to datum C, and true-position (Ø0.400–Ø0.500) on the motor bore and mounting features.</em></p>
 
 ### CFD Aerodynamic Validation
 
@@ -305,6 +305,48 @@ Instrumentation that isn't calibrated isn't useful. I built the thermocouple cal
   <img src="assets/hycube_agreement_2up.png" width="70%" alt="Agreement and sensitivity plots">
 </p>
 <p align="center"><em>Bland-Altman agreement plot and sensitivity (slope) versus probe length, used to characterize instrumentation behavior before flight.</em></p>
+
+---
+
+## Wind Turbine: Design-Build-Test
+
+**Rapid Prototyping · Blade Design · Wind-Tunnel Testing · Power Characterization · Structural FEA**
+
+<p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
+  <strong>Result:</strong> #1 of 40 teams in measured electrical power output &nbsp;·&nbsp;
+  <strong>Team size:</strong> 4 &nbsp;·&nbsp;
+  <strong>Constraints:</strong> Hard manufacturability and performance limits
+</p>
+
+In a four-person team project, we designed, fabricated, and tested a small wind turbine under hard manufacturability and performance constraints. Our design ranked **#1 of 40 teams** in measured electrical power output from wind-tunnel testing. The project required integrating blade aerodynamics, structural integrity, and measurement methodology into a single hardware deliverable — every decision had to survive the test.
+
+**What I owned**
+
+- Led power characterization and measurement: designed the test protocol, acquired raw voltage and current data at each operating point, and converted it into comparable power curves that drove design iteration between builds.
+- Conducted blade concept research to identify geometry trade-offs between swept area, chord distribution, and twist angle given the fabrication constraints.
+- Ran structural FEA covering displacement, Von Mises stress, and factor of safety to validate the blade and hub geometry before committing to the final print.
+- Performed verification review of the assembled hardware against design intent before each tunnel run.
+
+<table style="width:92%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
+  <tr>
+    <td style="width:30%; vertical-align:middle; text-align:center;">
+      <img src="assets/windturbine_power_vs_current.png"
+           alt="Power vs current measurement curve"
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #d1d5db; display:block;">
+    </td>
+    <td style="width:34%; vertical-align:middle; text-align:center;">
+      <img src="assets/windturbine_test_setup.jpg"
+           alt="Wind turbine test setup in wind tunnel"
+           style="width:100%; height:220px; object-fit:cover; object-position:center 45%; border-radius:8px; border:1px solid #2a3542; display:block;">
+    </td>
+    <td style="width:36%; vertical-align:middle; text-align:center;">
+      <img src="assets/windturbine_fea_triptych.png"
+           alt="FEA results showing displacement, stress, and factor of safety"
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #d1d5db; display:block;">
+    </td>
+  </tr>
+</table>
+<p align="center"><em>Left: measured power curve used to benchmark output and drive design iteration. Center: wind-tunnel test setup. Right: structural FEA results showing displacement, Von Mises stress, and factor of safety across the blade and hub.</em></p>
 
 ---
 
@@ -396,33 +438,6 @@ Closed-loop training is the primary driver of rollout stability in neural rigid-
 ## Additional Projects
 
 Smaller projects included for range and technical depth.
-
-### Wind Turbine Design-Build-Test
-
-**Rapid Prototyping · Wind-Tunnel Testing · Power Characterization · Structural FEA**
-
-In a four-person team project, we designed, fabricated, and tested a small wind turbine under hard manufacturability and performance constraints. Our design ranked **#1 of 40 teams** in measured electrical power output from wind-tunnel testing. I owned power characterization and measurement — converting raw voltage and current data into comparable power curves to drive iteration — and conducted structural FEA review covering displacement, stress, and factor of safety.
-
-<table style="width:76%; margin:0 auto; border-collapse:separate; border-spacing:12px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:28%; vertical-align:middle; text-align:center;">
-      <img src="assets/windturbine_power_vs_current.png"
-           alt="Power vs current measurement curve"
-           style="width:100%; height:180px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
-    </td>
-    <td style="width:30%; vertical-align:middle; text-align:center;">
-      <img src="assets/windturbine_test_setup.jpg"
-           alt="Wind turbine test setup"
-           style="width:100%; height:180px; object-fit:cover; object-position:center 45%; border-radius:8px; border:1px solid #2a3542; display:block;">
-    </td>
-    <td style="width:42%; vertical-align:middle; text-align:center;">
-      <img src="assets/windturbine_fea_triptych.png"
-           alt="FEA results showing displacement, stress, and factor of safety"
-           style="width:100%; height:180px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
-    </td>
-  </tr>
-</table>
-<p align="center"><em>Measured power curve, wind-tunnel test setup, and structural FEA results showing displacement, stress, and factor of safety.</em></p>
 
 ### Post-Stroke Imaging Triage
 
