@@ -16,23 +16,12 @@
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
-I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in hardware and robotics. As a sophomore, I have run a full design-to-test pipeline on a custom aircraft, built physics-informed neural dynamics models in the Mofrad Lab, designed and CFD-validated a mechanism-integrated drone attachment, and validated sensor instrumentation for a flight-critical payload through NASA Space Grant. I care about work that closes the loop between CAD, simulation, fabrication, and physical test — hardware that actually gets built and validated.
+I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in hardware and robotics. As a sophomore, I have run a full design-to-test pipeline on a custom aircraft, built physics-informed neural dynamics models in the Mofrad Lab, designed and GD&T-toleranced a flight-tested drone attachment, and validated sensor instrumentation for a flight-critical payload through NASA Space Grant. I care about work that closes the loop between CAD, simulation, fabrication, and physical test — hardware that actually gets built and validated.
 
-<p align="center"><strong>Mechanical Design</strong> • <strong>Hardware Integration</strong> • <strong>Physical Validation</strong> • <strong>Applied ML for Physical Systems</strong></p>
+<p align="center"><strong>Mechanical Design</strong> • <strong>Hardware Integration</strong> • <strong>GD&T and Tolerancing</strong> • <strong>Physical Validation</strong> • <strong>Applied ML for Physical Systems</strong></p>
 
 <table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
   <tr>
-    <td style="vertical-align:top;">
-      <a href="#drone-mechanical-integration-cad-dfam-and-flight-tested-hardware">
-        <img src="assets/dronee29Cadrender.png"
-             alt="Drone seed dispersal attachment CAD render"
-             style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#f8fafc; border-radius:12px; display:block; border:1px solid #2a3542;">
-      </a>
-      <p style="margin:10px 0 0 0;">
-        <a href="#drone-mechanical-integration-cad-dfam-and-flight-tested-hardware" class="card-title"><strong>Drone Mechanical Integration</strong></a><br>
-        <span class="card-subtitle">CAD, DfAM, CFD-validated geometry, and flight-tested hardware integration on a live quadcopter.</span>
-      </p>
-    </td>
     <td style="vertical-align:top;">
       <a href="#concept-aircraft-hardware-design-fabrication-and-physical-test">
         <img src="assets/IMG_3685 (1).jpeg"
@@ -40,31 +29,40 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
              style="width:100%; height:230px; object-fit:cover; object-position:center 40%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
-        <a href="#concept-aircraft-hardware-design-fabrication-and-physical-test" class="card-title"><strong>Concept Aircraft: Design, Build & Test</strong></a><br>
-        <span class="card-subtitle">Full design-to-manufacture pipeline: SolidWorks CAD, FDM fabrication, force-balance and flow instrumentation.</span>
+        <a href="#concept-aircraft-hardware-design-fabrication-and-physical-test" class="card-title"><strong>Concept Aircraft: Design, Build and Test</strong></a><br>
+        <span class="card-subtitle">Full design-to-manufacture pipeline: SolidWorks CAD, FDM fabrication, force-balance testing, and tuft flow instrumentation.</span>
+      </p>
+    </td>
+    <td style="vertical-align:top;">
+      <a href="#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware">
+        <img src="assets/Drone_E29_GDandT.png"
+             alt="GD&T engineering drawing for drone body"
+             style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
+      </a>
+      <p style="margin:10px 0 0 0;">
+        <a href="#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware" class="card-title"><strong>Drone Mechanical Integration</strong></a><br>
+        <span class="card-subtitle">SolidWorks CAD, GD&T drawing package, DfAM, CFD-validated geometry, and flight-tested hardware.</span>
       </p>
     </td>
   </tr>
   <tr>
     <td style="vertical-align:top;">
       <a href="#hycube-flight-instrumentation-and-sensor-validation">
-        <img src="assets/HyCubeINAir.png"
-             alt="HyCUBE thermal instrumentation payload"
+        <img src="assets/hycube_calibration_rig.jpeg"
+             alt="Thermocouple calibration rig"
              style="width:100%; height:230px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#hycube-flight-instrumentation-and-sensor-validation" class="card-title"><strong>HyCUBE Flight Instrumentation</strong></a><br>
-        <span class="card-subtitle">Sensor calibration, hardware integration, and flight-readiness validation for a NASA-supported payload.</span>
+        <span class="card-subtitle">Sensor calibration, hardware integration, and flight-readiness validation for a NASA-supported reentry payload.</span>
       </p>
     </td>
     <td style="vertical-align:top;">
-      <div class="dark-figure-frame">
-        <a href="#flynet-physics-informed-neural-dynamics-modeling">
-          <img src="assets/c172flyhero.png"
-               alt="FlyNet neural dynamics modeling"
-               style="width:100%; height:230px; object-fit:cover; object-position:center 20%; border-radius:12px; display:block; border:1px solid #2a3542;">
-        </a>
-      </div>
+      <a href="#flynet-physics-informed-neural-dynamics-modeling">
+        <img src="assets/flynet_time_history_v2.png"
+             alt="FlyNet closed-loop state time history"
+             style="width:100%; height:230px; object-fit:cover; object-position:center 20%; border-radius:12px; display:block; border:1px solid #2a3542;">
+      </a>
       <p style="margin:10px 0 0 0;">
         <a href="#flynet-physics-informed-neural-dynamics-modeling" class="card-title"><strong>FlyNet: Physics-Informed Neural Dynamics</strong></a><br>
         <span class="card-subtitle">Closed-loop neural dynamics modeling with equations-of-motion integration and PyTorch.</span>
@@ -73,11 +71,11 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
   </tr>
 </table>
 
-<p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in mechanical design, hardware integration, sensor validation, and physics-informed machine learning.</em></p>
+<p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in mechanical design, hardware integration, GD&T tolerancing, sensor validation, and physics-informed machine learning.</em></p>
 
 ## Explore Projects
-- [Drone Mechanical Integration: CAD, DfAM and Flight-Tested Hardware](#drone-mechanical-integration-cad-dfam-and-flight-tested-hardware)
 - [Concept Aircraft: Hardware Design, Fabrication and Physical Test](#concept-aircraft-hardware-design-fabrication-and-physical-test)
+- [Drone Mechanical Integration: CAD, GDandT and Flight-Tested Hardware](#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware)
 - [HyCUBE: Flight Instrumentation and Sensor Validation](#hycube-flight-instrumentation-and-sensor-validation)
 - [FlyNet: Physics-Informed Neural Dynamics Modeling](#flynet-physics-informed-neural-dynamics-modeling)
 - [Additional Projects](#additional-projects)
@@ -85,71 +83,6 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
   - [Post-Stroke Imaging Triage](#post-stroke-imaging-triage)
   - [Agent-Based Biofilm Modeling](#agent-based-biofilm-modeling)
   - [Reliability-First Trading Automation](#reliability-first-trading-automation)
-
----
-
-## Drone Mechanical Integration: CAD, DfAM and Flight-Tested Hardware
-
-**Mechanism Design · SolidWorks CAD · DfAM · CFD Validation · Structural Integration · Closed-Circuit Flight Test**
-
-<p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
-  <strong>CFD condition:</strong> V∞ = 15 mph forward flight &nbsp;·&nbsp;
-  <strong>Drag:</strong> 3.94 N &nbsp;·&nbsp;
-  <strong>Lift:</strong> 0.926 N &nbsp;·&nbsp;
-  <strong>Side force:</strong> −0.044 N &nbsp;·&nbsp;
-  <strong>Build:</strong> ABS printed enclosure, motor-driven dispersal mechanism
-</p>
-
-<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/dronee29Cadrender.png"
-           alt="CAD render of drone seed dispersal attachment mounted under quadcopter"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; display:block;">
-    </td>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/drone_flight_photo.jpg"
-           alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
-           style="width:100%; height:220px; object-fit:cover; object-position:center center; border-radius:12px; border:1px solid #2a3542; display:block;">
-    </td>
-  </tr>
-</table>
-<p align="center"><em>Left: SolidWorks CAD integration of the attachment on the quadcopter airframe. Right: closed-circuit flight test with the attachment mounted, loaded, and running.</em></p>
-
-In a team project I owned the mechanical integration and aerodynamic validation of a motor-driven, gravity-fed mechanism that mounts under a quadcopter. The enclosure was designed for FDM production from the start: print orientation decisions, fillet geometry, and wall thickness were all chosen to minimize post-processing and hit functional tolerances on the first build. My contribution was making the attachment work as hardware, not just as a CAD model.
-
-**What I owned**
-
-- Designed the enclosure and mechanism interface in SolidWorks with DfAM constraints driving every geometry decision: print orientation for strength, filleted corners to reduce separation, wall thickness for structural integrity at the mount points.
-- Ran a forward-flight CFD study at 15 mph to characterize drag, lift, and side force before committing to the final geometry. Iterated on leading-edge fillets and corner radii to reduce separation-driven drag.
-- Confirmed near-zero side force (−0.044 N), verifying the external geometry would not introduce yaw-control authority issues on the vehicle.
-- Supported structural integration review and ran closed-circuit flight testing with the attachment mounted, loaded, and operating.
-
-### CFD Aerodynamic Validation
-
-<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/e29DronePressure.png"
-           alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
-    </td>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/e29dronevel.png"
-           alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
-    </td>
-  </tr>
-</table>
-<p align="center"><em>Static pressure distribution, left, and velocity field, right, from the 15 mph forward-flight CFD study used to validate external geometry before production.</em></p>
-
-| Result | Value | Engineering meaning |
-|--------|-------|---------------------|
-| Drag force | 3.94 N | Primary load on the vehicle; drove geometry iteration |
-| Lift force | +0.926 N | Partially offsets attachment weight; favorable for hover efficiency |
-| Side force | −0.044 N | Near-zero: symmetric geometry, no yaw authority impact |
-
-CFD was used as a design gate before fabricating the final part, not as a post-hoc analysis. The simulation confirmed which geometry changes actually reduced drag and cleared the attachment for flight test.
 
 ---
 
@@ -257,9 +190,85 @@ Steady-state SolidWorks Flow Simulation swept −2° to +8° AoA at V∞ = 40 mp
 
 ---
 
+## Drone Mechanical Integration: CAD, GDandT and Flight-Tested Hardware
+
+**Mechanism Design · SolidWorks CAD · GD&T Drawing Package · DfAM · CFD Validation · Closed-Circuit Flight Test**
+
+<p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
+  <strong>CFD condition:</strong> V∞ = 15 mph forward flight &nbsp;·&nbsp;
+  <strong>Drag:</strong> 3.94 N &nbsp;·&nbsp;
+  <strong>Lift:</strong> 0.926 N &nbsp;·&nbsp;
+  <strong>Side force:</strong> −0.044 N &nbsp;·&nbsp;
+  <strong>Material:</strong> ABS, FDM &nbsp;·&nbsp;
+  <strong>Projection:</strong> Third angle
+</p>
+
+<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
+  <tr>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/dronee29Cadrender.png"
+           alt="CAD render of drone seed dispersal attachment"
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; display:block;">
+    </td>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/drone_flight_photo.jpg"
+           alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
+           style="width:100%; height:220px; object-fit:cover; object-position:center center; border-radius:12px; border:1px solid #2a3542; display:block;">
+    </td>
+  </tr>
+</table>
+<p align="center"><em>Left: SolidWorks CAD render of the attachment. Right: closed-circuit flight test with the attachment mounted, loaded, and running.</em></p>
+
+In a team project I owned the mechanical integration, tolerancing, and aerodynamic validation of a motor-driven, gravity-fed mechanism that mounts under a quadcopter. The enclosure was designed for FDM production from the start — DfAM constraints, GD&T callouts, and wall thickness decisions were all made before the first print. My contribution was making the attachment work as hardware, not just as a CAD model.
+
+**What I owned**
+
+- Designed the enclosure and mechanism interface in SolidWorks with DfAM constraints driving every geometry decision: print orientation for strength, filleted corners to reduce separation, wall thickness for structural integrity at the mount points.
+- Produced a formal GD&T drawing package (third-angle projection, ABS, 1:3 scale) with perpendicularity, angularity, parallelism, circularity, and true-position callouts controlling the motor bore, mounting feet, and structural datum surfaces.
+- Ran a forward-flight CFD study at 15 mph to characterize drag, lift, and side force before committing to the final geometry. Iterated on leading-edge fillets and corner radii based on simulation results.
+- Confirmed near-zero side force (−0.044 N), verifying the geometry would not introduce yaw-control authority issues on the vehicle.
+- Supported structural integration review and ran closed-circuit flight testing with the attachment mounted, loaded, and operating.
+
+### GD&T Drawing Package
+
+<p align="center">
+  <img src="assets/Drone_E29_GDandT.png" width="88%"
+       alt="GD&T engineering drawing for the E29 drone body — third angle projection, ABS, 1:3 scale"
+       style="border-radius:8px; border:1px solid #d1d5db;">
+</p>
+<p align="center"><em>Formal GD&T drawing for the E29 drone body. Callouts include perpendicularity (0.400) to datum A, angularity (0.400) to datum B, parallelism (0.500 and 0.200) to datum C, and true-position controls (Ø0.400–Ø0.500) on the motor bore and mounting features referenced to datums A, B, and C.</em></p>
+
+### CFD Aerodynamic Validation
+
+<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
+  <tr>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/e29DronePressure.png"
+           alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
+    </td>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/e29dronevel.png"
+           alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
+    </td>
+  </tr>
+</table>
+<p align="center"><em>Static pressure distribution, left, and velocity field, right, from the 15 mph forward-flight CFD study used to validate external geometry before production.</em></p>
+
+| Result | Value | Engineering meaning |
+|--------|-------|---------------------|
+| Drag force | 3.94 N | Primary load on the vehicle; drove geometry iteration |
+| Lift force | +0.926 N | Partially offsets attachment weight; favorable for hover efficiency |
+| Side force | −0.044 N | Near-zero: symmetric geometry, no yaw authority impact |
+
+CFD was used as a design gate before fabricating the final part, not as a post-hoc analysis. The simulation confirmed which geometry changes actually reduced drag and cleared the attachment for flight test.
+
+---
+
 ## HyCUBE: Flight Instrumentation and Sensor Validation
 
-**Sensor Calibration · Hardware Integration · Telemetry Validation · Payload Operations**  
+**Sensor Calibration · Hardware Integration · Telemetry Validation · Payload Operations**
 *NASA Space Grant, hypersonic reentry payload*
 
 <p align="center">
@@ -301,7 +310,7 @@ Instrumentation that isn't calibrated isn't useful. I built the thermocouple cal
 
 ## FlyNet: Physics-Informed Neural Dynamics Modeling
 
-**Dynamics Modeling · PyTorch · Closed-Loop Training · Equations of Motion Integration · Recurrent Networks**  
+**Dynamics Modeling · PyTorch · Closed-Loop Training · Equations of Motion Integration · Recurrent Networks**
 *Mofrad Lab, UC Berkeley*
 
 <p align="center">
@@ -417,7 +426,7 @@ In a four-person team project, we designed, fabricated, and tested a small wind 
 
 ### Post-Stroke Imaging Triage
 
-**Medical Imaging · Applied Deep Learning · CT Preprocessing · Interpretability**  
+**Medical Imaging · Applied Deep Learning · CT Preprocessing · Interpretability**
 *Mofrad Lab collaboration*
 
 Built a reproducible slice-level baseline for intracranial hemorrhage detection on non-contrast head CT and ran a controlled initialization study comparing scratch training, ImageNet pretraining, and CT-native JEPA-style self-supervised pretraining. I built the full preprocessing and training pipeline, implemented class-imbalance handling and stable fine-tuning, and found that the best JEPA-10k model reached validation ROC-AUC of about 0.846 with sensitivity of about 0.80 and specificity of about 0.706 at a 0.5 threshold.
@@ -428,8 +437,8 @@ Built a reproducible slice-level baseline for intracranial hemorrhage detection 
 
 ### Agent-Based Biofilm Modeling
 
-**Python · MESA · Agent-Based Simulation · Parametric Design Screening**  
-*Co-developed with a senior mechanical engineering student*  
+**Python · MESA · Agent-Based Simulation · Parametric Design Screening**
+*Co-developed with a senior mechanical engineering student*
 [Full technical report (PDF)](assets/biofilm_abm_report.pdf)
 
 Built a parametric agent-based model in MESA to simulate bacterial biofilm formation on catheter surfaces, including planktonic motion, probabilistic attachment, EPS secretion, nutrient-driven growth, and shear-driven detachment. I used the model to run parameter sweeps over roughness, coating strength, and shear flow, compare five candidate material surfaces under stochastic replicates, and frame the project as a low-cost pre-prototyping screen for medical-device surface design before physical testing.
@@ -451,5 +460,5 @@ Built a paper-trading automation system designed as a reliability engineering ex
 
 I'm building toward a career in hardware and robotics. Always happy to connect with engineers, teams, and companies working on physical systems.
 
-[LinkedIn](https://www.linkedin.com/in/kevin-armstrong-ii-647125319/)  
+[LinkedIn](https://www.linkedin.com/in/kevin-armstrong-ii-647125319/)
 **Email:** kevarm2028@berkeley.edu
