@@ -35,9 +35,9 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     </td>
     <td style="vertical-align:top;">
       <a href="#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware">
-        <img src="assets/drone_flight_photo.jpg"
-             alt="Drone seed dispersal attachment mounted and flight-tested on quadcopter"
-             style="width:100%; height:230px; object-fit:cover; object-position:center center; border-radius:12px; display:block; border:1px solid #2a3542;">
+        <img src="assets/dronee29Cadrender.png"
+             alt="Drone seed dispersal attachment CAD render"
+             style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#drone-mechanical-integration-cad-gdandt-and-flight-tested-hardware" class="card-title"><strong>Drone Mechanical Integration</strong></a><br>
