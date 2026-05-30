@@ -48,9 +48,9 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
   <tr>
     <td style="vertical-align:top;">
       <a href="#hycube-flight-instrumentation-and-sensor-validation">
-        <img src="assets/hycube_calibration_rig.jpeg"
-             alt="Thermocouple calibration rig"
-             style="width:100%; height:230px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
+        <img src="assets/HyCubeINAir.png"
+             alt="HyCUBE payload in high-altitude flight"
+             style="width:100%; height:230px; object-fit:cover; object-position:center center; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#hycube-flight-instrumentation-and-sensor-validation" class="card-title"><strong>HyCUBE Flight Instrumentation</strong></a><br>
