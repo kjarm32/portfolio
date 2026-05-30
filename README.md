@@ -238,6 +238,20 @@ In a team project I owned the mechanical integration, tolerancing, and aerodynam
 </p>
 <p align="center"><em>E29 drone body GD&T drawing. Perpendicularity (0.400) to datum A, angularity (0.400) to datum B, parallelism (0.500 and 0.200) to datum C, and true-position (Ø0.400–Ø0.500) on the motor bore and mounting features.</em></p>
 
+### Drive System
+
+<p align="center">
+  <img src="assets/drone_e29_drivesystem.png" width="72%"
+       alt="E29 drone drive system cross-section showing pulley reduction, HTD belt, and bearing stack"
+       style="border-radius:8px; border:1px solid #2a3542;">
+</p>
+<p align="center"><em>Cross-section of the E29 drive system showing the 4.875:1 pulley reduction, HTD belt, bearing stack, and custom machined shaft.</em></p>
+
+- **4.875:1 pulley reduction** (16t to 78t) with a 100T HTD belt
+- Pulleys printed on Markforged X7 for high-strength fiber-reinforced construction
+- Custom machined aluminum shaft with 4-40 tap
+- Interference fit bearings; pinion press fit onto motor shaft
+
 ### CFD Aerodynamic Validation
 
 <table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
