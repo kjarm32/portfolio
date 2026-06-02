@@ -222,12 +222,76 @@ Steady-state SolidWorks Flow Simulation swept −2° to +8° AoA at V∞ = 40 mp
 **Mechanism Design · SolidWorks CAD · GD&T Drawing Package · DfAM · CFD Validation · Closed-Circuit Flight Test**
 
 <p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
+  <strong>Material:</strong> ABS, FDM &nbsp;·&nbsp;
+  <strong>Projection:</strong> Third angle &nbsp;·&nbsp;
+  <strong>Validation:</strong> CAD review, GD&T drawing package, CFD study, and closed-circuit flight test
+</p>
+
+<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
+  <tr>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/dronee29Cadrender.png"
+           alt="CAD render of drone seed dispersal attachment"
+           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; display:block;">
+    </td>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img src="assets/drone_flight_photo.jpg"
+           alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
+           style="width:100%; height:220px; object-fit:cover; object-position:center center; border-radius:12px; border:1px solid #2a3542; display:block;">
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <em>Left: SolidWorks CAD render of the attachment. Right: closed-circuit flight test with the attachment mounted, loaded, and running.</em>
+</p>
+
+In a team project, we designed, manufactured, and flight-tested a motor-driven, gravity-fed attachment that mounts under a quadcopter. The project combined CAD, DfAM, GD&T documentation, drive-system integration, CFD analysis, and physical flight testing. My main technical ownership was the <strong>CFD aerodynamic validation study</strong>, where I evaluated how the attachment affected the vehicle under forward-flight conditions and translated those results into engineering conclusions about drag, lift, and side force.
+
+**What I contributed**
+
+- Owned the forward-flight CFD validation study at 15 mph to characterize drag, lift, side force, and external-flow behavior before final hardware review.
+- Interpreted the CFD results in vehicle-level terms, especially the near-zero side force result, which indicated the attachment was unlikely to introduce meaningful yaw-control issues.
+- Used pressure and velocity-field outputs to identify high-load regions, flow behavior, and geometry features that could affect drag.
+- Connected simulation results to the physical test program by framing CFD as a design-validation step before closed-circuit flight testing.
+- Supported the final engineering review by communicating aerodynamic loads and CFD findings alongside the team’s CAD, GD&T, drive-system, and flight-test work.
+
+### GD&T Drawing Package
+
+<p align="center">
+  <img src="assets/Drone_E29_GDandT.png" width="62%"
+       alt="GD&T engineering drawing for the E29 drone body, third angle projection, ABS, 1:3 scale"
+       style="border-radius:8px; border:1px solid #d1d5db;">
+</p>
+
+<p align="center">
+  <em>Team GD&T drawing package for the E29 drone body. The drawing controlled key datum surfaces, mounting features, motor-bore geometry, and structural interfaces needed for manufacturing and assembly.</em>
+</p>
+
+### Drive System
+
+<p align="center">
+  <img src="assets/drone_e29_drivesystem.png" width="72%"
+       alt="E29 drone drive system cross-section showing pulley reduction, HTD belt, and bearing stack"
+       style="border-radius:8px; border:1px solid #2a3542;">
+</p>
+
+<p align="center">
+  <em>Team drive-system cross-section showing the 4.875:1 pulley reduction, HTD belt, bearing stack, and custom machined shaft.</em>
+</p>
+
+- **4.875:1 pulley reduction** from 16t to 78t with a 100T HTD belt.
+- Pulleys printed on Markforged X7 for high-strength fiber-reinforced construction.
+- Custom machined aluminum shaft with 4-40 tap.
+- Interference-fit bearings and pinion press fit onto the motor shaft.
+
+### CFD Aerodynamic Validation
+
+<p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
   <strong>CFD condition:</strong> V∞ = 15 mph forward flight &nbsp;·&nbsp;
   <strong>Drag:</strong> 3.94 N &nbsp;·&nbsp;
   <strong>Lift:</strong> 0.926 N &nbsp;·&nbsp;
-  <strong>Side force:</strong> −0.044 N &nbsp;·&nbsp;
-  <strong>Material:</strong> ABS, FDM &nbsp;·&nbsp;
-  <strong>Projection:</strong> Third angle
+  <strong>Side force:</strong> −0.044 N
 </p>
 
 <table style="width:82%; margin:0 auto; border-collapse:separate; border-spacing:18px 0; table-layout:fixed;">
@@ -251,66 +315,35 @@ Steady-state SolidWorks Flow Simulation swept −2° to +8° AoA at V∞ = 40 mp
     </td>
   </tr>
 </table>
-<p align="center"><em>Left: SolidWorks CAD render of the attachment. Right: closed-circuit flight test with the attachment mounted, loaded, and running.</em></p>
 
-In a team project I owned the mechanical integration, tolerancing, and aerodynamic validation of a motor-driven, gravity-fed mechanism that mounts under a quadcopter. The enclosure was designed for FDM production from the start: DfAM constraints, GD&T callouts, and wall thickness decisions were all made before the first print. My contribution was making the attachment work as hardware, not just as a CAD model.
-
-**What I owned**
-
-- Designed the enclosure and mechanism interface in SolidWorks with DfAM constraints driving every geometry decision: print orientation for strength, filleted corners to reduce separation, wall thickness for structural integrity at the mount points.
-- Produced a formal GD&T drawing package (third-angle projection, ABS, 1:3 scale) with perpendicularity, angularity, parallelism, circularity, and true-position callouts controlling the motor bore, mounting feet, and structural datum surfaces.
-- Ran a forward-flight CFD study at 15 mph to characterize drag, lift, and side force before committing to the final geometry. Iterated on leading-edge fillets and corner radii based on simulation results.
-- Confirmed near-zero side force (−0.044 N), verifying the geometry would not introduce yaw-control authority issues on the vehicle.
-- Supported structural integration review and ran closed-circuit flight testing with the attachment mounted, loaded, and operating.
-
-### GD&T Drawing Package
-
-<p align="center">
-  <img src="assets/Drone_E29_GDandT.png" width="62%"
-       alt="GD&T engineering drawing for the E29 drone body, third angle projection, ABS, 1:3 scale"
-       style="border-radius:8px; border:1px solid #d1d5db;">
-</p>
-<p align="center"><em>E29 drone body GD&T drawing. Perpendicularity (0.400) to datum A, angularity (0.400) to datum B, parallelism (0.500 and 0.200) to datum C, and true-position (Ø0.400–Ø0.500) on the motor bore and mounting features.</em></p>
-
-### Drive System
-
-<p align="center">
-  <img src="assets/drone_e29_drivesystem.png" width="72%"
-       alt="E29 drone drive system cross-section showing pulley reduction, HTD belt, and bearing stack"
-       style="border-radius:8px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>Cross-section of the E29 drive system showing the 4.875:1 pulley reduction, HTD belt, bearing stack, and custom machined shaft.</em></p>
-
-- **4.875:1 pulley reduction** (16t to 78t) with a 100T HTD belt
-- Pulleys printed on Markforged X7 for high-strength fiber-reinforced construction
-- Custom machined aluminum shaft with 4-40 tap
-- Interference fit bearings; pinion press fit onto motor shaft
-
-### CFD Aerodynamic Validation
-
-<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/e29DronePressure.png"
-           alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
-    </td>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/e29dronevel.png"
-           alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
-    </td>
-  </tr>
+<table align="center">
+  <thead>
+    <tr>
+      <th>Result</th>
+      <th>Value</th>
+      <th>Engineering meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Drag force</td>
+      <td>3.94 N</td>
+      <td>Primary aerodynamic load on the vehicle; important for motor margin and flight performance.</td>
+    </tr>
+    <tr>
+      <td>Lift force</td>
+      <td>+0.926 N</td>
+      <td>Partially offsets attachment weight; favorable for hover and forward-flight efficiency.</td>
+    </tr>
+    <tr>
+      <td>Side force</td>
+      <td>−0.044 N</td>
+      <td>Near-zero lateral loading, indicating the attachment should not meaningfully disturb yaw control.</td>
+    </tr>
+  </tbody>
 </table>
-<p align="center"><em>Static pressure distribution, left, and velocity field, right, from the 15 mph forward-flight CFD study used to validate external geometry before production.</em></p>
 
-| Result | Value | Engineering meaning |
-|--------|-------|---------------------|
-| Drag force | 3.94 N | Primary load on the vehicle; drove geometry iteration |
-| Lift force | +0.926 N | Partially offsets attachment weight; favorable for hover efficiency |
-| Side force | −0.044 N | Near-zero: symmetric geometry, no yaw authority impact |
-
-CFD was used as a design gate before fabricating the final part, not as a post-hoc analysis. The simulation confirmed which geometry changes actually reduced drag and cleared the attachment for flight test.
+CFD was used as a design-validation step before final flight testing, not just as a post-project visualization. The key result was that the attachment generated measurable drag but almost no side force, supporting the conclusion that the geometry was aerodynamically acceptable for closed-circuit flight testing.
 
 ---
 
