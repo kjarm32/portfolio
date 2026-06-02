@@ -84,17 +84,17 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
         <span class="card-subtitle">Sensor calibration, hardware integration, and flight-readiness validation for a NASA-supported reentry payload.</span>
       </p>
     </td>
-    <td style="vertical-align:top;">
-      <a href="#wind-turbine-design-build-test">
-        <img src="assets/wind_turbine_blade_forport_transparent_crop.png"
-             alt="CAD model of three-blade wind turbine rotor"
-             style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
-      </a>
-      <p style="margin:10px 0 0 0;">
-        <a href="#wind-turbine-design-build-test" class="card-title"><strong>Wind Turbine Design-Build-Test</strong></a><br>
-        <span class="card-subtitle">Blade CAD, wind-tunnel test footage, power characterization, structural FEA, ranked #1 of 40 teams.</span>
-      </p>
-    </td>
+  <td style="vertical-align:top;">
+    <a href="#wind-turbine-design-build-test">
+      <img src="assets/windturbine_fea_triptych.png"
+           alt="Wind turbine tower structural FEA results"
+           style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
+    </a>
+    <p style="margin:10px 0 0 0;">
+      <a href="#wind-turbine-design-build-test" class="card-title"><strong>Wind Turbine Design-Build-Test</strong></a><br>
+      <span class="card-subtitle">Structural FEA, blade CAD, wind-tunnel testing, and power characterization; ranked #1 of 40 teams.</span>
+    </p>
+  </td>
   </tr>
 </table>
 
