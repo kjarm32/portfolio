@@ -86,7 +86,7 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     </td>
     <td style="vertical-align:top;">
       <a href="#wind-turbine-design-build-test">
-        <img src="assets/wind_turbine_blade_forport.png"
+        <img src="assets/wind_turbine_blade_forport_transparent_crop.png"
              alt="CAD model of three-blade wind turbine rotor"
              style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
@@ -372,19 +372,14 @@ In a four-person design-build-test project, we developed a small-scale wind turb
 <table style="width:94%; margin:0 auto; border-collapse:separate; border-spacing:14px 12px; table-layout:fixed;">
   <tr>
     <td style="width:50%; vertical-align:middle; text-align:center;">
-      <video
-        src="assets/wind_turbine_test_e26.mp4"
-        controls
-        muted
-        loop
-        playsinline
-        poster="assets/wind_turbine_tower_centered_cleaner_16x9.png"
+      <img
+        src="assets/wind_turbine_tower_centered_cleaner_16x9.png"
+        alt="Wind turbine test setup"
         style="width:100%; height:260px; object-fit:contain; background:#f8f8f6; border-radius:10px; border:1px solid #d1d5db; display:block;">
-      </video>
     </td>
     <td style="width:50%; vertical-align:middle; text-align:center;">
       <img
-        src="assets/wind_turbine_blade_forport.png"
+        src="assets/wind_turbine_blade_forport_transparent_crop.png"
         alt="CAD model of three-blade wind turbine rotor"
         style="width:100%; height:260px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #d1d5db; display:block;">
     </td>
@@ -407,7 +402,7 @@ In a four-person design-build-test project, we developed a small-scale wind turb
 
 <p align="center">
   <em>
-    Top left: wind-tunnel test footage showing the turbine operating under airflow. 
+    Top left: wind-tunnel test setup used to evaluate turbine output. 
     Top right: CAD rotor model used to define blade geometry and hub layout. 
     Bottom left: measured power curve used to compare output across operating points. 
     Bottom right: structural FEA validating displacement, Von Mises stress, and factor of safety before final fabrication.
