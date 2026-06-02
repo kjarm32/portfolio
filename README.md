@@ -1,4 +1,31 @@
 <style>
+.project-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f8f8f6;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image,
+.project-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.cfd-image {
+  background: white;
+  padding: 14px;
+  filter: contrast(1.08) saturate(0.95);
+}
+
 @media (max-width: 680px) {
   /* Image layout tables — stack vertically */
   table:not(:has(thead)) { display:block !important; width:100% !important; }
@@ -59,13 +86,13 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     </td>
     <td style="vertical-align:top;">
       <a href="#wind-turbine-design-build-test">
-        <img src="assets/windturbine_fea_triptych.png"
-             alt="Wind turbine structural FEA results"
+        <img src="assets/wind_turbine_blade_forport.png"
+             alt="CAD model of three-blade wind turbine rotor"
              style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#ffffff; border-radius:12px; display:block; border:1px solid #2a3542;">
       </a>
       <p style="margin:10px 0 0 0;">
         <a href="#wind-turbine-design-build-test" class="card-title"><strong>Wind Turbine Design-Build-Test</strong></a><br>
-        <span class="card-subtitle">Rapid prototyping, power characterization, structural FEA, ranked #1 of 40 teams in measured output.</span>
+        <span class="card-subtitle">Blade CAD, wind-tunnel test footage, power characterization, structural FEA, ranked #1 of 40 teams.</span>
       </p>
     </td>
   </tr>
