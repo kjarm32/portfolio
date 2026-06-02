@@ -246,15 +246,16 @@ Steady-state SolidWorks Flow Simulation swept −2° to +8° AoA at V∞ = 40 mp
   <em>Left: SolidWorks CAD render of the attachment. Right: closed-circuit flight test with the attachment mounted, loaded, and running.</em>
 </p>
 
-In a team project, we designed, manufactured, and flight-tested a motor-driven, gravity-fed attachment that mounts under a quadcopter. The project combined CAD, DfAM, GD&T documentation, drive-system integration, CFD analysis, and physical flight testing. My main technical ownership was the <strong>CFD aerodynamic validation study</strong>, where I evaluated how the attachment affected the vehicle under forward-flight conditions and translated those results into engineering conclusions about drag, lift, and side force.
+In a team project, we designed, manufactured, and flight-tested a motor-driven, gravity-fed attachment that mounts under a quadcopter. The project combined CAD, DfAM, GD&T documentation, drive-system integration, CFD analysis, mounting/interface problem-solving, and physical flight testing. My main technical ownership was the <strong>CFD aerodynamic validation study</strong>, and I also contributed to integration work by helping resolve the drone-attachment mounting approach and drafting an initial internal component layout for the enclosure.
 
 **What I contributed**
 
 - Owned the forward-flight CFD validation study at 15 mph to characterize drag, lift, side force, and external-flow behavior before final hardware review.
 - Interpreted the CFD results in vehicle-level terms, especially the near-zero side force result, which indicated the attachment was unlikely to introduce meaningful yaw-control issues.
-- Used pressure and velocity-field outputs to identify high-load regions, flow behavior, and geometry features that could affect drag.
+- Helped resolve the drone-attachment mounting problem after early integration issues, identifying a more workable mounting approach so the system could be secured and flown during closed-circuit testing.
+- Drafted an initial internal component layout for the enclosure to explore packaging constraints, component clearance, and how the drive system could fit inside the available volume.
 - Connected simulation results to the physical test program by framing CFD as a design-validation step before closed-circuit flight testing.
-- Supported the final engineering review by communicating aerodynamic loads and CFD findings alongside the team’s CAD, GD&T, drive-system, and flight-test work.
+- Supported the final engineering review by communicating aerodynamic loads, mounting constraints, and CFD findings alongside the team’s CAD, GD&T, drive-system, and flight-test work.
 
 ### GD&T Drawing Package
 
