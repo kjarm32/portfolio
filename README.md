@@ -538,5 +538,6 @@ Built a paper-trading automation system designed as a reliability engineering ex
 
 I'm building toward a career in hardware and robotics. Always happy to connect with engineers, teams, and companies working on physical systems.
 
-[LinkedIn](https://www.linkedin.com/in/kevin-armstrong-ii-647125319/)
+[LinkedIn](https://www.linkedin.com/in/kevin-armstrong-ii-647125319/) \
+
 **Email:** kevarm2028@berkeley.edu
