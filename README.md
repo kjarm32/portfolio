@@ -324,43 +324,70 @@ Instrumentation that isn't calibrated isn't useful. I built the thermocouple cal
 
 ## Wind Turbine: Design-Build-Test
 
-**Rapid Prototyping · Blade Design · Wind-Tunnel Testing · Power Characterization · Structural FEA**
+**Rapid Prototyping · Blade Design · Wind-Tunnel Testing · Power Characterization · Structural FEA · CAD Validation**
 
 <p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
   <strong>Result:</strong> #1 of 40 teams in measured electrical power output &nbsp;·&nbsp;
   <strong>Team size:</strong> 4 &nbsp;·&nbsp;
-  <strong>Constraints:</strong> Hard manufacturability and performance limits
+  <strong>Constraints:</strong> Manufacturability, structural integrity, and wind-tunnel performance limits
 </p>
 
-In a four-person team project, we designed, fabricated, and tested a small wind turbine under hard manufacturability and performance constraints. Our design ranked **#1 of 40 teams** in measured electrical power output from wind-tunnel testing. The project required integrating blade aerodynamics, structural integrity, and measurement methodology into a single hardware deliverable where every decision had to survive the test.
+In a four-person design-build-test project, we developed a small-scale wind turbine from blade geometry research through CAD, fabrication, structural validation, and wind-tunnel testing. Our turbine ranked **#1 of 40 teams** in measured electrical power output. The project required balancing aerodynamic performance, printability, tower stiffness, hub/blade strength, and measurement repeatability into one working hardware system.
 
 **What I owned**
 
-- Led power characterization and measurement: designed the test protocol, acquired raw voltage and current data at each operating point, and converted it into comparable power curves that drove design iteration between builds.
-- Conducted blade concept research to identify geometry trade-offs between swept area, chord distribution, and twist angle given the fabrication constraints.
-- Ran structural FEA covering displacement, Von Mises stress, and factor of safety to validate the blade and hub geometry before committing to the final print.
-- Performed verification review of the assembled hardware against design intent before each tunnel run.
+- Led power characterization and measurement: designed the test procedure, collected voltage and current data at each operating point, and converted raw measurements into comparable power curves used to evaluate design changes.
+- Researched blade geometry trade-offs including swept area, chord distribution, manufacturability, and twist-angle behavior under the project constraints.
+- Built and reviewed CAD models of the rotor/blade geometry before fabrication to check blade shape, hub fit, and assembly feasibility.
+- Ran structural FEA to evaluate displacement, Von Mises stress, and factor of safety before committing to the final printed geometry.
+- Verified the assembled turbine and test setup before tunnel runs, including tower alignment, sensor placement, wiring, and generator/load connections.
 
-<table style="width:92%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
+<table style="width:94%; margin:0 auto; border-collapse:separate; border-spacing:14px 12px; table-layout:fixed;">
   <tr>
-    <td style="width:30%; vertical-align:middle; text-align:center;">
-      <img src="assets/windturbine_power_vs_current.png"
-           alt="Power vs current measurement curve"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #d1d5db; display:block;">
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <video
+        src="assets/wind_turbine_test_e26.mp4"
+        controls
+        muted
+        loop
+        playsinline
+        poster="assets/wind_turbine_tower_centered_cleaner_16x9.png"
+        style="width:100%; height:260px; object-fit:contain; background:#f8f8f6; border-radius:10px; border:1px solid #d1d5db; display:block;">
+      </video>
     </td>
-    <td style="width:34%; vertical-align:middle; text-align:center;">
-      <img src="assets/windturbine_test_setup.jpg"
-           alt="Wind turbine test setup in wind tunnel"
-           style="width:100%; height:220px; object-fit:cover; object-position:center 45%; border-radius:8px; border:1px solid #2a3542; display:block;">
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img
+        src="assets/wind_turbine_blade_forport.png"
+        alt="CAD model of three-blade wind turbine rotor"
+        style="width:100%; height:260px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #d1d5db; display:block;">
     </td>
-    <td style="width:36%; vertical-align:middle; text-align:center;">
-      <img src="assets/windturbine_fea_triptych.png"
-           alt="FEA results showing displacement, stress, and factor of safety"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #d1d5db; display:block;">
+  </tr>
+  <tr>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img
+        src="assets/windturbine_power_vs_current.png"
+        alt="Measured wind turbine power curve"
+        style="width:100%; height:240px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #d1d5db; display:block;">
+    </td>
+    <td style="width:50%; vertical-align:middle; text-align:center;">
+      <img
+        src="assets/windturbine_fea_triptych.png"
+        alt="Structural FEA results showing displacement stress and factor of safety"
+        style="width:100%; height:240px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #d1d5db; display:block;">
     </td>
   </tr>
 </table>
-<p align="center"><em>Left: measured power curve used to benchmark output and drive design iteration. Center: wind-tunnel test setup. Right: structural FEA results showing displacement, Von Mises stress, and factor of safety across the blade and hub.</em></p>
+
+<p align="center">
+  <em>
+    Top left: wind-tunnel test footage showing the turbine operating under airflow. 
+    Top right: CAD rotor model used to define blade geometry and hub layout. 
+    Bottom left: measured power curve used to compare output across operating points. 
+    Bottom right: structural FEA validating displacement, Von Mises stress, and factor of safety before final fabrication.
+  </em>
+</p>
+
+The final system connected CAD-driven blade design, physical fabrication, test instrumentation, and structural validation into a single working turbine. The key engineering challenge was not only producing a high-output rotor, but also building a repeatable test setup where measured electrical power could be trusted and used to guide design decisions.
 
 ---
 
