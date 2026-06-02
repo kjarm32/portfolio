@@ -230,17 +230,24 @@ Steady-state SolidWorks Flow Simulation swept −2° to +8° AoA at V∞ = 40 mp
   <strong>Projection:</strong> Third angle
 </p>
 
-<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
+<table style="width:82%; margin:0 auto; border-collapse:separate; border-spacing:18px 0; table-layout:fixed;">
   <tr>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/dronee29Cadrender.png"
-           alt="CAD render of drone seed dispersal attachment"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; display:block;">
+    <td style="width:50%; vertical-align:top; text-align:center; border:1px solid #d1d5db; border-radius:12px; padding:12px; background:#ffffff;">
+      <img src="assets/e29DronePressure.png"
+           alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
+           style="width:100%; height:245px; object-fit:contain; display:block;">
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;">
+        <em>Static pressure distribution used to identify high-load regions and external-flow behavior.</em>
+      </p>
     </td>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/drone_flight_photo.jpg"
-           alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
-           style="width:100%; height:220px; object-fit:cover; object-position:center center; border-radius:12px; border:1px solid #2a3542; display:block;">
+
+  <td style="width:50%; vertical-align:top; text-align:center; border:1px solid #d1d5db; border-radius:12px; padding:12px; background:#ffffff;">
+      <img src="assets/e29dronevel.png"
+           alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
+           style="width:100%; height:245px; object-fit:contain; display:block;">
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;">
+        <em>Velocity field from the 15 mph forward-flight CFD study used to validate the external geometry before production.</em>
+      </p>
     </td>
   </tr>
 </table>
@@ -369,45 +376,57 @@ In a four-person design-build-test project, we developed a small-scale wind turb
 - Ran structural FEA to evaluate displacement, Von Mises stress, and factor of safety before committing to the final printed geometry.
 - Verified the assembled turbine and test setup before tunnel runs, including tower alignment, sensor placement, wiring, and generator/load connections.
 
+<h3>Structural validation as the design gate</h3>
+
+<p align="center">
+  <img
+    src="assets/windturbine_fea_triptych.png"
+    alt="Wind turbine tower structural FEA results showing displacement, Von Mises stress, and factor of safety"
+    style="width:88%; max-height:380px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; padding:12px; display:block; margin:0 auto;">
+</p>
+
+<p align="center" style="max-width:820px; margin:10px auto 24px auto;">
+  <em>
+    Structural FEA of the turbine tower assembly showing displacement, Von Mises stress, and factor of safety.
+    This analysis validated the tower/support geometry before wind-tunnel testing.
+  </em>
+</p>
+
+<h3>Blade design, test setup, and measured output</h3>
+
 <table style="width:94%; margin:0 auto; border-collapse:separate; border-spacing:14px 12px; table-layout:fixed;">
   <tr>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img
-        src="assets/wind_turbine_tower_centered_cleaner_16x9.png"
-        alt="Wind turbine test setup"
-        style="width:100%; height:260px; object-fit:contain; background:#f8f8f6; border-radius:10px; border:1px solid #d1d5db; display:block;">
-    </td>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
+    <td style="width:33%; vertical-align:top; text-align:center; border:1px solid #d1d5db; border-radius:12px; padding:12px; background:#ffffff;">
       <img
         src="assets/wind_turbine_blade_forport_transparent_crop.png"
         alt="CAD model of three-blade wind turbine rotor"
-        style="width:100%; height:260px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #d1d5db; display:block;">
+        style="width:100%; height:190px; object-fit:contain; object-position:center center; display:block;">
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;">
+        <em>Blade CAD used to define rotor geometry and hub layout before fabrication.</em>
+      </p>
     </td>
-  </tr>
-  <tr>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
+
+  <td style="width:33%; vertical-align:top; text-align:center; border:1px solid #d1d5db; border-radius:12px; padding:12px; background:#ffffff;">
+      <img
+        src="assets/wind_turbine_tower_centered_cleaner_16x9.png"
+        alt="Wind turbine test setup"
+        style="width:100%; height:190px; object-fit:cover; object-position:center center; border-radius:8px; display:block;">
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;">
+        <em>Wind-tunnel test setup used to evaluate turbine output under airflow.</em>
+      </p>
+    </td>
+
+  <td style="width:33%; vertical-align:top; text-align:center; border:1px solid #d1d5db; border-radius:12px; padding:12px; background:#ffffff;">
       <img
         src="assets/windturbine_power_vs_current.png"
         alt="Measured wind turbine power curve"
-        style="width:100%; height:240px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #d1d5db; display:block;">
-    </td>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img
-        src="assets/windturbine_fea_triptych.png"
-        alt="Structural FEA results showing displacement stress and factor of safety"
-        style="width:100%; height:240px; object-fit:contain; background:#ffffff; border-radius:10px; border:1px solid #d1d5db; display:block;">
+        style="width:100%; height:190px; object-fit:contain; object-position:center center; display:block;">
+      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;">
+        <em>Measured power curve used to compare output across operating points.</em>
+      </p>
     </td>
   </tr>
 </table>
-
-<p align="center">
-  <em>
-    Top left: wind-tunnel test setup used to evaluate turbine output. 
-    Top right: CAD rotor model used to define blade geometry and hub layout. 
-    Bottom left: measured power curve used to compare output across operating points. 
-    Bottom right: structural FEA validating displacement, Von Mises stress, and factor of safety before final fabrication.
-  </em>
-</p>
 
 The final system connected CAD-driven blade design, physical fabrication, test instrumentation, and structural validation into a single working turbine. The key engineering challenge was not only producing a high-output rotor, but also building a repeatable test setup where measured electrical power could be trusted and used to guide design decisions.
 
