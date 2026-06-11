@@ -43,7 +43,7 @@
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
-I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in hardware and robotics. As a sophomore, I have run a full design-to-test pipeline on a custom aircraft, built physics-informed neural dynamics models in the Mofrad Lab, designed and GD&T-toleranced a flight-tested drone attachment, and validated sensor instrumentation for a flight-critical payload through NASA Space Grant. I care about work that closes the loop between CAD, simulation, fabrication, and physical test: hardware that actually gets built and validated.
+I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in hardware and aerospace. As a sophomore, I have run a full design-to-test pipeline on a custom aircraft, built physics-informed neural dynamics models in the Mofrad Lab, designed and GD&T-toleranced a flight-tested drone attachment, and validated sensor instrumentation for a flight-critical payload through NASA Space Grant. I care about work that closes the loop between CAD, simulation, fabrication, and physical test: hardware that actually gets built and validated.
 
 <p align="center"><strong>Mechanical Design</strong> • <strong>Hardware Integration</strong> • <strong>GD&T and Tolerancing</strong> • <strong>Physical Validation</strong> • <strong>Applied ML for Physical Systems</strong></p>
 
@@ -588,8 +588,7 @@ Built a paper-trading automation system designed as a reliability engineering ex
 ---
 
 ## Contact
-
-I'm building toward a career in hardware and robotics. Always happy to connect with engineers, teams, and companies working on physical systems.
+Always happy to connect with engineers, teams, and companies working on physical systems.
 
 [LinkedIn](https://www.linkedin.com/in/kevin-armstrong-ii-647125319/) <br>
 
