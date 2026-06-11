@@ -217,7 +217,7 @@ Steady-state SolidWorks Flow Simulation swept −2° to +8° AoA at V∞ = 40 mp
 
 ---
 
-## Drone Mechanical Integration: CAD, GDandT and Flight-Tested Hardware
+## Drone Mechanical Integration: CAD, GD&T and Flight-Tested Hardware
 
 **Mechanism Design · SolidWorks CAD · GD&T Drawing Package · DfAM · CFD Validation · Closed-Circuit Flight Test**
 
