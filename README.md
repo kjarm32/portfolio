@@ -466,88 +466,35 @@ The final system connected CAD-driven blade design, physical fabrication, test i
 
 ---
 
-## FlyNet: Physics-Informed Neural Dynamics Modeling
+## FlyNet: Physics-Informed Flight Dynamics Modeling Study
 
-**Dynamics Modeling · PyTorch · Closed-Loop Training · Equations of Motion Integration · Recurrent Networks**
+**PyTorch · Flight Dynamics · Rigid-Body Equations of Motion · Closed-Loop Simulation**
 *Mofrad Lab, UC Berkeley*
 
-<p align="center">
-  <img src="assets/flynet_time_history_v2.png" width="92%"
-       alt="FlyNet closed-loop state time history, all models vs JSBSim ground truth"
-       style="border-radius:10px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>Closed-loop state time history across all model variants versus ground truth. Shaded regions show control input phases of the 2-3-1-1 maneuver.</em></p>
+I am studying the FlyNet paper by Stachiw, Crain, and Ricciardi as part of a student research exploration of physics-informed neural dynamics models for aircraft simulation.
 
-<p align="center">
-  <iframe width="72%" height="420"
-    src="https://www.youtube.com/embed/RBWWbZS1y6c"
-    frameborder="0"
-    allowfullscreen
-    style="border-radius:12px; border:1px solid #2a3542;">
-  </iframe>
-</p>
+My current focus is understanding the implementation structure behind the method: how aircraft states, controls, dynamic pressure, altitude, and force/moment targets can be organized for feed-forward training and closed-loop rollout.
 
-Neural networks that model physical systems are only useful if they stay stable in closed-loop rollout, the same challenge that matters for any robot running a learned dynamics or control model on real hardware. I replicated FlyNet (Stachiw et al., 2022), a physics-based neural network for rigid-body dynamics modeling, then extended the comparison to a parameter-matched recurrent architecture to isolate what actually drives closed-loop stability.
+This project uses simulated and non-restricted data. It does **not** contain NRC Bell 412HP flight-test data, proprietary flight-test data, or any data from the original FlyNet authors.
 
-**Core question:** Is rollout stability driven by the training objective or by the model architecture?
+Any plots, tables, or metrics in this repository are exploratory debugging outputs only. They should not be interpreted as a reproduction of the original FlyNet paper results, since the aircraft model, data source, preprocessing, maneuvers, and validation setup are different.
 
-**Highlights**
+**What I am exploring**
 
-- Built an end-to-end simulation data pipeline generating 56 trajectories across 4 speed conditions and 7 maneuver types.
-- Implemented a two-stage training pipeline: feed-forward pretraining followed by closed-loop output-error refinement with Adams-Bashforth equations-of-motion integration.
-- Closed-loop refinement reduced translational drift substantially, especially in lateral velocity channels. The w-channel RMSE reached **1.45 fps**, beating the paper baseline of 1.77 fps.
-- The recurrent (GRU) model, trained without closed-loop refinement, diverged in rollout, proving the training objective governs stability, not hidden-state architecture alone.
-- GRU closed-loop training stabilized some channels but introduced longitudinal divergence, revealing an architecture-dependent instability that would not appear in open-loop evaluation.
+* Organizing aircraft state, control, dynamic pressure, and altitude features
+* Predicting body-axis forces and moments instead of directly predicting next-state values
+* Integrating predicted forces and moments through rigid-body equations of motion
+* Understanding the difference between one-step prediction error and closed-loop rollout error
+* Testing normalization, feature construction, and rollout structure on non-restricted simulation data
 
-**Pipeline**
+**Current status**
 
-| Stage | What it does |
-|---|---|
-| `generate_dataset.py` | Trim oracle and trajectory generation across speed and maneuver conditions |
-| `pretrain_model.py` | Stage 1 feed-forward pretraining with 119 second-order features |
-| `train_closedloop.py` | Stage 2 output-error refinement with EOM integration |
-| `train_rnn.py` | Parameter-matched GRU pretraining |
-| `train_closedloop_rnn.py` | Timestep-by-timestep GRU closed-loop rollout |
-| `evaluate.py` | Closed-loop RMSE across 8 state channels |
+Early student implementation. The main goal is method understanding, data-format clarity, and schema correctness rather than benchmarking against the original FlyNet results.
 
-**Closed-loop RMSE, test set**
+**Reference**
 
-<table align="center">
-  <thead>
-    <tr>
-      <th>Channel</th>
-      <th>Paper FlyNet</th>
-      <th>FF Pretrain</th>
-      <th>FF + CL</th>
-      <th>RNN, no CL</th>
-      <th>RNN + CL</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>u (fps)</td><td>2.04</td><td>22.18</td><td>22.17</td><td>21.07</td><td>2036</td></tr>
-    <tr><td>v (fps)</td><td>2.70</td><td>45.68</td><td>2.98</td><td>51.31</td><td>42.26</td></tr>
-    <tr><td><strong>w (fps)</strong></td><td><strong>1.77</strong></td><td>56.05</td><td><strong>1.45</strong></td><td>55.00</td><td>19.46</td></tr>
-    <tr><td>p (rad/s)</td><td>0.030</td><td>0.0278</td><td>0.0404</td><td>0.0269</td><td>0.0108</td></tr>
-    <tr><td>q (rad/s)</td><td>0.015</td><td>0.0212</td><td>0.0377</td><td>0.0250</td><td>0.0116</td></tr>
-    <tr><td>r (rad/s)</td><td>0.026</td><td>0.0235</td><td>0.0305</td><td>0.0232</td><td>0.0064</td></tr>
-    <tr><td>θ (rad)</td><td>0.028</td><td>0.151</td><td>0.099</td><td>0.150</td><td>0.092</td></tr>
-    <tr><td>φ (rad)</td><td>0.050</td><td>0.096</td><td>0.084</td><td>0.077</td><td>0.080</td></tr>
-  </tbody>
-</table>
+Stachiw, T., Crain, A., & Ricciardi, J. “A physics-based neural network for flight dynamics modelling and simulation.” *Advanced Modeling and Simulation in Engineering Sciences*, 2022.
 
-<p align="center"><em>Paper baseline: Bell 412HP helicopter with real flight-test data. My replication: C172p fixed-wing aircraft with simulation trajectories.</em></p>
-
-**My contributions**
-
-- Built the full data pipeline: trim oracle, maneuver generation, and trajectory-level train/test splits.
-- Implemented the feature pipeline with normalization, second-order feature expansion, and Xavier initialization.
-- Recreated both training stages: feed-forward pretraining and closed-loop output-error refinement with EOM integration.
-- Extended the study with a parameter-matched GRU and timestep-level closed-loop recurrent rollout.
-- Built the evaluation pipeline and produced a publication-comparable RMSE table across all model variants.
-
-**Key finding**
-
-Closed-loop training is the primary driver of rollout stability in neural rigid-body dynamics models. Architecture (feed-forward vs recurrent) is secondary. The feed-forward model became stable after output-error refinement; the recurrent model introduced a new instability when trained the same way. The implication for any learned dynamics or control model running on physical hardware: the training objective and integration scheme matter more than the network structure.
 
 ---
 
