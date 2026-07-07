@@ -191,93 +191,86 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 - [CFD Summary (PDF)](assets/BWB_CFD_Summary_.pdf)
 
 ---
-
 ## FlyNet: Neural Flight Dynamics Modeling
 
-**Flight Dynamics · JSBSim Simulation · PyTorch · Closed-Loop Training · Recurrent Networks**  
+**Flight Dynamics · Physics-Embedded ML · PyTorch · JSBSim · Closed-Loop Simulation · System Identification**  
 *Mofrad Lab collaboration*
 
-
 <p align="center">
-  <img src="assets/flynet_time_history_v2.png" width="92%"
-       alt="FlyNet closed-loop state time history — all models vs JSBSim ground truth"
+  <img src="assets/flynet_feature_to_trajectory_loop.png" width="92%"
+       alt="FlyNet closed-loop neural flight dynamics pipeline"
        style="border-radius:10px; border:1px solid #2a3542;">
 </p>
-<p align="center"><em>Closed-loop state time history across all model variants vs JSBSim ground truth. Shaded regions show elevator deflection phases of the 2-3-1-1 maneuver.</em></p>
+<p align="center"><em>
+A learned force/moment model is embedded inside rigid-body equations of motion, so evaluation happens through full closed-loop trajectory rollout rather than isolated one-step prediction.
+</em></p>
+
+I am developing and evaluating physics-embedded neural models for aircraft flight dynamics. The model learns aerodynamic force and moment terms from aircraft state and control inputs, then rolls those predictions forward through equations of motion to test whether the learned dynamics remain stable over full trajectories.
+
+The project began as a reproduction of a published FlyNet-style architecture and has grown into a broader research pipeline for closed-loop neural system identification. My focus is on the gap between low average prediction error and reliable trajectory behavior: when small force/moment errors compound, which state channels dominate rollout failure, and how model accuracy changes across operating regimes.
 
 <p align="center">
-  <iframe width="72%" height="420"
+  <img src="assets/flynet_method_comparison_heatmap.png" width="88%"
+       alt="Method comparison heatmap for neural flight dynamics rollout"
+       style="border-radius:10px; border:1px solid #2a3542;">
+</p>
+<p align="center"><em>
+Model changes do not improve every state uniformly; they shift error across translational, rotational, and attitude channels.
+</em></p>
+
+### Research Focus
+
+- Reproducing and extending FlyNet-style physics-embedded neural flight dynamics models.
+- Training neural force/moment predictors that are evaluated through closed-loop EOM integration.
+- Comparing feed-forward and recurrent architectures under matched rollout conditions.
+- Building diagnostics for state-channel error, regime sensitivity, and trajectory-level drift.
+- Studying whether training objectives should optimize average accuracy, worst-regime behavior, or controller-relevant performance.
+
+### What I Built
+
+| Area | Contribution |
+|---|---|
+| Simulation data pipeline | Generated trimmed aircraft trajectories and maneuver datasets using JSBSim |
+| Feature engineering | Implemented normalized state/control features and second-order feature expansion |
+| Neural dynamics model | Built feed-forward and recurrent PyTorch models for force/moment prediction |
+| Closed-loop training | Trained models through trajectory-level output-error refinement |
+| Evaluation | Measured rollout RMSE across translational velocity, angular rate, and attitude channels |
+| Diagnostics | Produced plots for channel trade-offs, regime sensitivity, and closed-loop failure modes |
+
+<p align="center">
+  <img src="assets/flynet_regime_summary.png" width="88%"
+       alt="Operating-regime sensitivity plot for neural flight dynamics"
+       style="border-radius:10px; border:1px solid #2a3542;">
+</p>
+<p align="center"><em>
+A major theme of the work is that average rollout error can hide regime-specific failures, which matters for aircraft models intended for planning or control.
+</em></p>
+
+### Key Takeaways
+
+- Closed-loop evaluation is substantially more informative than one-step prediction error for learned flight dynamics.
+- Feed-forward models can become stable under trajectory-level refinement, but stability depends strongly on the training objective.
+- Recurrent memory can improve some state channels while degrading others, so architecture alone is not a complete solution.
+- Regime-specific and channel-specific diagnostics are necessary because pooled RMSE can hide important failure modes.
+- The long-term research direction is robust neural flight dynamics: models that are reliable across operating conditions, not just accurate on average.
+
+### Controller-Relevant Direction
+
+The next stage of this work connects learned dynamics accuracy to downstream control relevance. Instead of treating rollout RMSE as the only endpoint, I am exploring how learned models should be validated for use in tracking, planning, or model-predictive control loops.
+
+<p align="center">
+  <iframe width="52%" height="260"
     src="https://www.youtube.com/embed/RBWWbZS1y6c"
     frameborder="0"
     allowfullscreen
     style="border-radius:12px; border:1px solid #2a3542;">
   </iframe>
 </p>
+<p align="center"><em>Small rollout/demo video from the closed-loop modeling pipeline.</em></p>
 
-I replicated the FlyNet architecture (Stachiw et al., 2022), a physics-based neural network for global flight dynamics modeling, using JSBSim simulation data for a Cessna 172p. I then extended the pipeline with a parameter-matched GRU model to test whether recurrent hidden state improves closed-loop integration stability over a feed-forward model.
+### Tools
 
-**Research question:** Does recurrent hidden state improve closed-loop rollout stability when both architectures use identical input features and similar parameter counts?
-
-**Highlights**
-
-- Generated 56 trajectories across 4 speed bins and 7 maneuver types using a JSBSim trim oracle.
-- Recreated the two-stage training pipeline: feed-forward pretraining plus closed-loop output-error refinement.
-- Feed-forward closed-loop refinement reduced translational drift substantially, especially in the v and w channels.
-- The w-channel test RMSE reached **1.45 fps**, beating the paper baseline of 1.77 fps in that channel.
-- GRU pretraining without closed-loop refinement diverged in rollout, showing that the training objective, not just architecture, drives stability.
-- GRU closed-loop training stabilized some lateral channels but introduced longitudinal divergence, which revealed an architecture-dependent rollout instability.
-
-**Pipeline**
-
-| Stage | What it does |
-|---|---|
-| `generate_dataset.py` | JSBSim trim oracle and trajectory generation |
-| `pretrain_model.py` | Stage 1 feed-forward pretraining with 119 second-order features |
-| `train_closedloop.py` | Stage 2 output-error refinement with EOM integration |
-| `train_rnn.py` | Parameter-matched GRU pretraining |
-| `train_closedloop_rnn.py` | Timestep-by-timestep GRU closed-loop rollout |
-| `evaluate.py` | Closed-loop RMSE across 8 state channels |
-
-**Closed-loop RMSE, test set**
-
-<table align="center">
-  <thead>
-    <tr>
-      <th>Channel</th>
-      <th>Paper FlyNet</th>
-      <th>FF Pretrain</th>
-      <th>FF + CL</th>
-      <th>RNN, no CL</th>
-      <th>RNN + CL</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>u (fps)</td><td>2.04</td><td>22.18</td><td>22.17</td><td>21.07</td><td>2036</td></tr>
-    <tr><td>v (fps)</td><td>2.70</td><td>45.68</td><td>2.98</td><td>51.31</td><td>42.26</td></tr>
-    <tr><td><strong>w (fps)</strong></td><td><strong>1.77</strong></td><td>56.05</td><td><strong>1.45</strong></td><td>55.00</td><td>19.46</td></tr>
-    <tr><td>p (rad/s)</td><td>0.030</td><td>0.0278</td><td>0.0404</td><td>0.0269</td><td>0.0108</td></tr>
-    <tr><td>q (rad/s)</td><td>0.015</td><td>0.0212</td><td>0.0377</td><td>0.0250</td><td>0.0116</td></tr>
-    <tr><td>r (rad/s)</td><td>0.026</td><td>0.0235</td><td>0.0305</td><td>0.0232</td><td>0.0064</td></tr>
-    <tr><td>θ (rad)</td><td>0.028</td><td>0.151</td><td>0.099</td><td>0.150</td><td>0.092</td></tr>
-    <tr><td>φ (rad)</td><td>0.050</td><td>0.096</td><td>0.084</td><td>0.077</td><td>0.080</td></tr>
-  </tbody>
-</table>
-
-<p align="center"><em>Paper results: Bell 412HP helicopter with real flight-test trajectories. My replication: C172p fixed-wing aircraft with JSBSim simulation trajectories.</em></p>
-
-**My contributions**
-
-- Built the end-to-end JSBSim data pipeline, including trim logic, maneuver generation, and trajectory-level splits.
-- Implemented the feature pipeline with normalization, second-order expansion, and Xavier initialization.
-- Recreated feed-forward pretraining and closed-loop output-error refinement with Adams-Bashforth EOM integration.
-- Extended the comparison with a parameter-matched GRU and timestep-level closed-loop recurrent rollout.
-- Built the evaluation pipeline and produced a publication-comparable RMSE table.
-
-**Key finding in progress**
-
-Closed-loop training appears to be the main source of rollout stability. The feed-forward model became substantially more stable after output-error refinement, while the recurrent model introduced a separate longitudinal instability. This suggests that recurrent dynamics need additional constraints or architecture changes before they can reliably improve flight-dynamics rollout.
-
----
+`Python` · `PyTorch` · `JSBSim` · `NumPy` · `Matplotlib` · `Flight dynamics` · `Closed-loop simulation` · `System identification`
 
 ## HyCUBE: CubeSat Thermal & Instrumentation Payload
 
