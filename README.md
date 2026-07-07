@@ -191,72 +191,28 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 - [CFD Summary (PDF)](assets/BWB_CFD_Summary_.pdf)
 
 ---
-## FlyNet: Neural Flight Dynamics Modeling
+## Learned Rotorcraft Dynamics for Control-Oriented Simulation
 
-**Flight Dynamics · Physics-Embedded ML · PyTorch · JSBSim · Closed-Loop Simulation · System Identification**  
+**Flight Dynamics · Physics-Informed ML · PyTorch · JSBSim · Closed-Loop Simulation · Control Systems**  
 *Mofrad Lab collaboration*
 
-<p align="center">
-  <img src="assets/flynet_feature_to_trajectory_loop.png" width="92%"
-       alt="FlyNet closed-loop neural flight dynamics pipeline"
-       style="border-radius:10px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>
-A learned force/moment model is embedded inside rigid-body equations of motion, so evaluation happens through full closed-loop trajectory rollout rather than isolated one-step prediction.
-</em></p>
+I am developing learned flight-dynamics models for rotorcraft simulation and control-oriented analysis. The project builds on physics-informed neural dynamics: instead of predicting aircraft motion directly, the model learns force and moment behavior while preserving rigid-body equations of motion.
 
-I am developing and evaluating physics-embedded neural models for aircraft flight dynamics. The model learns aerodynamic force and moment terms from aircraft state and control inputs, then rolls those predictions forward through equations of motion to test whether the learned dynamics remain stable over full trajectories.
-
-The project began as a reproduction of a published FlyNet-style architecture and has grown into a broader research pipeline for closed-loop neural system identification. My focus is on the gap between low average prediction error and reliable trajectory behavior: when small force/moment errors compound, which state channels dominate rollout failure, and how model accuracy changes across operating regimes.
-
-<p align="center">
-  <img src="assets/flynet_method_comparison_heatmap.png" width="88%"
-       alt="Method comparison heatmap for neural flight dynamics rollout"
-       style="border-radius:10px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>
-Model changes do not improve every state uniformly; they shift error across translational, rotational, and attitude channels.
-</em></p>
-
-### Research Focus
-
-- Reproducing and extending FlyNet-style physics-embedded neural flight dynamics models.
-- Training neural force/moment predictors that are evaluated through closed-loop EOM integration.
-- Comparing feed-forward and recurrent architectures under matched rollout conditions.
-- Building diagnostics for state-channel error, regime sensitivity, and trajectory-level drift.
-- Studying whether training objectives should optimize average accuracy, worst-regime behavior, or controller-relevant performance.
+My work focuses on whether learned dynamics remain reliable when they are rolled forward through full trajectories. This matters because low prediction error at a single time step does not always mean the model behaves well in closed-loop simulation.
 
 ### What I Built
 
-| Area | Contribution |
-|---|---|
-| Simulation data pipeline | Generated trimmed aircraft trajectories and maneuver datasets using JSBSim |
-| Feature engineering | Implemented normalized state/control features and second-order feature expansion |
-| Neural dynamics model | Built feed-forward and recurrent PyTorch models for force/moment prediction |
-| Closed-loop training | Trained models through trajectory-level output-error refinement |
-| Evaluation | Measured rollout RMSE across translational velocity, angular rate, and attitude channels |
-| Diagnostics | Produced plots for channel trade-offs, regime sensitivity, and closed-loop failure modes |
+- Implemented a PyTorch-based neural flight-dynamics modeling pipeline.
+- Integrated learned force and moment predictions with rigid-body equations of motion.
+- Built closed-loop rollout evaluation on held-out rotorcraft trajectories.
+- Developed diagnostics for trajectory drift, local model behavior, and control-relevant response.
+- Compared model variants under matched simulation and evaluation conditions.
 
-<p align="center">
-  <img src="assets/flynet_regime_summary.png" width="88%"
-       alt="Operating-regime sensitivity plot for neural flight dynamics"
-       style="border-radius:10px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>
-A major theme of the work is that average rollout error can hide regime-specific failures, which matters for aircraft models intended for planning or control.
-</em></p>
+### Research Focus
 
-### Key Takeaways
+The core question is how to evaluate learned aircraft dynamics beyond ordinary prediction loss. I am studying when these models behave like useful simulation surrogates, especially in settings where trajectory rollout and control response matter.
 
-- Closed-loop evaluation is substantially more informative than one-step prediction error for learned flight dynamics.
-- Feed-forward models can become stable under trajectory-level refinement, but stability depends strongly on the training objective.
-- Recurrent memory can improve some state channels while degrading others, so architecture alone is not a complete solution.
-- Regime-specific and channel-specific diagnostics are necessary because pooled RMSE can hide important failure modes.
-- The long-term research direction is robust neural flight dynamics: models that are reliable across operating conditions, not just accurate on average.
-
-### Controller-Relevant Direction
-
-The next stage of this work connects learned dynamics accuracy to downstream control relevance. Instead of treating rollout RMSE as the only endpoint, I am exploring how learned models should be validated for use in tracking, planning, or model-predictive control loops.
+This work sits at the intersection of machine learning, flight dynamics, system identification, and controls.
 
 <p align="center">
   <iframe width="52%" height="260"
@@ -266,11 +222,11 @@ The next stage of this work connects learned dynamics accuracy to downstream con
     style="border-radius:12px; border:1px solid #2a3542;">
   </iframe>
 </p>
-<p align="center"><em>Small rollout/demo video from the closed-loop modeling pipeline.</em></p>
+<p align="center"><em>Closed-loop rollout/demo video from the flight-dynamics modeling pipeline.</em></p>
 
 ### Tools
 
-`Python` · `PyTorch` · `JSBSim` · `NumPy` · `Matplotlib` · `Flight dynamics` · `Closed-loop simulation` · `System identification`
+`Python` · `PyTorch` · `JSBSim` · `NumPy` · `Matplotlib` · `Flight dynamics` · `Rotorcraft simulation` · `Closed-loop validation` · `System identification`
 
 ## HyCUBE: CubeSat Thermal & Instrumentation Payload
 
