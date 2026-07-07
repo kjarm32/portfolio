@@ -42,8 +42,8 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
         </a>
       </div>
       <p style="margin:10px 0 0 0;">
-        <a href="#flynet-neural-flight-dynamics-modeling" class="card-title"><strong>FlyNet: Neural Flight Dynamics</strong></a><br>
-        <span class="card-subtitle">Closed-loop neural flight dynamics modeling with JSBSim and PyTorch.</span>
+        <a href="#flynet-neural-flight-dynamics-modeling" class="card-title"><strong>Learned Rotorcraft Dynamics</strong></a><br>
+        <span class="card-subtitle">Physics-informed ML for closed-loop flight simulation and control-oriented validation.</span>
       </p>
     </td>
   </tr>
@@ -77,7 +77,7 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
 
 ## Explore Projects
 - [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
-- [FlyNet: Neural Flight Dynamics Modeling](#flynet-neural-flight-dynamics-modeling)
+- [Learned Rotorcraft Dynamics for Control-Oriented Simulation](#flynet-neural-flight-dynamics-modeling)
 - [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
 - [Drone Seed Dispersal Attachment: Native Plant Rewilding](#drone-seed-dispersal-attachment-native-plant-rewilding)
 - [Additional Projects](#additional-projects)
@@ -191,28 +191,45 @@ Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep 
 - [CFD Summary (PDF)](assets/BWB_CFD_Summary_.pdf)
 
 ---
+---
+<a id="flynet-neural-flight-dynamics-modeling"></a>
+
 ## Learned Rotorcraft Dynamics for Control-Oriented Simulation
 
-**Flight Dynamics · Physics-Informed ML · PyTorch · JSBSim · Closed-Loop Simulation · Control Systems**  
+**Flight Dynamics · Physics-Informed ML · PyTorch · JSBSim · Closed-Loop Simulation · System Identification · Controls**  
 *Mofrad Lab collaboration*
 
-I am developing learned flight-dynamics models for rotorcraft simulation and control-oriented analysis. The project builds on physics-informed neural dynamics: instead of predicting aircraft motion directly, the model learns force and moment behavior while preserving rigid-body equations of motion.
+I am developing learned flight-dynamics models for rotorcraft simulation and control-oriented analysis. The project builds on FlyNet-style physics-informed neural dynamics: instead of predicting aircraft motion directly, the model learns force and moment behavior while preserving rigid-body equations of motion.
 
-My work focuses on whether learned dynamics remain reliable when they are rolled forward through full trajectories. This matters because low prediction error at a single time step does not always mean the model behaves well in closed-loop simulation.
+My work focuses on what happens after a learned model is rolled forward through full trajectories. A model can look accurate under ordinary prediction metrics while still accumulating drift, producing unrealistic local behavior, or responding poorly in feedback-style simulations. The goal of this project is to evaluate learned aircraft dynamics beyond one-step error and ask whether they can behave like useful simulation surrogates.
+
+<p align="center">
+  <img src="assets/flynet_method_comparison_heatmap.png" width="88%"
+       alt="Method comparison heatmap for learned rotorcraft dynamics"
+       style="border-radius:10px; border:1px solid #2a3542;">
+</p>
+<p align="center"><em>
+Closed-loop evaluation showed that model changes do not improve every state uniformly; they shift error across translational, rotational, and attitude channels.
+</em></p>
 
 ### What I Built
 
 - Implemented a PyTorch-based neural flight-dynamics modeling pipeline.
 - Integrated learned force and moment predictions with rigid-body equations of motion.
 - Built closed-loop rollout evaluation on held-out rotorcraft trajectories.
+- Compared feed-forward, recurrent, and training-objective variants under matched simulation conditions.
 - Developed diagnostics for trajectory drift, local model behavior, and control-relevant response.
-- Compared model variants under matched simulation and evaluation conditions.
+- Extended the project from trajectory matching toward controller-facing validation.
 
 ### Research Focus
 
-The core question is how to evaluate learned aircraft dynamics beyond ordinary prediction loss. I am studying when these models behave like useful simulation surrogates, especially in settings where trajectory rollout and control response matter.
+The core research question is how to validate learned aircraft dynamics when trajectory rollout and control response matter. I am studying when these models behave like reliable simulation surrogates, not just low-error predictors.
 
 This work sits at the intersection of machine learning, flight dynamics, system identification, and controls.
+
+### Why It Matters
+
+Learned flight-dynamics models are most useful when they can support downstream simulation, planning, or controller analysis. That requires more than matching data: the model must remain stable during rollout, preserve physically meaningful behavior, and respond consistently under perturbations.
 
 <p align="center">
   <iframe width="52%" height="260"
@@ -226,8 +243,9 @@ This work sits at the intersection of machine learning, flight dynamics, system 
 
 ### Tools
 
-`Python` · `PyTorch` · `JSBSim` · `NumPy` · `Matplotlib` · `Flight dynamics` · `Rotorcraft simulation` · `Closed-loop validation` · `System identification`
+`Python` · `PyTorch` · `JSBSim` · `NumPy` · `Matplotlib` · `Flight dynamics` · `Rotorcraft simulation` · `Closed-loop validation` · `System identification` · `Controls`
 
+---
 ## HyCUBE: CubeSat Thermal & Instrumentation Payload
 
 **Aerospace Instrumentation · Sensor Calibration · Thermal Validation · Flight Operations**  
