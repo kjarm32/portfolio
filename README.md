@@ -16,8 +16,6 @@
      alt="Headshot"
      style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
 
-I'm a mechanical engineering student-athlete at UC Berkeley building toward a career in aerospace and hardware. As a sophomore, I have run a full aerodynamics design-to-test pipeline on a custom blended-wing-body aircraft, built neural flight dynamics models in the Mofrad Lab, designed and CFD-validated a seed-dispersal attachment for rewilding drones, and validated thermocouple instrumentation for a hypersonic reentry payload through NASA Space Grant. I care about work that closes the loop between analysis, simulation, fabrication, and physical testing.
-
 <p align="center"><strong>Aerospace Systems</strong> • <strong>Experimental Aerodynamics</strong> • <strong>Mechanical Design</strong> • <strong>Applied ML</strong></p>
 
 <table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
@@ -72,6 +70,9 @@ I'm a mechanical engineering student-athlete at UC Berkeley building toward a ca
     </td>
   </tr>
 </table>
+
+I'm a mechanical engineering student at UC Berkeley building toward a career in aerospace and hardware. As a junior, I have run a full aerodynamics design-to-test pipeline on a custom blended-wing-body aircraft, built neural flight dynamics models in the Mofrad Lab, designed and CFD-validated a seed-dispersal attachment for rewilding drones, and validated thermocouple instrumentation for a hypersonic reentry payload through NASA Space Grant. I care about work that closes the loop between analysis, simulation, fabrication, and physical testing.
+
 
 <p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in aerodynamics, aerospace instrumentation, mechanical design, and applied machine learning.</em></p>
 
