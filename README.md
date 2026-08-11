@@ -30,9 +30,9 @@
     <td style="vertical-align:top;">
       <div class="dark-figure-frame">
         <a href="#flynet-neural-flight-dynamics-modeling">
-          <img src="assets/c172flyhero.png"
-               alt="FlyNet neural flight dynamics modeling"
-               style="width:100%; height:230px; object-fit:cover; object-position:center 20%; border-radius:12px; display:block; border:1px solid #2a3542;">
+          <img src="assets/rotorcraft_matched_trajectory_comparison_v3.gif"
+           alt="Matched rotorcraft controller and open-loop simulation responses"
+           style="width:100%; height:230px; object-fit:contain; object-position:center; background:#0b1213; border-radius:12px; display:block; border:1px solid #2a3542;">
         </a>
       </div>
       <p style="margin:10px 0 0 0;">
