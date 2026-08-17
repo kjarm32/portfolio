@@ -54,9 +54,9 @@
 
   <div class="featured-grid">
     <a class="featured-card" href="#experience">
-      <div class="featured-card-media">
+      <div class="featured-card-media light-media">
         <img src="assets/standardbots_render.jpg"
-     alt="Standard Bots industrial robot arm render">
+             alt="Standard Bots industrial robot arm render">
       </div>
       <div class="featured-card-copy">
         <span class="card-kicker">HARDWARE ENGINEERING</span>
@@ -191,17 +191,17 @@
     </div>
 
     <figure class="standardbots-photo">
-      <img src="assets/standardbots_build_photo.jpg"
-           alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
+      <img src="assets/standardbots_render.jpg"
+           alt="Standard Bots industrial robot arm render">
     </figure>
   </div>
 
   <div class="evidence-grid">
     <figure class="figure-card">
-      <img src="assets/standardbots_test_hardware.jpg"
-           alt="Representative robotic joint test hardware">
+      <img src="assets/standardbots_build_photo.jpg"
+           alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
       <figcaption>
-        <strong>Test hardware.</strong> Representative development hardware from the test-system work.
+        <strong>Assembly + calibration.</strong> Bringing up and validating a completed robot arm during production-facing hardware work.
       </figcaption>
     </figure>
 
@@ -211,7 +211,7 @@
         <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
       </video>
       <figcaption>
-        <strong>Assembly + calibration checkout.</strong> Arm executing a motion routine I programmed while bringing up the completed assembly.
+        <strong>Checkout routine.</strong> Arm executing a motion routine I programmed while bringing up the completed assembly.
       </figcaption>
     </figure>
   </div>
@@ -335,7 +335,7 @@
       <figure class="figure-card">
         <img src="assets/bwb_wind_tunnel_run4_plot.png"
              alt="BWB wind tunnel normal force and pitching moment across angle of attack">
-        <figcaption>Tuft-free wind-tunnel run through 20°.</figcaption>
+        <figcaption>Wind-tunnel run through 20°.</figcaption>
       </figure>
     </div>
   </div>
@@ -511,17 +511,9 @@
     </div>
 
     <figure class="figure-card calibration-photo">
-      <img src="assets/hycube_calibration_rig.jpeg"
-           alt="Thermocouple calibration rig for HyCUBE">
+      <img src="assets/hycube_test_setup.jpg"
+           alt="HyCUBE calibration and test setup">
       <figcaption>Thermocouple calibration and measurement setup.</figcaption>
-    </figure>
-  </div>
-
-  <div class="hycube-bottom">
-    <figure class="figure-card preflight-photo">
-      <img src="assets/hycube_balloon_preflight.jpeg"
-           alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
-      <figcaption>Payload integration before balloon release.</figcaption>
     </figure>
   </div>
 </section>
@@ -584,28 +576,31 @@
   <header class="section-heading">
     <p class="eyebrow">ADDITIONAL ENGINEERING</p>
     <h2>Wind Turbine Design-Build-Test</h2>
+    <p class="case-subtitle">Rapid prototyping · wind-tunnel-style testing · power characterization · structural review</p>
   </header>
 
-  <article class="wind-card">
-    <div class="wind-copy">
-      <p>
-        In a four-person team, designed, built, and tested a small wind turbine under manufacturability and performance constraints.
-        I focused on measurement, power characterization, blade concept research, and verification.
+  <article class="case-study compact-case wind-case">
+    <div class="wind-top">
+      <p class="case-lede">
+        In a four-person team project, we designed, built, and tested a small wind turbine under manufacturability
+        and performance constraints. I focused on measurement, power characterization, blade concept research,
+        and verification review, and our final design ranked <strong>#1 of 40 teams</strong> in measured electrical power output.
       </p>
 
-      <div class="wind-result">
+      <div class="wind-result-card">
         <strong>#1 / 40</strong>
         <span>teams in measured electrical power output</span>
       </div>
     </div>
 
-    <div class="wind-media">
-      <figure>
-        <img src="assets/windturbine_test_setup.jpg" alt="Wind turbine test setup">
+    <div class="wind-visuals">
+      <figure class="figure-card wind-tower-photo">
+        <img src="assets/windturbine_test_setup.jpg" alt="Wind turbine physical test setup">
         <figcaption>Physical test setup.</figcaption>
       </figure>
-      <figure>
-        <img src="assets/windturbine_fea_triptych.png" alt="Wind turbine structural FEA results">
+
+      <figure class="figure-card wind-fea-photo">
+        <img src="assets/windturbine_fea_triptych.png" alt="Wind turbine structural FEA sanity-check results">
         <figcaption>Structural sanity-check results.</figcaption>
       </figure>
     </div>
