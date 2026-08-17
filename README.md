@@ -464,7 +464,7 @@
     </div>
   </header>
 
-  <div class="media-grid two hycube-context-grid">
+  <div class="media-grid two hycube-hero-grid">
     <figure class="figure-card">
       <img src="assets/HyCubeINAir.png" alt="HyCUBE payload during high-altitude flight">
       <figcaption>HyCUBE in high-altitude flight.</figcaption>
@@ -472,15 +472,15 @@
     <figure class="figure-card">
       <img src="assets/hycube_mission_graphic.webp"
            alt="HyCUBE mission profile showing high-altitude ascent and reentry phases">
-      <figcaption>Mission profile: balloon ascent, release, and reentry experiment.</figcaption>
+      <figcaption>Mission profile: balloon ascent, release, and the reentry experiment.</figcaption>
     </figure>
   </div>
 
   <div class="split-feature hycube-feature">
     <div>
       <p class="project-lede">
-        Built, wired, and programmed a thermocouple calibration rig for flight instrumentation
-        and supported payload integration and high-altitude flight operations.
+        Built, wired, and programmed a thermocouple calibration rig for flight instrumentation,
+        then supported payload integration and high-altitude flight operations for the HyCUBE reentry experiment.
       </p>
 
   <ul class="clean-list">
@@ -493,6 +493,11 @@
       to approximately 90,000 ft, recovered the payload, and validated post-flight data.
     </li>
   </ul>
+
+  <div class="metric-grid two hycube-metrics">
+    <div class="metric"><strong>50–155°C</strong><span>probe characterization range</span></div>
+    <div class="metric"><strong>~90,000 ft</strong><span>high-altitude flight and recovery</span></div>
+  </div>
 </div>
 
 <figure class="figure-card">
@@ -503,7 +508,7 @@
 
   </div>
 
-  <div class="media-grid two hycube-operations-grid">
+  <div class="media-grid two hycube-support-grid">
     <figure class="figure-card">
       <img src="assets/hycube_balloon_preflight.jpeg"
            alt="Payload integration before the HyCUBE balloon release">
@@ -581,7 +586,7 @@
     <div class="wind-project-copy">
       <p class="project-lede">
         In a four-person team, designed, built, and tested a small wind turbine under manufacturability and performance constraints.
-        I focused on measurement, power characterization, blade concept research, and verification review.
+        I focused on measurement, power characterization, blade concept research, and verification.
       </p>
       <div class="project-result wind-result">
         <strong>#1 / 40</strong>
