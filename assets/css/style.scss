@@ -1159,3 +1159,164 @@ body {
     height: auto;
   }
 }
+
+
+/* ===== User-requested micro-refinement ===== */
+
+/* Standard Bots loaded burn-in fixture: fill the panel with only a slight crop */
+.standardbots-photo.standardbots-fixture-photo {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #f7f9fc;
+}
+
+.standardbots-photo.standardbots-fixture-photo img {
+  display: block;
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  object-position: center 42%;
+  padding: 0;
+  background: #f7f9fc;
+}
+
+.standardbots-photo.standardbots-fixture-photo figcaption {
+  padding: 12px 14px 14px;
+  border-top: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.standardbots-photo.standardbots-fixture-photo figcaption strong {
+  color: var(--ink-2);
+}
+
+/* Wind turbine: tower + text share the left card; FEA is the only right-side visual */
+.wind-final-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.wind-story-card {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.78fr) minmax(280px, 1.22fr);
+  grid-template-rows: 1fr auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.wind-story-image {
+  display: grid;
+  place-items: center;
+  min-height: 430px;
+  padding: 14px;
+  background: #fff;
+}
+
+.wind-story-image img {
+  display: block;
+  width: 100%;
+  height: 405px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.wind-story-copy {
+  align-self: center;
+  padding: 28px 28px 24px 18px;
+}
+
+.wind-result-inline {
+  margin-bottom: 20px;
+}
+
+.wind-result-inline strong,
+.wind-result-inline span {
+  display: block;
+}
+
+.wind-result-inline strong {
+  color: var(--ink);
+  font-size: 38px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.wind-result-inline span {
+  max-width: 220px;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.wind-story-copy p {
+  margin: 0 0 14px !important;
+  color: var(--ink-2);
+  font-size: 15px;
+  line-height: 1.65 !important;
+}
+
+.wind-story-caption {
+  grid-column: 1 / -1;
+  padding: 11px 13px 13px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.wind-final-fea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wind-final-fea img {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 430px;
+  object-fit: contain;
+  padding: 18px;
+  background: #fff;
+}
+
+@media (max-width: 980px) {
+  .wind-final-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wind-story-card {
+    grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .standardbots-photo.standardbots-fixture-photo img {
+    height: 360px;
+  }
+
+  .wind-story-card {
+    grid-template-columns: 1fr;
+  }
+
+  .wind-story-image {
+    min-height: 0;
+  }
+
+  .wind-story-image img,
+  .wind-final-fea img {
+    height: auto;
+    min-height: 0;
+  }
+
+  .wind-story-copy {
+    padding: 20px;
+  }
+}
