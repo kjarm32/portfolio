@@ -54,9 +54,9 @@
 
   <div class="featured-grid">
     <a class="featured-card" href="#experience">
-      <div class="featured-card-media standardbots-burnin-card">
-        <img src="assets/standardbots_test_hardware.jpg"
-             alt="Loaded burn-in test hardware developed at Standard Bots">
+      <div class="featured-card-media">
+        <img src="assets/standardbots_render.jpg"
+             alt="Standard Bots industrial robot arm render">
       </div>
       <div class="featured-card-copy">
         <span class="card-kicker">HARDWARE ENGINEERING</span>
@@ -190,9 +190,9 @@
       </div>
     </div>
 
-    <figure class="standardbots-photo">
-      <img src="assets/standardbots_render.jpg"
-           alt="Standard Bots industrial robot arm render">
+    <figure class="standardbots-photo standardbots-fixture-photo">
+      <img src="assets/standardbots_test_hardware.jpg"
+           alt="Loaded burn-in test hardware developed at Standard Bots">
     </figure>
   </div>
 
@@ -481,8 +481,8 @@
     </figure>
   </div>
 
-  <div class="split-feature hycube-copy">
-    <div>
+  <div class="hycube-detail-grid">
+    <div class="hycube-copy-panel">
       <p class="case-lede">
         Built, wired, and programmed a thermocouple calibration rig for flight instrumentation,
         then characterized probe configurations against a reference and supported payload integration,
@@ -512,18 +512,24 @@
       </div>
     </div>
 
-    <figure class="figure-card hycube-analysis">
+    <figure class="figure-card hycube-plot-card">
       <img src="assets/hycube_validation_2up.png"
-           alt="HyCUBE thermocouple validation plots">
+           alt="HyCUBE thermocouple parity and temperature-error validation plots">
       <figcaption>Thermocouple parity and temperature-error validation.</figcaption>
     </figure>
-  </div>
 
-  <figure class="figure-card hycube-ground-photo">
-    <img src="assets/hycube_balloon_preflight.jpeg"
-         alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
-    <figcaption>Payload integration before balloon release.</figcaption>
-  </figure>
+    <figure class="figure-card hycube-ground-photo">
+      <img src="assets/hycube_balloon_preflight.jpeg"
+           alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
+      <figcaption>Payload integration before balloon release.</figcaption>
+    </figure>
+
+    <figure class="figure-card hycube-plot-card secondary">
+      <img src="assets/hycube_agreement_2up.png"
+           alt="HyCUBE agreement and sensitivity plots across thermocouple probe configurations">
+      <figcaption>Agreement and sensitivity plots across probe configurations.</figcaption>
+    </figure>
+  </div>
 </section>
 
 <section id="drone" class="case-study compact-case">
@@ -555,27 +561,27 @@
     <div class="metric"><strong>−0.044 N</strong><span>predicted side force</span></div>
   </div>
 
-  <div class="case-intro two">
-    <p>
-      On a team, I owned mounting placement, aerodynamic outer geometry, maintenance access, and DfAM
-      for an ABS-printed quadcopter attachment, then validated retention and aircraft integration through loaded flight testing.
-    </p>
-    <p>
-      I ran a 15 mph CFD study to quantify aerodynamic loads, then redesigned the leading edge from flat to curved
-      to reduce simulated flow separation and improve aerodynamic integration.
-    </p>
-  </div>
+  <div class="drone-body-grid">
+    <div class="drone-copy">
+      <p>
+        On a team, I owned mounting placement, aerodynamic outer geometry, maintenance access,
+        and DfAM for an ABS-printed quadcopter attachment, then validated retention and aircraft integration
+        on a DJI drone through loaded flight testing.
+      </p>
+      <p>
+        I ran a 15 mph CFD study to quantify aerodynamic loads, then redesigned the leading edge from flat to curved
+        to reduce simulated flow separation and improve aerodynamic integration.
+      </p>
+    </div>
 
-  <div class="media-grid two drone-cfd-grid">
-    <figure class="figure-card">
-      <img src="assets/e29DronePressure.png"
-           alt="Static pressure result for the drone seed-dispersal attachment at 15 mph">
-      <figcaption>Static-pressure field at the 15 mph forward-flight condition.</figcaption>
-    </figure>
-    <figure class="figure-card">
-      <img src="assets/e29dronevel.png"
-           alt="Velocity field result for the drone seed-dispersal attachment at 15 mph">
-      <figcaption>Velocity field used to assess wake behavior and separation.</figcaption>
+    <figure class="figure-card drone-cfd-pair">
+      <div class="drone-cfd-inner">
+        <img src="assets/e29DronePressure.png"
+             alt="Static pressure result for the drone seed-dispersal attachment at 15 mph">
+        <img src="assets/e29dronevel.png"
+             alt="Velocity field result for the drone seed-dispersal attachment at 15 mph">
+      </div>
+      <figcaption>Pressure and velocity fields used to quantify aerodynamic loads and refine the attachment geometry at 15 mph forward flight.</figcaption>
     </figure>
   </div>
 </section>
@@ -601,21 +607,34 @@
       </div>
     </div>
 
-    <div class="wind-visuals">
+    <div class="wind-visuals refined">
       <figure class="figure-card wind-tower-photo">
         <img src="assets/windturbine_test_setup.jpg" alt="Wind turbine physical test setup">
         <figcaption>Physical test setup.</figcaption>
       </figure>
 
-      <figure class="figure-card wind-fea-photo">
-        <img src="assets/windturbine_fea_triptych.png" alt="Wind turbine structural FEA sanity-check results">
-        <figcaption>Structural sanity-check results.</figcaption>
-      </figure>
+      <div class="wind-side-stack">
+        <figure class="figure-card wind-power-photo">
+          <img src="assets/windturbine_power_vs_current.png" alt="Wind turbine power versus current curve">
+          <figcaption>Measured power curve.</figcaption>
+        </figure>
+
+        <figure class="figure-card wind-fea-photo">
+          <img src="assets/windturbine_fea_triptych.png" alt="Wind turbine structural FEA sanity-check results">
+          <figcaption>Structural sanity-check results.</figcaption>
+        </figure>
+      </div>
     </div>
   </article>
 </section>
 
 <footer class="portfolio-footer">
+  <span>Kevin Armstrong II · UC Berkeley Mechanical Engineering</span>
+  <div>
+    <a href="mailto:kevarm2028@berkeley.edu">Email</a>
+    <a href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/">LinkedIn</a>
+  </div>
+</footer> class="portfolio-footer">
   <span>Kevin Armstrong II · UC Berkeley Mechanical Engineering</span>
   <div>
     <a href="mailto:kevarm2028@berkeley.edu">Email</a>
