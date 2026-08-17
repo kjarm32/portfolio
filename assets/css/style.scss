@@ -932,3 +932,91 @@ body {
     page-break-inside: avoid;
   }
 }
+
+
+/* Requested Standard Bots image fixes */
+.featured-card-media.standardbots-burnin-card img {
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.evidence-grid .assembly-photo img {
+  object-fit: cover;
+  object-position: 28% 18%;
+}
+
+
+/* Requested HyCUBE layout: mission context -> analysis -> ground hardware */
+.hycube-analysis img {
+  height: 330px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+}
+
+.hycube-ground-photo {
+  width: min(68%, 720px);
+  margin-top: 16px;
+}
+
+.hycube-ground-photo img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+
+/* Requested Drone CFD pairing */
+.drone-cfd-grid {
+  gap: 6px;
+}
+
+.drone-cfd-grid .figure-card {
+  background: #f4f6f8;
+}
+
+.drone-cfd-grid .figure-card img {
+  height: 270px;
+  object-fit: contain;
+  background: #f4f6f8;
+}
+
+
+/* Requested Wind Turbine visual treatment */
+.wind-visuals {
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+  align-items: stretch;
+}
+
+.wind-tower-photo img {
+  height: 390px;
+  object-fit: contain;
+  object-position: center top;
+  padding: 10px;
+  background: #fff;
+}
+
+.wind-fea-photo img {
+  height: 390px;
+  object-fit: contain;
+  padding: 10px;
+  background: #fff;
+}
+
+
+@media (max-width: 820px) {
+  .hycube-ground-photo {
+    width: 100%;
+  }
+
+  .hycube-ground-photo img,
+  .hycube-analysis img {
+    height: 280px;
+  }
+
+  .wind-tower-photo img,
+  .wind-fea-photo img {
+    height: 300px;
+  }
+}
