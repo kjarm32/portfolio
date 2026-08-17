@@ -1,432 +1,1095 @@
-<style>
-@media (max-width: 680px) {
-  /* Image layout tables — stack vertically */
-  table:not(:has(thead)) { display:block !important; width:100% !important; }
-  table:not(:has(thead)) tr { display:block !important; }
-  table:not(:has(thead)) td { display:block !important; width:100% !important; box-sizing:border-box !important; padding:6px 0 !important; }
-  table:not(:has(thead)) td img { height:auto !important; max-width:100% !important; }
-  /* Data tables — scroll horizontally instead */
-  table:has(thead) { display:block !important; overflow-x:auto !important; -webkit-overflow-scrolling:touch !important; }
-  img[width] { max-width:100% !important; }
-  iframe { width:100% !important; height:240px !important; }
-}
-</style>
+<div class="portfolio-nav">
+  <a class="portfolio-brand" href="#top">KA</a>
+  <div class="portfolio-nav-links">
+    <a href="#experience">Experience</a>
+    <a href="#aerospace">Aerospace</a>
+    <a href="#research">Research</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
 
+<a id="top"></a>
 
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
+    <h1 class="hero-name">Kevin Armstrong II</h1>
+    <p class="hero-title">I design, analyze, build, and test aircraft and complex mechanical hardware.</p>
+    <p class="hero-lede">
+      Mechanical engineering student focused on aircraft design, experimental aerodynamics, and hardware development.
+      My strongest work closes the loop between CAD, first-principles analysis, fabrication, instrumentation, and physical test.
+    </p>
 
-<table style="width:100%; border-collapse:separate; border-spacing:18px 16px; table-layout:fixed;">
-  <tr>
-    <td style="vertical-align:top;">
-      <a href="#concept-aircraft-blended-wing-body-aerodynamics">
-        <img src="assets/IMG_3685 (1).jpeg"
-             alt="Blended-wing-body aerodynamic validation project"
-             style="width:100%; height:230px; object-fit:cover; object-position:center 40%; border-radius:12px; display:block; border:1px solid #2a3542;">
-      </a>
-      <p style="margin:10px 0 0 0;">
-        <a href="#concept-aircraft-blended-wing-body-aerodynamics" class="card-title"><strong>Blended-Wing-Body Aerodynamics</strong></a><br>
-        <span class="card-subtitle">Full design-to-test pipeline with CFD, wind tunnel data, and tuft flow visualization.</span>
-      </p>
-    </td>
-    <td style="vertical-align:top;">
-      <div class="dark-figure-frame">
-        <a href="#flynet-neural-flight-dynamics-modeling">
-          <img src="assets/rotorcraft_matched_trajectory_comparison_v3.gif"
-           alt="Matched rotorcraft controller and open-loop simulation responses"
-           style="width:100%; height:230px; object-fit:contain; object-position:center; background:#0b1213; border-radius:12px; display:block; border:1px solid #2a3542;">
-        </a>
+    <div class="tag-row">
+      <span>Aircraft Design</span>
+      <span>Experimental Aerodynamics</span>
+      <span>Mechanical Hardware</span>
+      <span>Test Engineering</span>
+    </div>
+
+    <div class="hero-actions">
+      <a class="button button-primary" href="#aerospace">View selected work</a>
+      <a class="button button-secondary" href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/">LinkedIn</a>
+      <a class="button button-secondary" href="mailto:kevarm2028@berkeley.edu">Email</a>
+    </div>
+  </div>
+
+  <aside class="hero-profile">
+    <img src="assets/4headshotasmes.png" alt="Kevin Armstrong II">
+    <div class="hero-credentials">
+      <div>
+        <span class="credential-kicker">PROFESSIONAL HARDWARE</span>
+        <strong>Standard Bots</strong>
+        <small>Hardware Engineering Intern · 2026</small>
       </div>
-      <p style="margin:10px 0 0 0;">
-        <a href="#flynet-neural-flight-dynamics-modeling" class="card-title"><strong>Learned Rotorcraft Dynamics</strong></a><br>
-        <span class="card-subtitle">Physics-informed ML for closed-loop flight simulation and control-oriented validation.</span>
+      <div>
+        <span class="credential-kicker">FLIGHT DYNAMICS RESEARCH</span>
+        <strong>IEEE Aerospace 2027</strong>
+        <small>Accepted conference paper</small>
+      </div>
+      <div>
+        <span class="credential-kicker">ENGINEERING + ATHLETICS</span>
+        <strong>UC Berkeley</strong>
+        <small>Mechanical Engineering · NCAA Division I</small>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<section class="credibility-strip">
+  <div><strong>Design</strong><span>CAD · drawings · interfaces</span></div>
+  <div><strong>Analyze</strong><span>FEA · CFD · first principles</span></div>
+  <div><strong>Build</strong><span>machining · FDM · assembly</span></div>
+  <div><strong>Test</strong><span>instrumentation · data · validation</span></div>
+</section>
+
+<section id="experience" class="portfolio-section">
+  <header class="section-header">
+    <p class="eyebrow dark">FEATURED EXPERIENCE</p>
+    <h2>Professional hardware development</h2>
+    <p>
+      Production-facing mechanical design and test work on six-axis industrial robots.
+    </p>
+  </header>
+
+  <article class="experience-card">
+    <div class="experience-copy">
+      <div class="experience-heading">
+        <div>
+          <p class="project-kicker">STANDARD BOTS · BROOKLYN, NY · SUMMER 2026</p>
+          <h3>Hardware Engineering Intern</h3>
+        </div>
+        <span class="status-pill">Design → Build → Test</span>
+      </div>
+
+      <p class="project-lede">
+        Designed and validated mechanical hardware and test infrastructure for industrial robots,
+        working from problem definition through CAD, analysis, fabrication, assembly, instrumentation, and production use.
       </p>
-    </td>
-  </tr>
-  <tr>
-    <td style="vertical-align:top;">
-      <a href="#hycube-cubesat-thermal--instrumentation-payload">
+
+      <div class="metric-grid four">
+        <div class="metric"><strong>100 hr</strong><span>automated loaded burn-in</span></div>
+        <div class="metric"><strong>&gt;2.5 kN·m</strong><span>momentary interface load verified</span></div>
+        <div class="metric"><strong>~75 hr</strong><span>downstream disassembly/rework avoided</span></div>
+        <div class="metric"><strong>3</strong><span>complete arms assembled + calibrated</span></div>
+      </div>
+
+      <div class="workstream-grid">
+        <div class="workstream">
+          <span class="workstream-number">01</span>
+          <h4>Joint reliability test system</h4>
+          <p>
+            Designed an automated pre-assembly burn-in station that applied representative load for long-duration testing,
+            integrated torque/position sensing, and screened joints before complete robot assembly to reduce downstream rework.
+          </p>
+        </div>
+
+        <div class="workstream">
+          <span class="workstream-number">02</span>
+          <h4>High-load dynamometer interface</h4>
+          <p>
+            Designed a precision mechanical interface for joint dynamometer testing and checked bolted, doweled, and keyed
+            load paths with hand calculations and static FEA before releasing the manufactured part.
+          </p>
+        </div>
+
+        <div class="workstream">
+          <span class="workstream-number">03</span>
+          <h4>Build systems + production support</h4>
+          <p>
+            Assembled and calibrated complete robot arms, programmed checkout motion routines, improved technician-facing build instructions,
+            trained technicians, and designed protective hardware used across multiple product lines.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="standardbots-visual"
+         role="img"
+         aria-label="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
+      <div class="visual-overlay">
+        <span>STANDARD BOTS</span>
+        <strong>Mechanical hardware<br>under real constraints.</strong>
+        <small>Assembly and calibration work during the 2026 hardware engineering internship.</small>
+      </div>
+    </div>
+  </article>
+
+  <div class="standardbots-evidence-grid">
+
+    <figure class="evidence-card">
+      <img src="assets/standardbots_test_hardware.jpg"
+           alt="Prototype robotic joint test hardware mounted to a mechanical test interface">
+      <figcaption>
+        <strong>Test hardware</strong>
+        <span>
+          Representative development hardware from the test-system work.
+          Detailed internal specifications are intentionally omitted.
+        </span>
+      </figcaption>
+    </figure>
+
+    <figure class="evidence-card video-card">
+      <video autoplay
+             muted
+             loop
+             playsinline
+             controls
+             preload="metadata"
+             poster="assets/standardbots_motion_poster.jpg">
+        <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
+      </video>
+      <figcaption>
+        <strong>Assembly + calibration checkout</strong>
+        <span>
+          Arm executing a motion routine I programmed while bringing up and validating the completed assembly.
+        </span>
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<section id="aerospace" class="portfolio-section">
+
+  <header class="section-header">
+    <p class="eyebrow dark">SELECTED AEROSPACE WORK</p>
+    <h2>Aircraft, aerodynamics, and flight systems</h2>
+    <p>
+      Projects selected for direct relevance to aircraft design, flight sciences,
+      hardware integration, and test.
+    </p>
+  </header>
+
+  <div class="project-grid">
+
+    <a class="project-card" href="#bwb">
+      <div class="project-image">
+        <img src="assets/IMG_3685 (1).jpeg"
+             alt="Blended-wing-body model in a wind tunnel">
+      </div>
+
+      <div class="project-card-body">
+        <p class="project-kicker">EXPERIMENTAL AERODYNAMICS</p>
+        <h3>Blended-Wing-Body Aircraft</h3>
+        <p>
+          Independently designed the OML, verified a low-speed CFD workflow,
+          fabricated the test article, and characterized stall in a wind tunnel.
+        </p>
+        <div class="project-result">
+          <strong>14–16°</strong>
+          <span>stall onset</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="project-card dark-card" href="#rotorcraft">
+
+      <div class="project-image dark-media">
+        <img src="assets/rotorcraft_matched_trajectory_comparison_v3.gif"
+             alt="Learned rotorcraft dynamics rollout comparison">
+      </div>
+
+      <div class="project-card-body">
+        <p class="project-kicker">FLIGHT DYNAMICS + ML</p>
+        <h3>Learned Rotorcraft Dynamics</h3>
+        <p>
+          Physics-informed force and moment models evaluated by trajectory rollout
+          and controller-facing behavior rather than one-step error alone.
+        </p>
+        <div class="project-result">
+          <strong>IEEE 2027</strong>
+          <span>accepted paper</span>
+        </div>
+      </div>
+
+    </a>
+
+    <a class="project-card" href="#hycube">
+
+      <div class="project-image">
         <img src="assets/HyCubeINAir.png"
-             alt="HyCUBE thermal instrumentation payload"
-             style="width:100%; height:230px; object-fit:cover; object-position:center 35%; border-radius:12px; display:block; border:1px solid #2a3542;">
-      </a>
-      <p style="margin:10px 0 0 0;">
-        <a href="#hycube-cubesat-thermal--instrumentation-payload" class="card-title"><strong>HyCUBE Thermal Payload</strong></a><br>
-        <span class="card-subtitle">Aerospace instrumentation, calibration, and flight operations for a reentry payload.</span>
+             alt="HyCUBE payload during high-altitude flight">
+      </div>
+
+      <div class="project-card-body">
+        <p class="project-kicker">FLIGHT INSTRUMENTATION</p>
+        <h3>HyCUBE Reentry Payload</h3>
+        <p>
+          Thermocouple calibration, instrumentation validation, payload integration,
+          flight operations, recovery, and post-flight data review.
+        </p>
+        <div class="project-result">
+          <strong>NASA</strong>
+          <span>Space Grant support</span>
+        </div>
+      </div>
+
+    </a>
+
+  </div>
+</section>
+
+<section id="bwb" class="case-study">
+
+  <header class="case-study-header">
+
+    <div>
+      <p class="eyebrow dark">FLAGSHIP AIRCRAFT PROJECT · JAN–APR 2026</p>
+      <h2>Blended-Wing-Body Aerodynamics</h2>
+      <p class="case-study-subtitle">
+        Geometry design · CFD solution verification · FDM fabrication ·
+        force-balance test · tuft flow visualization
       </p>
-    </td>
-    <td style="vertical-align:top;">
-      <a href="#drone-seed-dispersal-attachment-native-plant-rewilding">
-        <img src="assets/dronee29Cadrender.png"
-     alt="Drone seed dispersal attachment CAD render"
-     style="width:100%; height:230px; object-fit:contain; object-position:center center; background:#f8fafc; border-radius:12px; display:block; border:1px solid #2a3542;">
-      </a>
-      <p style="margin:10px 0 0 0;">
-        <a href="#drone-seed-dispersal-attachment-native-plant-rewilding" class="card-title"><strong>Drone Seed Dispersal Attachment</strong></a><br>
-        <span class="card-subtitle">CAD, CFD validation, DfAM, and flight-tested mechanical integration.</span>
+    </div>
+
+    <a class="text-link"
+       href="assets/BWB_Project_Showcase_Tufts%20(4).html">
+      Full technical showcase ↗
+    </a>
+
+  </header>
+
+  <div class="case-hero">
+
+    <img src="assets/IMG_3685 (1).jpeg"
+         alt="3D-printed BWB model mounted to a three-component wind tunnel balance">
+
+    <div class="case-hero-caption">
+      <span>EWT 18 × 18 in test section</span>
+      <span>5.0% blockage</span>
+      <span>V∞ ≈ 40 mph</span>
+      <span>Re ≈ 5.6 × 10⁴</span>
+    </div>
+
+  </div>
+
+  <div class="metric-grid four case-metrics">
+
+    <div class="metric">
+      <strong>7.31</strong>
+      <span>peak CFD L/D at 6°</span>
+    </div>
+
+    <div class="metric">
+      <strong>14–16°</strong>
+      <span>stall onset in tunnel data</span>
+    </div>
+
+    <div class="metric">
+      <strong>3.36 N</strong>
+      <span>peak normal force at 18°</span>
+    </div>
+
+    <div class="metric">
+      <strong>&lt;0.5%</strong>
+      <span>domain sensitivity in CL/CD</span>
+    </div>
+
+  </div>
+
+  <div class="case-intro">
+
+    <p>
+      I built this project as a complete design-to-test loop rather than a standalone CFD exercise.
+      I defined a custom blended-wing-body outer mold line in SOLIDWORKS,
+      established a repeatable pre-stall CFD workflow, fabricated a 1:1 FDM model,
+      and extended the test campaign through 20° angle of attack using a
+      three-component balance and tuft visualization.
+    </p>
+
+    <p>
+      The main engineering question was not simply “what is the lift coefficient?”
+      but whether the analysis and test workflow could reveal how a blended
+      planform builds load, loses efficiency, and separates as angle of attack increases.
+    </p>
+
+  </div>
+
+  <div class="case-section">
+
+    <div class="case-section-copy">
+
+      <p class="section-number">01 / GEOMETRY</p>
+
+      <h3>
+        Designed the outer mold line from cross-sections to test article
+      </h3>
+
+      <p>
+        The planform spans approximately 8 in (0.203 m), is 9 in (0.229 m) long,
+        and reaches roughly 2 in (0.051 m) peak thickness.
+        A multi-section loft with four guide curves blends the centerbody into the outer panels.
+        I defined a custom centerbody section to provide the volume and smooth spanwise
+        blending needed by the configuration while maintaining a clean leading edge
+        and tapered trailing edge.
       </p>
-    </td>
-  </tr>
-</table>
 
-<img src="assets/4headshotasmes.png"
-     alt="Headshot"
-     style="float:right; width:135px; height:165px; object-fit:cover; object-position:center 20%; border-radius:10px; margin:0 0 12px 18px;">
+      <div class="spec-row">
+        <span><strong>Sref</strong> 9.62 × 10⁻³ m²</span>
+        <span><strong>c̄</strong> ≈ 0.047 m</span>
+        <span><strong>q∞</strong> ≈ 192 Pa</span>
+      </div>
 
-<p align="center"><strong>Aerospace Systems</strong> • <strong>Experimental Aerodynamics</strong> • <strong>Mechanical Design</strong> • <strong>Applied ML</strong></p>
+    </div>
 
-I'm a mechanical engineering student at UC Berkeley building toward a career in aerospace and hardware. As a junior, I have run a full aerodynamics design-to-test pipeline on a custom blended-wing-body aircraft, built neural flight dynamics models in the Mofrad Lab, designed and CFD-validated a seed-dispersal attachment for rewilding drones, and validated thermocouple instrumentation for a hypersonic reentry payload through NASA Space Grant. I care about work that closes the loop between analysis, simulation, fabrication, and physical testing.
+    <div class="media-grid two">
 
+      <figure class="figure-card">
+        <img src="assets/Cadbwbsketch.png"
+             alt="BWB concept sketch and geometry development">
+        <figcaption>
+          Concept and early geometry definition.
+        </figcaption>
+      </figure>
 
-<p align="center" style="margin: 14px 0 22px 0; color:#6b7280;"><em>Selected work in aerodynamics, aerospace instrumentation, mechanical design, and applied machine learning.</em></p>
+      <figure class="figure-card">
+        <img src="assets/BWB_Aero_CADd1.png"
+             alt="SolidWorks loft used to construct the BWB outer mold line">
+        <figcaption>
+          SOLIDWORKS multi-section loft and guide-curve definition.
+        </figcaption>
+      </figure>
 
-## Explore Projects
-- [Concept Aircraft: Blended-Wing-Body Aerodynamics](#concept-aircraft-blended-wing-body-aerodynamics)
-- [Learned Rotorcraft Dynamics for Control-Oriented Simulation](#flynet-neural-flight-dynamics-modeling)
-- [HyCUBE: CubeSat Thermal & Instrumentation Payload](#hycube-cubesat-thermal--instrumentation-payload)
-- [Drone Seed Dispersal Attachment: Native Plant Rewilding](#drone-seed-dispersal-attachment-native-plant-rewilding)
-- [Additional Projects](#additional-projects)
-  - [Wind Turbine Design-Build-Test](#wind-turbine-design-build-test)
-  - [Post-Stroke Imaging Triage](#post-stroke-imaging-triage)
-  - [Agent-Based Biofilm Modeling](#agent-based-biofilm-modeling)
-  - [Reliability-First Trading Automation](#reliability-first-trading-automation)
+    </div>
 
----
+  </div>
 
-## Concept Aircraft: Blended-Wing-Body Aerodynamics
+  <div class="case-section">
 
-**CAD Design · SolidWorks CFD · 3D-Printed Model · Wind Tunnel Force-Balance Testing · Tuft Flow Visualization**
+    <div class="case-section-copy">
 
-<p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
-  <strong>AoA sweep:</strong> −2° to +20° &nbsp;·&nbsp;
-  <strong>V∞:</strong> ≈ 40 mph &nbsp;·&nbsp;
-  <strong>Re:</strong> ≈ 5.6 × 10⁴ &nbsp;·&nbsp;
-  <strong>Testing:</strong> EWT 3-component balance &nbsp;·&nbsp;
-  <strong>Blockage:</strong> 5.0%
-</p>
+      <p class="section-number">02 / CFD SOLUTION VERIFICATION</p>
 
-Blended-wing-body aircraft generate lift across more of the airframe instead of concentrating lift in a conventional wing. That creates potential efficiency benefits, but it also makes stall behavior more complex. I designed a custom BWB geometry in SOLIDWORKS, characterized the pre-stall regime with CFD, fabricated a 1:1 FDM model, and ran a wind tunnel stall campaign with simultaneous force-balance and tuft flow visualization.
+      <h3>
+        Built a repeatable low-Reynolds-number CFD workflow before using
+        the sweep for design conclusions
+      </h3>
 
-### Design-to-test pipeline
+      <p>
+        Steady external-flow cases used a fixed geometry with the inlet velocity
+        vector rotated to impose angle of attack.
+        The sweep covered −2° to +8° at 40 mph with turbulence enabled
+        (1% intensity, 0.01 m length scale).
+        Each case continued for 100 additional iterations after the goal criteria
+        were marked achieved, and reported coefficients came from the stabilized
+        averaging window.
+      </p>
 
-<p align="center">
-  <img src="assets/Cadbwbsketch.png" width="28%" alt="Concept sketch">
-  &nbsp;&nbsp;
-  <img src="assets/BWB_Aero_CADd1.png" width="28%" alt="SolidWorks loft">
-  &nbsp;&nbsp;
-  <img src="assets/IMG_3685 (1).jpeg" width="28%" alt="Wind tunnel test">
-</p>
-<p align="center"><em>Left to right: concept sketch, SolidWorks multi-section loft, and 1:1 FDM model on the EWT three-component balance sting.</em></p>
+      <p>
+        A domain study at 4° changed CL by about 0.17% and CD by about 0.43%.
+        Medium-to-fine mesh refinement changed CL by about 1.25% and CD by about 0.37%,
+        supporting the medium mesh for the sweep with a fine-mesh verification point.
+      </p>
 
-### Wind Tunnel Stall Campaign
+      <div class="callout">
+        <strong>Terminology matters:</strong>
+        these grid/domain studies are numerical <em>verification</em>.
+        Experimental <em>validation</em> requires a controlled comparison to
+        physical measurements, so the site keeps those claims separate.
+      </div>
 
-The tunnel campaign used a three-component force balance for normal force, axial force, and pitching moment. Data was sampled at 25 Hz, corrected with wind-off tare, and pressure-corrected at each AoA point. I extended the sweep to 20° AoA, which was 12° beyond the CFD range, to capture the full post-stall regime.
+    </div>
 
-**Key results**
+    <div class="media-grid two">
 
-- Gradual stall onset confirmed at **14 to 16°**, identified by normal-force slope collapse and pitching-moment reversal.
-- **Peak normal force: 3.36 N at 18°**. The post-stall drop to 3.33 N at 20° was only about 1%, which suggests progressive spanwise separation rather than a full-span stall collapse.
-- CFD and tunnel normal force agreed well through the 8° pre-stall CFD range.
-- **Pitching moment peaked before normal force** at 16° vs 18°, indicating an aerodynamic-center shift near stall.
-- Zero-lift angle was about −1.5° to −2°, consistent with the cambered centerbody producing positive loading at zero incidence.
+      <figure class="figure-card">
+        <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8 (3).png"
+             alt="Streamwise velocity and pressure fields at 0, 4, and 8 degrees angle of attack">
+        <figcaption>
+          Matched VX cut planes and fixed-scale surface pressure views at 0°, 4°, and 8°.
+        </figcaption>
+      </figure>
 
-### Aerodynamic Data Summary
+      <figure class="figure-card">
+        <img src="assets/ES3_mesh_sensitivity.png"
+             alt="Mesh sensitivity comparison for the BWB CFD model">
+        <figcaption>
+          Mesh-refinement check at the 4° baseline condition.
+        </figcaption>
+      </figure>
 
-<p align="center">
-  <img src="assets/bwb_cfd_sweep_plot.png" width="44%"
-       alt="CFD sweep showing lift coefficient and lift-to-drag ratio versus angle of attack"
-       style="border-radius:8px; border:1px solid #d1d5db; margin-right:10px;">
-  <img src="assets/bwb_wind_tunnel_run4_plot.png" width="44%"
-       alt="Clean Run 4 wind tunnel sweep showing normal force and pitching moment versus angle of attack"
-       style="border-radius:8px; border:1px solid #d1d5db; margin-left:10px;">
-</p>
-<p align="center"><em>Left: pre-stall CFD sweep from −2° to 8° AoA. Right: clean Run 4 wind-tunnel sweep from −2° to 20° AoA, after the tuft-visualization run.</em></p>
+    </div>
 
-### Tuft Flow Visualization: Surface Separation Sequence
+  </div>
 
-Lightweight yarn tufts, roughly 7 mm long and spaced at about 12% chord, were attached to the upper surface and recorded from above at each AoA. During attached flow, the tufts stayed aligned rearward. In transitional regions, they deflected laterally. During separation, they lifted, reversed, or fluttered.
+  <div class="case-section">
 
-**Main finding: separation starts at the centerbody and progresses outward.** The outer panels remain partially attached after centerbody stall begins, which explains why the force curve rolls over gradually instead of collapsing suddenly.
+    <div class="case-section-copy">
 
-<table style="width:100%; border-collapse:separate; border-spacing:12px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:25%; vertical-align:top; text-align:center; border:1px solid #d1d5db; padding:10px;">
-      <img src="assets/tuft_prestall.png"
-           style="width:100%; height:145px; object-fit:cover; object-position:center center; border-radius:8px; display:block;"
-           alt="Pre-stall: tufts flat and aligned rearward across full planform">
-      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;"><em>0 to 4°: attached flow. Tufts stream rearward across the planform.</em></p>
-    </td>
-    <td style="width:25%; vertical-align:top; text-align:center; border:1px solid #d1d5db; padding:10px;">
-      <img src="assets/tuft_onset.png"
-           style="width:100%; height:145px; object-fit:cover; object-position:center center; border-radius:8px; display:block;"
-           alt="Transition: centerbody tufts curling, outer panel clean">
-      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;"><em>6 to 10°: centerbody tufts begin curling while the outer panel remains clean.</em></p>
-    </td>
-    <td style="width:25%; vertical-align:top; text-align:center; border:1px solid #d1d5db; padding:10px;">
-      <img src="assets/tuft_stall.png"
-           style="width:100%; height:145px; object-fit:cover; object-position:center center; border-radius:8px; display:block;"
-           alt="Stall onset: centerbody separated, outer panel partially attached">
-      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;"><em>14 to 16°: centerbody tufts become disordered. Outer-panel tufts deflect but do not fully reverse.</em></p>
-    </td>
-    <td style="width:25%; vertical-align:top; text-align:center; border:1px solid #d1d5db; padding:10px;">
-      <img src="assets/tuft_poststall.png"
-           style="width:100%; height:145px; object-fit:cover; object-position:center center; border-radius:8px; display:block;"
-           alt="Post-stall: widespread centerbody separation, wingtips persist">
-      <p style="font-size:12px; line-height:1.35; margin:8px 0 0 0;"><em>18 to 20°: widespread centerbody separation. Wingtip tufts remain partially ordered.</em></p>
-    </td>
-  </tr>
-</table>
+      <p class="section-number">
+        03 / PRE-STALL PERFORMANCE + STALL CAMPAIGN
+      </p>
 
-### CFD: Pre-Stall Characterization
+      <h3>
+        Used CFD for the pre-stall regime, then pushed the physical test
+        12° farther to capture the full stall sequence
+      </h3>
 
-Steady-state laminar and turbulent SolidWorks Flow Simulation was used to sweep −2° to +8° AoA at V∞ = 40 mph. Coefficients were reported after a post-convergence averaging window and checked with mesh and domain sensitivity studies.
+      <p>
+        The verified CFD sweep shows CL rising nearly linearly through 6°.
+        L/D reaches 7.31 at 6° and declines by 8° as drag grows faster than lift.
+        The wind-tunnel campaign then extends from −2° through 20° using the
+        EWT three-component balance, wind-off tare, point-by-point
+        dynamic-pressure correction, and 25 Hz acquisition.
+      </p>
 
-<p align="center">
-  <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8 (3).png" width="74%" alt="Streamwise velocity cut planes and surface pressure maps at AoA = 0°, 4°, 8°">
-</p>
-<p align="center"><em>Pre-stall CFD sweep: streamwise velocity cut planes and surface pressure maps at 0°, 4°, and 8° AoA.</em></p>
+      <p>
+        The tunnel data identifies a progressive stall onset around 14–16°:
+        the normal-force increment collapses relative to the linear regime and
+        pitching moment reverses near 16°.
+        Normal force continues to rise to 3.36 N at 18° and falls only about
+        1% by 20°, indicating a soft, progressive loss of loading rather than
+        an abrupt full-span break.
+      </p>
 
-**Verification**
+    </div>
 
-- Domain independence at α = 4°: ΔC_L = +0.17%, ΔC_D = +0.43%.
-- Mesh independence at α = 4°: medium-to-fine ΔC_L ≈ 1.25%, ΔC_D ≈ 0.37%.
+    <div class="media-grid two">
 
-### Resources
-- [Project Executive summary (HTML)](assets/BWB_Project_Showcase_Tufts%20%284%29.html)
-- [CFD Summary (PDF)](assets/BWB_CFD_Summary_.pdf)
+      <figure class="figure-card">
+        <img src="assets/bwb_cfd_sweep_plot.png"
+             alt="BWB CFD lift coefficient and lift-to-drag ratio across angle of attack">
+        <figcaption>
+          CFD pre-stall sweep: CL and L/D versus angle of attack.
+        </figcaption>
+      </figure>
 
----
----
-<a id="flynet-neural-flight-dynamics-modeling"></a>
+      <figure class="figure-card">
+        <img src="assets/bwb_wind_tunnel_run4_plot.png"
+             alt="BWB wind tunnel normal force and pitching moment across angle of attack">
+        <figcaption>
+          Tuft-free wind-tunnel run through 20° AoA.
+        </figcaption>
+      </figure>
 
-## Learned Rotorcraft Dynamics for Control-Oriented Simulation
+    </div>
 
-**Flight Dynamics · Physics-Informed ML · PyTorch · JSBSim · Closed-Loop Simulation · System Identification · Controls**  
-*Mofrad Lab collaboration*
+  </div>
 
-I am developing learned flight-dynamics models for rotorcraft simulation and control-oriented analysis. The project builds on FlyNet-style physics-informed neural dynamics: instead of predicting aircraft motion directly, the model learns force and moment behavior while preserving rigid-body equations of motion.
+  <div class="case-section">
 
-My work focuses on what happens after a learned model is rolled forward through full trajectories. A model can look accurate under ordinary prediction metrics while still accumulating drift, producing unrealistic local behavior, or responding poorly in feedback-style simulations. The goal of this project is to evaluate learned aircraft dynamics beyond one-step error and ask whether they can behave like useful simulation surrogates.
+    <div class="case-section-copy">
 
-<p align="center">
-  <img src="assets/flynet_method_comparison_heatmap.png" width="88%"
-       alt="Method comparison heatmap for learned rotorcraft dynamics"
-       style="border-radius:10px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>
-Closed-loop evaluation showed that model changes do not improve every state uniformly; they shift error across translational, rotational, and attitude channels.
-</em></p>
+      <p class="section-number">04 / FLOW VISUALIZATION</p>
 
-### What I Built
+      <h3>
+        The force balance showed when stall began; tufts showed where it began
+      </h3>
 
-- Implemented a PyTorch-based neural flight-dynamics modeling pipeline.
-- Integrated learned force and moment predictions with rigid-body equations of motion.
-- Built closed-loop rollout evaluation on held-out rotorcraft trajectories.
-- Compared feed-forward, recurrent, and training-objective variants under matched simulation conditions.
-- Developed diagnostics for trajectory drift, local model behavior, and control-relevant response.
-- Extended the project from trajectory matching toward controller-facing validation.
+      <p>
+        Approximately 7 mm yarn tufts at roughly 12% chord spacing were filmed
+        from a fixed overhead view.
+        The visual sequence shows the centerbody becoming disturbed before the
+        outer panels, with clearly separated inboard flow at 14–16° while the
+        tips remain partially attached.
+        By 18–20°, the centerbody is broadly separated but the outer panels
+        still retain some ordered flow.
+      </p>
 
-### Research Focus
+      <p>
+        That spanwise progression explains the soft stall in the force data:
+        load is shed progressively from the center outward instead of disappearing
+        across the entire planform at once.
+      </p>
 
-The core research question is how to validate learned aircraft dynamics when trajectory rollout and control response matter. I am studying when these models behave like reliable simulation surrogates, not just low-error predictors.
+    </div>
 
-This work sits at the intersection of machine learning, flight dynamics, system identification, and controls.
+    <div class="tuft-grid">
 
-### Why It Matters
+      <figure>
+        <img src="assets/tuft_prestall.png"
+             alt="Attached BWB tuft flow at low angle of attack">
+        <figcaption>
+          <strong>0–4°</strong>
+          <span>Attached baseline</span>
+        </figcaption>
+      </figure>
 
-Learned flight-dynamics models are most useful when they can support downstream simulation, planning, or controller analysis. That requires more than matching data: the model must remain stable during rollout, preserve physically meaningful behavior, and respond consistently under perturbations.
+      <figure>
+        <img src="assets/tuft_onset.png"
+             alt="Centerbody tufts beginning to curl on the BWB">
+        <figcaption>
+          <strong>6–10°</strong>
+          <span>Inboard disturbance</span>
+        </figcaption>
+      </figure>
 
-<p align="center">
-  <iframe width="52%" height="260"
-    src="https://www.youtube.com/embed/RBWWbZS1y6c"
-    frameborder="0"
-    allowfullscreen
-    style="border-radius:12px; border:1px solid #2a3542;">
-  </iframe>
-</p>
-<p align="center"><em>Closed-loop rollout/demo video from the flight-dynamics modeling pipeline.</em></p>
+      <figure>
+        <img src="assets/tuft_stall.png"
+             alt="Centerbody separation at BWB stall onset">
+        <figcaption>
+          <strong>14–16°</strong>
+          <span>Centerbody separation</span>
+        </figcaption>
+      </figure>
 
-### Tools
+      <figure>
+        <img src="assets/tuft_poststall.png"
+             alt="Post-stall BWB tuft flow with partially attached outer panels">
+        <figcaption>
+          <strong>18–20°</strong>
+          <span>Progressive post-stall</span>
+        </figcaption>
+      </figure>
 
-`Python` · `PyTorch` · `JSBSim` · `NumPy` · `Matplotlib` · `Flight dynamics` · `Rotorcraft simulation` · `Closed-loop validation` · `System identification` · `Controls`
+    </div>
 
----
-## HyCUBE: CubeSat Thermal & Instrumentation Payload
+  </div>
 
-**Aerospace Instrumentation · Sensor Calibration · Thermal Validation · Flight Operations**  
-*NASA Space Grant, hypersonic reentry payload support*
+  <div class="finding-grid">
 
-<p align="center">
-  <img src="assets/HyCubeINAir.png" width="46%" alt="HyCUBE payload in high-altitude flight" style="border-radius:10px; border:1px solid #2a3542;">
-  <img src="assets/hycube_mission_graphic.webp" width="46%" alt="HyCUBE mission phases" style="border-radius:10px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>HyCUBE payload context: high-altitude flight imagery and mission phases for a ballistic reentry experiment.</em></p>
+    <div class="finding">
+      <span>01</span>
+      <h4>Stall onset is progressive, not abrupt</h4>
+      <p>
+        Force and tuft evidence converge on a 14–16° onset window,
+        followed by gradual spanwise separation.
+      </p>
+    </div>
 
-<p align="center">
-  <img src="assets/hycube_balloon_preflight.jpeg" width="46%"
-       alt="Pre-launch payload integration before balloon release"
-       style="border-radius:10px; border:1px solid #2a3542;">
-  <img src="assets/hycube_calibration_rig.jpeg" width="46%"
-       alt="Thermocouple calibration rig with controlled heat source and measurement circuit"
-       style="border-radius:10px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>Left: payload integration before balloon release. Right: thermocouple calibration rig with a controlled heat source and measurement circuit.</em></p>
+    <div class="finding">
+      <span>02</span>
+      <h4>Best CFD efficiency occurs at 6°</h4>
+      <p>
+        Within the −2° to +8° simulated range, L/D peaks at 7.31
+        before drag growth overtakes lift growth.
+      </p>
+    </div>
 
-Reliable temperature sensing is critical for flight-readiness decisions. I built a thermocouple calibration and validation workflow for HyCUBE, converting raw measurement logs into calibration fits, agreement plots, and reusable figures for technical review.
+    <div class="finding">
+      <span>03</span>
+      <h4>Pitching moment changes before peak normal force</h4>
+      <p>
+        The 16° pitching-moment reversal preceding the 18° force peak
+        is consistent with a redistribution of aerodynamic loading near stall.
+      </p>
+    </div>
 
-**Highlights**
+    <div class="finding">
+      <span>04</span>
+      <h4>The outer panels keep carrying load</h4>
+      <p>
+        Tufts remain partly ordered at the tips through 20°,
+        explaining why the force curve rolls over instead of collapsing.
+      </p>
+    </div>
 
-- Built a calibration workflow for thermocouple instrumentation used in flight-readiness review.
-- Implemented cold-junction compensation and regression-based sensitivity estimates.
-- Compared sensor behavior against a reference measurement using parity and agreement plots.
-- Produced review-ready PNG exports, summary tables, and validation figures.
-- Supported high-altitude balloon operations, including payload integration, ground-station setup, monitoring, recovery, and post-flight data validation.
+  </div>
 
-<p align="center">
-  <img src="assets/hycube_validation_2up.png" width="70%" alt="Parity plot and temperature error vs reference">
-</p>
-<p align="center"><em>Validation output: thermocouple temperature vs reference and error vs reference temperature.</em></p>
+  <details class="technical-details">
 
-<p align="center">
-  <img src="assets/hycube_agreement_2up.png" width="70%" alt="Agreement and sensitivity plots">
-</p>
-<p align="center"><em>Agreement and sensitivity plots used to compare thermocouple behavior across probe configurations.</em></p>
+    <summary>
+      Technical appendix — CFD inputs and coefficient sweep
+    </summary>
 
----
+    <div class="technical-details-body">
 
-## Drone Seed Dispersal Attachment: Native Plant Rewilding
+      <p>
+        <strong>Freestream:</strong>
+        p∞ = 101,325 Pa ·
+        T∞ = 293.2 K ·
+        ρ∞ ≈ 1.20 kg/m³ ·
+        μ∞ ≈ 1.8146 × 10⁻⁵ Pa·s ·
+        V∞ = 17.88 m/s ·
+        Re ≈ 5.6 × 10⁴.
+      </p>
 
-**CAD Design · DfAM · CFD Aerodynamic Validation · Mechanical Integration · Flight Test**
+      <div class="table-wrap">
 
-<p style="font-size:13px; color:#374151; margin:8px 0 18px 0;">
-  <strong>CFD condition:</strong> V∞ = 15 mph forward flight &nbsp;·&nbsp;
-  <strong>Drag:</strong> 3.94 N &nbsp;·&nbsp;
-  <strong>Lift:</strong> 0.926 N &nbsp;·&nbsp;
-  <strong>Side force:</strong> −0.044 N &nbsp;·&nbsp;
-  <strong>Build:</strong> ABS printed enclosure
-</p>
+        <table>
 
-<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/dronee29Cadrender.png"
-           alt="CAD render of drone seed dispersal attachment mounted under quadcopter"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:12px; border:1px solid #2a3542; display:block;">
-    </td>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
+          <thead>
+            <tr>
+              <th>AoA</th>
+              <th>CL</th>
+              <th>CD</th>
+              <th>L/D</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>−2°</td>
+              <td>−0.0414</td>
+              <td>0.0283</td>
+              <td>−1.46</td>
+            </tr>
+
+            <tr>
+              <td>0°</td>
+              <td>0.0586</td>
+              <td>0.0272</td>
+              <td>2.15</td>
+            </tr>
+
+            <tr>
+              <td>2°</td>
+              <td>0.1612</td>
+              <td>0.0307</td>
+              <td>5.25</td>
+            </tr>
+
+            <tr>
+              <td>4°</td>
+              <td>0.2598</td>
+              <td>0.0373</td>
+              <td>6.97</td>
+            </tr>
+
+            <tr>
+              <td>6°</td>
+              <td>0.3554</td>
+              <td>0.0486</td>
+              <td><strong>7.31</strong></td>
+            </tr>
+
+            <tr>
+              <td>8°</td>
+              <td>0.4473</td>
+              <td>0.0644</td>
+              <td>6.95</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <p class="resource-links">
+
+        <a href="assets/BWB_CFD_Summary_.pdf">
+          CFD summary PDF ↗
+        </a>
+
+        <a href="assets/BWB_Project_Showcase_Tufts%20(4).html">
+          Full project showcase ↗
+        </a>
+
+      </p>
+
+    </div>
+
+  </details>
+
+</section>
+
+<section id="rotorcraft" class="case-study compact-case">
+
+  <header class="case-study-header">
+
+    <div>
+
+      <p class="eyebrow dark">
+        RESEARCH · FLIGHT DYNAMICS
+      </p>
+
+      <h2>
+        Learned Rotorcraft Dynamics for Controller-Facing Simulation
+      </h2>
+
+      <p class="case-study-subtitle">
+        Physics-informed ML · rigid-body dynamics · rollout stability · closed-loop evaluation
+      </p>
+
+    </div>
+
+    <span class="status-pill light">
+      IEEE Aerospace 2027 · Accepted
+    </span>
+
+  </header>
+
+  <div class="split-feature">
+
+    <div>
+
+      <p class="project-lede">
+        I am developing learned rotorcraft dynamics models that predict forces and
+        moments while preserving the rigid-body equations of motion.
+        The research asks a stricter question than one-step prediction accuracy:
+        does the learned model remain useful when it is rolled forward through
+        a trajectory or inserted into a controller-facing simulation?
+      </p>
+
+      <ul class="clean-list">
+
+        <li>
+          Implemented the PyTorch flight-dynamics pipeline and force/moment integration.
+        </li>
+
+        <li>
+          Compared feed-forward, temporal, recurrent, and training-objective variants
+          under matched conditions.
+        </li>
+
+        <li>
+          Built held-out trajectory rollout diagnostics for drift, local behavior,
+          and control-relevant response.
+        </li>
+
+        <li>
+          Extended evaluation toward stability and tracking rather than optimizing
+          a single aggregate prediction metric.
+        </li>
+
+      </ul>
+
+      <p class="paper-note">
+        <strong>Accepted paper:</strong>
+        “From Accurate Predictions to Controller-Facing Learned Rotorcraft Surrogates:
+        Stability &amp; Tracking.”
+      </p>
+
+    </div>
+
+    <figure class="figure-card dark-figure">
+
+      <img src="assets/flynet_method_comparison_heatmap.png"
+           alt="Comparison of learned rotorcraft dynamics model errors across state channels">
+
+      <figcaption>
+        Architecture and training changes move error differently across
+        translation, rotation, and attitude states.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+  <details class="technical-details">
+
+    <summary>
+      See rollout demo and toolchain
+    </summary>
+
+    <div class="technical-details-body">
+
+      <div class="video-wrap">
+
+        <iframe
+          src="https://www.youtube.com/embed/RBWWbZS1y6c"
+          title="Rotorcraft learned dynamics rollout demo"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+      <p>
+        <strong>Tools:</strong>
+        Python · PyTorch · JSBSim · NumPy · Matplotlib ·
+        system identification · rotorcraft simulation · closed-loop validation.
+      </p>
+
+    </div>
+
+  </details>
+
+</section>
+
+<section id="hycube" class="case-study compact-case">
+
+  <header class="case-study-header">
+
+    <div>
+
+      <p class="eyebrow dark">
+        FLIGHT HARDWARE · INSTRUMENTATION
+      </p>
+
+      <h2>
+        HyCUBE Reentry Payload — Thermal Instrumentation &amp; Flight Operations
+      </h2>
+
+      <p class="case-study-subtitle">
+        NASA Space Grant · sensor calibration · payload integration · high-altitude operations
+      </p>
+
+    </div>
+
+  </header>
+
+  <div class="media-grid two hero-media">
+
+    <figure class="figure-card">
+
+      <img src="assets/hycube_balloon_preflight.jpeg"
+           alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
+
+      <figcaption>
+        Payload integration before high-altitude balloon release.
+      </figcaption>
+
+    </figure>
+
+    <figure class="figure-card">
+
+      <img src="assets/hycube_calibration_rig.jpeg"
+           alt="Thermocouple calibration rig for HyCUBE">
+
+      <figcaption>
+        Controlled thermocouple calibration and measurement setup.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+  <div class="split-feature">
+
+    <div>
+
+      <p class="project-lede">
+        Built a thermocouple calibration and validation workflow for a ballistic
+        reentry experiment, converting raw measurement logs into calibration fits,
+        agreement plots, and review-ready figures while also supporting payload
+        integration, ground-station operations, recovery, and post-flight validation.
+      </p>
+
+      <ul class="clean-list">
+
+        <li>
+          Implemented cold-junction compensation and regression-based sensitivity estimates.
+        </li>
+
+        <li>
+          Compared probe response against a reference measurement with parity,
+          error, and agreement plots.
+        </li>
+
+        <li>
+          Supported real hardware integration and high-altitude flight operations.
+        </li>
+
+      </ul>
+
+    </div>
+
+    <figure class="figure-card">
+
+      <img src="assets/hycube_validation_2up.png"
+           alt="HyCUBE thermocouple validation plots">
+
+      <figcaption>
+        Representative parity and temperature-error validation outputs.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+<section class="portfolio-section">
+
+  <header class="section-header">
+
+    <p class="eyebrow dark">
+      ADDITIONAL BUILD + TEST WORK
+    </p>
+
+    <h2>
+      Smaller projects with clear physical outcomes
+    </h2>
+
+  </header>
+
+  <div class="small-project-grid">
+
+    <article class="small-project-card">
+
       <img src="assets/drone_flight_photo.jpg"
-           alt="Indoor flight test of the drone with the seed dispersal attachment mounted"
-           style="width:100%; height:220px; object-fit:cover; object-position:center center; border-radius:12px; border:1px solid #2a3542; display:block;">
-    </td>
-  </tr>
-</table>
-<p align="center"><em>Left: CAD integration of the seed-dispersal attachment. Right: indoor flight test with the attachment mounted on the quadcopter.</em></p>
+           alt="Quadcopter flight test with a seed dispersal attachment">
 
-In a team design project, I helped design and build a seed-dispersal attachment for a quadcopter intended for native plant rewilding. The attachment uses a gravity-fed hopper and motor-driven dispersal mechanism in an ABS printed enclosure. My main contribution was the aerodynamic and mechanical integration work: CFD validation, external geometry refinement, and placement decisions to reduce drag and avoid yaw imbalance.
+      <div>
 
-**Engineering focus**
+        <p class="project-kicker">
+          MECHANICAL INTEGRATION · CFD · FLIGHT TEST
+        </p>
 
-- Ran a 15 mph forward-flight CFD study to quantify drag, lift, and side force.
-- Confirmed near-zero side force, indicating the attachment geometry should not introduce major yaw-control issues.
-- Added leading-edge and corner fillets to reduce separation and drag.
-- Reviewed DfAM print orientation decisions to improve surface quality on aerodynamic faces.
-- Supported final flight testing with the attachment mounted and loaded.
+        <h3>
+          Drone Seed-Dispersal Hardware
+        </h3>
 
-### CFD Aerodynamic Validation
+        <p>
+          Designed and flight-tested a printed seed-dispersal attachment;
+          used CFD and external-geometry refinement to reduce drag and
+          minimize yaw disturbance.
+        </p>
 
-<table style="width:70%; margin:0 auto; border-collapse:separate; border-spacing:14px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/e29DronePressure.png"
-           alt="Static pressure plot for the drone seed dispersal attachment at 15 mph forward flight"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
-    </td>
-    <td style="width:50%; vertical-align:middle; text-align:center;">
-      <img src="assets/e29dronevel.png"
-           alt="Velocity plot for the drone seed dispersal attachment at 15 mph forward flight"
-           style="width:100%; height:220px; object-fit:contain; background:#ffffff; border-radius:8px; border:1px solid #2a3542; display:block;">
-    </td>
-  </tr>
-</table>
-<p align="center"><em>Static pressure result, left, and velocity field result, right, from the 15 mph forward-flight CFD study.</em></p>
+        <div class="project-result">
+          <strong>−0.044 N</strong>
+          <span>predicted side force at 15 mph</span>
+        </div>
 
-| Result | Value | Engineering meaning |
-|--------|-------|---------------------|
-| Drag force | 3.94 N | Primary flight-performance cost |
-| Lift force | +0.926 N | Small positive lift partially offsets attachment weight |
-| Side force | −0.044 N | Symmetric geometry, low yaw disturbance |
+      </div>
 
-The CFD confirmed drag as the main performance concern and guided the final external geometry. The project connects mechanical design, manufacturability, and flight behavior rather than treating the attachment as only a printed container.
+    </article>
 
----
+    <article class="small-project-card">
 
-## Additional Projects
-
-Smaller projects included for range and technical completeness. These sit below the core aerospace and aerodynamics projects so the page stays focused on the roles I am currently targeting.
-
-### Wind Turbine Design-Build-Test
-
-**Rapid Prototyping · Wind-Tunnel Testing · Power Characterization · Structural Review**
-
-In a four-person team project, we designed, built, and tested a small wind turbine under manufacturability and performance constraints, and our final design ranked **#1 of 40 teams** in measured electrical power output. I focused on measurement, power characterization, blade concept research, and verification review, converting voltage and current data into comparable power results to guide iteration while also reviewing structural sanity checks on the design.
-
-<table style="width:76%; margin:0 auto; border-collapse:separate; border-spacing:12px 0; table-layout:fixed;">
-  <tr>
-    <td style="width:28%; vertical-align:middle; text-align:center;">
-      <img src="assets/windturbine_power_vs_current.png"
-           alt="Power vs current measurement curve"
-           style="width:100%; height:180px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
-    </td>
-    <td style="width:30%; vertical-align:middle; text-align:center;">
       <img src="assets/windturbine_test_setup.jpg"
-           alt="Wind turbine test setup"
-           style="width:100%; height:180px; object-fit:cover; object-position:center 45%; border-radius:8px; border:1px solid #2a3542; display:block;">
-    </td>
-    <td style="width:42%; vertical-align:middle; text-align:center;">
-      <img src="assets/windturbine_fea_triptych.png"
-           alt="FEA results showing displacement, stress, and factor of safety"
-           style="width:100%; height:180px; object-fit:contain; background:#ffffff; border-radius:8px; display:block;">
-    </td>
-  </tr>
-</table>
-<p align="center"><em>Measured power curve, wind-tunnel-style test setup, and structural FEA sanity-check results.</em></p>
+           alt="Wind turbine design-build-test setup">
 
-### Post-Stroke Imaging Triage
+      <div>
 
-**Medical Imaging · Applied Deep Learning · CT Preprocessing · Interpretability**  
-*Mofrad Lab collaboration*
+        <p class="project-kicker">
+          DESIGN · PROTOTYPING · TEST
+        </p>
 
-Built a reproducible slice-level baseline for intracranial hemorrhage detection on non-contrast head CT and ran a controlled initialization study comparing scratch training, ImageNet pretraining, and CT-native JEPA-style self-supervised pretraining. I built the full preprocessing and training pipeline, implemented class-imbalance handling and stable fine-tuning, and found that the best JEPA-10k model reached validation ROC-AUC of about 0.846 with sensitivity of about 0.80 and specificity of about 0.706 at a 0.5 threshold.
+        <h3>
+          Wind Turbine Design-Build-Test
+        </h3>
 
-<p align="center">
-  <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png" width="52%" alt="Grad-CAM visualization grid for head CT hemorrhage model" style="border-radius:8px; border:1px solid #2a3542;">
-</p>
+        <p>
+          Developed and tested a small wind turbine under manufacturability
+          and performance constraints; focused on measurement, power
+          characterization, and design verification.
+        </p>
 
-### Agent-Based Biofilm Modeling
+        <div class="project-result">
+          <strong>#1 / 40</strong>
+          <span>teams in measured power output</span>
+        </div>
 
-**Python · MESA · Agent-Based Simulation · Parametric Design Screening**  
-*Co-developed with a senior mechanical engineering student*  
-[Full technical report (PDF)](assets/biofilm_abm_report.pdf)
+      </div>
 
-Built a parametric agent-based model in MESA to simulate bacterial biofilm formation on catheter surfaces, including planktonic motion, probabilistic attachment, EPS secretion, nutrient-driven growth, and shear-driven detachment. I used the model to run parameter sweeps over roughness, coating strength, and shear flow, compare five candidate material surfaces under stochastic replicates, and frame the project as a low-cost pre-prototyping screen for medical-device surface design before physical testing.
+    </article>
 
-<p align="center">
-  <img src="assets/ABMHeatMap_forport.png" width="58%" alt="Agent-based biofilm modeling heatmap" style="border-radius:10px; border:1px solid #2a3542;">
-</p>
-<p align="center"><em>Parameter sweep heatmap from the agent-based biofilm model, used to compare how surface and flow conditions influence attachment behavior.</em></p>
+  </div>
 
+</section>
 
-### Reliability-First Trading Automation
+<section id="research" class="portfolio-section secondary-section">
 
-**Systems Engineering · Deterministic State Machine · Safety Checks · Audit Logs**
+  <header class="section-header">
 
-Built a reliability-first paper-trading automation system that observes leveraged S&P 500 ETFs at the U.S. market open, makes a deterministic leader decision, and executes one cash-only order with explicit safety checks. I framed the project as a reliability engineering exercise focused on predictable behavior under imperfect market data, API failures, and account constraints, with fail-closed logic, traceable state transitions, and audit-style logs for each exit path.
+    <p class="eyebrow dark">
+      OTHER TECHNICAL RESEARCH
+    </p>
 
+    <h2>
+      Range without diluting the aerospace story
+    </h2>
 
+    <p>
+      These projects stay visible, but intentionally sit below the aircraft
+      and hardware work.
+    </p>
 
----
+  </header>
 
-## Contact
+  <div class="secondary-grid">
 
-I'm always happy to connect with researchers, engineers, students, and teams interested in aerospace systems, instrumentation, mechanical design, and applied machine learning.
+    <details>
 
-[LinkedIn](https://www.linkedin.com/in/kevin-armstrong-ii-647125319/)  
-**Email:** kevarm2028@berkeley.edu
+      <summary>
+        Post-Stroke Imaging Triage
+      </summary>
+
+      <div>
+
+        <p>
+          <strong>
+            Medical imaging · deep learning · CT preprocessing · interpretability
+          </strong>
+        </p>
+
+        <p>
+          Built a reproducible intracranial-hemorrhage baseline and a controlled
+          initialization study comparing scratch training, ImageNet pretraining,
+          and CT-native self-supervised pretraining.
+          Best validation ROC-AUC reached approximately 0.846.
+        </p>
+
+        <img src="assets/gradcam_grid_imagenet_maskedcrop%20(1).png"
+             alt="Grad-CAM visualizations for intracranial hemorrhage classification">
+
+      </div>
+
+    </details>
+
+    <details>
+
+      <summary>
+        Agent-Based Biofilm Modeling
+      </summary>
+
+      <div>
+
+        <p>
+          <strong>
+            Python · MESA · stochastic simulation · design screening
+          </strong>
+        </p>
+
+        <p>
+          Co-developed a parametric biofilm model to screen catheter-surface
+          concepts across roughness, coating strength, and shear conditions
+          before physical prototyping.
+        </p>
+
+        <img src="assets/ABMHeatMap_forport.png"
+             alt="Agent-based biofilm parameter sweep heatmap">
+
+      </div>
+
+    </details>
+
+  </div>
+
+</section>
+
+<section id="contact" class="contact-section">
+
+  <p class="eyebrow">
+    CONTACT
+  </p>
+
+  <h2>
+    Interested in aircraft, hardware, or test work?
+  </h2>
+
+  <p>
+    I’m especially interested in teams working on aircraft configuration
+    and aerodynamics, mechanical design, vehicle hardware, structures,
+    and experimental test.
+  </p>
+
+  <div class="hero-actions">
+
+    <a class="button button-primary light-button"
+       href="mailto:kevarm2028@berkeley.edu">
+      kevarm2028@berkeley.edu
+    </a>
+
+    <a class="button button-secondary dark-button"
+       href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/">
+      LinkedIn
+    </a>
+
+  </div>
+
+</section>
