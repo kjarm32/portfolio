@@ -55,8 +55,8 @@
   <div class="featured-grid">
     <a class="featured-card" href="#experience">
       <div class="featured-card-media">
-        <img src="assets/standardbots_build_photo.jpg"
-             alt="Kevin Armstrong assembling and calibrating an industrial robot arm">
+        <img src="assets/standardbots_render.jpg"
+     alt="Standard Bots industrial robot arm render">
       </div>
       <div class="featured-card-copy">
         <span class="card-kicker">HARDWARE ENGINEERING</span>
