@@ -635,7 +635,18 @@
 
 <footer class="portfolio-footer">
   <span>Kevin Armstrong II · UC Berkeley Mechanical Engineering</span>
+
   <div>
-    <a href="mailto:kevarm2028@berkeley.edu">Email</a>
-    <a href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/">LinkedIn</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kevarm2028@berkeley.edu"
+       target="_blank"
+       rel="noopener noreferrer">
+      kevarm2028@berkeley.edu
+    </a>
+
+    <a href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/"
+       target="_blank"
+       rel="noopener noreferrer">
+      LinkedIn
+    </a>
   </div>
+</footer>
