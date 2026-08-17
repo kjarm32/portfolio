@@ -192,7 +192,8 @@
 
     <figure class="standardbots-photo standardbots-fixture-photo">
       <img src="assets/standardbots_test_hardware.jpg"
-           alt="Loaded burn-in test hardware developed at Standard Bots">
+           alt="Loaded burn-in station fixture developed at Standard Bots">
+      <figcaption><strong>Loaded burn-in station fixture.</strong></figcaption>
     </figure>
   </div>
 
@@ -594,36 +595,40 @@
   </header>
 
   <article class="case-study compact-case wind-case">
-    <div class="wind-top">
-      <p class="case-lede">
-        In a four-person team project, we designed, built, and tested a small wind turbine under manufacturability
-        and performance constraints. I focused on measurement, power characterization, blade concept research,
-        and verification review, and our final design ranked <strong>#1 of 40 teams</strong> in measured electrical power output.
-      </p>
+    <div class="wind-final-grid">
 
-      <div class="wind-result-card">
-        <strong>#1 / 40</strong>
-        <span>teams in measured electrical power output</span>
+      <div class="wind-story-card">
+        <div class="wind-story-image">
+          <img src="assets/windturbine_test_setup.jpg"
+               alt="Wind turbine physical test setup">
+        </div>
+
+        <div class="wind-story-copy">
+          <div class="wind-result-inline">
+            <strong>#1 / 40</strong>
+            <span>teams in measured electrical power output</span>
+          </div>
+
+          <p>
+            In a four-person team project, we designed, built, and tested a small wind turbine under
+            manufacturability and performance constraints. I focused on measurement, power characterization,
+            blade concept research, and verification review.
+          </p>
+
+          <p>
+            Our final design ranked <strong>#1 of 40 teams</strong> in measured electrical power output.
+          </p>
+        </div>
+
+        <div class="wind-story-caption">Physical test setup.</div>
       </div>
-    </div>
 
-    <div class="wind-visuals refined">
-      <figure class="figure-card wind-tower-photo">
-        <img src="assets/windturbine_test_setup.jpg" alt="Wind turbine physical test setup">
-        <figcaption>Physical test setup.</figcaption>
+      <figure class="figure-card wind-final-fea">
+        <img src="assets/windturbine_fea_triptych.png"
+             alt="Wind turbine structural FEA sanity-check results">
+        <figcaption>Structural sanity-check results.</figcaption>
       </figure>
 
-      <div class="wind-side-stack">
-        <figure class="figure-card wind-power-photo">
-          <img src="assets/windturbine_power_vs_current.png" alt="Wind turbine power versus current curve">
-          <figcaption>Measured power curve.</figcaption>
-        </figure>
-
-        <figure class="figure-card wind-fea-photo">
-          <img src="assets/windturbine_fea_triptych.png" alt="Wind turbine structural FEA sanity-check results">
-          <figcaption>Structural sanity-check results.</figcaption>
-        </figure>
-      </div>
     </div>
   </article>
 </section>
