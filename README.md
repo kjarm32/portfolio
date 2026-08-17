@@ -282,12 +282,7 @@
         A domain study at 4° changed CL by about 0.17% and CD by about 0.43%. Medium-to-fine mesh refinement changed CL by about 1.25% and CD by about 0.37%,
         supporting the medium mesh for the sweep with a fine-mesh verification point.
       </p>
-      <div class="callout">
-        <strong>Terminology matters:</strong>
-        these grid/domain studies are numerical <em>verification</em>. Experimental <em>validation</em> requires a controlled comparison to physical measurements,
-        so the site keeps those claims separate.
-      </div>
-    </div>
+</div>
 
 <figure class="figure-card full-width-figure">
   <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8 (3).png"
@@ -439,119 +434,101 @@
   </header>
 
   <div class="split-feature">
-    <div>
-      <p class="project-lede">
-        I am developing learned rotorcraft dynamics models that predict forces and moments while preserving the rigid-body equations of motion.
-        The research asks a stricter question than one-step prediction accuracy: does the learned model remain useful when it is rolled forward through a trajectory
-        or inserted into a controller-facing simulation?
-      </p>
-      <ul class="clean-list">
-        <li>Implemented the PyTorch flight-dynamics pipeline and force/moment integration.</li>
-        <li>Compared feed-forward, temporal, recurrent, and training-objective variants under matched conditions.</li>
-        <li>Built held-out trajectory rollout diagnostics for drift, local behavior, and control-relevant response.</li>
-        <li>Extended evaluation toward stability and tracking rather than optimizing a single aggregate prediction metric.</li>
-      </ul>
-      <p class="paper-note">
-        <strong>Accepted paper:</strong> “From Accurate Predictions to Controller-Facing Learned Rotorcraft Surrogates: Stability &amp; Tracking.”
-      </p>
-    </div>
 
-<figure class="figure-card dark-figure">
-  <img src="assets/flynet_method_comparison_heatmap.png" alt="Comparison of learned rotorcraft dynamics model errors across state channels">
-  <figcaption>Architecture and training changes move error differently across translation, rotation, and attitude states.</figcaption>
+<div>
+
+  <p class="project-lede">
+    Built, wired, and programmed a thermocouple calibration rig for flight instrumentation,
+    then converted raw measurement logs into calibration fits, agreement plots, and review-ready figures
+    for the HyCUBE hypersonic reentry payload.
+  </p>
+
+  <ul class="clean-list">
+
+    <li>
+      Implemented Arduino-based DAQ and cold-junction compensation, then characterized probe configurations
+      against a reference from 50–155°C using regression and agreement analysis.
+    </li>
+
+    <li>
+      Integrated and secured payload hardware for high-altitude balloon flight operations.
+    </li>
+
+    <li>
+      Tracked telemetry and state estimates over the Iridium satellite network to approximately 90,000 ft,
+      recovered the payload, and validated the post-flight data.
+    </li>
+
+  </ul>
+
+</div>
+
+<figure class="figure-card">
+
+  <img src="assets/hycube_validation_2up.png"
+       alt="HyCUBE thermocouple validation plots">
+
+  <figcaption>
+    Representative parity and temperature-error validation outputs.
+  </figcaption>
+
 </figure>
 
-  </div>
-
-  <details class="technical-details">
-    <summary>See rollout demo and toolchain</summary>
-    <div class="technical-details-body">
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/RBWWbZS1y6c" title="Rotorcraft learned dynamics rollout demo" allowfullscreen></iframe>
-      </div>
-      <p><strong>Tools:</strong> Python · PyTorch · JSBSim · NumPy · Matplotlib · system identification · rotorcraft simulation · closed-loop validation.</p>
-    </div>
-  </details>
-</section>
-
-<section id="hycube" class="case-study compact-case">
-  <header class="case-study-header">
-    <div>
-      <p class="eyebrow dark">FLIGHT HARDWARE · INSTRUMENTATION</p>
-      <h2>HyCUBE Reentry Payload — Thermal Instrumentation &amp; Flight Operations</h2>
-      <p class="case-study-subtitle">NASA Space Grant · sensor calibration · payload integration · high-altitude operations</p>
-    </div>
-  </header>
-
-  <div class="media-grid two hycube-context-grid">
-    <figure class="figure-card">
-      <img src="assets/HyCubeINAir.png"
-           alt="HyCUBE payload during high-altitude flight">
-      <figcaption>
-        HyCUBE in high-altitude flight before the ballistic reentry phase.
-      </figcaption>
-    </figure>
-    <figure class="figure-card">
-      <img src="assets/hycube_mission_graphic.webp"
-           alt="HyCUBE mission profile showing high-altitude ascent and reentry phases">
-      <figcaption>
-        Mission context: balloon ascent, release, and the reentry experiment.
-      </figcaption>
-    </figure>
-  </div>
-
-  <div class="media-grid two hero-media">
-    <figure class="figure-card">
-      <img src="assets/hycube_balloon_preflight.jpeg"
-           alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
-      <figcaption>
-        Payload integration before high-altitude balloon release.
-      </figcaption>
-    </figure>
-    <figure class="figure-card">
-      <img src="assets/hycube_calibration_rig.jpeg"
-           alt="Thermocouple calibration rig for HyCUBE">
-      <figcaption>
-        Controlled thermocouple calibration and measurement setup.
-      </figcaption>
-    </figure>
-  </div>
-
-  <div class="split-feature">
-    <div>
-      <p class="project-lede">
-        Built a thermocouple calibration and validation workflow for a ballistic reentry experiment, converting raw measurement logs into
-        calibration fits, agreement plots, and review-ready figures while also supporting payload integration, ground-station operations, recovery, and post-flight validation.
-      </p>
-      <ul class="clean-list">
-        <li>Implemented cold-junction compensation and regression-based sensitivity estimates.</li>
-        <li>Compared probe response against a reference measurement with parity, error, and agreement plots.</li>
-        <li>Supported real hardware integration and high-altitude flight operations.</li>
-      </ul>
-    </div>
-    <figure class="figure-card">
-      <img src="assets/hycube_validation_2up.png" alt="HyCUBE thermocouple validation plots">
-      <figcaption>Representative parity and temperature-error validation outputs.</figcaption>
-    </figure>
   </div>
 </section>
 
 <section class="portfolio-section">
+
   <header class="section-header">
-    <p class="eyebrow dark">ADDITIONAL BUILD + TEST WORK</p>
-    <h2>Smaller projects with clear physical outcomes</h2>
+
+<p class="eyebrow dark">
+  ADDITIONAL ENGINEERING PROJECTS
+</p>
+
+<h2>
+  Additional Engineering Projects
+</h2>
+
+<p>
+  Smaller but still relevant examples of design, analysis, prototyping, and test.
+</p>
+
   </header>
 
   <div class="small-project-grid">
     <article class="small-project-card">
-      <img src="assets/drone_flight_photo.jpg" alt="Quadcopter flight test with a seed dispersal attachment">
-      <div>
-        <p class="project-kicker">MECHANICAL INTEGRATION · CFD · FLIGHT TEST</p>
-        <h3>Drone Seed-Dispersal Hardware</h3>
-        <p>Designed and flight-tested a printed seed-dispersal attachment; used CFD and external-geometry refinement to reduce drag and minimize yaw disturbance.</p>
-        <div class="project-result"><strong>−0.044 N</strong><span>predicted side force at 15 mph</span></div>
-      </div>
-    </article>
+
+  <div class="small-project-media two">
+    <img src="assets/drone_flight_photo.jpg"
+         alt="Quadcopter flight test with a seed dispersal attachment">
+    <img src="assets/dronee29Cadrender.png"
+         alt="CAD render of the drone seed-dispersal attachment">
+  </div>
+
+  <div>
+
+    <p class="project-kicker">
+      MECHANICAL INTEGRATION · CFD · FLIGHT TEST
+    </p>
+
+    <h3>
+      Drone Seed-Dispersal Hardware
+    </h3>
+
+    <p>
+      Designed, analyzed, and flight-tested a printed seed-dispersal attachment for a quadcopter.
+      Used CAD iteration and CFD-informed geometry refinement to reduce drag and limit yaw disturbance
+      before validating the integrated hardware in flight.
+    </p>
+
+    <div class="project-result">
+      <strong>−0.044 N</strong>
+      <span>predicted side force at 15 mph</span>
+    </div>
+
+  </div>
+
+</article>
 
 <article class="small-project-card">
   <img src="assets/windturbine_test_setup.jpg" alt="Wind turbine design-build-test setup">
