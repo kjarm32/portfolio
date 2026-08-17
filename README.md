@@ -54,9 +54,9 @@
 
   <div class="featured-grid">
     <a class="featured-card" href="#experience">
-      <div class="featured-card-media light-media">
-        <img src="assets/standardbots_render.jpg"
-             alt="Standard Bots industrial robot arm render">
+      <div class="featured-card-media standardbots-burnin-card">
+        <img src="assets/standardbots_test_hardware.jpg"
+             alt="Loaded burn-in test hardware developed at Standard Bots">
       </div>
       <div class="featured-card-copy">
         <span class="card-kicker">HARDWARE ENGINEERING</span>
@@ -197,7 +197,7 @@
   </div>
 
   <div class="evidence-grid">
-    <figure class="figure-card">
+    <figure class="figure-card assembly-photo">
       <img src="assets/standardbots_build_photo.jpg"
            alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
       <figcaption>
@@ -220,9 +220,8 @@
 <section id="bwb" class="case-study">
   <header class="case-header split">
     <div>
-      <p class="eyebrow">FLAGSHIP AIRCRAFT PROJECT · 2026</p>
-      <h2>Blended-Wing-Body Aerodynamics</h2>
-      <p class="case-subtitle">Geometry design · CFD verification · FDM fabrication · force-balance test · tuft visualization</p>
+      <h2>Blended-Wing-Body Aircraft Design &amp; Aerodynamic Validation</h2>
+      <p class="case-subtitle">Outer-mold-line design · CFD verification · FDM fabrication · force-balance testing · tuft flow visualization</p>
     </div>
 
     <a class="text-link" href="assets/BWB_Project_Showcase_Tufts%20(4).html">Full technical showcase ↗</a>
@@ -470,12 +469,14 @@
 
   <div class="media-grid two hycube-context">
     <figure class="figure-card">
-      <img src="assets/HyCubeINAir.png" alt="HyCUBE payload during high-altitude flight">
+      <img src="assets/HyCubeINAir.png"
+           alt="HyCUBE payload during high-altitude flight">
       <figcaption>HyCUBE in high-altitude flight.</figcaption>
     </figure>
+
     <figure class="figure-card">
       <img src="assets/hycube_mission_graphic.webp"
-           alt="HyCUBE mission profile showing ascent, release, and reentry">
+           alt="HyCUBE mission profile showing balloon ascent, release, and reentry">
       <figcaption>Mission profile: balloon ascent, release, and reentry experiment.</figcaption>
     </figure>
   </div>
@@ -483,14 +484,15 @@
   <div class="split-feature hycube-copy">
     <div>
       <p class="case-lede">
-        Built, wired, and programmed a thermocouple calibration rig for flight instrumentation
-        and supported payload integration and high-altitude flight operations.
+        Built, wired, and programmed a thermocouple calibration rig for flight instrumentation,
+        then characterized probe configurations against a reference and supported payload integration,
+        high-altitude flight operations, recovery, and post-flight validation.
       </p>
 
       <ul class="clean-list">
         <li>
           Used Arduino DAQ and cold-junction compensation to characterize probe configurations
-          against a reference from 50–155°C using regression and agreement analysis.
+          from 50–155°C using regression and agreement analysis.
         </li>
         <li>
           Integrated and secured payload hardware, tracked telemetry and state estimates over the Iridium satellite network
@@ -510,12 +512,18 @@
       </div>
     </div>
 
-    <figure class="figure-card calibration-photo">
-      <img src="assets/hycube_test_setup.jpg"
-           alt="HyCUBE calibration and test setup">
-      <figcaption>Thermocouple calibration and measurement setup.</figcaption>
+    <figure class="figure-card hycube-analysis">
+      <img src="assets/hycube_validation_2up.png"
+           alt="HyCUBE thermocouple validation plots">
+      <figcaption>Thermocouple parity and temperature-error validation.</figcaption>
     </figure>
   </div>
+
+  <figure class="figure-card hycube-ground-photo">
+    <img src="assets/hycube_balloon_preflight.jpeg"
+         alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
+    <figcaption>Payload integration before balloon release.</figcaption>
+  </figure>
 </section>
 
 <section id="drone" class="case-study compact-case">
@@ -549,16 +557,16 @@
 
   <div class="case-intro two">
     <p>
-      In a team design project, my focus was the aerodynamic and mechanical integration of a gravity-fed,
-      motor-driven seed-dispersal attachment for a quadcopter.
+      On a team, I owned mounting placement, aerodynamic outer geometry, maintenance access, and DfAM
+      for an ABS-printed quadcopter attachment, then validated retention and aircraft integration through loaded flight testing.
     </p>
     <p>
-      I used CFD to quantify the aerodynamic penalty, refined the external geometry to reduce separation and drag,
-      reviewed DfAM decisions, and supported final flight testing with the attachment mounted and loaded.
+      I ran a 15 mph CFD study to quantify aerodynamic loads, then redesigned the leading edge from flat to curved
+      to reduce simulated flow separation and improve aerodynamic integration.
     </p>
   </div>
 
-  <div class="media-grid two">
+  <div class="media-grid two drone-cfd-grid">
     <figure class="figure-card">
       <img src="assets/e29DronePressure.png"
            alt="Static pressure result for the drone seed-dispersal attachment at 15 mph">
