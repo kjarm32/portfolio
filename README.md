@@ -537,7 +537,7 @@
   <header class="case-header">
     <div>
       <p class="eyebrow">MECHANICAL INTEGRATION · AERODYNAMIC ANALYSIS · FLIGHT TEST</p>
-      <h2>Drone Seed-Dispersal Attachment</h2>
+      <h2>UAV Seed-Dispersal Attachment</h2>
       <p class="case-subtitle">CAD · DfAM · CFD analysis · mechanical integration · loaded flight testing</p>
     </div>
   </header>
