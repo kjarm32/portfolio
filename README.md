@@ -20,10 +20,10 @@
       instrumentation, and physical test.
     </p>
     <div class="hero-links">
-      <a href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/"
-         target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kevarm2028@berkeley.edu"
-         target="_blank" rel="noopener noreferrer">kevarm2028@berkeley.edu ↗</a>
+      <a class="hero-link" href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/"
+         target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="hero-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kevarm2028@berkeley.edu"
+         target="_blank" rel="noopener noreferrer">Email</a>
     </div>
   </div>
 
@@ -152,7 +152,7 @@
            alt="Loaded burn-in station fixture developed at Standard Bots">
       <figcaption>
         <strong>Loaded burn-in station fixture.</strong>
-        Built hardware used for pre-assembly joint reliability testing under representative load.
+        Built hardware used for automated pre-assembly load testing under representative load.
       </figcaption>
     </figure>
 
@@ -160,7 +160,7 @@
       <video class="cad-video"
              autoplay muted loop playsinline controls preload="metadata"
              poster="assets/standardbots_test_hardware.jpg">
-        <source src="assets/Collapse_Loaded_burn_in.mp4" type="video/mp4">
+        <source src="assets/Collaspe_Loaded_burn_in.mp4" type="video/mp4">
       </video>
       <figcaption>
         <strong>CAD assembly sequence.</strong>
@@ -172,7 +172,7 @@
   <div class="workstream-grid">
     <article>
       <span>01</span>
-      <h3>Joint reliability test system</h3>
+      <h3>Automated load-testing station</h3>
       <p>
         Designed an automated pre-assembly burn-in station that applied representative load for long-duration testing,
         integrated torque and position sensing, and screened joints before complete robot assembly.
@@ -594,8 +594,8 @@
   <span>Kevin Armstrong II · UC Berkeley Mechanical Engineering</span>
   <div>
     <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kevarm2028@berkeley.edu"
-       target="_blank" rel="noopener noreferrer">kevarm2028@berkeley.edu ↗</a>
+       target="_blank" rel="noopener noreferrer">Email</a>
     <a href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/"
-       target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+       target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </div>
 </footer>
