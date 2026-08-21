@@ -277,7 +277,7 @@
       </figure>
       <figure class="figure-card bwb-geometry-card bwb-loft-card">
         <img src="assets/BWB_Aero_CADd1.png" alt="SOLIDWORKS loft used to construct the BWB outer mold line">
-        <figcaption>SOLIDWORKS multi-section loft and guide-curve definition.</figcaption>
+        <figcaption><strong>SOLIDWORKS loft definition.</strong> Multi-section loft and guide-curve setup used to generate the final outer mold line.</figcaption>
       </figure>
     </div>
   </div>
@@ -296,24 +296,24 @@
     <figure class="figure-card wide-figure bwb-cfd-overview">
       <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8 (3).png"
            alt="Streamwise velocity and surface pressure at 0, 4, and 8 degrees angle of attack">
-      <figcaption>Matched streamwise-velocity and surface-pressure views at 0°, 4°, and 8°.</figcaption>
+      <figcaption><strong>CFD field comparison.</strong> Streamwise-velocity and surface-pressure views compared at 0°, 4°, and 8° angle of attack.</figcaption>
     </figure>
 
     <div class="verification-grid">
       <div>
-        <span>DOMAIN · 4°</span>
-        <strong>ΔCL 0.17%</strong>
-        <small>ΔCD 0.43%</small>
+        <span>DOMAIN SENSITIVITY</span>
+        <strong>ΔCL = 0.17%</strong>
+        <small>ΔCD = 0.43% at 4°</small>
       </div>
       <div>
-        <span>MESH · 4°</span>
-        <strong>ΔCL 1.25%</strong>
-        <small>ΔCD 0.37% · medium → fine</small>
+        <span>MESH REFINEMENT</span>
+        <strong>ΔCL = 1.25%</strong>
+        <small>ΔCD = 0.37% from medium → fine</small>
       </div>
       <div>
-        <span>CONVERGENCE</span>
-        <strong>+100 iterations</strong>
-        <small>after solver goals were achieved</small>
+        <span>CONVERGENCE CHECK</span>
+        <strong>100+ iterations</strong>
+        <small>beyond solver-goal convergence</small>
       </div>
     </div>
   </div>
