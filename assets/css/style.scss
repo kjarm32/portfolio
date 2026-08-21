@@ -334,8 +334,8 @@ body > header:first-child,
 
 .featured-card-media.standardbots-render img {
   object-fit: cover;
-  object-position: center 52%;
-  transform: scale(1.72);
+  object-position: center 53%;
+  transform: scale(1.90);
 }
 
 .featured-card-media.dark-media {
@@ -1286,15 +1286,14 @@ body > header:first-child,
 }
 
 .title-with-note .company-context {
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 500;
+  color: #d8c5ae;
+  font-size: 18px;
+  font-weight: 650;
 }
 
 .title-with-note .company-context::before {
-  content: "•";
-  margin-right: 9px;
-  color: var(--accent);
+  content: none;
+  margin-right: 0;
 }
 
 
@@ -1381,19 +1380,60 @@ body > header:first-child,
 }
 
 
+.drone-cad-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface) !important;
+}
+
 .drone-cad-card img {
+  display: block;
+  width: 100%;
+  height: 315px;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  padding: 0 !important;
   background: #fff !important;
 }
 
+.drone-cad-card figcaption {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 13px 14px 15px !important;
+  border-top: 1px solid var(--line);
+  background: var(--surface) !important;
+  color: #c8bfb3 !important;
+}
+
+.drone-cad-card figcaption strong {
+  color: var(--ink) !important;
+}
+
 .drone-flight-card {
-  background: #171512;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface);
 }
 
 .drone-flight-card img {
-  object-fit: contain !important;
-  object-position: center;
+  display: block;
+  width: 100%;
+  height: 315px;
+  object-fit: cover !important;
+  object-position: center 52%;
+  transform: none !important;
+  padding: 0 !important;
   background: #171512 !important;
-  padding: 8px;
+}
+
+.drone-flight-card figcaption {
+  padding: 13px 14px 15px !important;
+  border-top: 1px solid var(--line);
+  background: var(--surface) !important;
 }
 
 .drone-body-grid {
@@ -1432,245 +1472,134 @@ body > header:first-child,
 
 
 /* =========================================================
-   Final crop / spacing polish
+   BWB figure presentation
+   One authoritative block: no competing crop overrides below.
    ========================================================= */
 
-/* Make the Series C context easier to read while keeping it subordinate. */
-.title-with-note .company-context {
-  font-size: 15.5px;
-  font-weight: 600;
-  color: #b9aa9a;
-}
-
-/* BWB geometry: remove dead side-space without sacrificing engineering detail. */
-.bwb-geometry-card {
-  overflow: hidden;
-  background: #171512;
-}
-
-.bwb-geometry-card img {
-  display: block;
-  width: 100%;
-  height: 310px !important;
-  transform-origin: center;
-}
-
-.bwb-sketch-card img {
-  object-fit: contain !important;
-  background: #fff;
-  transform: scale(1.075);
-}
-
-.bwb-loft-card img {
-  object-fit: contain !important;
-  background: #fff;
-  transform: scale(1.18);
-}
-
-/* BWB CFD montage: enlarge the actual plots and reduce the dark side gutters. */
-.bwb-cfd-overview {
-  overflow: hidden;
-  background: #171512;
-}
-
-.bwb-cfd-overview img {
-  display: block;
-  width: 100%;
-  height: 455px;
-  max-height: none;
-  object-fit: contain;
-  background: #fff;
-  transform: scale(1.105);
-  transform-origin: center;
-}
-
-/* BWB performance plots: modest whitespace crop only; keep axes/annotations intact. */
-.bwb-performance-plot {
-  overflow: hidden;
-}
-
-.bwb-performance-plot img {
-  height: 305px !important;
-  object-fit: contain !important;
-  background: #fff !important;
-  transform: scale(1.045);
-  transform-origin: center;
-}
-
-/* HyCUBE captions need a little breathing room from the images. */
-.hycube-context .figure-card figcaption,
-.hycube-detail-grid .figure-card figcaption {
-  padding: 15px 14px 15px;
-  line-height: 1.55;
-}
-
-/* Keep HyCUBE plot content visually centered after the crop/zoom. */
-.hycube-plot-card img {
-  transform: scale(1.085);
-}
-
-/* UAV hero: keep the CAD image crisp and make the flight photo fill the frame
-   without the large dark gutters from the previous contain treatment. */
-.drone-hero {
-  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
-}
-
-.drone-cad-card {
-  background: #fff;
-}
-
-.drone-cad-card img {
-  width: 100%;
-  height: 315px;
-  object-fit: contain !important;
-  background: #fff !important;
-  padding: 0;
-  transform: scale(1.035);
-  transform-origin: center;
-}
-
-.drone-flight-card {
-  overflow: hidden;
-  background: #171512;
-}
-
-.drone-flight-card img {
-  width: 100%;
-  height: 315px;
-  object-fit: cover !important;
-  object-position: center 52%;
-  padding: 0 !important;
-  background: #171512 !important;
-  transform: none;
-}
-
-/* Keep caption rhythm consistent in the UAV hero row. */
-.drone-hero .figure-card figcaption {
-  padding: 14px 14px 15px;
-}
-
-/* Mobile: disable aggressive figure zooms where width is scarce. */
-@media (max-width: 820px) {
-  .bwb-sketch-card img,
-  .bwb-loft-card img,
-  .bwb-cfd-overview img,
-  .bwb-performance-plot img,
-  .drone-cad-card img {
-    transform: none;
-  }
-
-  .bwb-geometry-card img,
-  .bwb-cfd-overview img,
-  .bwb-performance-plot img,
-  .drone-cad-card img,
-  .drone-flight-card img {
-    height: auto !important;
-  }
-}
-
-
-/* --- Targeted cleanup pass: Standard Bots + BWB CFD/geometry only --- */
-
-/* Make the Standard Bots context line stronger and remove the bullet. */
-.title-with-note .company-context {
-  font-size: 18px;
-  font-weight: 650;
-  color: #d8c5ae;
-}
-.title-with-note .company-context::before {
-  content: none;
-  margin-right: 0;
-}
-
-/* Zoom the featured Standard Bots card in a bit more on the arm. */
-.featured-card-media.standardbots-render img {
-  object-position: center 53%;
-  transform: scale(1.90);
-}
-
-/* Keep BWB geometry captions visible and tighten the image crops. */
+/* Geometry cards: full engineering content stays visible; captions live below images. */
 .bwb-geometry-card {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  background: var(--surface);
 }
+
 .bwb-geometry-card img {
-  height: 286px !important;
-}
-.bwb-geometry-card figcaption,
-.bwb-cfd-overview figcaption {
-  padding: 13px 15px 15px;
-  min-height: 54px;
-}
-.bwb-sketch-card img {
-  object-fit: cover !important;
-  object-position: 56% 54%;
-  background: #fff;
-  transform: scale(1.11);
-}
-.bwb-loft-card img {
-  object-fit: cover !important;
-  object-position: center 52%;
-  background: #fff;
-  transform: scale(1.10);
+  display: block;
+  width: 100%;
+  height: 300px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  background: #fff !important;
 }
 
-/* Clean up the CFD montage so less of the outer white margin dominates. */
+.bwb-geometry-card figcaption {
+  position: relative;
+  z-index: 2;
+  display: block;
+  min-height: 0;
+  padding: 12px 14px 14px !important;
+  border-top: 1px solid var(--line);
+  background: var(--surface) !important;
+  color: #c8bfb3 !important;
+}
+
+.bwb-geometry-card figcaption strong {
+  color: var(--ink) !important;
+}
+
+/* CFD montage: preserve the entire 0° / 4° / 8° technical comparison.
+   Do not use cover or transform; those are what caused the clipping. */
+.bwb-cfd-overview {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface);
+}
+
 .bwb-cfd-overview img {
-  height: 405px;
-  object-fit: cover;
-  object-position: center 18%;
-  background: #fff;
-  transform: scale(1.12);
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: 620px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+  background: #fff !important;
 }
 
-/* Make the CFD verification stats read more like quick findings. */
+.bwb-cfd-overview figcaption {
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 13px 15px 15px !important;
+  border-top: 1px solid var(--line);
+  background: var(--surface) !important;
+  color: #c8bfb3 !important;
+}
+
+.bwb-cfd-overview figcaption strong {
+  color: var(--ink) !important;
+}
+
+/* CFD verification numbers: compact, readable engineering summary. */
 .verification-grid span {
   font-size: 10px;
   letter-spacing: 0.085em;
 }
+
 .verification-grid strong {
   margin-top: 7px;
   font-size: 20px;
 }
+
 .verification-grid small {
   margin-top: 4px;
   font-size: 12px;
   line-height: 1.45;
 }
 
-/* Dark-theme the technical appendix table so it does not inherit bright row fills. */
+/* Technical appendix table: keep every row native to the dark theme. */
 .table-wrap table {
   min-width: 360px;
   border-collapse: collapse;
   background: #11100e;
   border: 1px solid var(--line);
 }
+
 .table-wrap th,
 .table-wrap td {
   padding: 10px 14px;
   border: 1px solid var(--line);
-  background: transparent;
-}
-.table-wrap thead th {
-  background: #14120f;
-  color: #f3ede6;
-  font-weight: 750;
-}
-.table-wrap tbody td {
-  color: #ece3d7;
-}
-.table-wrap tbody tr:nth-child(odd) td {
-  background: #0f0e0c;
-}
-.table-wrap tbody tr:nth-child(even) td {
-  background: #171512;
-}
-.table-wrap tbody td strong {
-  color: #fff;
 }
 
-/* Slightly stronger BWB captions overall. */
-.bwb-geometry-card figcaption strong,
-.bwb-cfd-overview figcaption strong {
-  color: #f3ede6;
+.table-wrap thead th {
+  background: #14120f !important;
+  color: #f3ede6 !important;
+  font-weight: 750;
+}
+
+.table-wrap tbody tr:nth-child(odd) td {
+  background: #0f0e0c !important;
+  color: #ece3d7 !important;
+}
+
+.table-wrap tbody tr:nth-child(even) td {
+  background: #171512 !important;
+  color: #ece3d7 !important;
+}
+
+.table-wrap tbody td strong {
+  color: #fff !important;
+}
+
+@media (max-width: 820px) {
+  .bwb-geometry-card img,
+  .bwb-cfd-overview img,
+  .drone-cad-card img,
+  .drone-flight-card img {
+    height: auto !important;
+    max-height: none !important;
+  }
 }
