@@ -1,4 +1,4 @@
-<div class="portfolio-nav">
+<nav class="portfolio-nav" aria-label="Portfolio navigation">
   <a class="portfolio-brand" href="#top">KA</a>
   <div class="portfolio-nav-links">
     <a href="#experience">Experience</a>
@@ -6,62 +6,68 @@
     <a href="#rotorcraft">Research</a>
     <a href="#hycube">Flight Hardware</a>
   </div>
-</div>
+</nav>
 
 <a id="top"></a>
 
-<section class="hero">
+<section class="hero-compact">
   <div class="hero-copy">
-    <p class="eyebrow hero-eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
+    <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
     <h1>Kevin Armstrong II</h1>
-    <p class="hero-title">Aircraft and mechanical hardware, from CAD and analysis through build and test.</p>
-
-    <div class="hero-actions">
-      <a class="button button-primary" href="#featured-work">View work</a>
-      <a class="button button-ghost" href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/">LinkedIn</a>
-      <a class="button button-ghost" href="mailto:kevarm2028@berkeley.edu">Email</a>
+    <p class="hero-title">Aircraft design, experimental aerodynamics, and mechanical hardware.</p>
+    <p class="hero-summary">
+      I build engineering systems from geometry and first-principles analysis through fabrication,
+      instrumentation, and physical test.
+    </p>
+    <div class="hero-links">
+      <a href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/"
+         target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kevarm2028@berkeley.edu"
+         target="_blank" rel="noopener noreferrer">kevarm2028@berkeley.edu ↗</a>
     </div>
   </div>
 
-  <aside class="hero-profile">
-    <img src="assets/4headshotasmes.png" alt="Kevin Armstrong II">
+  <img class="hero-headshot"
+       src="assets/4headshotasmes.png"
+       alt="Kevin Armstrong II">
+</section>
 
-    <div class="hero-signals">
-      <div>
-        <span>PROFESSIONAL HARDWARE</span>
-        <strong>Standard Bots</strong>
-        <small>Hardware Engineering · 2026</small>
-      </div>
-      <div>
-        <span>FLIGHT DYNAMICS RESEARCH</span>
-        <strong>IEEE Aerospace 2027</strong>
-        <small>Accepted conference paper</small>
-      </div>
-      <div>
-        <span>UC BERKELEY</span>
-        <strong>Mechanical Engineering</strong>
-        <small>NCAA Division I</small>
-      </div>
-    </div>
-  </aside>
+<section class="experience-brief" aria-label="Experience overview">
+  <div class="experience-brief-item">
+    <span>2026 · PROFESSIONAL HARDWARE</span>
+    <strong>Standard Bots</strong>
+    <p>Mechanical Design &amp; Test Intern · Long Island, New York</p>
+  </div>
+
+  <div class="experience-brief-item">
+    <span>2024 · AEROSPACE SYSTEMS</span>
+    <strong>UMN Aerospace Systems Lab</strong>
+    <p>Aerospace Systems Intern · HyCUBE Hypersonic Reentry Vehicle · NASA Minnesota Space Grant</p>
+  </div>
+
+  <div class="experience-brief-item">
+    <span>FLIGHT DYNAMICS RESEARCH</span>
+    <strong>UC Berkeley</strong>
+    <p>Learned rotorcraft dynamics · IEEE Aerospace 2027 accepted paper</p>
+  </div>
 </section>
 
 <section id="featured-work" class="featured-work">
   <header class="section-heading">
-    <p class="eyebrow">FEATURED WORK</p>
-    <h2>Selected engineering</h2>
+    <p class="eyebrow">SELECTED ENGINEERING</p>
+    <h2>Work</h2>
   </header>
 
   <div class="featured-grid">
     <a class="featured-card" href="#experience">
-      <div class="featured-card-media">
-        <img src="assets/standardbots_render.jpg"
-             alt="Standard Bots industrial robot arm render">
+      <div class="featured-card-media standardbots-render">
+        <img src="assets/Standard%20Bots%20RO1.png"
+             alt="Standard Bots RO1 industrial robot">
       </div>
       <div class="featured-card-copy">
-        <span class="card-kicker">HARDWARE ENGINEERING</span>
+        <span class="card-kicker">MECHANICAL DESIGN + TEST</span>
         <h3>Standard Bots</h3>
-        <p>Mechanical design, test infrastructure, assembly, calibration, and production validation.</p>
+        <p>Industrial-robot test infrastructure, high-load interfaces, assembly, calibration, and production validation.</p>
         <strong class="card-result">100 hr loaded burn-in</strong>
       </div>
     </a>
@@ -72,9 +78,9 @@
              alt="Blended-wing-body model mounted in a wind tunnel">
       </div>
       <div class="featured-card-copy">
-        <span class="card-kicker">EXPERIMENTAL AERODYNAMICS</span>
+        <span class="card-kicker">AIRCRAFT DESIGN + AERODYNAMICS</span>
         <h3>Blended-Wing-Body Aircraft</h3>
-        <p>Custom OML, CFD, FDM test article, force-balance testing, and tuft visualization.</p>
+        <p>Outer-mold-line design, CFD verification, FDM fabrication, force-balance testing, and tuft visualization.</p>
         <strong class="card-result">14–16° stall onset</strong>
       </div>
     </a>
@@ -87,7 +93,7 @@
       <div class="featured-card-copy">
         <span class="card-kicker">FLIGHT DYNAMICS + ML</span>
         <h3>Learned Rotorcraft Dynamics</h3>
-        <p>Physics-informed force and moment models evaluated through rollout and controller-facing behavior.</p>
+        <p>Physics-informed force and moment models evaluated through trajectory rollout and controller-facing behavior.</p>
         <strong class="card-result">IEEE Aerospace 2027</strong>
       </div>
     </a>
@@ -98,103 +104,98 @@
              alt="HyCUBE payload during high-altitude flight">
       </div>
       <div class="featured-card-copy">
-        <span class="card-kicker">FLIGHT INSTRUMENTATION</span>
+        <span class="card-kicker">AEROSPACE SYSTEMS</span>
         <h3>HyCUBE Reentry Vehicle</h3>
-        <p>Thermal instrumentation, payload integration, high-altitude operations, and recovery.</p>
+        <p>Flight instrumentation, calibration, payload integration, high-altitude operations, recovery, and validation.</p>
         <strong class="card-result">~90,000 ft flight</strong>
       </div>
     </a>
   </div>
 </section>
 
-<section class="intro">
-  <div>
-    <p class="eyebrow">ABOUT</p>
-    <h2>I like engineering that closes the loop.</h2>
-  </div>
-
-  <div class="intro-copy">
-    <p>
-      I’m a UC Berkeley mechanical engineering student focused on aircraft design, experimental aerodynamics,
-      and complex mechanical hardware. My strongest projects move from geometry and first-principles analysis
-      into fabrication, instrumentation, and physical test.
-    </p>
-
-    <div class="capability-row">
-      <span>Aircraft Design</span>
-      <span>Experimental Aerodynamics</span>
-      <span>Mechanical Hardware</span>
-      <span>Test Engineering</span>
-    </div>
-  </div>
-</section>
-
 <section id="experience" class="case-study standardbots-case">
-  <header class="case-header">
+  <header class="case-header standardbots-header">
     <div>
-      <p class="eyebrow">FEATURED EXPERIENCE · BROOKLYN, NY · SUMMER 2026</p>
-      <h2>Standard Bots</h2>
-      <p class="case-subtitle">Hardware Engineering Intern</p>
+      <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
+      <div class="title-with-note">
+        <h2>Standard Bots</h2>
+        <span>Series C industrial robotics startup</span>
+      </div>
+      <p class="case-subtitle">Mechanical Design &amp; Test Intern · Long Island, New York</p>
     </div>
   </header>
 
-  <div class="standardbots-hero">
-    <div class="standardbots-copy">
-      <p class="case-lede">
-        Designed mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
-        structural analysis, fabrication, assembly, instrumentation, and validation.
-      </p>
+  <p class="case-lede standardbots-lede">
+    Designed mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
+    structural analysis, fabrication, assembly, instrumentation, and validation.
+  </p>
 
-      <div class="metric-grid three">
-        <div class="metric">
-          <strong>100 hr</strong>
-          <span>automated loaded burn-in</span>
-        </div>
-        <div class="metric">
-          <strong>&gt;2.5 kN·m</strong>
-          <span>momentary interface load verified</span>
-        </div>
-        <div class="metric">
-          <strong>~75 hr</strong>
-          <span>downstream disassembly/rework avoided</span>
-        </div>
-      </div>
-
-      <div class="workstream-grid">
-        <article>
-          <span>01</span>
-          <h3>Joint reliability test system</h3>
-          <p>
-            Designed an automated pre-assembly burn-in station that applied representative load for long-duration testing,
-            integrated torque and position sensing, and screened joints before complete robot assembly.
-          </p>
-        </article>
-
-        <article>
-          <span>02</span>
-          <h3>High-load dynamometer interface</h3>
-          <p>
-            Designed a precision mechanical interface and checked bolted, doweled, and keyed load paths
-            with hand calculations and static FEA before releasing the manufactured part.
-          </p>
-        </article>
-
-        <article>
-          <span>03</span>
-          <h3>Assembly + production support</h3>
-          <p>
-            Assembled and calibrated three complete robot arms, programmed checkout motion routines,
-            improved technician-facing build instructions, and trained technicians.
-          </p>
-        </article>
-      </div>
+  <div class="metric-row three">
+    <div>
+      <strong>100 hr</strong>
+      <span>automated loaded burn-in</span>
     </div>
+    <div>
+      <strong>&gt;2.5 kN·m</strong>
+      <span>momentary interface load verified</span>
+    </div>
+    <div>
+      <strong>~75 hr</strong>
+      <span>downstream disassembly / rework avoided</span>
+    </div>
+  </div>
 
-    <figure class="standardbots-photo standardbots-fixture-photo">
-      <img src="assets/standardbots_test_hardware.jpg"
+  <div class="standardbots-fixture-grid">
+    <figure class="figure-card">
+      <img class="fixture-image"
+           src="assets/standardbots_test_hardware.jpg"
            alt="Loaded burn-in station fixture developed at Standard Bots">
-      <figcaption><strong>Loaded burn-in station fixture.</strong></figcaption>
+      <figcaption>
+        <strong>Loaded burn-in station fixture.</strong>
+        Built hardware used for pre-assembly joint reliability testing under representative load.
+      </figcaption>
     </figure>
+
+    <figure class="figure-card">
+      <video class="cad-video"
+             autoplay muted loop playsinline controls preload="metadata"
+             poster="assets/standardbots_test_hardware.jpg">
+        <source src="assets/Collapse_Loaded_burn_in.mp4" type="video/mp4">
+      </video>
+      <figcaption>
+        <strong>CAD assembly sequence.</strong>
+        Exploded / collapse view of the fixture architecture and assembly stack.
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="workstream-grid">
+    <article>
+      <span>01</span>
+      <h3>Joint reliability test system</h3>
+      <p>
+        Designed an automated pre-assembly burn-in station that applied representative load for long-duration testing,
+        integrated torque and position sensing, and screened joints before complete robot assembly.
+      </p>
+    </article>
+
+    <article>
+      <span>02</span>
+      <h3>High-load dynamometer interface</h3>
+      <p>
+        Designed a precision mechanical interface and checked bolted, doweled, and keyed load paths
+        with hand calculations and static FEA before releasing the manufactured part.
+      </p>
+    </article>
+
+    <article>
+      <span>03</span>
+      <h3>Assembly, checkout + production support</h3>
+      <p>
+        Assembled and calibrated three complete robot arms, programmed checkout motion routines,
+        improved technician-facing build instructions, and trained technicians.
+      </p>
+    </article>
   </div>
 
   <div class="evidence-grid">
@@ -202,7 +203,8 @@
       <img src="assets/standardbots_build_photo.jpg"
            alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
       <figcaption>
-        <strong>Assembly + calibration.</strong> Bringing up and validating a completed robot arm during production-facing hardware work.
+        <strong>Assembly + calibration.</strong>
+        Bringing up and validating a completed robot arm.
       </figcaption>
     </figure>
 
@@ -212,7 +214,8 @@
         <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
       </video>
       <figcaption>
-        <strong>Checkout routine.</strong> Arm executing a motion routine I programmed while bringing up the completed assembly.
+        <strong>Checkout routine.</strong>
+        Arm executing a motion routine I programmed while bringing up the completed assembly.
       </figcaption>
     </figure>
   </div>
@@ -537,7 +540,7 @@
   <header class="case-header">
     <div>
       <p class="eyebrow">MECHANICAL INTEGRATION · AERODYNAMIC ANALYSIS · FLIGHT TEST</p>
-      <h2>UAV Seed-Dispersal Attachment</h2>
+      <h2>Drone Seed-Dispersal Attachment</h2>
       <p class="case-subtitle">CAD · DfAM · CFD analysis · mechanical integration · loaded flight testing</p>
     </div>
   </header>
@@ -587,66 +590,12 @@
   </div>
 </section>
 
-<section class="portfolio-section wind-section">
-  <header class="section-heading">
-    <p class="eyebrow">ADDITIONAL ENGINEERING</p>
-    <h2>Wind Turbine Design-Build-Test</h2>
-    <p class="case-subtitle">Rapid prototyping · wind-tunnel-style testing · power characterization · structural review</p>
-  </header>
-
-  <article class="case-study compact-case wind-case">
-    <div class="wind-final-grid">
-
-      <div class="wind-story-card">
-        <div class="wind-story-image">
-          <img src="assets/windturbine_test_setup.jpg"
-               alt="Wind turbine physical test setup">
-        </div>
-
-        <div class="wind-story-copy">
-          <div class="wind-result-inline">
-            <strong>#1 / 40</strong>
-            <span>teams in measured electrical power output</span>
-          </div>
-
-          <p>
-            In a four-person team project, we designed, built, and tested a small wind turbine under
-            manufacturability and performance constraints. I focused on measurement, power characterization,
-            blade concept research, and verification review.
-          </p>
-
-          <p>
-            Our final design ranked <strong>#1 of 40 teams</strong> in measured electrical power output.
-          </p>
-        </div>
-
-        <div class="wind-story-caption">Physical test setup.</div>
-      </div>
-
-      <figure class="figure-card wind-final-fea">
-        <img src="assets/windturbine_fea_triptych.png"
-             alt="Wind turbine structural FEA sanity-check results">
-        <figcaption>Structural sanity-check results.</figcaption>
-      </figure>
-
-    </div>
-  </article>
-</section>
-
 <footer class="portfolio-footer">
   <span>Kevin Armstrong II · UC Berkeley Mechanical Engineering</span>
-
   <div>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kevarm2028@berkeley.edu"
-       target="_blank"
-       rel="noopener noreferrer">
-      kevarm2028@berkeley.edu
-    </a>
-
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kevarm2028@berkeley.edu"
+       target="_blank" rel="noopener noreferrer">kevarm2028@berkeley.edu ↗</a>
     <a href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/"
-       target="_blank"
-       rel="noopener noreferrer">
-      LinkedIn
-    </a>
+       target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
   </div>
 </footer>
