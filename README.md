@@ -273,7 +273,7 @@
     <div class="media-grid two">
       <figure class="figure-card bwb-geometry-card bwb-sketch-card">
         <img src="assets/Cadbwbsketch.png" alt="BWB concept sketch and geometry development">
-        <figcaption>Concept and early geometry definition.</figcaption>
+        <figcaption><strong>Geometry definition.</strong> Cross-sections and guide curves used to shape the BWB outer mold line.</figcaption>
       </figure>
       <figure class="figure-card bwb-geometry-card bwb-loft-card">
         <img src="assets/BWB_Aero_CADd1.png" alt="SOLIDWORKS loft used to construct the BWB outer mold line">
