@@ -34,13 +34,13 @@
 
 <section class="experience-brief" aria-label="Experience overview">
   <div class="experience-brief-item">
-    <span>2026 · PROFESSIONAL HARDWARE</span>
+    <span>PROFESSIONAL HARDWARE</span>
     <strong>Standard Bots</strong>
     <p>Mechanical Design &amp; Test Intern · Long Island, New York</p>
   </div>
 
   <div class="experience-brief-item">
-    <span>2024 · AEROSPACE SYSTEMS</span>
+    <span>AEROSPACE SYSTEMS</span>
     <strong>UMN Aerospace Systems Lab</strong>
     <p>Aerospace Systems Intern · HyCUBE Hypersonic Reentry Vehicle · NASA Minnesota Space Grant</p>
   </div>
@@ -160,7 +160,7 @@
       <video class="cad-video"
              autoplay muted loop playsinline controls preload="metadata"
              poster="assets/standardbots_test_hardware.jpg">
-        <source src="assets/Collaspe_Loaded_burn_in.mp4" type="video/mp4">
+        <source src="assets/Loaded%20Burn-in%20View%20+%20Still.mp4" type="video/mp4">
       </video>
       <figcaption>
         <strong>CAD assembly sequence.</strong>
