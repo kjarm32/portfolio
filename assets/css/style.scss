@@ -335,7 +335,7 @@ body > header:first-child,
 .featured-card-media.standardbots-render img {
   object-fit: cover;
   object-position: center 53%;
-  transform: scale(3.2);
+  transform: scale(2.60);
 }
 
 .featured-card-media.dark-media {
@@ -1358,6 +1358,7 @@ body > header:first-child,
   object-fit: cover;
   object-position: center;
   transform: scale(1.03);
+  transform-origin: left center;
 }
 
 
@@ -1602,4 +1603,11 @@ body > header:first-child,
     height: auto !important;
     max-height: none !important;
   }
+}
+
+
+/* Surgical HyCUBE caption spacing only */
+.hycube-plot-card figcaption {
+  padding: 16px 17px 18px !important;
+  line-height: 1.6;
 }
