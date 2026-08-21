@@ -271,11 +271,11 @@
     </div>
 
     <div class="media-grid two">
-      <figure class="figure-card">
+      <figure class="figure-card bwb-geometry-card bwb-sketch-card">
         <img src="assets/Cadbwbsketch.png" alt="BWB concept sketch and geometry development">
         <figcaption>Concept and early geometry definition.</figcaption>
       </figure>
-      <figure class="figure-card">
+      <figure class="figure-card bwb-geometry-card bwb-loft-card">
         <img src="assets/BWB_Aero_CADd1.png" alt="SOLIDWORKS loft used to construct the BWB outer mold line">
         <figcaption>SOLIDWORKS multi-section loft and guide-curve definition.</figcaption>
       </figure>
@@ -293,7 +293,7 @@
       </p>
     </div>
 
-    <figure class="figure-card wide-figure">
+    <figure class="figure-card wide-figure bwb-cfd-overview">
       <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8 (3).png"
            alt="Streamwise velocity and surface pressure at 0, 4, and 8 degrees angle of attack">
       <figcaption>Matched streamwise-velocity and surface-pressure views at 0°, 4°, and 8°.</figcaption>
@@ -330,12 +330,12 @@
     </div>
 
     <div class="media-grid two">
-      <figure class="figure-card">
+      <figure class="figure-card bwb-performance-plot">
         <img src="assets/bwb_cfd_sweep_plot.png"
              alt="BWB CFD lift coefficient and lift-to-drag ratio across angle of attack">
         <figcaption>Pre-stall CFD sweep.</figcaption>
       </figure>
-      <figure class="figure-card">
+      <figure class="figure-card bwb-performance-plot">
         <img src="assets/bwb_wind_tunnel_run4_plot.png"
              alt="BWB wind tunnel normal force and pitching moment across angle of attack">
         <figcaption>Wind-tunnel run through 20°.</figcaption>
