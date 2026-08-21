@@ -2,7 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 /* =========================================================
    Kevin Armstrong II — Engineering Portfolio
@@ -18,8 +18,8 @@
   --muted: #aaa094;
   --line: #3b3732;
   --line-dark: #6e655c;
-  --accent: #c19363;
-  --accent-2: #ddb17f;
+  --accent: #c99b6b;
+  --accent-2: #e2b17d;
   --radius: 8px;
 }
 
@@ -31,7 +31,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -71,10 +71,10 @@ body > header:first-child,
 .markdown-body h3,
 .markdown-body h4 {
   color: var(--ink);
-  font-family: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
-  font-weight: 650;
-  line-height: 1.06;
-  letter-spacing: -0.035em;
+  font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 760;
+  line-height: 1.07;
+  letter-spacing: -0.04em;
 }
 
 .markdown-body h1,
@@ -343,9 +343,7 @@ body > header:first-child,
 }
 
 .featured-card-media.dark-media img {
-  object-fit: cover;
-  object-position: center;
-  transform: scale(1.055);
+  object-fit: contain;
 }
 
 .featured-card-copy {
@@ -389,7 +387,7 @@ body > header:first-child,
 
 .case-study {
   margin: 0 0 82px;
-  padding: 44px 0 0;
+  padding: 56px 0 0;
   border-top: 1px solid var(--line);
   border-radius: 0;
   background: transparent;
@@ -402,7 +400,7 @@ body > header:first-child,
 }
 
 .case-header {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .case-header.split {
@@ -426,21 +424,14 @@ body > header:first-child,
 .title-with-note {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
+  align-items: baseline;
+  gap: 13px;
 }
 
 .title-with-note span {
   color: var(--muted);
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
   font-size: 13px;
-  font-weight: 500;
-}
-
-.title-with-note .company-context::before {
-  content: "•";
-  margin-right: 9px;
-  color: var(--accent);
+  font-weight: 550;
 }
 
 .case-lede {
@@ -592,19 +583,15 @@ body > header:first-child,
 }
 
 .figure-card figcaption {
-  padding: 11px 13px 13px;
-  color: #c8bfb3;
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
-  font-size: 13.25px;
-  font-weight: 500;
-  line-height: 1.5;
+  padding: 10px 12px 12px;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.45;
 }
 
 .figure-card figcaption strong {
-  color: var(--ink);
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
-  font-size: 13.25px;
-  font-weight: 700;
+  color: var(--ink-2);
+  font-size: 12.5px;
 }
 
 .workstream-grid {
@@ -955,22 +942,17 @@ body > header:first-child,
   gap: 14px;
 }
 
-.hycube-plot-card {
-  overflow: hidden;
-}
-
 .hycube-plot-card img {
-  height: 232px;
+  height: 250px;
   object-fit: contain;
-  background: #fff;
-  padding: 0;
-  transform: scale(1.105);
+  background: #fffdfa;
+  padding: 8px;
 }
 
 .hycube-ground-photo img {
-  height: 410px;
+  height: 315px;
   object-fit: cover;
-  object-position: center 50%;
+  object-position: center 28%;
 }
 
 /* -------------------------
@@ -984,26 +966,16 @@ body > header:first-child,
 .drone-hero .figure-card img {
   height: 315px;
   object-fit: contain;
+  background: #f7f3ed;
 }
 
-.drone-cad-card img {
-  background: #fff !important;
-}
-
-.drone-flight-card {
-  background: #171512;
-}
-
-.drone-flight-card img {
-  object-fit: contain !important;
-  object-position: center;
-  background: #171512 !important;
-  padding: 8px;
+.drone-hero .figure-card:nth-child(2) img {
+  object-fit: cover;
 }
 
 .drone-body-grid {
   display: grid;
-  grid-template-columns: minmax(340px, 0.98fr) minmax(420px, 1.02fr);
+  grid-template-columns: minmax(270px, 0.82fr) minmax(420px, 1.18fr);
   gap: 22px;
   margin-top: 24px;
   align-items: start;
@@ -1307,7 +1279,40 @@ body > header:first-child,
 }
 
 
-/* Controller-facing research highlights */
+/* Safe refinements carried forward after stylesheet recovery */
+.title-with-note {
+  align-items: center;
+  gap: 10px;
+}
+
+.title-with-note .company-context {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.title-with-note .company-context::before {
+  content: "•";
+  margin-right: 9px;
+  color: var(--accent);
+}
+
+
+.figure-card figcaption {
+  padding: 11px 13px 13px;
+  color: #c8bfb3;
+  font-size: 13.25px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.figure-card figcaption strong {
+  color: var(--ink);
+  font-size: 13.25px;
+  font-weight: 700;
+}
+
+
 .research-points {
   display: grid;
   gap: 0;
@@ -1331,7 +1336,6 @@ body > header:first-child,
 .research-points article > span {
   padding-top: 3px;
   color: var(--accent);
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
   font-size: 10px;
   font-weight: 700;
 }
@@ -1351,16 +1355,49 @@ body > header:first-child,
 }
 
 
-.card-kicker,
-.eyebrow,
-.case-subtitle,
-.status-pill,
-.metric span,
-.metric-row span,
-.experience-brief-item,
-.portfolio-nav-links,
-.portfolio-footer {
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+.featured-card-media.dark-media img {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.055);
+}
+
+
+.hycube-plot-card {
+  overflow: hidden;
+}
+
+.hycube-plot-card img {
+  height: 232px;
+  object-fit: contain;
+  background: #fff !important;
+  padding: 0;
+  transform: scale(1.105);
+}
+
+.hycube-ground-photo img {
+  height: 410px;
+  object-fit: cover;
+  object-position: center 50%;
+}
+
+
+.drone-cad-card img {
+  background: #fff !important;
+}
+
+.drone-flight-card {
+  background: #171512;
+}
+
+.drone-flight-card img {
+  object-fit: contain !important;
+  object-position: center;
+  background: #171512 !important;
+  padding: 8px;
+}
+
+.drone-body-grid {
+  grid-template-columns: minmax(340px, 0.98fr) minmax(420px, 1.02fr);
 }
 
 
