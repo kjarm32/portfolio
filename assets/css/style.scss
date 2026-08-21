@@ -1567,3 +1567,110 @@ body > header:first-child,
     height: auto !important;
   }
 }
+
+
+/* --- Targeted cleanup pass: Standard Bots + BWB CFD/geometry only --- */
+
+/* Make the Standard Bots context line stronger and remove the bullet. */
+.title-with-note .company-context {
+  font-size: 18px;
+  font-weight: 650;
+  color: #d8c5ae;
+}
+.title-with-note .company-context::before {
+  content: none;
+  margin-right: 0;
+}
+
+/* Zoom the featured Standard Bots card in a bit more on the arm. */
+.featured-card-media.standardbots-render img {
+  object-position: center 53%;
+  transform: scale(1.90);
+}
+
+/* Keep BWB geometry captions visible and tighten the image crops. */
+.bwb-geometry-card {
+  display: flex;
+  flex-direction: column;
+}
+.bwb-geometry-card img {
+  height: 286px !important;
+}
+.bwb-geometry-card figcaption,
+.bwb-cfd-overview figcaption {
+  padding: 13px 15px 15px;
+  min-height: 54px;
+}
+.bwb-sketch-card img {
+  object-fit: cover !important;
+  object-position: 56% 54%;
+  background: #fff;
+  transform: scale(1.11);
+}
+.bwb-loft-card img {
+  object-fit: cover !important;
+  object-position: center 52%;
+  background: #fff;
+  transform: scale(1.10);
+}
+
+/* Clean up the CFD montage so less of the outer white margin dominates. */
+.bwb-cfd-overview img {
+  height: 405px;
+  object-fit: cover;
+  object-position: center 18%;
+  background: #fff;
+  transform: scale(1.12);
+}
+
+/* Make the CFD verification stats read more like quick findings. */
+.verification-grid span {
+  font-size: 10px;
+  letter-spacing: 0.085em;
+}
+.verification-grid strong {
+  margin-top: 7px;
+  font-size: 20px;
+}
+.verification-grid small {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+/* Dark-theme the technical appendix table so it does not inherit bright row fills. */
+.table-wrap table {
+  min-width: 360px;
+  border-collapse: collapse;
+  background: #11100e;
+  border: 1px solid var(--line);
+}
+.table-wrap th,
+.table-wrap td {
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  background: transparent;
+}
+.table-wrap thead th {
+  background: #14120f;
+  color: #f3ede6;
+  font-weight: 750;
+}
+.table-wrap tbody td {
+  color: #ece3d7;
+}
+.table-wrap tbody tr:nth-child(odd) td {
+  background: #0f0e0c;
+}
+.table-wrap tbody tr:nth-child(even) td {
+  background: #171512;
+}
+.table-wrap tbody td strong {
+  color: #fff;
+}
+
+/* Slightly stronger BWB captions overall. */
+.bwb-geometry-card figcaption strong,
+.bwb-cfd-overview figcaption strong {
+  color: #f3ede6;
+}
