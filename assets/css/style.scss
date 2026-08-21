@@ -334,8 +334,8 @@ body > header:first-child,
 
 .featured-card-media.standardbots-render img {
   object-fit: cover;
-  object-position: center 50%;
-  transform: scale(1.50);
+  object-position: center 52%;
+  transform: scale(1.72);
 }
 
 .featured-card-media.dark-media {
@@ -1427,5 +1427,143 @@ body > header:first-child,
 
   .hycube-ground-photo img {
     height: 320px;
+  }
+}
+
+
+/* =========================================================
+   Final crop / spacing polish
+   ========================================================= */
+
+/* Make the Series C context easier to read while keeping it subordinate. */
+.title-with-note .company-context {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #b9aa9a;
+}
+
+/* BWB geometry: remove dead side-space without sacrificing engineering detail. */
+.bwb-geometry-card {
+  overflow: hidden;
+  background: #171512;
+}
+
+.bwb-geometry-card img {
+  display: block;
+  width: 100%;
+  height: 310px !important;
+  transform-origin: center;
+}
+
+.bwb-sketch-card img {
+  object-fit: contain !important;
+  background: #fff;
+  transform: scale(1.075);
+}
+
+.bwb-loft-card img {
+  object-fit: contain !important;
+  background: #fff;
+  transform: scale(1.18);
+}
+
+/* BWB CFD montage: enlarge the actual plots and reduce the dark side gutters. */
+.bwb-cfd-overview {
+  overflow: hidden;
+  background: #171512;
+}
+
+.bwb-cfd-overview img {
+  display: block;
+  width: 100%;
+  height: 455px;
+  max-height: none;
+  object-fit: contain;
+  background: #fff;
+  transform: scale(1.105);
+  transform-origin: center;
+}
+
+/* BWB performance plots: modest whitespace crop only; keep axes/annotations intact. */
+.bwb-performance-plot {
+  overflow: hidden;
+}
+
+.bwb-performance-plot img {
+  height: 305px !important;
+  object-fit: contain !important;
+  background: #fff !important;
+  transform: scale(1.045);
+  transform-origin: center;
+}
+
+/* HyCUBE captions need a little breathing room from the images. */
+.hycube-context .figure-card figcaption,
+.hycube-detail-grid .figure-card figcaption {
+  padding: 15px 14px 15px;
+  line-height: 1.55;
+}
+
+/* Keep HyCUBE plot content visually centered after the crop/zoom. */
+.hycube-plot-card img {
+  transform: scale(1.085);
+}
+
+/* UAV hero: keep the CAD image crisp and make the flight photo fill the frame
+   without the large dark gutters from the previous contain treatment. */
+.drone-hero {
+  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+}
+
+.drone-cad-card {
+  background: #fff;
+}
+
+.drone-cad-card img {
+  width: 100%;
+  height: 315px;
+  object-fit: contain !important;
+  background: #fff !important;
+  padding: 0;
+  transform: scale(1.035);
+  transform-origin: center;
+}
+
+.drone-flight-card {
+  overflow: hidden;
+  background: #171512;
+}
+
+.drone-flight-card img {
+  width: 100%;
+  height: 315px;
+  object-fit: cover !important;
+  object-position: center 52%;
+  padding: 0 !important;
+  background: #171512 !important;
+  transform: none;
+}
+
+/* Keep caption rhythm consistent in the UAV hero row. */
+.drone-hero .figure-card figcaption {
+  padding: 14px 14px 15px;
+}
+
+/* Mobile: disable aggressive figure zooms where width is scarce. */
+@media (max-width: 820px) {
+  .bwb-sketch-card img,
+  .bwb-loft-card img,
+  .bwb-cfd-overview img,
+  .bwb-performance-plot img,
+  .drone-cad-card img {
+    transform: none;
+  }
+
+  .bwb-geometry-card img,
+  .bwb-cfd-overview img,
+  .bwb-performance-plot img,
+  .drone-cad-card img,
+  .drone-flight-card img {
+    height: auto !important;
   }
 }
