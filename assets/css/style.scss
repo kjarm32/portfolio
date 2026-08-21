@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 
 /* =========================================================
    Kevin Armstrong II — Engineering Portfolio
@@ -9,16 +10,16 @@
    ========================================================= */
 
 :root {
-  --bg: #fbf7f1;
-  --surface: #fffdf9;
-  --surface-2: #f4ede3;
-  --ink: #161410;
-  --ink-2: #3d3832;
-  --muted: #72695d;
-  --line: #ddd3c6;
-  --line-dark: #bfae98;
-  --accent: #7b5130;
-  --accent-2: #5f3f25;
+  --bg: #12110f;
+  --surface: #1a1815;
+  --surface-2: #24211d;
+  --ink: #f4f0e8;
+  --ink-2: #d7d0c5;
+  --muted: #aaa094;
+  --line: #3b3732;
+  --line-dark: #6e655c;
+  --accent: #c99b6b;
+  --accent-2: #e2b17d;
   --radius: 8px;
 }
 
@@ -30,7 +31,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -70,7 +71,7 @@ body > header:first-child,
 .markdown-body h3,
 .markdown-body h4 {
   color: var(--ink);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 760;
   line-height: 1.07;
   letter-spacing: -0.04em;
@@ -101,8 +102,8 @@ body > header:first-child,
   margin: 0 0 8px !important;
   color: var(--accent);
   font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
+  font-weight: 700;
+  letter-spacing: 0.075em;
   text-transform: uppercase;
 }
 
@@ -258,7 +259,7 @@ body > header:first-child,
   color: var(--muted);
   font-size: 9px;
   font-weight: 750;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
 }
 
 .experience-brief-item strong {
@@ -333,8 +334,8 @@ body > header:first-child,
 
 .featured-card-media.standardbots-render img {
   object-fit: cover;
-  object-position: center 46%;
-  transform: scale(1.24);
+  object-position: center 50%;
+  transform: scale(1.62);
 }
 
 .featured-card-media.dark-media {
@@ -354,7 +355,7 @@ body > header:first-child,
   color: var(--accent);
   font-size: 9px;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
 }
 
 .featured-card h3 {
@@ -576,8 +577,9 @@ body > header:first-child,
 }
 
 .cad-video {
-  object-fit: contain;
-  background: #11161c;
+  object-fit: cover;
+  object-position: center;
+  background: #fff;
 }
 
 .figure-card figcaption {
@@ -608,7 +610,7 @@ body > header:first-child,
   color: var(--accent);
   font-size: 9px;
   font-weight: 800;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.075em;
 }
 
 .workstream-grid h3 {
@@ -695,7 +697,7 @@ body > header:first-child,
   color: var(--accent);
   font-size: 9px;
   font-weight: 800;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.075em;
 }
 
 .case-block-copy h3 {
@@ -736,7 +738,7 @@ body > header:first-child,
   color: var(--accent);
   font-size: 9px;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
 }
 
 .verification-grid strong {
@@ -815,7 +817,7 @@ body > header:first-child,
   color: var(--accent);
   font-size: 9px;
   font-weight: 800;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
 }
 
 .finding-grid h3 {
@@ -1220,5 +1222,58 @@ body > header:first-child,
   tr {
     break-inside: avoid;
     page-break-inside: avoid;
+  }
+}
+
+
+/* Requested dark-theme finish — no layout changes */
+.featured-card-media,
+.figure-card img,
+.figure-card video,
+.case-hero,
+.hycube-context .figure-card img,
+.hycube-plot-card img,
+.drone-hero .figure-card img,
+.drone-cfd-pair,
+.drone-cfd-inner,
+.drone-cfd-inner img {
+  background: #1d1b18;
+}
+
+.portfolio-nav {
+  background: rgba(18, 17, 15, 0.94);
+}
+
+.hero-headshot {
+  background: #24211d;
+}
+
+.featured-card,
+.figure-card {
+  background: var(--surface);
+}
+
+.hero-link {
+  background: transparent;
+  color: var(--ink) !important;
+}
+
+.hero-link:hover {
+  background: var(--surface-2);
+}
+
+.markdown-body table,
+.markdown-body table tr,
+.markdown-body table th,
+.markdown-body table td {
+  background: transparent;
+  color: var(--ink-2);
+  border-color: var(--line);
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #111;
   }
 }
