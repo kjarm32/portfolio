@@ -119,7 +119,7 @@
       <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
       <div class="title-with-note">
         <h2>Standard Bots</h2>
-        <span>Series C industrial robotics startup</span>
+        <span class="company-context">Series C industrial robotics startup</span>
       </div>
       <p class="case-subtitle">Mechanical Design &amp; Test Intern · Long Island, New York</p>
     </div>
@@ -151,8 +151,8 @@
            src="assets/standardbots_test_hardware.jpg"
            alt="Loaded burn-in station fixture developed at Standard Bots">
       <figcaption>
-        <strong>Loaded burn-in station fixture.</strong>
-        Built hardware used for automated pre-assembly load testing under representative load.
+        <strong>Automated loaded burn-in fixture.</strong>
+        Built station used to screen joints under representative load before full robot assembly.
       </figcaption>
     </figure>
 
@@ -163,8 +163,8 @@
         <source src="assets/Loaded%20Burn-in%20View%20+%20Still.mp4" type="video/mp4">
       </video>
       <figcaption>
-        <strong>CAD assembly sequence.</strong>
-        Exploded / collapse view of the fixture architecture and assembly stack.
+        <strong>Exploded CAD sequence.</strong>
+        Fixture architecture, coupling stack, support structure, and test-side interfaces coming together.
       </figcaption>
     </figure>
   </div>
@@ -428,26 +428,50 @@
   <header class="case-header split">
     <div>
       <p class="eyebrow">RESEARCH · FLIGHT DYNAMICS</p>
-      <h2>Learned Rotorcraft Dynamics</h2>
-      <p class="case-subtitle">Physics-informed ML · rigid-body dynamics · rollout stability · controller-facing evaluation</p>
+      <h2>Learned Rotorcraft Dynamics for Controller-Facing Simulation</h2>
+      <p class="case-subtitle">Physics-informed force/moment modeling · nonlinear 6-DOF rollout · local stability · LQR tracking</p>
     </div>
 
     <span class="status-pill">IEEE Aerospace 2027 · Accepted</span>
   </header>
 
-  <div class="split-feature">
+  <div class="split-feature research-feature">
     <div>
       <p class="case-lede">
-        I am developing learned rotorcraft models that predict forces and moments while preserving the rigid-body equations of motion.
-        My work focuses on whether the models remain stable and useful when rolled forward through complete trajectories,
-        not only whether they minimize one-step prediction error.
+        I am developing physics-informed AH-1S rotorcraft surrogates that learn aerodynamic force and moment maps
+        while retaining the nonlinear rigid-body equations of motion. The research asks whether a learned model
+        preserves controller-facing behavior under rollout, local linearization, and feedback tracking—not only whether
+        it matches one-step data.
       </p>
 
-      <ul class="clean-list">
-        <li>Built the PyTorch flight-dynamics and force/moment integration pipeline.</li>
-        <li>Compared feed-forward, temporal, recurrent, and training-objective variants under matched conditions.</li>
-        <li>Evaluated trajectory drift, stability, tracking, and control-relevant response on held-out cases.</li>
-      </ul>
+      <div class="research-points">
+        <article>
+          <span>01</span>
+          <h3>Physics-informed 6-DOF simulator</h3>
+          <p>
+            Built a PyTorch/JSBSim pipeline coupling learned force/moment maps to nonlinear rigid-body dynamics
+            across 56 maneuver trajectories, 8 aircraft states, and multiple speed regimes.
+          </p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Rollout + local differential fidelity</h3>
+          <p>
+            A past-12 temporal model cut held-out rollout geomean RMSE from 0.06498 to 0.02293 (64.7%);
+            GroupDRO reduced mean locally unstable-mode incidence from 0.771 to 0.302 (60.8%).
+          </p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Controller-facing validation</h3>
+          <p>
+            Developed local A/B Jacobian, eigenmode, and paired LQR tracking tests across 27 cases;
+            leading variants achieved about 0.91× baseline tracking error with no observed divergence in nonideal tests.
+          </p>
+        </article>
+      </div>
 
       <p class="paper-note">
         <strong>Accepted paper:</strong>
@@ -458,6 +482,10 @@
     <figure class="figure-card rotorcraft-figure">
       <img src="assets/rotorcraft_matched_trajectory_comparison_v3.gif"
            alt="Matched rotorcraft trajectory rollout comparison">
+      <figcaption>
+        <strong>Matched held-out rollout.</strong>
+        Learned and reference dynamics propagated through the same maneuver for trajectory-level comparison.
+      </figcaption>
     </figure>
   </div>
 </section>
@@ -475,13 +503,13 @@
     <figure class="figure-card">
       <img src="assets/HyCubeINAir.png"
            alt="HyCUBE payload during high-altitude flight">
-      <figcaption>HyCUBE in high-altitude flight.</figcaption>
+      <figcaption><strong>High-altitude flight.</strong> HyCUBE payload during the balloon mission.</figcaption>
     </figure>
 
     <figure class="figure-card">
       <img src="assets/hycube_mission_graphic.webp"
            alt="HyCUBE mission profile showing balloon ascent, release, and reentry">
-      <figcaption>Mission profile: balloon ascent, release, and reentry experiment.</figcaption>
+      <figcaption><strong>Mission architecture.</strong> Balloon ascent, release, reentry experiment, and Iridium data return.</figcaption>
     </figure>
   </div>
 
@@ -519,19 +547,19 @@
     <figure class="figure-card hycube-plot-card">
       <img src="assets/hycube_validation_2up.png"
            alt="HyCUBE thermocouple parity and temperature-error validation plots">
-      <figcaption>Thermocouple parity and temperature-error validation.</figcaption>
+      <figcaption><strong>Calibration validation.</strong> Parity and residual error across the 50–155°C probe-characterization range.</figcaption>
     </figure>
 
     <figure class="figure-card hycube-ground-photo">
       <img src="assets/hycube_balloon_preflight.jpeg"
            alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
-      <figcaption>Payload integration before balloon release.</figcaption>
+      <figcaption><strong>Preflight integration.</strong> Securing payload hardware before balloon release.</figcaption>
     </figure>
 
     <figure class="figure-card hycube-plot-card secondary">
       <img src="assets/hycube_agreement_2up.png"
            alt="HyCUBE agreement and sensitivity plots across thermocouple probe configurations">
-      <figcaption>Agreement and sensitivity plots across probe configurations.</figcaption>
+      <figcaption><strong>Agreement + sensitivity.</strong> Bias, limits of agreement, and fitted sensitivity across probe configurations.</figcaption>
     </figure>
   </div>
 </section>
@@ -546,15 +574,15 @@
   </header>
 
   <div class="media-grid two drone-hero">
-    <figure class="figure-card">
+    <figure class="figure-card drone-cad-card">
       <img src="assets/dronee29Cadrender.png"
            alt="CAD render of drone seed-dispersal attachment mounted under a quadcopter">
-      <figcaption>CAD integration of the seed-dispersal attachment.</figcaption>
+      <figcaption><strong>Integrated CAD.</strong> ABS-printed hopper/body, mounting interface, and service-access geometry.</figcaption>
     </figure>
-    <figure class="figure-card">
+    <figure class="figure-card drone-flight-card">
       <img src="assets/drone_flight_photo.jpg"
            alt="Indoor flight test with the seed-dispersal attachment mounted">
-      <figcaption>Loaded indoor flight test with the attachment installed.</figcaption>
+      <figcaption><strong>Loaded flight validation.</strong> Complete attachment mounted under the DJI quadcopter during indoor testing.</figcaption>
     </figure>
   </div>
 
@@ -568,13 +596,19 @@
   <div class="drone-body-grid">
     <div class="drone-copy">
       <p>
-        On a team, I owned mounting placement, aerodynamic outer geometry, maintenance access,
-        and DfAM for an ABS-printed quadcopter attachment, then validated retention and aircraft integration
-        on a DJI drone through loaded flight testing.
+        On a four-person team, I owned mounting placement, aerodynamic outer geometry, maintenance access,
+        and DfAM for a 418 g ABS-printed seed-dispersal attachment, then validated retention and aircraft integration
+        on a DJI quadcopter through loaded flight testing.
       </p>
       <p>
-        I ran a 15 mph CFD study to quantify aerodynamic loads, then redesigned the leading edge from flat to curved
-        to reduce simulated flow separation and improve aerodynamic integration.
+        The attachment combined a gravity-fed hopper/ramp with a belt-driven dispensing mechanism.
+        The drivetrain used a 4.875:1 HTD reduction (16T → 78T), printed pulleys, interference-fit bearings,
+        and a custom shaft/bearing stack packaged beneath the hopper.
+      </p>
+      <p>
+        I ran a 15 mph CFD study that predicted 3.94 N drag, 0.926 N lift, and −0.044 N side force,
+        then redesigned the leading edge from flat to curved to reduce simulated flow separation and improve
+        aerodynamic integration before final flight testing.
       </p>
     </div>
 
@@ -585,7 +619,7 @@
         <img src="assets/e29dronevel.png"
              alt="Velocity field result for the drone seed-dispersal attachment at 15 mph">
       </div>
-      <figcaption>Pressure and velocity fields used to quantify aerodynamic loads and refine the attachment geometry at 15 mph forward flight.</figcaption>
+      <figcaption><strong>15 mph CFD.</strong> Pressure and velocity fields used to quantify loads and drive the leading-edge redesign.</figcaption>
     </figure>
   </div>
 </section>
