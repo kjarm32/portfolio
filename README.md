@@ -486,9 +486,9 @@
       <img src="assets/rotorcraft_matched_trajectory_comparison_v3.gif"
            alt="Matched rotorcraft trajectory rollout comparison">
       <figcaption>
-        <strong>Matched held-out rollout.</strong>
-        Learned and reference dynamics propagated through the same maneuver for trajectory-level comparison.
-      </figcaption>
+        <strong>Same-pulse trajectory response.</strong>
+        Augmented-memory GroupDRO and open-loop dynamics receive the same control pulse but produce different flight paths, exposing controller-facing differences that one-step prediction error alone does not capture.
+</figcaption>
     </figure>
   </div>
 </section>
