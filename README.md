@@ -14,7 +14,7 @@
   <div class="hero-copy">
     <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
     <h1>Kevin Armstrong II</h1>
-    <p class="hero-title">Aircraft design, experimental aerodynamics, and mechanical hardware.</p>
+     <p class="hero-title">Aerospace systems, robotics hardware, and experimental aerodynamics.</p>
     <p class="hero-summary">
       I build engineering systems from geometry and first-principles analysis through fabrication,
       instrumentation, and physical test.
@@ -34,7 +34,7 @@
 
 <section class="experience-brief" aria-label="Experience overview">
   <div class="experience-brief-item">
-    <span>PROFESSIONAL HARDWARE</span>
+    <span>ROBOTICS HARDWARE</span>
     <strong>Standard Bots</strong>
     <p>Mechanical Design &amp; Test Intern · Long Island, New York</p>
   </div>
