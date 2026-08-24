@@ -126,6 +126,7 @@
   </header>
 
   <p class="case-lede standardbots-lede">
+    Industrial robots must maintain positioning accuracy under repeated production loads, making joint reliability and validation critical to reducing downstream failures and rework.
     Designed mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
     structural analysis, fabrication, assembly, instrumentation, and validation.
   </p>
@@ -256,6 +257,7 @@
   </div>
 
   <p class="case-lede single">
+    Blended-wing-body aircraft integrate the wing and fuselage into a single lifting form, reducing drag and offering significant fuel-burn potential over conventional tube-and-wing aircraft.
     I designed a custom blended-wing-body outer mold line in SOLIDWORKS, established a repeatable pre-stall CFD workflow,
     fabricated a 1:1 FDM model, and extended the physical test campaign through 20° angle of attack to characterize the stall sequence.
   </p>
@@ -438,6 +440,7 @@
   <div class="split-feature research-feature">
     <div>
       <p class="case-lede">
+        Rotorcraft are dynamically complex and often inherently unstable, making accurate, control-ready models essential for simulation and flight-control design.
         I am developing physics-informed AH-1S rotorcraft surrogates that learn aerodynamic force and moment maps
         while retaining the nonlinear rigid-body equations of motion. The research asks whether a learned model
         preserves controller-facing behavior under rollout, local linearization, and feedback tracking—not only whether
@@ -516,6 +519,7 @@
   <div class="hycube-detail-grid">
     <div class="hycube-copy-panel">
       <p class="case-lede">
+        Hypersonic entry exposes vehicles to extreme aerothermal heating, making reliable temperature measurements essential for validating thermal-protection-system performance.
         Built, wired, and programmed a thermocouple calibration rig for flight instrumentation,
         then characterized probe configurations against a reference and supported payload integration,
         high-altitude flight operations, recovery, and post-flight validation.
@@ -596,6 +600,7 @@
   <div class="drone-body-grid">
     <div class="drone-copy">
       <p>
+        External payloads can alter an aircraft’s mass distribution, aerodynamics, stability, and controllability, so drone attachments must be engineered as part of the flight vehicle.
         On a four-person team, I owned mounting placement, aerodynamic outer geometry, maintenance access,
         and DfAM for a 418 g ABS-printed seed-dispersal attachment, then validated retention and aircraft integration
         on a DJI quadcopter through loaded flight testing.
