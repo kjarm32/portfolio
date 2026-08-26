@@ -48,7 +48,7 @@
   <div class="experience-brief-item">
     <span>FLIGHT DYNAMICS RESEARCH</span>
     <strong>UC Berkeley</strong>
-    <p>Learned rotorcraft dynamics · IEEE Aerospace 2027 accepted paper</p>
+    <p>Learned rotorcraft dynamics · IEEE Aerospace 2027 accepted abstract</p>
   </div>
 </section>
 
@@ -477,7 +477,7 @@
       </div>
 
       <p class="paper-note">
-        <strong>Accepted paper:</strong>
+        <strong>Accepted abstract:</strong>
         “From Accurate Predictions to Controller-Facing Learned Rotorcraft Surrogates: Stability &amp; Tracking.”
       </p>
     </div>
