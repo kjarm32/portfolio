@@ -141,9 +141,9 @@
       <span>momentary interface load verified</span>
     </div>
     <div>
-      <strong>~75 hr</strong>
-      <span>downstream disassembly / rework avoided</span>
-    </div>
+  <strong>1st at company</strong>
+  <span>loaded burn-in screening to reduce downstream disassembly + rework</span>
+  </div>
   </div>
 
   <div class="standardbots-fixture-grid">
