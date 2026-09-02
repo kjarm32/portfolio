@@ -1223,7 +1223,9 @@ body > header:first-child,
   }
 
   body {
-    background: #fff;
+    background: var(--bg);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .portfolio-nav,
@@ -1292,8 +1294,8 @@ body > header:first-child,
 
 @media print {
   body {
-    background: #fff;
-    color: #111;
+    background: var(--bg);
+    color: var(--ink);
   }
 }
 
