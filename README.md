@@ -41,7 +41,7 @@
 
   <div class="experience-brief-item">
     <span>AEROSPACE SYSTEMS</span>
-    <strong>UMN Aerospace Systems Lab</strong>
+    <strong>NASA MN Space Grant Consortium</strong>
     <p>Aerospace Systems Intern · HyCUBE Hypersonic Reentry Vehicle · NASA Minnesota Space Grant</p>
   </div>
 
