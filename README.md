@@ -87,8 +87,10 @@
 
     <a class="featured-card" href="#rotorcraft">
       <div class="featured-card-media dark-media">
-        <img src="assets/rotorcraft_matched_trajectory_comparison_v3.gif"
-             alt="Matched rotorcraft trajectory comparison">
+        <video autoplay muted loop playsinline preload="metadata"
+               aria-label="Matched AH-1S recovery comparison">
+          <source src="assets/ah1s_matched_recovery_20s.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="featured-card-copy">
         <span class="card-kicker">FLIGHT DYNAMICS + ML</span>
@@ -483,12 +485,20 @@
     </div>
 
     <figure class="figure-card rotorcraft-figure">
-      <img src="assets/rotorcraft_matched_trajectory_comparison_v3.gif"
-           alt="Matched rotorcraft trajectory rollout comparison">
+      <video autoplay muted loop playsinline controls preload="metadata"
+             aria-label="Matched AH-1S recovery comparison across open-loop and neural controllers">
+        <source src="assets/ah1s_matched_recovery_20s.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <figcaption>
-        <strong>Same-pulse trajectory response.</strong>
-        Augmented-memory GroupDRO and open-loop dynamics receive the same control pulse but produce different flight paths, exposing controller-facing differences that one-step prediction error alone does not capture.
-</figcaption>
+        <strong>Matched recovery comparison.</strong>
+        Open loop, compact neural, raw-history neural, and quadratic-load controllers are compared on
+        <code>confirmation_046</code>, the largest completed open-loop-error case among the 48 locked trials,
+        selected without considering which model won. This is a 20-second slow-motion presentation of a
+        2-second JSBSim recovery in physical time, not a new 20-second experiment. Spatial displacement is
+        reconstructed by integrating the velocity-error channels. Position is magnified 1000× and attitude
+        120×, with both scale factors shown throughout.
+      </figcaption>
     </figure>
   </div>
 </section>
