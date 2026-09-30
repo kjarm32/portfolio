@@ -1,10 +1,11 @@
 <nav class="portfolio-nav" aria-label="Portfolio navigation">
   <a class="portfolio-brand" href="#top">KA</a>
   <div class="portfolio-nav-links">
+    <a href="#bwb">Aerodynamics</a>
     <a href="#experience">Mechanical Design</a>
+    <a href="#rotorcraft">Flight Dynamics</a>
     <a href="#hycube">Flight Hardware</a>
     <a href="#drone">Vehicle Integration</a>
-    <a href="#bwb">Aerodynamics</a>
   </div>
 </nav>
 
@@ -14,10 +15,10 @@
   <div class="hero-copy">
     <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
     <h1>Kevin Armstrong II</h1>
-    <p class="hero-title">Mechanical design, test hardware, and aerospace systems.</p>
+    <p class="hero-title">Aircraft aerodynamics, flight dynamics, and mechanical design &amp; test.</p>
     <p class="hero-summary">
-      I design and validate engineering hardware from first-principles load-path analysis and CAD through
-      structural analysis, fabrication, instrumentation, assembly, and physical test.
+      I design and validate aircraft and vehicle systems from geometry and first-principles analysis through CFD,
+      structural analysis, fabrication, instrumentation, and physical test.
     </p>
     <div class="hero-links">
       <a class="hero-link" href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/"
@@ -27,23 +28,22 @@
     </div>
   </div>
 
-<img class="hero-headshot"
-    src="assets/4headshotasmes.png"
-    alt="Kevin Armstrong II">
-
+  <img class="hero-headshot"
+       src="assets/4headshotasmes.png"
+       alt="Kevin Armstrong II">
 </section>
 
-<section class="experience-brief" aria-label="Experience overview">
+<section class="experience-brief" aria-label="Engineering focus">
+  <div class="experience-brief-item">
+    <span>AIRCRAFT AERODYNAMICS</span>
+    <strong>Blended-Wing-Body Aircraft</strong>
+    <p>Outer-mold-line design · CFD verification · wind-tunnel testing · flow visualization</p>
+  </div>
+
   <div class="experience-brief-item">
     <span>MECHANICAL DESIGN + TEST</span>
     <strong>Standard Bots</strong>
     <p>High-load hardware · mechanical interfaces · structural analysis · experimental validation</p>
-  </div>
-
-  <div class="experience-brief-item">
-    <span>AEROSPACE HARDWARE</span>
-    <strong>NASA MN Space Grant Consortium</strong>
-    <p>Flight instrumentation · calibration · payload integration · high-altitude operations</p>
   </div>
 
   <div class="experience-brief-item">
@@ -60,6 +60,19 @@
   </header>
 
   <div class="featured-grid">
+    <a class="featured-card" href="#bwb">
+      <div class="featured-card-media">
+        <img src="assets/IMG_3685 (1).jpeg"
+             alt="Blended-wing-body model mounted in a wind tunnel">
+      </div>
+      <div class="featured-card-copy">
+        <span class="card-kicker">AERODYNAMICS + EXPERIMENTAL VALIDATION</span>
+        <h3>Blended-Wing-Body Aircraft</h3>
+        <p>Outer-mold-line design, CFD verification, FDM fabrication, force-balance testing, and tuft visualization.</p>
+        <strong class="card-result">14–16° measured stall onset</strong>
+      </div>
+    </a>
+
     <a class="featured-card" href="#experience">
       <div class="featured-card-media standardbots-render">
         <img src="assets/Standard%20Bots%20RO1.png"
@@ -70,6 +83,21 @@
         <h3>Standard Bots</h3>
         <p>High-load test infrastructure, mechanical interfaces, structural analysis, assembly, calibration, and validation.</p>
         <strong class="card-result">100 hr loaded burn-in</strong>
+      </div>
+    </a>
+
+    <a class="featured-card" href="#rotorcraft">
+      <div class="featured-card-media dark-media">
+        <video autoplay muted loop playsinline preload="metadata"
+               aria-label="Matched AH-1S recovery comparison">
+          <source src="assets/ah1s_matched_recovery_20s.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="featured-card-copy">
+        <span class="card-kicker">FLIGHT DYNAMICS + MODEL VALIDATION</span>
+        <h3>Learned Flight Dynamics</h3>
+        <p>Aerodynamic force/moment modeling, nonlinear 6-DOF simulation, local stability analysis, and controller-facing validation.</p>
+        <strong class="card-result">IEEE Aerospace 2027 · Accepted</strong>
       </div>
     </a>
 
@@ -85,285 +113,6 @@
         <strong class="card-result">~90,000 ft flight</strong>
       </div>
     </a>
-
-    <a class="featured-card" href="#drone">
-      <div class="featured-card-media">
-        <img src="assets/drone_flight_photo.jpg"
-             alt="Drone payload attachment during loaded flight testing">
-      </div>
-      <div class="featured-card-copy">
-        <span class="card-kicker">MECHANICAL INTEGRATION + FLIGHT TEST</span>
-        <h3>Drone Payload Integration</h3>
-        <p>Mechanism design, mounting interfaces, DfAM, CFD-informed redesign, and loaded flight validation.</p>
-        <strong class="card-result">418 g flight-tested payload</strong>
-      </div>
-    </a>
-
-    <a class="featured-card" href="#bwb">
-      <div class="featured-card-media">
-        <img src="assets/IMG_3685 (1).jpeg"
-             alt="Blended-wing-body model mounted in a wind tunnel">
-      </div>
-      <div class="featured-card-copy">
-        <span class="card-kicker">AIRCRAFT DESIGN + EXPERIMENTAL TEST</span>
-        <h3>Blended-Wing-Body Aircraft</h3>
-        <p>Outer-mold-line design, CFD verification, FDM fabrication, force-balance testing, and tuft visualization.</p>
-        <strong class="card-result">14–16° measured stall onset</strong>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section id="experience" class="case-study standardbots-case">
-  <header class="case-header standardbots-header">
-    <div>
-      <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
-      <div class="title-with-note">
-        <h2>Standard Bots</h2>
-        <span class="company-context">Series C industrial robotics startup</span>
-      </div>
-      <p class="case-subtitle">Mechanical Design &amp; Test Intern · high-load test infrastructure · Long Island, New York</p>
-    </div>
-  </header>
-
-  <p class="case-lede standardbots-lede">
-    Designed and commissioned mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
-    load-path analysis, static FEA, fabrication, assembly, instrumentation, and validation.
-    My work focused on applying representative loads, screening joint reliability before full robot assembly,
-    and building robust interfaces for high-load production test equipment.
-  </p>
-
-  <div class="metric-row three">
-    <div>
-      <strong>100 hr</strong>
-      <span>automated loaded burn-in</span>
-    </div>
-    <div>
-      <strong>&gt;2.5 kN·m</strong>
-      <span>momentary interface load verified</span>
-    </div>
-    <div>
-      <strong>1st at company</strong>
-      <span>loaded joint screening before full robot assembly</span>
-    </div>
-  </div>
-
-  <div class="standardbots-fixture-grid">
-    <figure class="figure-card">
-      <img class="fixture-image"
-           src="assets/standardbots_test_hardware.jpg"
-           alt="Loaded burn-in station fixture developed at Standard Bots">
-      <figcaption>
-        <strong>Automated loaded burn-in fixture.</strong>
-        Built station used to screen joints under representative load before full robot assembly.
-      </figcaption>
-    </figure>
-
-<figure class="figure-card">
-  <video class="cad-video"
-         autoplay muted loop playsinline controls preload="metadata"
-         poster="assets/standardbots_test_hardware.jpg">
-    <source src="assets/Loaded%20Burn-in%20View%20+%20Still.mp4" type="video/mp4">
-  </video>
-  <figcaption>
-    <strong>Exploded CAD sequence.</strong>
-    Fixture architecture, coupling stack, support structure, and test-side interfaces coming together.
-  </figcaption>
-</figure>
-
-  </div>
-
-  <div class="workstream-grid">
-    <article>
-      <span>01</span>
-      <h3>Automated load-testing station</h3>
-      <p>
-        Designed an automated pre-assembly burn-in station that applied representative torque during long-duration cycling,
-        integrated torque and position sensing, and screened joints before complete robot assembly.
-      </p>
-    </article>
-
-<article>
-  <span>02</span>
-  <h3>High-load dynamometer interface</h3>
-  <p>
-    Designed a precision mechanical interface and checked bolted, doweled, keyed, and shaft load paths
-    with hand calculations and static FEA before releasing the manufactured part.
-  </p>
-</article>
-
-<article>
-  <span>03</span>
-  <h3>Assembly, checkout + production support</h3>
-  <p>
-    Assembled and calibrated three complete robot arms, programmed checkout motion routines,
-    improved technician-facing build instructions, and trained technicians.
-  </p>
-</article>
-
-  </div>
-
-  <div class="evidence-grid">
-    <figure class="figure-card assembly-photo">
-      <img src="assets/standardbots_build_photo.jpg"
-           alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
-      <figcaption>
-        <strong>Assembly + calibration.</strong>
-        Bringing up and validating a completed robot arm.
-      </figcaption>
-    </figure>
-
-<figure class="figure-card">
-  <video autoplay muted loop playsinline controls preload="metadata"
-         poster="assets/standardbots_motion_poster.jpg">
-    <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
-  </video>
-  <figcaption>
-    <strong>Checkout routine.</strong>
-    Arm executing a motion routine I programmed while bringing up the completed assembly.
-  </figcaption>
-</figure>
-
-  </div>
-</section>
-
-<section id="hycube" class="case-study compact-case">
-  <header class="case-header">
-    <div>
-      <p class="eyebrow">NASA MINNESOTA SPACE GRANT · UMN SMALL SATELLITE PROGRAM</p>
-      <h2>HyCUBE Hypersonic Reentry Vehicle</h2>
-      <p class="case-subtitle">Thermal instrumentation · calibration · payload integration · high-altitude flight operations</p>
-    </div>
-  </header>
-
-  <div class="media-grid two hycube-context">
-    <figure class="figure-card">
-      <img src="assets/HyCubeINAir.png"
-           alt="HyCUBE payload during high-altitude flight">
-      <figcaption><strong>High-altitude flight.</strong> HyCUBE payload during the balloon mission.</figcaption>
-    </figure>
-
-<figure class="figure-card">
-  <img src="assets/hycube_mission_graphic.webp"
-       alt="HyCUBE mission profile showing balloon ascent, release, and reentry">
-  <figcaption><strong>Mission architecture.</strong> Balloon ascent, release, reentry experiment, and Iridium data return.</figcaption>
-</figure>
-
-  </div>
-
-  <div class="hycube-detail-grid">
-    <div class="hycube-copy-panel">
-      <p class="case-lede">
-        Hypersonic entry exposes vehicles to extreme aerothermal heating, making reliable temperature measurements essential for validating thermal-protection-system performance.
-        Built, wired, and programmed a thermocouple calibration rig for flight instrumentation,
-        then characterized probe configurations against a reference and supported payload integration,
-        high-altitude flight operations, recovery, and post-flight validation.
-      </p>
-
-  <ul class="clean-list">
-    <li>
-      Used Arduino DAQ and cold-junction compensation to characterize probe configurations
-      from 50–155°C using regression and agreement analysis.
-    </li>
-    <li>
-      Integrated and secured payload hardware, tracked telemetry and state estimates over the Iridium satellite network
-      to approximately 90,000 ft, recovered the payload, and validated post-flight data.
-    </li>
-  </ul>
-
-  <div class="metric-grid two">
-    <div class="metric">
-      <strong>50–155°C</strong>
-      <span>probe characterization range</span>
-    </div>
-    <div class="metric">
-      <strong>~90,000 ft</strong>
-      <span>high-altitude flight and recovery</span>
-    </div>
-  </div>
-</div>
-
-<figure class="figure-card hycube-plot-card">
-  <img src="assets/hycube_validation_2up.png"
-       alt="HyCUBE thermocouple parity and temperature-error validation plots">
-  <figcaption><strong>Calibration validation.</strong> Parity and residual error across the 50–155°C probe-characterization range.</figcaption>
-</figure>
-
-<figure class="figure-card hycube-ground-photo">
-  <img src="assets/hycube_balloon_preflight.jpeg"
-       alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
-  <figcaption><strong>Preflight integration.</strong> Securing payload hardware before balloon release.</figcaption>
-</figure>
-
-<figure class="figure-card hycube-plot-card secondary">
-  <img src="assets/hycube_agreement_2up.png"
-       alt="HyCUBE agreement and sensitivity plots across thermocouple probe configurations">
-  <figcaption><strong>Agreement + sensitivity.</strong> Bias, limits of agreement, and fitted sensitivity across probe configurations.</figcaption>
-</figure>
-
-  </div>
-</section>
-
-<section id="drone" class="case-study compact-case">
-  <header class="case-header">
-    <div>
-      <p class="eyebrow">MECHANICAL INTEGRATION · MECHANISM DESIGN · FLIGHT TEST</p>
-      <h2>Drone Payload Integration: Mechanism, CFD &amp; Flight Test</h2>
-      <p class="case-subtitle">CAD · mechanism design · mechanical integration · DfAM · CFD analysis · loaded flight testing</p>
-    </div>
-  </header>
-
-  <div class="media-grid two drone-hero">
-    <figure class="figure-card drone-cad-card">
-      <img src="assets/dronee29Cadrender.png"
-           alt="CAD render of drone seed-dispersal attachment mounted under a quadcopter">
-      <figcaption><strong>Integrated CAD.</strong> ABS-printed hopper/body, mounting interface, and service-access geometry.</figcaption>
-    </figure>
-    <figure class="figure-card drone-flight-card">
-      <img src="assets/drone_flight_photo.jpg"
-           alt="Indoor flight test with the seed-dispersal attachment mounted">
-      <figcaption><strong>Loaded flight validation.</strong> Complete attachment mounted under the DJI quadcopter during indoor testing.</figcaption>
-    </figure>
-  </div>
-
-  <div class="metric-grid four">
-    <div class="metric"><strong>15 mph</strong><span>CFD forward-flight condition</span></div>
-    <div class="metric"><strong>3.94 N</strong><span>predicted drag</span></div>
-    <div class="metric"><strong>0.926 N</strong><span>predicted lift</span></div>
-    <div class="metric"><strong>−0.044 N</strong><span>predicted side force</span></div>
-  </div>
-
-  <div class="drone-body-grid">
-    <div class="drone-copy">
-      <p>
-        External payloads can alter an aircraft’s mass distribution, aerodynamics, stability, and controllability,
-        so the attachment had to be engineered as part of the flight vehicle.
-        On a four-person team, I owned mounting placement, aerodynamic outer geometry, maintenance access,
-        and DfAM for a 418 g ABS-printed seed-dispersal attachment, then validated retention and aircraft integration
-        on a DJI quadcopter through loaded flight testing.
-      </p>
-      <p>
-        I ran a 15 mph CFD study that predicted 3.94 N drag, 0.926 N lift, and −0.044 N side force.
-        The initial geometry showed unfavorable leading-edge separation, so I redesigned the forward face
-        from flat to curved to improve aerodynamic integration before final flight testing.
-      </p>
-      <p>
-        The payload also required a compact dispensing mechanism: a gravity-fed hopper/ramp with a belt-driven drivetrain,
-        4.875:1 HTD reduction (16T → 78T), printed pulleys, interference-fit bearings,
-        and a custom shaft/bearing stack packaged beneath the hopper.
-      </p>
-    </div>
-
-<figure class="figure-card drone-cfd-pair">
-  <div class="drone-cfd-inner">
-    <img src="assets/e29DronePressure.png"
-         alt="Static pressure result for the drone seed-dispersal attachment at 15 mph">
-    <img src="assets/e29dronevel.png"
-         alt="Velocity field result for the drone seed-dispersal attachment at 15 mph">
-  </div>
-  <figcaption><strong>15 mph CFD.</strong> Pressure and velocity fields used to quantify loads and drive the leading-edge redesign.</figcaption>
-</figure>
-
   </div>
 </section>
 
@@ -579,6 +328,119 @@
   </details>
 </section>
 
+<section id="experience" class="case-study standardbots-case">
+  <header class="case-header standardbots-header">
+    <div>
+      <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
+      <div class="title-with-note">
+        <h2>Standard Bots</h2>
+        <span class="company-context">Series C industrial robotics startup</span>
+      </div>
+      <p class="case-subtitle">Mechanical Design &amp; Test Intern · high-load test infrastructure · Long Island, New York</p>
+    </div>
+  </header>
+
+  <p class="case-lede standardbots-lede">
+    Designed and commissioned mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
+    load-path analysis, static FEA, fabrication, assembly, instrumentation, and validation.
+    My work focused on applying representative loads, screening joint reliability before full robot assembly,
+    and building robust interfaces for high-load production test equipment.
+  </p>
+
+  <div class="metric-row three">
+    <div>
+      <strong>100 hr</strong>
+      <span>automated loaded burn-in</span>
+    </div>
+    <div>
+      <strong>&gt;2.5 kN·m</strong>
+      <span>momentary interface load verified</span>
+    </div>
+    <div>
+      <strong>1st at company</strong>
+      <span>loaded joint screening before full robot assembly</span>
+    </div>
+  </div>
+
+  <div class="standardbots-fixture-grid">
+    <figure class="figure-card">
+      <img class="fixture-image"
+           src="assets/standardbots_test_hardware.jpg"
+           alt="Loaded burn-in station fixture developed at Standard Bots">
+      <figcaption>
+        <strong>Automated loaded burn-in fixture.</strong>
+        Built station used to screen joints under representative load before full robot assembly.
+      </figcaption>
+    </figure>
+
+<figure class="figure-card">
+  <video class="cad-video"
+         autoplay muted loop playsinline controls preload="metadata"
+         poster="assets/standardbots_test_hardware.jpg">
+    <source src="assets/Loaded%20Burn-in%20View%20+%20Still.mp4" type="video/mp4">
+  </video>
+  <figcaption>
+    <strong>Exploded CAD sequence.</strong>
+    Fixture architecture, coupling stack, support structure, and test-side interfaces coming together.
+  </figcaption>
+</figure>
+
+  </div>
+
+  <div class="workstream-grid">
+    <article>
+      <span>01</span>
+      <h3>Automated load-testing station</h3>
+      <p>
+        Designed an automated pre-assembly burn-in station that applied representative torque during long-duration cycling,
+        integrated torque and position sensing, and screened joints before complete robot assembly.
+      </p>
+    </article>
+
+<article>
+  <span>02</span>
+  <h3>High-load dynamometer interface</h3>
+  <p>
+    Designed a precision mechanical interface and checked bolted, doweled, keyed, and shaft load paths
+    with hand calculations and static FEA before releasing the manufactured part.
+  </p>
+</article>
+
+<article>
+  <span>03</span>
+  <h3>Assembly, checkout + production support</h3>
+  <p>
+    Assembled and calibrated three complete robot arms, programmed checkout motion routines,
+    improved technician-facing build instructions, and trained technicians.
+  </p>
+</article>
+
+  </div>
+
+  <div class="evidence-grid">
+    <figure class="figure-card assembly-photo">
+      <img src="assets/standardbots_build_photo.jpg"
+           alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
+      <figcaption>
+        <strong>Assembly + calibration.</strong>
+        Bringing up and validating a completed robot arm.
+      </figcaption>
+    </figure>
+
+<figure class="figure-card">
+  <video autoplay muted loop playsinline controls preload="metadata"
+         poster="assets/standardbots_motion_poster.jpg">
+    <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
+  </video>
+  <figcaption>
+    <strong>Checkout routine.</strong>
+    Arm executing a motion routine I programmed while bringing up the completed assembly.
+  </figcaption>
+</figure>
+
+  </div>
+</section>
+
 <section id="rotorcraft" class="case-study compact-case">
   <header class="case-header split">
     <div>
@@ -650,6 +512,147 @@
     reconstructed by integrating the velocity-error channels. Position is magnified 1000× and attitude
     120×, with both scale factors shown throughout.
   </figcaption>
+</figure>
+
+  </div>
+</section>
+
+<section id="hycube" class="case-study compact-case">
+  <header class="case-header">
+    <div>
+      <p class="eyebrow">NASA MINNESOTA SPACE GRANT · UMN SMALL SATELLITE PROGRAM</p>
+      <h2>HyCUBE Hypersonic Reentry Vehicle</h2>
+      <p class="case-subtitle">Thermal instrumentation · calibration · payload integration · high-altitude flight operations</p>
+    </div>
+  </header>
+
+  <div class="media-grid two hycube-context">
+    <figure class="figure-card">
+      <img src="assets/HyCubeINAir.png"
+           alt="HyCUBE payload during high-altitude flight">
+      <figcaption><strong>High-altitude flight.</strong> HyCUBE payload during the balloon mission.</figcaption>
+    </figure>
+
+<figure class="figure-card">
+  <img src="assets/hycube_mission_graphic.webp"
+       alt="HyCUBE mission profile showing balloon ascent, release, and reentry">
+  <figcaption><strong>Mission architecture.</strong> Balloon ascent, release, reentry experiment, and Iridium data return.</figcaption>
+</figure>
+
+  </div>
+
+  <div class="hycube-detail-grid">
+    <div class="hycube-copy-panel">
+      <p class="case-lede">
+        Hypersonic entry exposes vehicles to extreme aerothermal heating, making reliable temperature measurements essential for validating thermal-protection-system performance.
+        Built, wired, and programmed a thermocouple calibration rig for flight instrumentation,
+        then characterized probe configurations against a reference and supported payload integration,
+        high-altitude flight operations, recovery, and post-flight validation.
+      </p>
+
+  <ul class="clean-list">
+    <li>
+      Used Arduino DAQ and cold-junction compensation to characterize probe configurations
+      from 50–155°C using regression and agreement analysis.
+    </li>
+    <li>
+      Integrated and secured payload hardware, tracked telemetry and state estimates over the Iridium satellite network
+      to approximately 90,000 ft, recovered the payload, and validated post-flight data.
+    </li>
+  </ul>
+
+  <div class="metric-grid two">
+    <div class="metric">
+      <strong>50–155°C</strong>
+      <span>probe characterization range</span>
+    </div>
+    <div class="metric">
+      <strong>~90,000 ft</strong>
+      <span>high-altitude flight and recovery</span>
+    </div>
+  </div>
+</div>
+
+<figure class="figure-card hycube-plot-card">
+  <img src="assets/hycube_validation_2up.png"
+       alt="HyCUBE thermocouple parity and temperature-error validation plots">
+  <figcaption><strong>Calibration validation.</strong> Parity and residual error across the 50–155°C probe-characterization range.</figcaption>
+</figure>
+
+<figure class="figure-card hycube-ground-photo">
+  <img src="assets/hycube_balloon_preflight.jpeg"
+       alt="Kevin Armstrong integrating the HyCUBE payload before balloon release">
+  <figcaption><strong>Preflight integration.</strong> Securing payload hardware before balloon release.</figcaption>
+</figure>
+
+<figure class="figure-card hycube-plot-card secondary">
+  <img src="assets/hycube_agreement_2up.png"
+       alt="HyCUBE agreement and sensitivity plots across thermocouple probe configurations">
+  <figcaption><strong>Agreement + sensitivity.</strong> Bias, limits of agreement, and fitted sensitivity across probe configurations.</figcaption>
+</figure>
+
+  </div>
+</section>
+
+
+<section id="drone" class="case-study compact-case">
+  <header class="case-header">
+    <div>
+      <p class="eyebrow">MECHANICAL INTEGRATION · MECHANISM DESIGN · FLIGHT TEST</p>
+      <h2>Drone Payload Integration: Mechanism, CFD &amp; Flight Test</h2>
+      <p class="case-subtitle">CAD · mechanism design · mechanical integration · DfAM · CFD analysis · loaded flight testing</p>
+    </div>
+  </header>
+
+  <div class="media-grid two drone-hero">
+    <figure class="figure-card drone-cad-card">
+      <img src="assets/dronee29Cadrender.png"
+           alt="CAD render of drone seed-dispersal attachment mounted under a quadcopter">
+      <figcaption><strong>Integrated CAD.</strong> ABS-printed hopper/body, mounting interface, and service-access geometry.</figcaption>
+    </figure>
+    <figure class="figure-card drone-flight-card">
+      <img src="assets/drone_flight_photo.jpg"
+           alt="Indoor flight test with the seed-dispersal attachment mounted">
+      <figcaption><strong>Loaded flight validation.</strong> Complete attachment mounted under the DJI quadcopter during indoor testing.</figcaption>
+    </figure>
+  </div>
+
+  <div class="metric-grid four">
+    <div class="metric"><strong>15 mph</strong><span>CFD forward-flight condition</span></div>
+    <div class="metric"><strong>3.94 N</strong><span>predicted drag</span></div>
+    <div class="metric"><strong>0.926 N</strong><span>predicted lift</span></div>
+    <div class="metric"><strong>−0.044 N</strong><span>predicted side force</span></div>
+  </div>
+
+  <div class="drone-body-grid">
+    <div class="drone-copy">
+      <p>
+        External payloads can alter an aircraft’s mass distribution, aerodynamics, stability, and controllability,
+        so the attachment had to be engineered as part of the flight vehicle.
+        On a four-person team, I owned mounting placement, aerodynamic outer geometry, maintenance access,
+        and DfAM for a 418 g ABS-printed seed-dispersal attachment, then validated retention and aircraft integration
+        on a DJI quadcopter through loaded flight testing.
+      </p>
+      <p>
+        I ran a 15 mph CFD study that predicted 3.94 N drag, 0.926 N lift, and −0.044 N side force.
+        The initial geometry showed unfavorable leading-edge separation, so I redesigned the forward face
+        from flat to curved to improve aerodynamic integration before final flight testing.
+      </p>
+      <p>
+        The payload also required a compact dispensing mechanism: a gravity-fed hopper/ramp with a belt-driven drivetrain,
+        4.875:1 HTD reduction (16T → 78T), printed pulleys, interference-fit bearings,
+        and a custom shaft/bearing stack packaged beneath the hopper.
+      </p>
+    </div>
+
+<figure class="figure-card drone-cfd-pair">
+  <div class="drone-cfd-inner">
+    <img src="assets/e29DronePressure.png"
+         alt="Static pressure result for the drone seed-dispersal attachment at 15 mph">
+    <img src="assets/e29dronevel.png"
+         alt="Velocity field result for the drone seed-dispersal attachment at 15 mph">
+  </div>
+  <figcaption><strong>15 mph CFD.</strong> Pressure and velocity fields used to quantify loads and drive the leading-edge redesign.</figcaption>
 </figure>
 
   </div>
