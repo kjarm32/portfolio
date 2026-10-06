@@ -62,14 +62,14 @@
   <div class="featured-grid">
     <a class="featured-card" href="#bwb">
       <div class="featured-card-media">
-        <img src="assets/IMG_3685 (1).jpeg"
-             alt="Blended-wing-body model mounted in a wind tunnel">
+        <img src="assets/bwb_fog_hero.jpg"
+             alt="Fog flowing over the new blended-wing-body model in the wind tunnel">
       </div>
       <div class="featured-card-copy">
         <span class="card-kicker">AERODYNAMICS + EXPERIMENTAL VALIDATION</span>
         <h3>Blended-Wing-Body Aircraft</h3>
-        <p>Outer-mold-line design, CFD verification, FDM fabrication, force-balance testing, and tuft visualization.</p>
-        <strong class="card-result">14–16° measured stall onset</strong>
+        <p>New geometry and fog visualization, with an earlier CFD and wind-tunnel campaign.</p>
+        <strong class="card-result">CAD → fabrication → physical test</strong>
       </div>
     </a>
 
@@ -120,47 +120,141 @@
   <header class="case-header split">
     <div>
       <p class="eyebrow">AIRCRAFT DESIGN · EXPERIMENTAL AERODYNAMICS</p>
-      <h2>Blended-Wing-Body Aircraft Design &amp; Aerodynamic Validation</h2>
-      <p class="case-subtitle">Outer-mold-line design · CFD verification · FDM fabrication · force-balance testing · tuft flow visualization</p>
+      <h2>Blended-Wing-Body Aircraft Design &amp; Testing</h2>
+      <p class="case-subtitle">New configuration · fog visualization · mobile test rig · earlier CFD and wind-tunnel study</p>
     </div>
 
-<a class="text-link" href="assets/BWB_Project_Showcase_Tufts%20(4).html">Full technical showcase ↗</a>
+<a class="text-link" href="assets/BWB_Project_Showcase_Tufts%20(4).html">Earlier test technical showcase ↗</a>
 
   </header>
 
-  <figure class="case-hero">
-    <img src="assets/IMG_3685 (1).jpeg"
-         alt="3D-printed blended-wing-body model mounted to a three-component wind tunnel balance">
-  </figure>
-
-  <div class="metric-grid four">
-    <div class="metric">
-      <strong>−2° → 20°</strong>
-      <span>wind-tunnel test envelope</span>
-    </div>
-    <div class="metric">
-      <strong>14–16°</strong>
-      <span>stall onset from force + tuft evidence</span>
-    </div>
-    <div class="metric">
-      <strong>ΔCL = 0.17%</strong>
-      <span>CFD domain sensitivity at 4°</span>
-    </div>
-    <div class="metric">
-      <strong>7.31</strong>
-      <span>peak CFD L/D at 6°</span>
-    </div>
+  <div class="bwb-hero-media">
+    <figure class="figure-card bwb-fog-photo">
+      <img src="assets/bwb_fog_hero.jpg"
+           alt="Fog passing around the new blended-wing-body model in the wind tunnel">
+      <figcaption><strong>New configuration.</strong> Fog visualization in the wind tunnel.</figcaption>
+    </figure>
+    <figure class="figure-card bwb-fog-video">
+      <video autoplay muted loop playsinline controls preload="metadata" poster="assets/bwb_fog_hero.jpg"
+             aria-label="Fog visualization around the new blended-wing-body model">
+        <source src="assets/bwb_fog_flow.mp4" type="video/mp4">
+        Your browser does not support this video.
+      </video>
+      <figcaption><strong>Flow in motion.</strong> Watch the fog move past the model.</figcaption>
+    </figure>
   </div>
 
   <p class="case-lede single">
-    I designed and experimentally characterized a custom blended-wing-body aircraft from outer-mold-line definition through physical test.
-    I established a repeatable pre-stall CFD workflow and checked domain and mesh sensitivity before using the numerical results for design conclusions.
-    I then fabricated a 1:1 FDM test article and extended the wind-tunnel campaign through 20° angle of attack to characterize the stall sequence and separation pattern.
+    I designed and fabricated a revised blended-wing-body model, then examined its flow in the wind tunnel using fog.
+    I also built a mobile rig to observe the physical article in motion. An earlier configuration provided a separate
+    CFD, force-balance, and tuft-visualization study, documented below.
   </p>
 
   <div class="case-block">
     <div class="case-block-copy">
-      <span class="step">01 / DESIGN</span>
+      <span class="step">01 / NEW CONFIGURATION</span>
+      <h3>From revised CAD to the wind-tunnel model</h3>
+      <p>
+        The updated outer mold line blends a raised centerbody into swept outer panels.
+        These top and isometric views show the geometry used for the new physical model.
+      </p>
+    </div>
+
+    <div class="media-grid two">
+      <figure class="figure-card bwb-geometry-card">
+        <img src="assets/bwb_new_cad_top.png" alt="Top CAD view of the revised blended-wing-body model">
+        <figcaption><strong>Planform.</strong> Revised blended-wing-body geometry.</figcaption>
+      </figure>
+      <figure class="figure-card bwb-geometry-card">
+        <img src="assets/bwb_new_cad_iso.png" alt="Isometric CAD view of the revised blended-wing-body model">
+        <figcaption><strong>Isometric view.</strong> Raised centerbody and swept panels.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="case-block">
+    <div class="case-block-copy">
+      <span class="step">02 / NEW WIND-TUNNEL SWEEP</span>
+      <h3>Lift and efficiency across the measured angle range</h3>
+      <p>
+        The new model was tested from −6° to 30° at 20–60 mph. Lift increases through most of the sweep,
+        while the 28° to 30° points show a consistent high-angle roll-over. Peak L/D occurs at a lower angle
+        than peak lift.
+      </p>
+    </div>
+
+    <div class="media-grid two">
+      <figure class="figure-card bwb-performance-plot">
+        <img src="assets/bwb_new_cl_vs_aoa.png" alt="New BWB lift coefficient versus angle of attack at 20 to 60 mph">
+        <figcaption><strong>Lift.</strong> New-configuration wind-tunnel sweep.</figcaption>
+      </figure>
+      <figure class="figure-card bwb-performance-plot">
+        <img src="assets/bwb_new_ld_vs_aoa.png" alt="New BWB lift-to-drag ratio versus angle of attack at 20 to 60 mph">
+        <figcaption><strong>Efficiency.</strong> L/D across the same angle and speed range.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="case-block">
+    <div class="case-block-copy">
+      <span class="step">03 / MOBILE TEST RIG</span>
+      <h3>A second way to observe the model in motion</h3>
+      <p>
+        I mounted the revised model above a small wheeled platform and ran it outdoors.
+        The rig and video document a qualitative physical test; the wind tunnel is the source of measured aerodynamic data.
+      </p>
+    </div>
+
+    <div class="media-grid two bwb-rig-grid">
+      <figure class="figure-card">
+        <img src="assets/bwb_mobile_rig.jpg" alt="New blended-wing-body model mounted above the mobile test rig">
+        <figcaption><strong>Test rig.</strong> The revised model mounted above the wheeled platform.</figcaption>
+      </figure>
+      <figure class="figure-card">
+        <video controls playsinline preload="metadata" poster="assets/bwb_mobile_rig.jpg"
+               aria-label="Outdoor run of the blended-wing-body mobile test rig">
+          <source src="assets/bwb_mobile_rig_run.mp4" type="video/mp4">
+          Your browser does not support this video.
+        </video>
+        <figcaption><strong>Outdoor run.</strong> The mobile rig carrying the model.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="case-block">
+    <div class="case-block-copy">
+      <span class="step">04 / EARLIER CONFIGURATION</span>
+      <h3>CFD, force balance, and tuft evidence</h3>
+      <p>
+        The following results belong to the earlier blended-wing-body test article. I used a pre-stall
+        SolidWorks CFD sweep, fabricated a 1:1 FDM model, and extended the wind-tunnel campaign through
+        20° angle of attack to study its force trends and separation sequence.
+      </p>
+    </div>
+  </div>
+
+  <div class="metric-grid four" aria-label="Earlier configuration results">
+    <div class="metric">
+      <strong>−2° → 20°</strong>
+      <span>earlier wind-tunnel envelope</span>
+    </div>
+    <div class="metric">
+      <strong>14–16°</strong>
+      <span>earlier stall onset from force + tufts</span>
+    </div>
+    <div class="metric">
+      <strong>ΔCL = 0.17%</strong>
+      <span>earlier CFD domain sensitivity at 4°</span>
+    </div>
+    <div class="metric">
+      <strong>7.31</strong>
+      <span>earlier CFD peak L/D at 6°</span>
+    </div>
+  </div>
+
+  <div class="case-block">
+    <div class="case-block-copy">
+      <span class="step">05 / EARLIER DESIGN</span>
       <h3>From cross-sections to a physical test article</h3>
       <p>
         A multi-section loft with guide curves blends a custom centerbody into the outer panels.
@@ -183,7 +277,7 @@
 
   <div class="case-block">
     <div class="case-block-copy">
-      <span class="step">02 / CFD VERIFICATION</span>
+      <span class="step">06 / EARLIER CFD VERIFICATION</span>
       <h3>Checked numerical sensitivity before using the sweep for design conclusions</h3>
       <p>
         Steady external-flow cases covered −2° to +8° at 40 mph.
@@ -221,7 +315,7 @@
 
   <div class="case-block">
     <div class="case-block-copy">
-      <span class="step">03 / EXPERIMENT</span>
+      <span class="step">07 / EARLIER WIND-TUNNEL EXPERIMENT</span>
       <h3>Extended the physical test envelope beyond the CFD sweep to capture stall</h3>
       <p>
         The tunnel sweep ran from −2° through 20° using a three-component balance, wind-off tare,
@@ -247,7 +341,7 @@
 
   <div class="case-block">
     <div class="case-block-copy">
-      <span class="step">04 / FLOW PHYSICS</span>
+      <span class="step">08 / EARLIER FLOW PHYSICS</span>
       <h3>The force balance showed when stall began; tufts showed where it began</h3>
       <p>
         Tufts show the centerbody becoming disturbed before the outer panels.
@@ -301,7 +395,7 @@
   </div>
 
   <details class="technical-details">
-    <summary>Technical appendix — current CFD coefficient sweep</summary>
+    <summary>Technical appendix — earlier CFD coefficient sweep</summary>
     <div class="technical-details-body">
       <div class="table-wrap">
         <table>
