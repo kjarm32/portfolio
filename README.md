@@ -166,40 +166,36 @@
 
   <div class="case-block">
     <div class="case-block-copy">
-      <span class="step">SECOND TEST / GEOMETRY</span>
-      <h3>From revised CAD to the wind-tunnel model</h3>
+      <span class="step">SECOND TEST / GEOMETRY + AIRFOIL</span>
+      <h3>Revised CAD and MH45 section choice</h3>
       <p>
-        The updated outer mold line blends a raised centerbody into swept outer panels.
-        These top and isometric views show the geometry used for the new physical model.
+        The revised outer mold line blends a raised centerbody into swept outer panels. I selected MH45 for its low
+        section pitching moment, relevant to a tailless layout without a conventional horizontal tail; its relative
+        thickness is 9.85%. The tunnel test examined the complete three-dimensional model, not just the
+        <a href="https://www.mh-aerotools.de/airfoils/mh45koo.htm" target="_blank" rel="noopener noreferrer">isolated airfoil ↗</a>.
       </p>
     </div>
 
-    <div class="media-grid two">
-      <figure class="figure-card bwb-geometry-card">
-        <img src="assets/bwb_new_cad_top.png" alt="Top CAD view of the revised blended-wing-body model">
-        <figcaption><strong>Planform.</strong> Revised blended-wing-body geometry.</figcaption>
+    <div class="media-grid bwb-design-grid">
+      <figure class="figure-card">
+        <a href="assets/bwb_new_cad_top.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size planform CAD view">
+          <img src="assets/bwb_new_cad_top.png" alt="Top CAD view of the revised blended-wing-body model">
+        </a>
+        <figcaption><strong>Planform CAD</strong></figcaption>
       </figure>
-      <figure class="figure-card bwb-geometry-card">
-        <img src="assets/bwb_new_cad_iso.png" alt="Isometric CAD view of the revised blended-wing-body model">
-        <figcaption><strong>Isometric view.</strong> Raised centerbody and swept panels.</figcaption>
+      <figure class="figure-card">
+        <a href="assets/bwb_new_cad_iso.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size isometric CAD view">
+          <img src="assets/bwb_new_cad_iso.png" alt="Isometric CAD view of the revised blended-wing-body model">
+        </a>
+        <figcaption><strong>Isometric CAD</strong></figcaption>
+      </figure>
+      <figure class="figure-card">
+        <a href="assets/bwb_mh45_profile.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size MH45 airfoil profile">
+          <img src="assets/bwb_mh45_profile.png" alt="Outline of the MH45 airfoil plotted against normalized chord">
+        </a>
+        <figcaption><strong>MH45 airfoil</strong></figcaption>
       </figure>
     </div>
-  </div>
-
-  <div class="case-block">
-    <div class="case-block-copy">
-      <span class="step">SECOND TEST / AIRFOIL SELECTION</span>
-      <h3>Why I chose the MH45 section</h3>
-      <p>
-        I selected MH45 for its low section pitching moment, relevant to a tailless layout without a conventional
-        horizontal tail. Its relative thickness is 9.85%. The tunnel test then examined the complete
-        three-dimensional model, not just the isolated airfoil.
-      </p>
-    </div>
-    <figure class="figure-card bwb-airfoil-card">
-      <img src="assets/bwb_mh45_profile.png" alt="Outline of the MH45 airfoil plotted against normalized chord">
-      <figcaption><strong>MH45 profile.</strong> Plotted from <a href="https://www.mh-aerotools.de/airfoils/mh45koo.htm" target="_blank" rel="noopener noreferrer">Martin Hepperle’s published coordinates ↗</a>.</figcaption>
-    </figure>
   </div>
 
   <div class="case-block">
