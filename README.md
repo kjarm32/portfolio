@@ -15,12 +15,14 @@
   <div class="hero-copy">
     <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
     <h1>Kevin Armstrong II</h1>
-    <p class="hero-title">Aircraft aerodynamics, flight dynamics, and mechanical design &amp; test.</p>
+    <p class="hero-title">Aerodynamics &amp; Flight Hardware · Mechanical Design &amp; Test.</p>
     <p class="hero-summary">
       I design and validate aircraft and vehicle systems from geometry and first-principles analysis through CFD,
       structural analysis, fabrication, instrumentation, and physical test.
     </p>
     <div class="hero-links">
+      <a class="hero-link" href="https://app.notion.com/p/Zipline-Aerodynamics-Presentation-Kevin-Armstrong-II-3f1f045049e780f89fbadf1b7cc8d9f6"
+         target="_blank" rel="noopener noreferrer">Aerodynamics Specific Work</a>
       <a class="hero-link" href="https://www.linkedin.com/in/kevin-armstrong-ii-647125319/"
          target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a class="hero-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kevarm2028@berkeley.edu"
