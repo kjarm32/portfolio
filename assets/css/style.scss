@@ -1027,32 +1027,37 @@ body > header:first-child,
   align-items: center;
 }
 
-.clean-list {
-  list-style: none;
-  margin: 22px 0 0 !important;
-  padding: 0 !important;
+.hycube-contributions {
+  margin-top: 4px;
+  border-top: 1px solid var(--line);
+}
+
+.hycube-contributions article {
   display: grid;
-  gap: 12px;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 18px;
+  padding: 15px 0;
 }
 
-.clean-list li {
-  position: relative;
-  margin: 0;
-  padding-left: 19px;
+.hycube-contributions article + article {
+  border-top: 1px solid var(--line);
+}
+
+.hycube-contributions h3 {
+  margin: 0 !important;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hycube-contributions p {
+  margin: 0 !important;
   color: var(--ink-2);
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.clean-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.72em;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--accent);
+  font-size: 13.5px;
+  line-height: 1.6 !important;
 }
 
 .paper-note {
@@ -1795,5 +1800,12 @@ body > header:first-child,
   .media-grid.two.bwb-rig-grid .figure-card video {
     height: auto;
     max-height: 380px;
+  }
+}
+
+@media (max-width: 620px) {
+  .hycube-contributions article {
+    grid-template-columns: 1fr;
+    gap: 5px;
   }
 }
