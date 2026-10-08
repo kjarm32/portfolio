@@ -673,16 +673,16 @@
         high-altitude flight operations, recovery, and post-flight validation.
       </p>
 
-  <ul class="clean-list">
-    <li>
-      Used Arduino DAQ and cold-junction compensation to characterize probe configurations
-      from 50–155°C using regression and agreement analysis.
-    </li>
-    <li>
-      Integrated and secured payload hardware, tracked telemetry and state estimates over the Iridium satellite network
-      to approximately 90,000 ft, recovered the payload, and validated post-flight data.
-    </li>
-  </ul>
+  <div class="hycube-contributions">
+    <article>
+      <h3>Calibration &amp; analysis</h3>
+      <p>Used Arduino DAQ and cold-junction compensation to characterize probes from 50–155°C with regression and agreement analysis.</p>
+    </article>
+    <article>
+      <h3>Flight integration</h3>
+      <p>Secured payload hardware, tracked Iridium telemetry to approximately 90,000 ft, recovered the payload, and validated post-flight data.</p>
+    </article>
+  </div>
 
   <div class="metric-grid two">
     <div class="metric">
