@@ -130,6 +130,8 @@
 
   </header>
 
+  <h3 id="bwb-second" class="bwb-campaign-heading">Revised model · Second test</h3>
+
   <div class="bwb-hero-media">
     <figure class="figure-card bwb-fog-photo">
       <img src="assets/bwb_fog_hero.jpg"
@@ -150,21 +152,6 @@
     The fog test above is my second BWB test article. The first combined CFD, force-balance measurements, and tufts;
     its inboard flow behavior shaped the questions I took into a revised geometry, a new tunnel sweep, and a mobile rig.
   </p>
-
-  <div class="bwb-iteration-map" aria-label="Progression from the first BWB test to the second">
-    <div class="bwb-iteration-stage">
-      <span>01 / FIRST TEST ARTICLE</span>
-      <strong>Locate the flow change</strong>
-      <p>Run 4: 40 mph, estimated mean chord 47 mm, Re ≈56,000. The force trend changed near 14–16°, where tufts showed inboard separation.</p>
-    </div>
-    <span class="bwb-iteration-arrow" aria-hidden="true">→</span>
-    <div class="bwb-iteration-stage">
-      <span>02 / REVISED TEST ARTICLE</span>
-      <strong>Explore the new shape</strong>
-      <p>At 30 mph, estimated mean chord 60.2 mm gives Re ≈53,000, the closest match. Lift coefficient rises through 28° and falls at 30°.</p>
-    </div>
-  </div>
-  <p class="bwb-iteration-note">At similar Reynolds numbers, the revised article maintains increasing lift to a higher angle. The first campaign's local separation onset and the second campaign's lift roll-over are different indicators, so this is a qualitative comparison of two distinct test campaigns.</p>
 
   <div class="case-block">
     <div class="case-block-copy">
@@ -259,15 +246,19 @@
     </div>
   </div>
 
-  <div class="case-block">
+  <div id="bwb-first" class="case-block bwb-first-test">
     <div class="case-block-copy">
-      <span class="step">FIRST TEST / BASELINE ARTICLE</span>
-      <h3>Where the design sequence began</h3>
+      <h3>Original model · First test</h3>
       <p>
         These results belong to the first blended-wing-body test article. I used a pre-stall
         SolidWorks CFD sweep, fabricated a 1:1 FDM model, and extended the wind-tunnel campaign through
         20° angle of attack to study its force trends and separation sequence. The inboard flow findings
         motivated the revised article shown above; the two datasets are separate campaigns.
+      </p>
+      <p>
+        The closest Reynolds comparison is this article's 40 mph run (Re ≈56,000) against the revised article's
+        30 mph run (Re ≈53,000). The first test's local separation near 14–16° and the revised test's lift
+        roll-over at 28–30° are different indicators, so the comparison is qualitative.
       </p>
     </div>
   </div>
