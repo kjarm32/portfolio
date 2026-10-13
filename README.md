@@ -155,16 +155,16 @@
     <div class="bwb-iteration-stage">
       <span>01 / FIRST TEST ARTICLE</span>
       <strong>Locate the flow change</strong>
-      <p>CFD mapped pre-stall trends; force balance and tufts traced inboard separation near 14–16°.</p>
+      <p>Run 4: 40 mph, estimated mean chord 47 mm, Re ≈56,000. The force trend changed near 14–16°, where tufts showed inboard separation.</p>
     </div>
     <span class="bwb-iteration-arrow" aria-hidden="true">→</span>
     <div class="bwb-iteration-stage">
       <span>02 / REVISED TEST ARTICLE</span>
       <strong>Explore the new shape</strong>
-      <p>Revised CAD, MH45 section choice, fog visualization, a new force sweep, and a mobile rig.</p>
+      <p>At 30 mph, estimated mean chord 60.2 mm gives Re ≈53,000, the closest match. Lift coefficient rises through 28° and falls at 30°.</p>
     </div>
   </div>
-  <p class="bwb-iteration-note">One design sequence, two distinct physical models and test campaigns.</p>
+  <p class="bwb-iteration-note">At similar Reynolds numbers, the revised article maintains increasing lift to a higher angle. The first campaign's local separation onset and the second campaign's lift roll-over are different indicators, so this is a qualitative comparison of two distinct test campaigns.</p>
 
   <div class="case-block">
     <div class="case-block-copy">
@@ -357,7 +357,7 @@
       <span class="step">FIRST TEST / WIND-TUNNEL EXPERIMENT</span>
       <h3>Extended the physical test envelope beyond the CFD sweep to capture stall</h3>
       <p>
-        The tunnel sweep ran from −2° through 20° using a three-component balance, wind-off tare,
+        Run 4 was conducted at approximately 40 mph (mean-chord Re ≈56,000). The tunnel sweep ran from −2° through 20° using a three-component balance, wind-off tare,
         point-by-point dynamic-pressure correction, and 25 Hz acquisition.
         Stall onset appears around 14–16°; normal force peaks at 3.36 N at 18° and falls only about 1% by 20°.
       </p>
