@@ -209,6 +209,12 @@
         while the 28° to 30° points show a consistent high-angle roll-over. Peak L/D occurs at a lower angle
         than peak lift.
       </p>
+      <p>
+        <strong>Airspeed → chord Reynolds number (dimensionless):</strong>
+        20 mph → 3.5 × 10<sup>4</sup> · 30 mph → 5.3 × 10<sup>4</sup> ·
+        40 mph → 7.0 × 10<sup>4</sup> · 50 mph → 8.8 × 10<sup>4</sup> ·
+        60 mph → 1.06 × 10<sup>5</sup>. Approximate Run 4 medians use a provisional 60.2 mm mean chord.
+      </p>
     </div>
 
     <div class="media-grid two">
