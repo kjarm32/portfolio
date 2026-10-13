@@ -860,6 +860,10 @@ body > header:first-child,
   font-size: 15px;
 }
 
+.bwb-sweep-block .case-block-copy {
+  margin-bottom: 0;
+}
+
 .bwb-re-table-wrap {
   margin-top: 17px;
   overflow-x: auto;
@@ -910,8 +914,8 @@ body > header:first-child,
   text-align: center;
 }
 
-.case-block-copy p.bwb-re-note {
-  margin-top: 6px !important;
+.bwb-sweep-block .bwb-re-note {
+  margin: 6px 0 22px !important;
   color: var(--muted);
   font-size: 11px;
   text-align: center;
