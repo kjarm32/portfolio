@@ -860,6 +860,72 @@ body > header:first-child,
   font-size: 15px;
 }
 
+.bwb-re-table-wrap {
+  margin-top: 17px;
+  overflow-x: auto;
+}
+
+.bwb-re-table {
+  display: table;
+  width: 100%;
+  min-width: 320px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  font-variant-numeric: tabular-nums;
+}
+
+.bwb-re-table tr {
+  background: transparent !important;
+  border: 0;
+}
+
+.bwb-re-table tr + tr {
+  border-top: 1px solid var(--line);
+}
+
+.bwb-re-table th,
+.bwb-re-table td {
+  padding: 9px 10px;
+  border: 0;
+  white-space: nowrap;
+}
+
+.bwb-re-table th {
+  width: 132px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.bwb-re-table td {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.case-block-copy p.bwb-re-note {
+  margin-top: 6px !important;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+@media (max-width: 620px) {
+  .bwb-re-table th,
+  .bwb-re-table td {
+    padding: 8px 3px;
+    font-size: 10px;
+  }
+
+  .bwb-re-table th {
+    width: 83px;
+  }
+}
+
 .verification-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

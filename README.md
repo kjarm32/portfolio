@@ -209,12 +209,15 @@
         while the 28° to 30° points show a consistent high-angle roll-over. Peak L/D occurs at a lower angle
         than peak lift.
       </p>
-      <p>
-        <strong>Airspeed → chord Reynolds number (dimensionless):</strong>
-        20 mph → 3.5 × 10<sup>4</sup> · 30 mph → 5.3 × 10<sup>4</sup> ·
-        40 mph → 7.0 × 10<sup>4</sup> · 50 mph → 8.8 × 10<sup>4</sup> ·
-        60 mph → 1.06 × 10<sup>5</sup>. Approximate Run 4 medians use a provisional 60.2 mm mean chord.
-      </p>
+      <div class="bwb-re-table-wrap">
+        <table class="bwb-re-table" aria-label="Airspeed and chord Reynolds number for the revised BWB wind-tunnel sweep">
+          <tbody>
+            <tr><th scope="row">Airspeed</th><td>20 mph</td><td>30 mph</td><td>40 mph</td><td>50 mph</td><td>60 mph</td></tr>
+            <tr><th scope="row">Reynolds no.</th><td>≈35,000</td><td>≈53,000</td><td>≈70,000</td><td>≈88,000</td><td>≈106,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="bwb-re-note">Chord-based Reynolds number is dimensionless. Run 4 medians use an estimated 60.2 mm mean chord.</p>
     </div>
 
     <div class="media-grid two">
