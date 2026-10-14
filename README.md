@@ -1,11 +1,11 @@
 <nav class="portfolio-nav" aria-label="Portfolio navigation">
   <a class="portfolio-brand" href="#top">KA</a>
   <div class="portfolio-nav-links">
-    <a href="#bwb">Aerodynamics</a>
     <a href="#experience">Mechanical Design</a>
-    <a href="#rotorcraft">Flight Dynamics</a>
+    <a href="#bwb">Aerodynamics</a>
     <a href="#hycube">Flight Hardware</a>
     <a href="#drone">Vehicle Integration</a>
+    <a href="#rotorcraft">Flight Dynamics</a>
   </div>
 </nav>
 
@@ -15,10 +15,10 @@
   <div class="hero-copy">
     <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
     <h1>Kevin Armstrong II</h1>
-    <p class="hero-title">Aerodynamics &amp; Flight Hardware · Mechanical Design &amp; Test.</p>
+    <p class="hero-title">Mechanical Design, Build &amp; Test · Aerodynamics &amp; Flight Hardware.</p>
     <p class="hero-summary">
-      I design and validate aircraft and vehicle systems from geometry and first-principles analysis through CFD,
-      structural analysis, fabrication, instrumentation, and physical test.
+      I design, build, integrate, and test mechanical and flight hardware, using structural analysis, CFD,
+      and measured results to guide design decisions.
     </p>
     <div class="hero-links">
       <a class="hero-link" href="https://app.notion.com/p/Zipline-Aerodynamics-Presentation-Kevin-Armstrong-II-3f1f045049e780f89fbadf1b7cc8d9f6"
@@ -37,15 +37,15 @@
 
 <section class="experience-brief" aria-label="Engineering focus">
   <div class="experience-brief-item">
-    <span>AIRCRAFT AERODYNAMICS</span>
-    <strong>Blended-Wing-Body Aircraft</strong>
-    <p>Outer-mold-line design · CFD verification · wind-tunnel testing · flow visualization</p>
+    <span>MECHANICAL DESIGN + TEST</span>
+    <strong>Standard Bots</strong>
+    <p>High-load test hardware · mechanical interfaces · robot assembly · validation</p>
   </div>
 
   <div class="experience-brief-item">
-    <span>MECHANICAL DESIGN + TEST</span>
-    <strong>Standard Bots</strong>
-    <p>High-load hardware · mechanical interfaces · structural analysis · experimental validation</p>
+    <span>AIRCRAFT AERODYNAMICS</span>
+    <strong>Blended-Wing-Body Aircraft</strong>
+    <p>Outer-mold-line design · CFD verification · wind-tunnel testing · flow visualization</p>
   </div>
 
   <div class="experience-brief-item">
@@ -62,19 +62,6 @@
   </header>
 
   <div class="featured-grid">
-    <a class="featured-card" href="#bwb">
-      <div class="featured-card-media">
-        <img src="assets/bwb_fog_hero.jpg"
-             alt="Fog flowing over the new blended-wing-body model in the wind tunnel">
-      </div>
-      <div class="featured-card-copy">
-        <span class="card-kicker">AERODYNAMICS + EXPERIMENTAL VALIDATION</span>
-        <h3>Blended-Wing-Body Aircraft</h3>
-        <p>Two linked test articles: the first mapped separation; the revised model explores its flow and force trends.</p>
-        <strong class="card-result">CAD → fabrication → physical test</strong>
-      </div>
-    </a>
-
     <a class="featured-card" href="#experience">
       <div class="featured-card-media standardbots-render">
         <img src="assets/Standard%20Bots%20RO1.png"
@@ -85,6 +72,19 @@
         <h3>Standard Bots</h3>
         <p>High-load test infrastructure, mechanical interfaces, structural analysis, assembly, calibration, and validation.</p>
         <strong class="card-result">100 hr loaded burn-in</strong>
+      </div>
+    </a>
+
+    <a class="featured-card" href="#bwb">
+      <div class="featured-card-media">
+        <img src="assets/bwb_fog_hero.jpg"
+             alt="Fog flowing over the new blended-wing-body model in the wind tunnel">
+      </div>
+      <div class="featured-card-copy">
+        <span class="card-kicker">AERODYNAMICS + EXPERIMENTAL VALIDATION</span>
+        <h3>Blended-Wing-Body Aircraft</h3>
+        <p>Two linked test articles: the first mapped separation; the revised model explores its flow and force trends.</p>
+        <strong class="card-result">CAD → fabrication → physical test</strong>
       </div>
     </a>
 
