@@ -243,7 +243,8 @@ body > header:first-child,
 .experience-brief {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+  border-top: 1px solid var(--line);
 }
 
 .experience-brief-item {
@@ -283,7 +284,7 @@ body > header:first-child,
    ------------------------- */
 
 .featured-work {
-  margin: 64px 0 80px;
+  margin: 64px 0 32px;
   scroll-margin-top: 72px;
 }
 

@@ -35,26 +35,6 @@
        alt="Kevin Armstrong II">
 </section>
 
-<section class="experience-brief" aria-label="Engineering focus">
-  <div class="experience-brief-item">
-    <span>MECHANICAL DESIGN + TEST</span>
-    <strong>Standard Bots</strong>
-    <p>High-load test hardware · mechanical interfaces · robot assembly · validation</p>
-  </div>
-
-  <div class="experience-brief-item">
-    <span>AIRCRAFT AERODYNAMICS</span>
-    <strong>Blended-Wing-Body Aircraft</strong>
-    <p>Outer-mold-line design · CFD verification · wind-tunnel testing · flow visualization</p>
-  </div>
-
-  <div class="experience-brief-item">
-    <span>FLIGHT DYNAMICS RESEARCH</span>
-    <strong>UC Berkeley</strong>
-    <p>Aerodynamic force/moment modeling · nonlinear simulation · IEEE Aerospace 2027</p>
-  </div>
-</section>
-
 <section id="featured-work" class="featured-work">
   <header class="section-heading">
     <p class="eyebrow">SELECTED ENGINEERING</p>
@@ -115,6 +95,26 @@
         <strong class="card-result">~90,000 ft flight</strong>
       </div>
     </a>
+  </div>
+</section>
+
+<section class="experience-brief" aria-label="Engineering focus">
+  <div class="experience-brief-item">
+    <span>MECHANICAL DESIGN + TEST</span>
+    <strong>Standard Bots</strong>
+    <p>High-load test hardware · mechanical interfaces · robot assembly · validation</p>
+  </div>
+
+  <div class="experience-brief-item">
+    <span>AIRCRAFT AERODYNAMICS</span>
+    <strong>Blended-Wing-Body Aircraft</strong>
+    <p>Outer-mold-line design · CFD verification · wind-tunnel testing · flow visualization</p>
+  </div>
+
+  <div class="experience-brief-item">
+    <span>FLIGHT DYNAMICS RESEARCH</span>
+    <strong>UC Berkeley</strong>
+    <p>Aerodynamic force/moment modeling · nonlinear simulation · IEEE Aerospace 2027</p>
   </div>
 </section>
 
