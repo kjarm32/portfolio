@@ -1846,3 +1846,48 @@ body > header:first-child,
     gap: 5px;
   }
 }
+
+/* Keep the original BWB test as one compact comparison. */
+.bwb-first-test {
+  margin-top: 44px;
+}
+
+.bwb-first-evidence {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 16px;
+}
+
+.bwb-first-evidence > * {
+  min-width: 0;
+}
+
+.bwb-first-evidence .bwb-cfd-overview a {
+  display: block;
+}
+
+.bwb-first-evidence .tuft-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.bwb-first-evidence .tuft-grid img {
+  height: 160px;
+}
+
+.bwb-first-evidence .tuft-grid figcaption {
+  padding: 7px 9px;
+}
+
+@media (max-width: 820px) {
+  .bwb-first-evidence {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .bwb-first-evidence .tuft-grid img {
+    height: 120px;
+  }
+}

@@ -118,6 +118,119 @@
   </div>
 </section>
 
+<section id="experience" class="case-study standardbots-case">
+  <header class="case-header standardbots-header">
+    <div>
+      <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
+      <div class="title-with-note">
+        <h2>Standard Bots</h2>
+        <span class="company-context">Series C industrial robotics startup</span>
+      </div>
+      <p class="case-subtitle">Mechanical Design &amp; Test Intern · high-load test infrastructure · Long Island, New York</p>
+    </div>
+  </header>
+
+  <p class="case-lede standardbots-lede">
+    Designed and commissioned mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
+    load-path analysis, static FEA, fabrication, assembly, instrumentation, and validation.
+    My work focused on applying representative loads, screening joint reliability before full robot assembly,
+    and building robust interfaces for high-load production test equipment.
+  </p>
+
+  <div class="metric-row three">
+    <div>
+      <strong>100 hr</strong>
+      <span>automated loaded burn-in</span>
+    </div>
+    <div>
+      <strong>&gt;2.5 kN·m</strong>
+      <span>momentary interface load verified</span>
+    </div>
+    <div>
+      <strong>1st at company</strong>
+      <span>loaded joint screening before full robot assembly</span>
+    </div>
+  </div>
+
+  <div class="standardbots-fixture-grid">
+    <figure class="figure-card">
+      <img class="fixture-image"
+           src="assets/standardbots_test_hardware.jpg"
+           alt="Loaded burn-in station fixture developed at Standard Bots">
+      <figcaption>
+        <strong>Automated loaded burn-in fixture.</strong>
+        Built station used to screen joints under representative load before full robot assembly.
+      </figcaption>
+    </figure>
+
+<figure class="figure-card">
+  <video class="cad-video"
+         autoplay muted loop playsinline controls preload="metadata"
+         poster="assets/standardbots_test_hardware.jpg">
+    <source src="assets/Loaded%20Burn-in%20View%20+%20Still.mp4" type="video/mp4">
+  </video>
+  <figcaption>
+    <strong>Exploded CAD sequence.</strong>
+    Fixture architecture, coupling stack, support structure, and test-side interfaces coming together.
+  </figcaption>
+</figure>
+
+  </div>
+
+  <div class="workstream-grid">
+    <article>
+      <span>01</span>
+      <h3>Automated load-testing station</h3>
+      <p>
+        Designed an automated pre-assembly burn-in station that applied representative torque during long-duration cycling,
+        integrated torque and position sensing, and screened joints before complete robot assembly.
+      </p>
+    </article>
+
+<article>
+  <span>02</span>
+  <h3>High-load dynamometer interface</h3>
+  <p>
+    Designed a precision mechanical interface and checked bolted, doweled, keyed, and shaft load paths
+    with hand calculations and static FEA before releasing the manufactured part.
+  </p>
+</article>
+
+<article>
+  <span>03</span>
+  <h3>Assembly, checkout + production support</h3>
+  <p>
+    Assembled and calibrated three complete robot arms, programmed checkout motion routines,
+    improved technician-facing build instructions, and trained technicians.
+  </p>
+</article>
+
+  </div>
+
+  <div class="evidence-grid">
+    <figure class="figure-card assembly-photo">
+      <img src="assets/standardbots_build_photo.jpg"
+           alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
+      <figcaption>
+        <strong>Assembly + calibration.</strong>
+        Bringing up and validating a completed robot arm.
+      </figcaption>
+    </figure>
+
+<figure class="figure-card">
+  <video autoplay muted loop playsinline controls preload="metadata"
+         poster="assets/standardbots_motion_poster.jpg">
+    <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
+  </video>
+  <figcaption>
+    <strong>Checkout routine.</strong>
+    Arm executing a motion routine I programmed while bringing up the completed assembly.
+  </figcaption>
+</figure>
+
+  </div>
+</section>
+
 <section id="bwb" class="case-study">
   <header class="case-header split">
     <div>
@@ -248,180 +361,44 @@
 
   <div id="bwb-first" class="case-block bwb-first-test">
     <div class="case-block-copy">
-      <h3>Original model · First test</h3>
+      <span class="step">ORIGINAL MODEL / FIRST TEST</span>
+      <h3>CFD and tufts revealed inboard-first separation</h3>
       <p>
-        These results belong to the first blended-wing-body test article. I used a pre-stall
-        SolidWorks CFD sweep, fabricated a 1:1 FDM model, and extended the wind-tunnel campaign through
-        20° angle of attack to study its force trends and separation sequence. The inboard flow findings
-        motivated the revised article shown above; the two datasets are separate campaigns.
-      </p>
-      <p>
-        The closest Reynolds comparison is this article's 40 mph run (Re ≈56,000) against the revised article's
-        30 mph run (Re ≈53,000). The first test's local separation near 14–16° and the revised test's lift
-        roll-over at 28–30° are different indicators, so the comparison is qualitative.
-      </p>
-    </div>
-  </div>
-
-  <div class="metric-grid four" aria-label="Earlier configuration results">
-    <div class="metric">
-      <strong>−2° → 20°</strong>
-      <span>first-test wind-tunnel envelope</span>
-    </div>
-    <div class="metric">
-      <strong>14–16°</strong>
-      <span>first-test stall onset from force + tufts</span>
-    </div>
-    <div class="metric">
-      <strong>ΔCL = 0.17%</strong>
-      <span>first-test CFD domain sensitivity at 4°</span>
-    </div>
-    <div class="metric">
-      <strong>7.31</strong>
-      <span>first-test CFD peak L/D at 6°</span>
-    </div>
-  </div>
-
-  <div class="case-block">
-    <div class="case-block-copy">
-      <span class="step">FIRST TEST / DESIGN</span>
-      <h3>From cross-sections to a physical test article</h3>
-      <p>
-        A multi-section loft with guide curves blends a custom centerbody into the outer panels.
-        The geometry moved directly from CAD into simulation, FDM fabrication, and wind-tunnel testing.
+        I simulated the original model from −2° to +8°, then tested a 1:1 FDM article in the tunnel through 20°.
+        At 14–16°, the tufts show separation starting near the centerbody while the outer panels remain partly attached.
+        That finding informed the revised model above. These are separate test campaigns.
       </p>
     </div>
 
-<div class="media-grid two">
-  <figure class="figure-card bwb-geometry-card bwb-sketch-card">
-    <img src="assets/Cadbwbsketch.png" alt="BWB concept sketch and geometry development">
-    <figcaption><strong>Geometry definition.</strong> Cross-sections and guide curves used to shape the BWB outer mold line.</figcaption>
-  </figure>
-  <figure class="figure-card bwb-geometry-card bwb-loft-card">
-    <img src="assets/BWB_Aero_CADd1.png" alt="SOLIDWORKS loft used to construct the BWB outer mold line">
-    <figcaption><strong>SOLIDWORKS loft definition.</strong> Multi-section loft and guide-curve setup used to generate the final outer mold line.</figcaption>
-  </figure>
-</div>
+    <div class="bwb-first-evidence">
+      <figure class="figure-card bwb-cfd-overview">
+        <a href="assets/Aero_Grid_VelX_vs_Pressure_0_4_8%20(3).png" target="_blank" rel="noopener noreferrer"
+           aria-label="Open full-size CFD field comparison">
+          <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8 (3).png"
+               alt="Streamwise velocity and surface pressure at 0, 4, and 8 degrees angle of attack">
+        </a>
+        <figcaption><strong>CFD.</strong> Velocity and pressure at 0°, 4°, and 8°.</figcaption>
+      </figure>
 
-  </div>
-
-  <div class="case-block">
-    <div class="case-block-copy">
-      <span class="step">FIRST TEST / CFD VERIFICATION</span>
-      <h3>Checked numerical sensitivity before using the sweep for design conclusions</h3>
-      <p>
-        Steady external-flow cases covered −2° to +8° at 40 mph.
-        A domain study at 4° changed CL by 0.17% and CD by 0.43%;
-        medium-to-fine mesh refinement changed CL by 1.25% and CD by 0.37%.
-        These checks established that the aerodynamic trends were not being driven by the chosen domain or mesh resolution.
-      </p>
+      <div class="tuft-grid" aria-label="Tuft flow progression">
+        <figure>
+          <img src="assets/tuft_prestall.png" alt="Attached BWB tuft flow at low angle of attack">
+          <figcaption><strong>0–4°</strong><span>Attached</span></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tuft_onset.png" alt="Centerbody tufts beginning to curl on the BWB">
+          <figcaption><strong>6–10°</strong><span>Inboard disturbance</span></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tuft_stall.png" alt="Centerbody separation at BWB stall onset">
+          <figcaption><strong>14–16°</strong><span>Centerbody separation</span></figcaption>
+        </figure>
+        <figure>
+          <img src="assets/tuft_poststall.png" alt="Post-stall BWB tuft flow with partially attached outer panels">
+          <figcaption><strong>18–20°</strong><span>Progressive separation</span></figcaption>
+        </figure>
+      </div>
     </div>
-
-<figure class="figure-card wide-figure bwb-cfd-overview">
-  <img src="assets/Aero_Grid_VelX_vs_Pressure_0_4_8 (3).png"
-       alt="Streamwise velocity and surface pressure at 0, 4, and 8 degrees angle of attack">
-  <figcaption><strong>CFD field comparison.</strong> Streamwise-velocity and surface-pressure views compared at 0°, 4°, and 8° angle of attack.</figcaption>
-</figure>
-
-<div class="verification-grid">
-  <div>
-    <span>DOMAIN SENSITIVITY</span>
-    <strong>ΔCL = 0.17%</strong>
-    <small>ΔCD = 0.43% at 4°</small>
-  </div>
-  <div>
-    <span>MESH REFINEMENT</span>
-    <strong>ΔCL = 1.25%</strong>
-    <small>ΔCD = 0.37% from medium → fine</small>
-  </div>
-  <div>
-    <span>CONVERGENCE CHECK</span>
-    <strong>100+ iterations</strong>
-    <small>beyond solver-goal convergence</small>
-  </div>
-</div>
-
-  </div>
-
-  <div class="case-block">
-    <div class="case-block-copy">
-      <span class="step">FIRST TEST / WIND-TUNNEL EXPERIMENT</span>
-      <h3>Extended the physical test envelope beyond the CFD sweep to capture stall</h3>
-      <p>
-        Run 4 was conducted at approximately 40 mph (mean-chord Re ≈56,000). The tunnel sweep ran from −2° through 20° using a three-component balance, wind-off tare,
-        point-by-point dynamic-pressure correction, and 25 Hz acquisition.
-        Stall onset appears around 14–16°; normal force peaks at 3.36 N at 18° and falls only about 1% by 20°.
-      </p>
-    </div>
-
-<div class="media-grid two">
-  <figure class="figure-card bwb-performance-plot">
-    <img src="assets/bwb_cfd_sweep_plot.png"
-         alt="BWB CFD lift coefficient and lift-to-drag ratio across angle of attack">
-    <figcaption>Pre-stall CFD sweep.</figcaption>
-  </figure>
-  <figure class="figure-card bwb-performance-plot">
-    <img src="assets/bwb_wind_tunnel_run4_plot.png"
-         alt="BWB wind tunnel normal force and pitching moment across angle of attack">
-    <figcaption>Wind-tunnel run through 20°.</figcaption>
-  </figure>
-</div>
-
-  </div>
-
-  <div class="case-block">
-    <div class="case-block-copy">
-      <span class="step">FIRST TEST / FLOW PHYSICS</span>
-      <h3>The force balance showed when stall began; tufts showed where it began</h3>
-      <p>
-        Tufts show the centerbody becoming disturbed before the outer panels.
-        At 14–16° the inboard flow is clearly separated while the tips remain partially attached,
-        matching the gradual roll-over in the force data.
-      </p>
-    </div>
-
-<div class="tuft-grid">
-  <figure>
-    <img src="assets/tuft_prestall.png" alt="Attached BWB tuft flow at low angle of attack">
-    <figcaption><strong>0–4°</strong><span>Attached baseline</span></figcaption>
-  </figure>
-  <figure>
-    <img src="assets/tuft_onset.png" alt="Centerbody tufts beginning to curl on the BWB">
-    <figcaption><strong>6–10°</strong><span>Inboard disturbance</span></figcaption>
-  </figure>
-  <figure>
-    <img src="assets/tuft_stall.png" alt="Centerbody separation at BWB stall onset">
-    <figcaption><strong>14–16°</strong><span>Centerbody separation</span></figcaption>
-  </figure>
-  <figure>
-    <img src="assets/tuft_poststall.png" alt="Post-stall BWB tuft flow with partially attached outer panels">
-    <figcaption><strong>18–20°</strong><span>Progressive post-stall</span></figcaption>
-  </figure>
-</div>
-
-  </div>
-
-  <div class="finding-grid">
-    <article>
-      <span>01</span>
-      <h3>Progressive stall onset</h3>
-      <p>Force and tuft evidence converge on a 14–16° onset window.</p>
-    </article>
-    <article>
-      <span>02</span>
-      <h3>Peak CFD efficiency at 6°</h3>
-      <p>Within the simulated range, L/D peaks at 7.31 before drag growth overtakes lift growth.</p>
-    </article>
-    <article>
-      <span>03</span>
-      <h3>Moment changes before peak normal force</h3>
-      <p>Pitching moment turns before the normal-force peak, consistent with loading redistribution near stall.</p>
-    </article>
-    <article>
-      <span>04</span>
-      <h3>Outer panels remain partly attached</h3>
-      <p>Tip tufts stay partly ordered through 20°, explaining the soft force roll-over.</p>
-    </article>
   </div>
 
   <details class="technical-details">
@@ -450,119 +427,6 @@
 </div>
 
   </details>
-</section>
-
-<section id="experience" class="case-study standardbots-case">
-  <header class="case-header standardbots-header">
-    <div>
-      <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
-      <div class="title-with-note">
-        <h2>Standard Bots</h2>
-        <span class="company-context">Series C industrial robotics startup</span>
-      </div>
-      <p class="case-subtitle">Mechanical Design &amp; Test Intern · high-load test infrastructure · Long Island, New York</p>
-    </div>
-  </header>
-
-  <p class="case-lede standardbots-lede">
-    Designed and commissioned mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
-    load-path analysis, static FEA, fabrication, assembly, instrumentation, and validation.
-    My work focused on applying representative loads, screening joint reliability before full robot assembly,
-    and building robust interfaces for high-load production test equipment.
-  </p>
-
-  <div class="metric-row three">
-    <div>
-      <strong>100 hr</strong>
-      <span>automated loaded burn-in</span>
-    </div>
-    <div>
-      <strong>&gt;2.5 kN·m</strong>
-      <span>momentary interface load verified</span>
-    </div>
-    <div>
-      <strong>1st at company</strong>
-      <span>loaded joint screening before full robot assembly</span>
-    </div>
-  </div>
-
-  <div class="standardbots-fixture-grid">
-    <figure class="figure-card">
-      <img class="fixture-image"
-           src="assets/standardbots_test_hardware.jpg"
-           alt="Loaded burn-in station fixture developed at Standard Bots">
-      <figcaption>
-        <strong>Automated loaded burn-in fixture.</strong>
-        Built station used to screen joints under representative load before full robot assembly.
-      </figcaption>
-    </figure>
-
-<figure class="figure-card">
-  <video class="cad-video"
-         autoplay muted loop playsinline controls preload="metadata"
-         poster="assets/standardbots_test_hardware.jpg">
-    <source src="assets/Loaded%20Burn-in%20View%20+%20Still.mp4" type="video/mp4">
-  </video>
-  <figcaption>
-    <strong>Exploded CAD sequence.</strong>
-    Fixture architecture, coupling stack, support structure, and test-side interfaces coming together.
-  </figcaption>
-</figure>
-
-  </div>
-
-  <div class="workstream-grid">
-    <article>
-      <span>01</span>
-      <h3>Automated load-testing station</h3>
-      <p>
-        Designed an automated pre-assembly burn-in station that applied representative torque during long-duration cycling,
-        integrated torque and position sensing, and screened joints before complete robot assembly.
-      </p>
-    </article>
-
-<article>
-  <span>02</span>
-  <h3>High-load dynamometer interface</h3>
-  <p>
-    Designed a precision mechanical interface and checked bolted, doweled, keyed, and shaft load paths
-    with hand calculations and static FEA before releasing the manufactured part.
-  </p>
-</article>
-
-<article>
-  <span>03</span>
-  <h3>Assembly, checkout + production support</h3>
-  <p>
-    Assembled and calibrated three complete robot arms, programmed checkout motion routines,
-    improved technician-facing build instructions, and trained technicians.
-  </p>
-</article>
-
-  </div>
-
-  <div class="evidence-grid">
-    <figure class="figure-card assembly-photo">
-      <img src="assets/standardbots_build_photo.jpg"
-           alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
-      <figcaption>
-        <strong>Assembly + calibration.</strong>
-        Bringing up and validating a completed robot arm.
-      </figcaption>
-    </figure>
-
-<figure class="figure-card">
-  <video autoplay muted loop playsinline controls preload="metadata"
-         poster="assets/standardbots_motion_poster.jpg">
-    <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
-  </video>
-  <figcaption>
-    <strong>Checkout routine.</strong>
-    Arm executing a motion routine I programmed while bringing up the completed assembly.
-  </figcaption>
-</figure>
-
-  </div>
 </section>
 
 <section id="rotorcraft" class="case-study compact-case">
