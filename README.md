@@ -68,6 +68,19 @@
       </div>
     </a>
 
+    <a class="featured-card" href="#hycube">
+      <div class="featured-card-media">
+        <img src="assets/HyCubeINAir.png"
+             alt="HyCUBE payload during high-altitude flight">
+      </div>
+      <div class="featured-card-copy">
+        <span class="card-kicker">AEROSPACE HARDWARE + TEST</span>
+        <h3>HyCUBE Reentry Vehicle</h3>
+        <p>Thermal instrumentation, calibration, payload integration, flight operations, recovery, and post-flight validation.</p>
+        <strong class="card-result">~90,000 ft flight</strong>
+      </div>
+    </a>
+
     <a class="featured-card" href="#rotorcraft">
       <div class="featured-card-media dark-media">
         <video autoplay muted loop playsinline preload="metadata"
@@ -83,18 +96,6 @@
       </div>
     </a>
 
-    <a class="featured-card" href="#hycube">
-      <div class="featured-card-media">
-        <img src="assets/HyCubeINAir.png"
-             alt="HyCUBE payload during high-altitude flight">
-      </div>
-      <div class="featured-card-copy">
-        <span class="card-kicker">AEROSPACE HARDWARE + TEST</span>
-        <h3>HyCUBE Reentry Vehicle</h3>
-        <p>Thermal instrumentation, calibration, payload integration, flight operations, recovery, and post-flight validation.</p>
-        <strong class="card-result">~90,000 ft flight</strong>
-      </div>
-    </a>
   </div>
 </section>
 
@@ -429,82 +430,6 @@
   </details>
 </section>
 
-<section id="rotorcraft" class="case-study compact-case">
-  <header class="case-header split">
-    <div>
-      <p class="eyebrow">RESEARCH · FLIGHT DYNAMICS</p>
-      <h2>Learned Aerodynamic Force &amp; Moment Models for Controller-Facing Simulation</h2>
-      <p class="case-subtitle">Physics-informed force/moment modeling · nonlinear 6-DOF rollout · local stability · LQR tracking</p>
-    </div>
-
-<span class="status-pill">IEEE Aerospace 2027 · Accepted</span>
-
-  </header>
-
-  <div class="split-feature research-feature">
-    <div>
-      <p class="case-lede">
-        I am developing physics-informed AH-1S rotorcraft surrogates that learn aerodynamic force and moment maps
-        while retaining the nonlinear rigid-body equations of motion.
-        The research asks whether a learned model preserves flight behavior under trajectory rollout,
-        local linearization, stability analysis, and feedback tracking—not only whether it matches one-step data.
-      </p>
-
-  <div class="research-points">
-    <article>
-      <span>01</span>
-      <h3>Physics-informed 6-DOF simulator</h3>
-      <p>
-        Built a PyTorch/JSBSim pipeline coupling learned force/moment maps to nonlinear rigid-body dynamics
-        across 56 maneuver trajectories, 8 aircraft states, and multiple speed regimes.
-      </p>
-    </article>
-
-    <article>
-      <span>02</span>
-      <h3>Rollout + local dynamic fidelity</h3>
-      <p>
-        A past-12 temporal model cut held-out rollout geomean RMSE from 0.06498 to 0.02293 (64.7%);
-        GroupDRO reduced mean locally unstable-mode incidence from 0.771 to 0.302 (60.8%).
-      </p>
-    </article>
-
-    <article>
-      <span>03</span>
-      <h3>Controller-facing validation</h3>
-      <p>
-        Developed local A/B Jacobian, eigenmode, and paired LQR tracking tests across 27 cases;
-        leading variants achieved about 0.91× baseline tracking error with no observed divergence in nonideal tests.
-      </p>
-    </article>
-  </div>
-
-  <p class="paper-note">
-    <strong>Accepted abstract:</strong>
-    “From Accurate Predictions to Controller-Facing Learned Rotorcraft Surrogates: Stability &amp; Tracking.”
-  </p>
-</div>
-
-<figure class="figure-card rotorcraft-figure">
-  <video autoplay muted loop playsinline controls preload="metadata"
-         aria-label="Matched AH-1S recovery comparison across open-loop and neural controllers">
-    <source src="assets/ah1s_matched_recovery_20s.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <figcaption>
-    <strong>Matched recovery comparison.</strong>
-    Open loop, compact neural, raw-history neural, and quadratic-load controllers are compared on
-    <code>confirmation_046</code>, the largest completed open-loop-error case among the 48 locked trials,
-    selected without considering which model won. This is a 20-second slow-motion presentation of a
-    2-second JSBSim recovery in physical time, not a new 20-second experiment. Spatial displacement is
-    reconstructed by integrating the velocity-error channels. Position is magnified 1000× and attitude
-    120×, with both scale factors shown throughout.
-  </figcaption>
-</figure>
-
-  </div>
-</section>
-
 <section id="hycube" class="case-study compact-case">
   <header class="case-header">
     <div>
@@ -582,6 +507,82 @@
   </div>
 </section>
 
+
+<section id="rotorcraft" class="case-study compact-case">
+  <header class="case-header split">
+    <div>
+      <p class="eyebrow">RESEARCH · FLIGHT DYNAMICS</p>
+      <h2>Learned Aerodynamic Force &amp; Moment Models for Controller-Facing Simulation</h2>
+      <p class="case-subtitle">Physics-informed force/moment modeling · nonlinear 6-DOF rollout · local stability · LQR tracking</p>
+    </div>
+
+<span class="status-pill">IEEE Aerospace 2027 · Accepted</span>
+
+  </header>
+
+  <div class="split-feature research-feature">
+    <div>
+      <p class="case-lede">
+        I am developing physics-informed AH-1S rotorcraft surrogates that learn aerodynamic force and moment maps
+        while retaining the nonlinear rigid-body equations of motion.
+        The research asks whether a learned model preserves flight behavior under trajectory rollout,
+        local linearization, stability analysis, and feedback tracking—not only whether it matches one-step data.
+      </p>
+
+  <div class="research-points">
+    <article>
+      <span>01</span>
+      <h3>Physics-informed 6-DOF simulator</h3>
+      <p>
+        Built a PyTorch/JSBSim pipeline coupling learned force/moment maps to nonlinear rigid-body dynamics
+        across 56 maneuver trajectories, 8 aircraft states, and multiple speed regimes.
+      </p>
+    </article>
+
+    <article>
+      <span>02</span>
+      <h3>Rollout + local dynamic fidelity</h3>
+      <p>
+        A past-12 temporal model cut held-out rollout geomean RMSE from 0.06498 to 0.02293 (64.7%);
+        GroupDRO reduced mean locally unstable-mode incidence from 0.771 to 0.302 (60.8%).
+      </p>
+    </article>
+
+    <article>
+      <span>03</span>
+      <h3>Controller-facing validation</h3>
+      <p>
+        Developed local A/B Jacobian, eigenmode, and paired LQR tracking tests across 27 cases;
+        leading variants achieved about 0.91× baseline tracking error with no observed divergence in nonideal tests.
+      </p>
+    </article>
+  </div>
+
+  <p class="paper-note">
+    <strong>Accepted abstract:</strong>
+    “From Accurate Predictions to Controller-Facing Learned Rotorcraft Surrogates: Stability &amp; Tracking.”
+  </p>
+</div>
+
+<figure class="figure-card rotorcraft-figure">
+  <video autoplay muted loop playsinline controls preload="metadata"
+         aria-label="Matched AH-1S recovery comparison across open-loop and neural controllers">
+    <source src="assets/ah1s_matched_recovery_20s.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption>
+    <strong>Matched recovery comparison.</strong>
+    Open loop, compact neural, raw-history neural, and quadratic-load controllers are compared on
+    <code>confirmation_046</code>, the largest completed open-loop-error case among the 48 locked trials,
+    selected without considering which model won. This is a 20-second slow-motion presentation of a
+    2-second JSBSim recovery in physical time, not a new 20-second experiment. Spatial displacement is
+    reconstructed by integrating the velocity-error channels. Position is magnified 1000× and attitude
+    120×, with both scale factors shown throughout.
+  </figcaption>
+</figure>
+
+  </div>
+</section>
 
 <section id="drone" class="case-study compact-case">
   <header class="case-header">
