@@ -361,14 +361,24 @@
   </div>
 
   <div id="bwb-first" class="case-block bwb-first-test">
-    <div class="case-block-copy">
-      <span class="step">ORIGINAL MODEL / FIRST TEST</span>
-      <h3>CFD and tufts revealed inboard-first separation</h3>
-      <p>
-        I simulated the original model from −2° to +8°, then tested a 1:1 FDM article in the tunnel through 20°.
-        At 14–16°, the tufts show separation starting near the centerbody while the outer panels remain partly attached.
-        That finding informed the revised model above. These are separate test campaigns.
-      </p>
+    <div class="bwb-first-intro">
+      <div class="case-block-copy">
+        <span class="step">ORIGINAL MODEL / FIRST TEST</span>
+        <h3>CFD and tufts revealed inboard-first separation</h3>
+        <p>
+          I simulated the original model from −2° to +8°, then tested a 1:1 FDM article in the tunnel through 20°.
+          At 14–16°, the tufts show separation starting near the centerbody while the outer panels remain partly attached.
+          That finding informed the revised model above. These are separate test campaigns.
+        </p>
+      </div>
+      <figure class="figure-card bwb-cfd-streamline-still">
+        <a href="assets/bwb_first_cfd_streamline_still.png" target="_blank" rel="noopener noreferrer"
+           aria-label="Open first-test CFD streamline view">
+          <img src="assets/bwb_first_cfd_streamline_still.png"
+               alt="CFD streamline view around the original blended-wing-body model">
+        </a>
+        <figcaption><strong>First-test CFD.</strong> Flow-field view of the original model.</figcaption>
+      </figure>
     </div>
 
     <div class="bwb-first-evidence">
