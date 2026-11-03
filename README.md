@@ -594,6 +594,49 @@
   </div>
 </section>
 
+<section id="aero-sae" class="case-study compact-case aero-sae-case">
+  <header class="case-header">
+    <p class="eyebrow">AIRCRAFT STRUCTURES · DESIGN TOOLS</p>
+    <h2>Aerospace SAE at Berkeley: Wing Rib Layout</h2>
+    <p class="case-subtitle">Current design work · parametric rib stations · 3D contour reference</p>
+  </header>
+
+  <div class="aero-sae-intro">
+    <div class="aero-sae-copy">
+      <p>
+        I am developing a parametric rib-layout notebook for Aerospace SAE at Berkeley's current aircraft.
+        Using the team's spanwise VLM lift data and a smoothed CH10 reference profile, I generated trial
+        top- and bottom-wing rib stations and 3D outer contours for CAD review.
+      </p>
+      <p>These are preliminary design views; structural sizing and fabrication details remain under team review.</p>
+    </div>
+    <figure class="figure-card aero-sae-aircraft">
+      <img src="assets/aero_sae_prior_season_aircraft.jpg"
+           alt="Aerospace SAE at Berkeley's blue Team 019 aircraft lifting off during a prior season">
+      <figcaption><strong>Team context.</strong> Prior-season Team 019 aircraft (2024–25). Photo: Aerospace SAE at Berkeley.</figcaption>
+    </figure>
+  </div>
+
+  <div class="media-grid two aero-sae-rib-grid">
+    <figure class="figure-card">
+      <a href="assets/aero_sae_rib_layout.png" target="_blank" rel="noopener noreferrer"
+         aria-label="Open full-size upper and lower wing rib layout">
+        <img src="assets/aero_sae_rib_layout.png"
+             alt="Trial spanwise rib station layout for the top and bottom wings">
+      </a>
+      <figcaption><strong>Rib station layout.</strong> Trial spacing across both exposed half-spans.</figcaption>
+    </figure>
+    <figure class="figure-card">
+      <a href="assets/aero_sae_rib_contours_3d.png" target="_blank" rel="noopener noreferrer"
+         aria-label="Open full-size 3D wing rib contour view">
+        <img src="assets/aero_sae_rib_contours_3d.png"
+             alt="Three-dimensional exterior rib contours for the top and bottom wings">
+      </a>
+      <figcaption><strong>3D rib contours.</strong> Reference geometry for sweep, stagger, and incidence.</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section id="drone" class="case-study compact-case">
   <header class="case-header">
     <div>
