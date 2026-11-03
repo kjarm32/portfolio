@@ -596,23 +596,26 @@
 
 <section id="aero-sae" class="case-study compact-case aero-sae-case">
   <header class="case-header">
-    <p class="eyebrow">AIRCRAFT STRUCTURES · DESIGN TOOLS</p>
-    <h2>Aerospace SAE at Berkeley: Wing Rib Layout</h2>
-    <p class="case-subtitle">Current design work · parametric rib stations · 3D contour reference</p>
+    <p class="eyebrow">AIRCRAFT STRUCTURES · WING DESIGN</p>
+    <h2>Aerospace SAE at Berkeley: Wing Rib Design &amp; Layout</h2>
+    <p class="case-subtitle">Current wing structure · rib stations · 3D CAD references</p>
   </header>
 
   <div class="aero-sae-intro">
     <div class="aero-sae-copy">
       <p>
-        I am developing a parametric rib-layout notebook for Aerospace SAE at Berkeley's current aircraft.
-        Using the team's spanwise VLM lift data and a smoothed CH10 reference profile, I generated trial
-        top- and bottom-wing rib stations and 3D outer contours for CAD review.
+        I am working on the rib design and layout for Aerospace SAE at Berkeley's current aircraft.
+        I built a parametric tool that converts the team's VLM lift distribution, wing planform, and CH10
+        reference profile into trial rib stations and 3D exterior contours. I use these outputs to develop
+        rib spacing and prepare reference geometry for wing CAD and structural design reviews.
       </p>
-      <p>These are preliminary design views; structural sizing and fabrication details remain under team review.</p>
+      <p>Rib-to-spar interfaces, attachment loads, and final sizing remain open before fabrication.</p>
     </div>
     <figure class="figure-card aero-sae-aircraft">
-      <img src="assets/aero_sae_prior_season_aircraft.jpg"
-           alt="Aerospace SAE at Berkeley's blue Team 019 aircraft lifting off during a prior season">
+      <div class="aero-sae-aircraft-frame">
+        <img src="assets/aero_sae_prior_season_aircraft.jpg"
+             alt="Aerospace SAE at Berkeley's blue Team 019 aircraft lifting off during a prior season">
+      </div>
       <figcaption><strong>Team context.</strong> Prior-season Team 019 aircraft (2024–25). Photo: Aerospace SAE at Berkeley.</figcaption>
     </figure>
   </div>
