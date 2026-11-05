@@ -127,7 +127,6 @@
         <h2>Standard Bots</h2>
         <span class="company-context">Series C industrial robotics startup</span>
       </div>
-      <p class="case-subtitle">Mechanical Design &amp; Test Intern · high-load test infrastructure · Long Island, New York</p>
     </div>
   </header>
 
