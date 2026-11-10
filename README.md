@@ -91,7 +91,7 @@
         <span class="card-kicker">FLIGHT DYNAMICS + MODEL VALIDATION</span>
         <h3>Learned Flight Dynamics</h3>
         <p>Aerodynamic force/moment modeling, nonlinear 6-DOF simulation, local stability analysis, and controller-facing validation.</p>
-        <strong class="card-result">First-author abstract accepted · IEEE Aerospace 2027</strong>
+        <strong class="card-result">First-author paper accepted · IEEE Aerospace 2027</strong>
       </div>
     </a>
 
@@ -503,7 +503,7 @@
       <h2>Rotorcraft Flight Dynamics Research</h2>
     </div>
 
-<span class="status-pill">First-author abstract accepted · IEEE Aerospace 2027</span>
+<span class="status-pill">First-author paper accepted · IEEE Aerospace 2027</span>
 
   </header>
 
@@ -546,7 +546,7 @@
   </div>
 
   <p class="paper-note">
-    <strong>First-author accepted abstract:</strong>
+    <strong>Paper No. 2495</strong><br>
     “Controller-Facing Rotorcraft Load Surrogates: Response Fidelity and Mechanism-Informed Memory.”
   </p>
 </div>
