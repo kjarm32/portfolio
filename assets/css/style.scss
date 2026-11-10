@@ -1094,6 +1094,13 @@ body > header:first-child,
   margin-top: 9px;
 }
 
+@media (max-width: 620px) {
+  .rotorcraft-figure video {
+    min-height: 0;
+    height: auto;
+  }
+}
+
 .hycube-context {
   margin-bottom: 22px;
 }
