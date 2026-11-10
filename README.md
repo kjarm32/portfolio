@@ -37,7 +37,6 @@
 
 <section id="featured-work" class="featured-work">
   <header class="section-heading">
-    <p class="eyebrow">SELECTED ENGINEERING</p>
     <h2>Selected work</h2>
   </header>
 

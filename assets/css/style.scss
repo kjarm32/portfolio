@@ -306,7 +306,7 @@ body > header:first-child,
 .featured-card-media.standardbots-render img {
   object-fit: cover;
   object-position: center 53%;
-  transform: scale(1.75);
+  transform: scale(2.6);
 }
 
 .featured-card-media.dark-media {
@@ -1571,11 +1571,15 @@ body > header:first-child,
 }
 
 .drone-body-grid {
-  grid-template-columns: minmax(340px, 0.98fr) minmax(420px, 1.02fr);
+  grid-template-columns: minmax(0, 0.98fr) minmax(0, 1.02fr);
 }
 
 
 @media (max-width: 820px) {
+  .drone-body-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .research-points article {
     grid-template-columns: 32px 1fr;
   }
