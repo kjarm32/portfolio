@@ -421,8 +421,9 @@
 <section id="hycube" class="case-study compact-case">
   <header class="case-header">
     <div>
-      <p class="eyebrow">SPACE HARDWARE</p>
+      <p class="eyebrow">NASA MINNESOTA SPACE GRANT</p>
       <h2>HyCUBE Hypersonic Reentry Vehicle</h2>
+      <p class="case-subtitle">University of Minnesota Small Satellite Program</p>
     </div>
   </header>
 
