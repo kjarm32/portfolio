@@ -127,6 +127,7 @@
         <h2>Standard Bots</h2>
         <span class="company-context">Series C industrial robotics startup</span>
       </div>
+      <a class="text-link" href="https://standardbots.com/" target="_blank" rel="noopener noreferrer">Visit Standard Bots ↗</a>
     </div>
   </header>
 
