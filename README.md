@@ -558,15 +558,13 @@
   </video>
   <figcaption>
     <strong>Matched recovery comparison.</strong>
-    Open loop, compact neural, raw-history neural, and quadratic-load controllers are compared on
-    <code>confirmation_046</code>, the largest completed open-loop-error case among the 48 locked trials,
-    selected without considering which model won. This is a 20-second slow-motion presentation of a
-    2-second JSBSim recovery in physical time, not a new 20-second experiment. Spatial displacement is
-    reconstructed by integrating the velocity-error channels. Position is magnified 1000× and attitude
-    120×, with both scale factors shown throughout.
-    <span class="caption-note"><strong>Display scale.</strong> Offset radius equals normalized eight-state
-    tracking error multiplied by 900. Direction groups longitudinal, lateral-directional, and vertical-pitch
-    channels. This is a visualization, not a geographic path or flight-test footage.</span>
+    Four controllers replay the same 2-second JSBSim disturbance in a 20-second slow-motion clip.
+    <code>confirmation_046</code> had the largest completed open-loop error among 48 locked trials and was
+    selected before model ranking. Displacement is reconstructed from velocity error; position and attitude
+    are magnified 1000× and 120×.
+    <span class="caption-note"><strong>Display scale.</strong> Colored offset radius represents normalized
+    eight-state tracking error at 900× scale, grouped across longitudinal, lateral-directional, and
+    vertical-pitch channels. This is simulation visualization, not a geographic path or flight-test footage.</span>
   </figcaption>
 </figure>
 
