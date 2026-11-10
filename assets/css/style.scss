@@ -2,25 +2,25 @@
 ---
 
 @import "{{ site.theme }}";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
 
 /* =========================================================
    Kevin Armstrong II — Engineering Portfolio
-   Warmer, cleaner, work-first presentation
+   Technical editorial presentation
    ========================================================= */
 
 :root {
-  --bg: #12110f;
-  --surface: #1a1815;
-  --surface-2: #24211d;
-  --ink: #f4f0e8;
-  --ink-2: #d7d0c5;
-  --muted: #aaa094;
-  --line: #3b3732;
-  --line-dark: #6e655c;
-  --accent: #c99b6b;
-  --accent-2: #e2b17d;
-  --radius: 8px;
+  --bg: #f5f7f7;
+  --surface: #ffffff;
+  --surface-2: #eaf0f2;
+  --ink: #172630;
+  --ink-2: #344a56;
+  --muted: #566b76;
+  --line: #d6e0e4;
+  --line-dark: #9aafb9;
+  --accent: #245f7b;
+  --accent-2: #174b66;
+  --radius: 3px;
 }
 
 html {
@@ -31,7 +31,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -71,10 +71,10 @@ body > header:first-child,
 .markdown-body h3,
 .markdown-body h4 {
   color: var(--ink);
-  font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: 760;
-  line-height: 1.07;
-  letter-spacing: -0.04em;
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
 }
 
 .markdown-body h1,
@@ -102,8 +102,9 @@ body > header:first-child,
   margin: 0 0 8px !important;
   color: var(--accent);
   font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.075em;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-weight: 600;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
 }
 
@@ -122,9 +123,7 @@ body > header:first-child,
   margin-bottom: 34px;
   padding: 12px 0;
   border-bottom: 1px solid var(--line);
-  background: rgba(251, 247, 241, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(245, 247, 247, 0.96);
 }
 
 .portfolio-brand {
@@ -133,9 +132,9 @@ body > header:first-child,
   width: 34px;
   height: 34px;
   border: 1px solid var(--line-dark);
-  border-radius: 5px;
+  border-radius: 2px;
   background: var(--surface);
-  color: var(--accent-2) !important;
+  color: var(--ink) !important;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -151,8 +150,15 @@ body > header:first-child,
 .portfolio-nav-links a {
   color: var(--ink-2) !important;
   font-size: 13px;
-  font-weight: 650;
+  font-weight: 500;
   text-decoration: none !important;
+}
+
+.portfolio-nav-links a:hover,
+.portfolio-nav-links a:focus-visible {
+  color: var(--accent) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 5px;
 }
 
 /* -------------------------
@@ -175,7 +181,7 @@ body > header:first-child,
 .hero-compact h1 {
   margin: 0 !important;
   font-size: clamp(44px, 6vw, 68px);
-  letter-spacing: -0.06em;
+  letter-spacing: -0.04em;
 }
 
 .hero-title {
@@ -183,7 +189,7 @@ body > header:first-child,
   max-width: 790px;
   color: var(--ink);
   font-size: clamp(24px, 3vw, 32px);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.22 !important;
   letter-spacing: -0.03em;
 }
@@ -207,23 +213,23 @@ body > header:first-child,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 96px;
-  padding: 10px 16px;
-  border: 1px solid var(--line-dark);
-  border-radius: 999px;
-  background: var(--surface);
+  padding: 4px 0 6px;
+  border: 0;
+  border-bottom: 1px solid var(--line-dark);
+  border-radius: 0;
+  background: transparent;
   color: var(--ink) !important;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   text-decoration: none !important;
-  transition: border-color 150ms ease, background 150ms ease, transform 150ms ease;
+  transition: border-color 150ms ease, color 150ms ease;
 }
 
-.hero-link:hover {
-  background: var(--surface-2);
+.hero-link:hover,
+.hero-link:focus-visible {
+  color: var(--accent) !important;
   border-color: var(--accent);
-  transform: translateY(-1px);
 }
 
 .hero-headshot {
@@ -232,51 +238,8 @@ body > header:first-child,
   object-fit: cover;
   object-position: center 18%;
   border: 1px solid var(--line-dark);
-  border-radius: 6px;
-  background: #d4d0cb;
-}
-
-/* -------------------------
-   Experience brief
-   ------------------------- */
-
-.experience-brief {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-bottom: 32px;
-  border-top: 1px solid var(--line);
-}
-
-.experience-brief-item {
-  min-height: 108px;
-  padding: 20px 22px 21px 0;
-}
-
-.experience-brief-item + .experience-brief-item {
-  padding-left: 22px;
-  border-left: 1px solid var(--line);
-}
-
-.experience-brief-item span {
-  display: block;
-  color: var(--muted);
-  font-size: 9px;
-  font-weight: 750;
-  letter-spacing: 0.07em;
-}
-
-.experience-brief-item strong {
-  display: block;
-  margin-top: 5px;
-  color: var(--ink);
-  font-size: 16px;
-}
-
-.experience-brief-item p {
-  margin: 4px 0 0 !important;
-  color: var(--ink-2);
-  font-size: 12.5px;
-  line-height: 1.48 !important;
+  border-radius: 2px;
+  background: var(--surface-2);
 }
 
 /* -------------------------
@@ -284,7 +247,7 @@ body > header:first-child,
    ------------------------- */
 
 .featured-work {
-  margin: 64px 0 32px;
+  margin: 54px 0 66px;
   scroll-margin-top: 72px;
 }
 
@@ -299,8 +262,8 @@ body > header:first-child,
 
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .featured-card {
@@ -310,19 +273,18 @@ body > header:first-child,
   background: var(--surface);
   color: var(--ink) !important;
   text-decoration: none !important;
-  transition: border-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+  transition: border-color 150ms ease;
 }
 
-.featured-card:hover {
-  border-color: var(--line-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(36, 28, 19, 0.06);
+.featured-card:hover,
+.featured-card:focus-visible {
+  border-color: var(--accent);
 }
 
 .featured-card-media {
-  height: 165px;
+  height: 220px;
   overflow: hidden;
-  background: #efe8de;
+  background: var(--surface-2);
 }
 
 .featured-card-media img,
@@ -333,22 +295,22 @@ body > header:first-child,
 }
 
 .featured-card[href="#bwb"] .featured-card-media img {
-  transform: scale(1.6);
+  transform: scale(1.25);
   transform-origin: 54% 48%;
 }
 
 .featured-card-media.standardbots-render {
-  background: #1e1c1a;
+  background: #172630;
 }
 
 .featured-card-media.standardbots-render img {
   object-fit: cover;
   object-position: center 53%;
-  transform: scale(2.60);
+  transform: scale(1.75);
 }
 
 .featured-card-media.dark-media {
-  background: #0b1219;
+  background: #172630;
 }
 
 .featured-card-media.dark-media img,
@@ -357,28 +319,29 @@ body > header:first-child,
 }
 
 .featured-card-copy {
-  padding: 15px 15px 14px;
+  padding: 18px 20px 19px;
 }
 
 .card-kicker {
   display: block;
   color: var(--accent);
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.07em;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .featured-card h3 {
   margin: 7px 0 0 !important;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.12;
 }
 
 .featured-card p {
-  min-height: 76px;
+  min-height: 0;
   margin: 9px 0 0 !important;
-  color: var(--muted);
-  font-size: 12.5px;
+  color: var(--ink-2);
+  font-size: 14px;
   line-height: 1.48 !important;
 }
 
@@ -388,7 +351,7 @@ body > header:first-child,
   padding-top: 11px;
   border-top: 1px solid var(--line);
   color: var(--ink);
-  font-size: 12.5px;
+  font-size: 13px;
 }
 
 /* -------------------------
@@ -565,7 +528,7 @@ body > header:first-child,
   overflow: hidden;
   margin: 0;
   border: 1px solid var(--line);
-  border-radius: 7px;
+  border-radius: var(--radius);
   background: var(--surface);
 }
 
@@ -573,7 +536,7 @@ body > header:first-child,
 .figure-card video {
   display: block;
   width: 100%;
-  background: #f0ece7;
+  background: var(--surface-2);
 }
 
 .fixture-image,
@@ -618,9 +581,10 @@ body > header:first-child,
 
 .workstream-grid article > span {
   color: var(--accent);
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.075em;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .workstream-grid h3 {
@@ -667,7 +631,7 @@ body > header:first-child,
   width: 100%;
   height: 335px;
   object-fit: cover;
-  background: #171512;
+  background: #172630;
 }
 
 .bwb-hero-media video {
@@ -739,17 +703,12 @@ body > header:first-child,
 }
 
 @media (max-width: 620px) {
+  .media-grid.bwb-design-grid {
+    grid-template-columns: 1fr;
+  }
+
   .bwb-design-grid .figure-card > a {
-    height: 95px;
-  }
-
-  .bwb-design-grid .figure-card figcaption,
-  .bwb-design-grid .figure-card figcaption strong {
-    font-size: 10px;
-  }
-
-  .bwb-design-grid .figure-card figcaption {
-    padding: 7px 6px;
+    height: 185px;
   }
 }
 
@@ -763,8 +722,8 @@ body > header:first-child,
   overflow: hidden;
   margin: 0 0 14px;
   border: 1px solid var(--line);
-  border-radius: 7px;
-  background: #ece4d9;
+  border-radius: var(--radius);
+  background: var(--surface-2);
 }
 
 .case-hero img {
@@ -1119,7 +1078,7 @@ body > header:first-child,
 }
 
 .rotorcraft-figure {
-  background: #0c1319;
+  background: #172630;
 }
 
 .rotorcraft-figure img,
@@ -1127,7 +1086,7 @@ body > header:first-child,
   min-height: 300px;
   max-height: 420px;
   object-fit: contain;
-  background: #0c1319;
+  background: #172630;
 }
 
 .hycube-context {
@@ -1137,7 +1096,7 @@ body > header:first-child,
 .hycube-context .figure-card img {
   height: 285px;
   object-fit: contain;
-  background: #f7f3ed;
+  background: var(--surface-2);
 }
 
 .hycube-detail-grid {
@@ -1155,7 +1114,7 @@ body > header:first-child,
 .hycube-plot-card img {
   height: 250px;
   object-fit: contain;
-  background: #fffdfa;
+  background: var(--surface);
   padding: 8px;
 }
 
@@ -1176,7 +1135,7 @@ body > header:first-child,
 .drone-hero .figure-card img {
   height: 315px;
   object-fit: contain;
-  background: #f7f3ed;
+  background: var(--surface-2);
 }
 
 .drone-hero .figure-card:nth-child(2) img {
@@ -1192,10 +1151,7 @@ body > header:first-child,
 }
 
 .aero-sae-intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 330px;
-  align-items: start;
-  gap: 22px;
+  max-width: 800px;
   margin-bottom: 16px;
 }
 
@@ -1207,38 +1163,10 @@ body > header:first-child,
   line-height: 1.65 !important;
 }
 
-.aero-sae-aircraft-frame {
-  height: 185px;
-  overflow: hidden;
-}
-
-.aero-sae-aircraft-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 56%;
-  transform: scale(1.6);
-  transform-origin: 25% 58%;
-}
-
-.aero-sae-aircraft figcaption {
-  font-size: 11.5px;
-}
-
 .media-grid.two.aero-sae-rib-grid .figure-card img {
   height: 315px;
   object-fit: contain;
   background: #fff;
-}
-
-@media (max-width: 820px) {
-  .aero-sae-intro {
-    grid-template-columns: 1fr;
-  }
-
-  .aero-sae-aircraft {
-    width: min(100%, 430px);
-  }
 }
 
 .drone-copy p {
@@ -1249,14 +1177,14 @@ body > header:first-child,
 }
 
 .drone-cfd-pair {
-  background: #f7f3ed;
+  background: var(--surface-2);
 }
 
 .drone-cfd-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  background: #f7f3ed;
+  background: var(--surface-2);
 }
 
 .drone-cfd-inner img {
@@ -1264,7 +1192,7 @@ body > header:first-child,
   height: 255px;
   object-fit: contain;
   padding: 5px 4px 0;
-  background: #f7f3ed;
+  background: var(--surface-2);
 }
 
 /* -------------------------
@@ -1298,20 +1226,6 @@ body > header:first-child,
    ------------------------- */
 
 @media (max-width: 1040px) {
-  .featured-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .experience-brief {
-    grid-template-columns: 1fr;
-  }
-
-  .experience-brief-item + .experience-brief-item {
-    padding-left: 0;
-    border-left: 0;
-    border-top: 1px solid var(--line);
-  }
-
   .split-feature,
   .hycube-detail-grid,
   .drone-body-grid {
@@ -1488,42 +1402,6 @@ body > header:first-child,
 }
 
 
-/* Requested dark-theme finish — no layout changes */
-.featured-card-media,
-.figure-card img,
-.figure-card video,
-.case-hero,
-.hycube-context .figure-card img,
-.hycube-plot-card img,
-.drone-hero .figure-card img,
-.drone-cfd-pair,
-.drone-cfd-inner,
-.drone-cfd-inner img {
-  background: #1d1b18;
-}
-
-.portfolio-nav {
-  background: rgba(18, 17, 15, 0.94);
-}
-
-.hero-headshot {
-  background: #24211d;
-}
-
-.featured-card,
-.figure-card {
-  background: var(--surface);
-}
-
-.hero-link {
-  background: transparent;
-  color: var(--ink) !important;
-}
-
-.hero-link:hover {
-  background: var(--surface-2);
-}
-
 .markdown-body table,
 .markdown-body table tr,
 .markdown-body table th,
@@ -1533,24 +1411,16 @@ body > header:first-child,
   border-color: var(--line);
 }
 
-@media print {
-  body {
-    background: var(--bg);
-    color: var(--ink);
-  }
-}
-
-
-/* Safe refinements carried forward after stylesheet recovery */
+/* Detail refinements */
 .title-with-note {
   align-items: center;
   gap: 10px;
 }
 
 .title-with-note .company-context {
-  color: #d8c5ae;
+  color: var(--muted);
   font-size: 18px;
-  font-weight: 650;
+  font-weight: 500;
 }
 
 .title-with-note .company-context::before {
@@ -1561,7 +1431,7 @@ body > header:first-child,
 
 .figure-card figcaption {
   padding: 11px 13px 13px;
-  color: #c8bfb3;
+  color: var(--muted);
   font-size: 13.25px;
   font-weight: 500;
   line-height: 1.5;
@@ -1669,7 +1539,7 @@ body > header:first-child,
   padding: 13px 14px 15px !important;
   border-top: 1px solid var(--line);
   background: var(--surface) !important;
-  color: #c8bfb3 !important;
+  color: var(--muted) !important;
 }
 
 .drone-cad-card figcaption strong {
@@ -1691,7 +1561,7 @@ body > header:first-child,
   object-position: center 52%;
   transform: none !important;
   padding: 0 !important;
-  background: #171512 !important;
+  background: #172630 !important;
 }
 
 .drone-flight-card figcaption {
@@ -1766,7 +1636,7 @@ body > header:first-child,
   padding: 12px 14px 14px !important;
   border-top: 1px solid var(--line);
   background: var(--surface) !important;
-  color: #c8bfb3 !important;
+  color: var(--muted) !important;
 }
 
 .bwb-geometry-card figcaption strong {
@@ -1800,7 +1670,7 @@ body > header:first-child,
   padding: 13px 15px 15px !important;
   border-top: 1px solid var(--line);
   background: var(--surface) !important;
-  color: #c8bfb3 !important;
+  color: var(--muted) !important;
 }
 
 .bwb-cfd-overview figcaption strong {
@@ -1824,11 +1694,11 @@ body > header:first-child,
   line-height: 1.45;
 }
 
-/* Technical appendix table: keep every row native to the dark theme. */
+/* Technical appendix table */
 .table-wrap table {
   min-width: 360px;
   border-collapse: collapse;
-  background: #11100e;
+  background: var(--surface);
   border: 1px solid var(--line);
 }
 
@@ -1839,23 +1709,23 @@ body > header:first-child,
 }
 
 .table-wrap thead th {
-  background: #14120f !important;
-  color: #f3ede6 !important;
-  font-weight: 750;
+  background: var(--surface-2) !important;
+  color: var(--ink) !important;
+  font-weight: 600;
 }
 
 .table-wrap tbody tr:nth-child(odd) td {
-  background: #0f0e0c !important;
-  color: #ece3d7 !important;
+  background: var(--surface) !important;
+  color: var(--ink-2) !important;
 }
 
 .table-wrap tbody tr:nth-child(even) td {
-  background: #171512 !important;
-  color: #ece3d7 !important;
+  background: var(--bg) !important;
+  color: var(--ink-2) !important;
 }
 
 .table-wrap tbody td strong {
-  color: #fff !important;
+  color: var(--ink) !important;
 }
 
 @media (max-width: 820px) {
@@ -1880,7 +1750,7 @@ body > header:first-child,
 .media-grid.two.bwb-rig-grid .figure-card video {
   height: 310px;
   object-fit: contain;
-  background: #171512;
+  background: #172630;
 }
 
 @media (max-width: 820px) {

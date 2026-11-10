@@ -1,11 +1,11 @@
 <nav class="portfolio-nav" aria-label="Portfolio navigation">
   <a class="portfolio-brand" href="#top">KA</a>
   <div class="portfolio-nav-links">
-    <a href="#experience">Mechanical Design</a>
-    <a href="#bwb">Aerodynamics</a>
-    <a href="#hycube">Flight Hardware</a>
-    <a href="#drone">Vehicle Integration</a>
-    <a href="#rotorcraft">Flight Dynamics</a>
+    <a href="#experience">Robotics</a>
+    <a href="#bwb">Aircraft</a>
+    <a href="#hycube">Space</a>
+    <a href="#rotorcraft">Research</a>
+    <a href="#drone">Drone</a>
   </div>
 </nav>
 
@@ -38,7 +38,7 @@
 <section id="featured-work" class="featured-work">
   <header class="section-heading">
     <p class="eyebrow">SELECTED ENGINEERING</p>
-    <h2>Work</h2>
+    <h2>Selected work</h2>
   </header>
 
   <div class="featured-grid">
@@ -96,26 +96,6 @@
       </div>
     </a>
 
-  </div>
-</section>
-
-<section class="experience-brief" aria-label="Engineering focus">
-  <div class="experience-brief-item">
-    <span>MECHANICAL DESIGN + TEST</span>
-    <strong>Standard Bots</strong>
-    <p>High-load test hardware · mechanical interfaces · robot assembly · validation</p>
-  </div>
-
-  <div class="experience-brief-item">
-    <span>AIRCRAFT AERODYNAMICS</span>
-    <strong>Blended-Wing-Body Aircraft</strong>
-    <p>Outer-mold-line design · CFD verification · wind-tunnel testing · flow visualization</p>
-  </div>
-
-  <div class="experience-brief-item">
-    <span>FLIGHT DYNAMICS RESEARCH</span>
-    <strong>UC Berkeley</strong>
-    <p>Aerodynamic force/moment modeling · nonlinear simulation · IEEE Aerospace 2027</p>
   </div>
 </section>
 
@@ -598,7 +578,7 @@
   <header class="case-header">
     <p class="eyebrow">AIRCRAFT STRUCTURES · WING DESIGN</p>
     <h2>Aerospace SAE at Berkeley: Wing Rib Design &amp; Layout</h2>
-    <p class="case-subtitle">Current wing structure · rib stations · 3D CAD references</p>
+    <p class="case-subtitle">In progress · parametric rib layout and CAD reference geometry</p>
   </header>
 
   <div class="aero-sae-intro">
@@ -611,13 +591,6 @@
       </p>
       <p>Rib-to-spar interfaces, attachment loads, and final sizing remain open before fabrication.</p>
     </div>
-    <figure class="figure-card aero-sae-aircraft">
-      <div class="aero-sae-aircraft-frame">
-        <img src="assets/aero_sae_prior_season_aircraft.jpg"
-             alt="Aerospace SAE at Berkeley's blue Team 019 aircraft lifting off during a prior season">
-      </div>
-      <figcaption><strong>Team context.</strong> Prior-season Team 019 aircraft (2024–25). Photo: Aerospace SAE at Berkeley.</figcaption>
-    </figure>
   </div>
 
   <div class="media-grid two aero-sae-rib-grid">
