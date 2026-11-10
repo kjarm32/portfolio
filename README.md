@@ -91,7 +91,7 @@
         <span class="card-kicker">FLIGHT DYNAMICS + MODEL VALIDATION</span>
         <h3>Learned Flight Dynamics</h3>
         <p>Aerodynamic force/moment modeling, nonlinear 6-DOF simulation, local stability analysis, and controller-facing validation.</p>
-        <strong class="card-result">IEEE Aerospace 2027 · Accepted</strong>
+        <strong class="card-result">First-author abstract accepted · IEEE Aerospace 2027</strong>
       </div>
     </a>
 
@@ -105,8 +105,8 @@
       <div class="title-with-note">
         <h2>Standard Bots</h2>
         <span class="company-context">Series C industrial robotics startup</span>
+        <a class="text-link company-link" href="https://standardbots.com/" target="_blank" rel="noopener noreferrer">Website ↗</a>
       </div>
-      <a class="text-link" href="https://standardbots.com/" target="_blank" rel="noopener noreferrer">Visit Standard Bots ↗</a>
     </div>
   </header>
 
@@ -214,9 +214,8 @@
 <section id="bwb" class="case-study">
   <header class="case-header split">
     <div>
-      <p class="eyebrow">AIRCRAFT DESIGN · EXPERIMENTAL AERODYNAMICS</p>
-      <h2>Blended-Wing-Body Aircraft Design &amp; Testing</h2>
-      <p class="case-subtitle">Two BWB iterations · first test: CFD and tufts · second test: revised model and fog</p>
+      <p class="eyebrow">EXPERIMENTAL AERODYNAMICS</p>
+      <h2>Blended-Wing-Body Aircraft</h2>
     </div>
 
 <a class="text-link" href="assets/BWB_Project_Showcase_Tufts%20(4).html">First test technical showcase ↗</a>
@@ -422,9 +421,8 @@
 <section id="hycube" class="case-study compact-case">
   <header class="case-header">
     <div>
-      <p class="eyebrow">NASA MINNESOTA SPACE GRANT · UMN SMALL SATELLITE PROGRAM</p>
+      <p class="eyebrow">SPACE HARDWARE</p>
       <h2>HyCUBE Hypersonic Reentry Vehicle</h2>
-      <p class="case-subtitle">Thermal instrumentation · calibration · payload integration · high-altitude flight operations</p>
     </div>
   </header>
 
@@ -500,12 +498,11 @@
 <section id="rotorcraft" class="case-study compact-case">
   <header class="case-header split">
     <div>
-      <p class="eyebrow">RESEARCH · FLIGHT DYNAMICS</p>
-      <h2>Learned Aerodynamic Force &amp; Moment Models for Controller-Facing Simulation</h2>
-      <p class="case-subtitle">Physics-informed force/moment modeling · nonlinear 6-DOF rollout · local stability · LQR tracking</p>
+      <p class="eyebrow">FLIGHT DYNAMICS RESEARCH</p>
+      <h2>Rotorcraft Flight Dynamics Research</h2>
     </div>
 
-<span class="status-pill">IEEE Aerospace 2027 · Accepted</span>
+<span class="status-pill">First-author abstract accepted · IEEE Aerospace 2027</span>
 
   </header>
 
@@ -514,8 +511,8 @@
       <p class="case-lede">
         I am developing physics-informed AH-1S rotorcraft surrogates that learn aerodynamic force and moment maps
         while retaining the nonlinear rigid-body equations of motion.
-        The research asks whether a learned model preserves flight behavior under trajectory rollout,
-        local linearization, stability analysis, and feedback tracking—not only whether it matches one-step data.
+        The research evaluates flight behavior through trajectory rollout, local linearization,
+        stability analysis, and feedback tracking alongside one-step accuracy.
       </p>
 
   <div class="research-points">
@@ -548,8 +545,8 @@
   </div>
 
   <p class="paper-note">
-    <strong>Accepted abstract:</strong>
-    “From Accurate Predictions to Controller-Facing Learned Rotorcraft Surrogates: Stability &amp; Tracking.”
+    <strong>First-author accepted abstract:</strong>
+    “Controller-Facing Rotorcraft Load Surrogates: Response Fidelity and Mechanism-Informed Memory.”
   </p>
 </div>
 
@@ -567,6 +564,9 @@
     2-second JSBSim recovery in physical time, not a new 20-second experiment. Spatial displacement is
     reconstructed by integrating the velocity-error channels. Position is magnified 1000× and attitude
     120×, with both scale factors shown throughout.
+    <span class="caption-note"><strong>Display scale.</strong> Offset radius equals normalized eight-state
+    tracking error multiplied by 900. Direction groups longitudinal, lateral-directional, and vertical-pitch
+    channels. This is a visualization, not a geographic path or flight-test footage.</span>
   </figcaption>
 </figure>
 
@@ -575,9 +575,9 @@
 
 <section id="aero-sae" class="case-study compact-case aero-sae-case">
   <header class="case-header">
-    <p class="eyebrow">AIRCRAFT STRUCTURES · WING DESIGN</p>
-    <h2>Aerospace SAE at Berkeley: Wing Rib Design &amp; Layout</h2>
-    <p class="case-subtitle">In progress · parametric rib layout and CAD reference geometry</p>
+    <p class="eyebrow">AEROSPACE SAE AT BERKELEY</p>
+    <h2>Wing Rib Design &amp; Layout</h2>
+    <p class="case-subtitle">In progress: parametric rib layout and CAD reference geometry</p>
   </header>
 
   <div class="aero-sae-intro">
@@ -615,9 +615,8 @@
 <section id="drone" class="case-study compact-case">
   <header class="case-header">
     <div>
-      <p class="eyebrow">MECHANICAL INTEGRATION · MECHANISM DESIGN · FLIGHT TEST</p>
-      <h2>Drone Payload Integration: Mechanism, CFD &amp; Flight Test</h2>
-      <p class="case-subtitle">CAD · mechanism design · mechanical integration · DfAM · CFD analysis · loaded flight testing</p>
+      <p class="eyebrow">MECHANICAL DESIGN AND FLIGHT TEST</p>
+      <h2>Drone Payload Integration</h2>
     </div>
   </header>
 

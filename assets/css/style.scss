@@ -1089,6 +1089,11 @@ body > header:first-child,
   background: #172630;
 }
 
+.rotorcraft-figure .caption-note {
+  display: block;
+  margin-top: 9px;
+}
+
 .hycube-context {
   margin-bottom: 22px;
 }
@@ -1424,8 +1429,37 @@ body > header:first-child,
 }
 
 .title-with-note .company-context::before {
-  content: none;
-  margin-right: 0;
+  content: "|";
+  margin-right: 10px;
+  color: var(--line-dark);
+  font-weight: 400;
+}
+
+.title-with-note .company-link {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.title-with-note .company-link::before {
+  content: "|";
+  margin-right: 10px;
+  color: var(--line-dark);
+  font-weight: 400;
+}
+
+@media (max-width: 620px) {
+  .title-with-note h2 {
+    flex-basis: 100%;
+  }
+
+  .title-with-note .company-context,
+  .title-with-note .company-link {
+    font-size: 13px;
+  }
+
+  .title-with-note .company-context::before {
+    content: none;
+  }
 }
 
 
