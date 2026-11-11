@@ -102,7 +102,7 @@
   <header class="case-header standardbots-header">
     <div>
       <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
-      <h2 class="standardbots-title">Standard Bots <span>| Series C industrial robotics startup</span> <a class="company-website" href="https://standardbots.com/" target="_blank" rel="noopener noreferrer">| Website ↗</a></h2>
+      <h2 class="standardbots-title">Standard Bots <span>| Series C industrial robotics startup</span> <a class="company-website" href="https://standardbots.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></h2>
     </div>
   </header>
 
