@@ -1,8 +1,8 @@
 <nav class="portfolio-nav" aria-label="Portfolio navigation">
   <a class="portfolio-brand" href="#top">KA</a>
   <div class="portfolio-nav-links">
-    <a href="#experience">Robotics</a>
     <a href="#bwb">Aircraft</a>
+    <a href="#experience">Robotics</a>
     <a href="#hycube">Space</a>
     <a href="#rotorcraft">Research</a>
     <a href="#drone">Drone</a>
@@ -15,10 +15,10 @@
   <div class="hero-copy">
     <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
     <h1>Kevin Armstrong II</h1>
-    <p class="hero-title">Mechanical Design, Build &amp; Test · Aerodynamics &amp; Flight Hardware.</p>
+    <p class="hero-title">Aircraft Aerodynamics · Design, Build &amp; Test · Flight Hardware.</p>
     <p class="hero-summary">
-      I design, build, integrate, and test mechanical and flight hardware, using structural analysis, CFD,
-      and measured results to guide design decisions.
+      I design, build, and test aircraft and flight hardware, using CFD, flow visualization,
+      and measured performance to guide each design iteration.
     </p>
     <div class="hero-links">
       <a class="hero-link" href="https://app.notion.com/p/Zipline-Aerodynamics-Presentation-Kevin-Armstrong-II-3f1f045049e780f89fbadf1b7cc8d9f6"
@@ -41,19 +41,6 @@
   </header>
 
   <div class="featured-grid">
-    <a class="featured-card" href="#experience">
-      <div class="featured-card-media standardbots-render">
-        <img src="assets/Standard%20Bots%20RO1.png"
-             alt="Standard Bots RO1 industrial robot">
-      </div>
-      <div class="featured-card-copy">
-        <span class="card-kicker">MECHANICAL DESIGN + TEST</span>
-        <h3>Standard Bots</h3>
-        <p>High-load test infrastructure, mechanical interfaces, structural analysis, assembly, calibration, and validation.</p>
-        <strong class="card-result">100 hr loaded burn-in</strong>
-      </div>
-    </a>
-
     <a class="featured-card" href="#bwb">
       <div class="featured-card-media">
         <img src="assets/bwb_fog_hero.jpg"
@@ -64,6 +51,19 @@
         <h3>Blended-Wing-Body Aircraft</h3>
         <p>Two linked test articles: the first mapped separation; the revised model explores its flow and force trends.</p>
         <strong class="card-result">CAD → fabrication → physical test</strong>
+      </div>
+    </a>
+
+    <a class="featured-card" href="#experience">
+      <div class="featured-card-media standardbots-render">
+        <img src="assets/Standard%20Bots%20RO1.png"
+             alt="Standard Bots RO1 industrial robot">
+      </div>
+      <div class="featured-card-copy">
+        <span class="card-kicker">MECHANICAL DESIGN + TEST</span>
+        <h3>Standard Bots</h3>
+        <p>High-load test infrastructure, mechanical interfaces, structural analysis, assembly, calibration, and validation.</p>
+        <strong class="card-result">100 hr loaded burn-in</strong>
       </div>
     </a>
 
@@ -94,115 +94,6 @@
         <strong class="card-result">First-author paper accepted · IEEE Aerospace 2027</strong>
       </div>
     </a>
-
-  </div>
-</section>
-
-<section id="experience" class="case-study standardbots-case">
-  <header class="case-header standardbots-header">
-    <div>
-      <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
-      <h2 class="standardbots-title">Standard Bots <span>| Series C industrial robotics startup</span> <a class="company-website" href="https://standardbots.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></h2>
-    </div>
-  </header>
-
-  <p class="case-lede standardbots-lede">
-    Designed and commissioned mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
-    load-path analysis, static FEA, fabrication, assembly, instrumentation, and validation.
-    My work focused on applying representative loads, screening joint reliability before full robot assembly,
-    and building robust interfaces for high-load production test equipment.
-  </p>
-
-  <div class="metric-row three">
-    <div>
-      <strong>100 hr</strong>
-      <span>automated loaded burn-in</span>
-    </div>
-    <div>
-      <strong>&gt;2.5 kN·m</strong>
-      <span>momentary interface load verified</span>
-    </div>
-    <div>
-      <strong>1st at company</strong>
-      <span>loaded joint screening before full robot assembly</span>
-    </div>
-  </div>
-
-  <div class="standardbots-fixture-grid">
-    <figure class="figure-card">
-      <img class="fixture-image"
-           src="assets/standardbots_test_hardware.jpg"
-           alt="Loaded burn-in station fixture developed at Standard Bots">
-      <figcaption>
-        <strong>Automated loaded burn-in fixture.</strong>
-        Built station used to screen joints under representative load before full robot assembly.
-      </figcaption>
-    </figure>
-
-<figure class="figure-card">
-  <video class="cad-video"
-         autoplay muted loop playsinline controls preload="metadata"
-         poster="assets/standardbots_test_hardware.jpg">
-    <source src="assets/Loaded%20Burn-in%20View%20+%20Still.mp4" type="video/mp4">
-  </video>
-  <figcaption>
-    <strong>Exploded CAD sequence.</strong>
-    Fixture architecture, coupling stack, support structure, and test-side interfaces coming together.
-  </figcaption>
-</figure>
-
-  </div>
-
-  <div class="workstream-grid">
-    <article>
-      <span>01</span>
-      <h3>Automated load-testing station</h3>
-      <p>
-        Designed an automated pre-assembly burn-in station that applied representative torque during long-duration cycling,
-        integrated torque and position sensing, and screened joints before complete robot assembly.
-      </p>
-    </article>
-
-<article>
-  <span>02</span>
-  <h3>High-load dynamometer interface</h3>
-  <p>
-    Designed a precision mechanical interface and checked bolted, doweled, keyed, and shaft load paths
-    with hand calculations and static FEA before releasing the manufactured part.
-  </p>
-</article>
-
-<article>
-  <span>03</span>
-  <h3>Assembly, checkout + production support</h3>
-  <p>
-    Assembled and calibrated three complete robot arms, programmed checkout motion routines,
-    improved technician-facing build instructions, and trained technicians.
-  </p>
-</article>
-
-  </div>
-
-  <div class="evidence-grid">
-    <figure class="figure-card assembly-photo">
-      <img src="assets/standardbots_build_photo.jpg"
-           alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
-      <figcaption>
-        <strong>Assembly + calibration.</strong>
-        Bringing up and validating a completed robot arm.
-      </figcaption>
-    </figure>
-
-<figure class="figure-card">
-  <video autoplay muted loop playsinline controls preload="metadata"
-         poster="assets/standardbots_motion_poster.jpg">
-    <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
-  </video>
-  <figcaption>
-    <strong>Checkout routine.</strong>
-    Arm executing a motion routine I programmed while bringing up the completed assembly.
-  </figcaption>
-</figure>
 
   </div>
 </section>
@@ -412,6 +303,115 @@
 </div>
 
   </details>
+</section>
+
+<section id="experience" class="case-study standardbots-case">
+  <header class="case-header standardbots-header">
+    <div>
+      <p class="eyebrow">PROFESSIONAL EXPERIENCE · SUMMER 2026</p>
+      <h2 class="standardbots-title">Standard Bots <span>| Series C industrial robotics startup</span> <a class="company-website" href="https://standardbots.com/" target="_blank" rel="noopener noreferrer">Website ↗</a></h2>
+    </div>
+  </header>
+
+  <p class="case-lede standardbots-lede">
+    Designed and commissioned mechanical hardware and test infrastructure for six-axis industrial robots across CAD,
+    load-path analysis, static FEA, fabrication, assembly, instrumentation, and validation.
+    My work focused on applying representative loads, screening joint reliability before full robot assembly,
+    and building robust interfaces for high-load production test equipment.
+  </p>
+
+  <div class="metric-row three">
+    <div>
+      <strong>100 hr</strong>
+      <span>automated loaded burn-in</span>
+    </div>
+    <div>
+      <strong>&gt;2.5 kN·m</strong>
+      <span>momentary interface load verified</span>
+    </div>
+    <div>
+      <strong>1st at company</strong>
+      <span>loaded joint screening before full robot assembly</span>
+    </div>
+  </div>
+
+  <div class="standardbots-fixture-grid">
+    <figure class="figure-card">
+      <img class="fixture-image"
+           src="assets/standardbots_test_hardware.jpg"
+           alt="Loaded burn-in station fixture developed at Standard Bots">
+      <figcaption>
+        <strong>Automated loaded burn-in fixture.</strong>
+        Built station used to screen joints under representative load before full robot assembly.
+      </figcaption>
+    </figure>
+
+<figure class="figure-card">
+  <video class="cad-video"
+         autoplay muted loop playsinline controls preload="metadata"
+         poster="assets/standardbots_test_hardware.jpg">
+    <source src="assets/Loaded%20Burn-in%20View%20+%20Still.mp4" type="video/mp4">
+  </video>
+  <figcaption>
+    <strong>Exploded CAD sequence.</strong>
+    Fixture architecture, coupling stack, support structure, and test-side interfaces coming together.
+  </figcaption>
+</figure>
+
+  </div>
+
+  <div class="workstream-grid">
+    <article>
+      <span>01</span>
+      <h3>Automated load-testing station</h3>
+      <p>
+        Designed an automated pre-assembly burn-in station that applied representative torque during long-duration cycling,
+        integrated torque and position sensing, and screened joints before complete robot assembly.
+      </p>
+    </article>
+
+<article>
+  <span>02</span>
+  <h3>High-load dynamometer interface</h3>
+  <p>
+    Designed a precision mechanical interface and checked bolted, doweled, keyed, and shaft load paths
+    with hand calculations and static FEA before releasing the manufactured part.
+  </p>
+</article>
+
+<article>
+  <span>03</span>
+  <h3>Assembly, checkout + production support</h3>
+  <p>
+    Assembled and calibrated three complete robot arms, programmed checkout motion routines,
+    improved technician-facing build instructions, and trained technicians.
+  </p>
+</article>
+
+  </div>
+
+  <div class="evidence-grid">
+    <figure class="figure-card assembly-photo">
+      <img src="assets/standardbots_build_photo.jpg"
+           alt="Kevin Armstrong assembling and calibrating a Standard Bots industrial robot arm">
+      <figcaption>
+        <strong>Assembly + calibration.</strong>
+        Bringing up and validating a completed robot arm.
+      </figcaption>
+    </figure>
+
+<figure class="figure-card">
+  <video autoplay muted loop playsinline controls preload="metadata"
+         poster="assets/standardbots_motion_poster.jpg">
+    <source src="assets/standardbots_motion_routine.mp4" type="video/mp4">
+  </video>
+  <figcaption>
+    <strong>Checkout routine.</strong>
+    Arm executing a motion routine I programmed while bringing up the completed assembly.
+  </figcaption>
+</figure>
+
+  </div>
 </section>
 
 <section id="hycube" class="case-study compact-case">
