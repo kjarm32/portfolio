@@ -1182,8 +1182,11 @@ body > header:first-child,
 }
 
 .aero-sae-intro {
-  max-width: 800px;
-  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 18px;
 }
 
 .aero-sae-copy p {
@@ -1192,6 +1195,12 @@ body > header:first-child,
   color: var(--ink-2);
   font-size: 15px;
   line-height: 1.65 !important;
+}
+
+.aero-sae-aircraft-photo img {
+  height: 290px;
+  object-fit: cover;
+  object-position: center 57%;
 }
 
 .aero-sae-cad-hero {
@@ -1305,6 +1314,7 @@ body > header:first-child,
   .standardbots-fixture-grid,
   .evidence-grid,
   .media-grid.two,
+  .aero-sae-intro,
   .aero-sae-build-grid {
     grid-template-columns: 1fr;
   }

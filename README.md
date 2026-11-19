@@ -428,6 +428,14 @@
       </p>
       <p>The assembly is a working prototype; the hinge bearing, linkage, and final integration details are still being refined.</p>
     </div>
+    <figure class="figure-card aero-sae-aircraft-photo">
+      <a href="assets/aero_sae_prior_season_aircraft.jpg" target="_blank" rel="noopener noreferrer"
+         aria-label="Open full-size photo of the team's prior-season aircraft">
+        <img src="assets/aero_sae_prior_season_aircraft.jpg" loading="lazy"
+             alt="Aerospace SAE at Berkeley's blue and gold prior-season aircraft flying above the runway">
+      </a>
+      <figcaption><strong>Team aircraft in flight.</strong> The prior-season aircraft provides flight context for this semester's new aileron design.</figcaption>
+    </figure>
   </div>
 
   <figure class="figure-card aero-sae-cad-hero">
