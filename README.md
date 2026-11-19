@@ -144,14 +144,14 @@
 
     <div class="media-grid bwb-design-grid">
       <figure class="figure-card">
-        <a href="assets/bwb_new_cad_top_teal.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size planform CAD view">
-          <img src="assets/bwb_new_cad_top_teal.png" alt="Teal top CAD view of the revised blended-wing-body model">
+        <a href="assets/bwb_new_cad_top_graphite.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size planform CAD view">
+          <img src="assets/bwb_new_cad_top_graphite.png" alt="Graphite top CAD view of the revised blended-wing-body model">
         </a>
         <figcaption><strong>Planform CAD</strong></figcaption>
       </figure>
       <figure class="figure-card">
-        <a href="assets/bwb_new_cad_iso_teal.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size isometric CAD view">
-          <img src="assets/bwb_new_cad_iso_teal.png" alt="Teal isometric CAD view of the revised blended-wing-body model">
+        <a href="assets/bwb_new_cad_iso_graphite.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size isometric CAD view">
+          <img src="assets/bwb_new_cad_iso_graphite.png" alt="Graphite isometric CAD view of the revised blended-wing-body model">
         </a>
         <figcaption><strong>Isometric CAD</strong></figcaption>
       </figure>
