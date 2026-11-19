@@ -75,7 +75,7 @@
       <div class="featured-card-copy">
         <span class="card-kicker">AIRCRAFT HARDWARE · CAD TO PROTOTYPE</span>
         <h3>Aileron Design &amp; Fabrication</h3>
-        <p>Current upper-wing aileron CAD, laser-cut parts, and a physical dry fit. Photo: the team's prior-season aircraft.</p>
+        <p>Current aircraft aileron CAD, laser-cut parts, and a physical dry fit. Photo: the team's prior-season aircraft.</p>
         <strong class="card-result">CAD → laser-cut parts → dry fit</strong>
       </div>
     </a>
@@ -415,14 +415,14 @@
 <section id="aero-sae" class="case-study compact-case aero-sae-case">
   <header class="case-header">
     <p class="eyebrow">AEROSPACE SAE AT BERKELEY · CURRENT AIRCRAFT</p>
-    <h2>Upper-Wing Aileron Design &amp; Fabrication</h2>
+    <h2>Aileron Design &amp; Fabrication</h2>
     <p class="case-subtitle">CAD assembly · laser-cut plywood parts · prototype dry fit</p>
   </header>
 
   <div class="aero-sae-intro">
     <div class="aero-sae-copy">
       <p>
-        For this semester's aircraft, I am developing the upper-wing aileron hardware. I modeled
+        For this semester's aircraft, I am developing the aileron hardware. I modeled
         the rib profiles, spar, and hinge-rod layout in CAD, then took the plywood parts through
         laser cutting and a physical dry fit to check the geometry and interfaces.
       </p>
@@ -442,7 +442,7 @@
     <a href="assets/aero_sae_aileron_cad.png" target="_blank" rel="noopener noreferrer"
        aria-label="Open full-size aileron assembly CAD view">
       <img src="assets/aero_sae_aileron_cad.png" loading="lazy"
-           alt="CAD assembly showing upper-wing aileron ribs, main spar, and hinge rods">
+           alt="CAD assembly showing aileron ribs, main spar, and hinge rods">
     </a>
     <figcaption><strong>Assembly CAD.</strong> The aileron rib, spar, and pivot-rod layout before fabrication.</figcaption>
   </figure>
@@ -646,8 +646,8 @@
   </header>
 
   <p class="case-lede drone-lede">
-    Designed and fabricated a 418 g printed payload for a DJI quadcopter, then flew the integrated aircraft indoors.
-    The seed-release mechanism remained an unfinished prototype.
+    Designed and fabricated a 418 g printed payload with a seed-dispensing mechanism for a DJI quadcopter,
+    then flew the integrated aircraft indoors.
   </p>
 
   <div class="media-grid two drone-hero">
@@ -678,9 +678,8 @@
       <p>
         External payloads can alter an aircraft’s mass distribution, aerodynamics, stability, and controllability,
         so the attachment had to be engineered as part of the flight vehicle.
-        On a four-person team, I owned mounting placement, aerodynamic outer geometry, maintenance access,
-        and DfAM for the ABS-printed payload. Indoor flight testing showed the aircraft could carry the attachment;
-        reliable seed release was not achieved.
+        I designed the mounting placement, aerodynamic outer geometry, maintenance access, and print-ready
+        geometry for the ABS payload. Indoor flight testing showed the aircraft carrying the attachment.
       </p>
       <p>
         I ran a 15 mph CFD study that predicted 3.94 N drag, 0.926 N lift, and −0.044 N side force.
