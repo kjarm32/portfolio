@@ -299,14 +299,8 @@ body > header:first-child,
   transform-origin: 54% 48%;
 }
 
-.featured-card[href="#aero-sae"] .featured-card-media,
-.featured-card[href="#hycube"] .featured-card-media {
-  background: #f0f1f1;
-}
-
-.featured-card[href="#aero-sae"] .featured-card-media img,
-.featured-card[href="#hycube"] .featured-card-media img {
-  object-fit: contain;
+.featured-card[href="#aero-sae"] .featured-card-media img {
+  object-position: center 58%;
 }
 
 .featured-card-media.standardbots-render {

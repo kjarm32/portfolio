@@ -69,21 +69,21 @@
 
     <a class="featured-card" href="#aero-sae">
       <div class="featured-card-media">
-        <img src="assets/aero_sae_aileron_cad.png"
-             alt="CAD assembly of upper-wing aileron ribs, spar, and hinge rod">
+        <img src="assets/aero_sae_prior_season_aircraft.jpg"
+             alt="Aerospace SAE at Berkeley's prior-season aircraft in flight">
       </div>
       <div class="featured-card-copy">
         <span class="card-kicker">AIRCRAFT HARDWARE · CAD TO PROTOTYPE</span>
         <h3>Aileron Design &amp; Fabrication</h3>
-        <p>Designed the aileron rib and hinge layout, then took the plywood parts through laser cutting and a physical dry fit.</p>
+        <p>Current upper-wing aileron CAD, laser-cut parts, and a physical dry fit. Photo: the team's prior-season aircraft.</p>
         <strong class="card-result">CAD → laser-cut parts → dry fit</strong>
       </div>
     </a>
 
     <a class="featured-card" href="#hycube">
       <div class="featured-card-media">
-        <img src="assets/hycube_calibration_rig.jpeg"
-             alt="Thermocouple calibration bench with probes, heat source, and breadboard electronics">
+        <img src="assets/HyCubeINAir.png"
+             alt="HyCUBE payload suspended during its high-altitude balloon flight">
       </div>
       <div class="featured-card-copy">
         <span class="card-kicker">INSTRUMENTATION · BUILD + FLIGHT TEST</span>
@@ -144,14 +144,14 @@
 
     <div class="media-grid bwb-design-grid">
       <figure class="figure-card">
-        <a href="assets/bwb_new_cad_top.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size planform CAD view">
-          <img src="assets/bwb_new_cad_top.png" alt="Top CAD view of the revised blended-wing-body model">
+        <a href="assets/bwb_new_cad_top_teal.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size planform CAD view">
+          <img src="assets/bwb_new_cad_top_teal.png" alt="Teal top CAD view of the revised blended-wing-body model">
         </a>
         <figcaption><strong>Planform CAD</strong></figcaption>
       </figure>
       <figure class="figure-card">
-        <a href="assets/bwb_new_cad_iso.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size isometric CAD view">
-          <img src="assets/bwb_new_cad_iso.png" alt="Isometric CAD view of the revised blended-wing-body model">
+        <a href="assets/bwb_new_cad_iso_teal.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size isometric CAD view">
+          <img src="assets/bwb_new_cad_iso_teal.png" alt="Teal isometric CAD view of the revised blended-wing-body model">
         </a>
         <figcaption><strong>Isometric CAD</strong></figcaption>
       </figure>
