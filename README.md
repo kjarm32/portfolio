@@ -652,7 +652,7 @@
 
   <div class="media-grid two drone-hero">
     <figure class="figure-card drone-flight-card">
-      <video autoplay muted loop playsinline controls preload="metadata" poster="assets/drone_indoor_flight_focused_poster.jpg"
+      <video id="drone-flight-video" autoplay muted playsinline controls preload="metadata" poster="assets/drone_indoor_flight_focused_poster.jpg"
              aria-label="Two aircraft-focused views of the DJI quadcopter carrying the printed payload in indoor flight">
         <source src="assets/drone_indoor_flight_focused.mp4" type="video/mp4">
         Your browser does not support this video.
@@ -706,6 +706,8 @@
 
   </div>
 </section>
+
+<script src="assets/drone-playback.js" defer></script>
 
 <footer class="portfolio-footer">
   <span>Kevin Armstrong II · UC Berkeley Mechanical Engineering</span>
