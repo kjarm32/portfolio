@@ -646,7 +646,7 @@
   </header>
 
   <p class="case-lede drone-lede">
-    Designed and fabricated a 418 g printed payload with a seed-dispensing mechanism for a DJI quadcopter,
+    Designed and fabricated a 3D-printed payload with a seed-dispensing mechanism for a DJI quadcopter,
     then flew the integrated aircraft indoors.
   </p>
 
