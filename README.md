@@ -15,7 +15,7 @@
   <div class="hero-copy">
     <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
     <h1>Kevin Armstrong II</h1>
-    <p class="hero-title">Mechanical &amp; Product Design · Flight Hardware · Aerodynamics.</p>
+    <p class="hero-title">Mechanical Design · Flight Hardware · Aerodynamics</p>
     <p class="hero-summary">
       I take mechanical and flight hardware from CAD through fabrication, assembly, and test.
       Analysis and measured results guide each design iteration.
