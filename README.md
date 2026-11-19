@@ -652,12 +652,12 @@
 
   <div class="media-grid two drone-hero">
     <figure class="figure-card drone-flight-card">
-      <video autoplay muted loop playsinline controls preload="metadata" poster="assets/drone_indoor_flight_poster.jpg"
-             aria-label="Indoor flight test of the DJI quadcopter carrying the printed payload">
-        <source src="assets/drone_indoor_flight_clip.mp4" type="video/mp4">
+      <video autoplay muted loop playsinline controls preload="metadata" poster="assets/drone_indoor_flight_focused_poster.jpg"
+             aria-label="Two aircraft-focused views of the DJI quadcopter carrying the printed payload in indoor flight">
+        <source src="assets/drone_indoor_flight_focused.mp4" type="video/mp4">
         Your browser does not support this video.
       </video>
-      <figcaption><strong>Indoor flight test.</strong> The complete aircraft flew with the printed payload attached.</figcaption>
+      <figcaption><strong>Indoor flight test.</strong> Close and wide views of the aircraft carrying the printed payload.</figcaption>
     </figure>
     <figure class="figure-card drone-cad-card">
       <img src="assets/dronee29Cadrender.png"
