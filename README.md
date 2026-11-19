@@ -707,7 +707,7 @@
   </div>
 </section>
 
-<script src="assets/drone-playback.js" defer></script>
+<script src="assets/drone-playback.js?v=2x6" defer></script>
 
 <footer class="portfolio-footer">
   <span>Kevin Armstrong II · UC Berkeley Mechanical Engineering</span>
