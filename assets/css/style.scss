@@ -1315,6 +1315,10 @@ body > header:first-child,
     grid-template-columns: 1fr;
   }
 
+  .aero-sae-cad-hero img {
+    height: auto;
+  }
+
   .workstream-grid,
   .verification-grid {
     grid-template-columns: 1fr;
