@@ -645,16 +645,24 @@
     </div>
   </header>
 
+  <p class="case-lede drone-lede">
+    Designed and fabricated a 418 g printed payload for a DJI quadcopter, then flew the integrated aircraft indoors.
+    The seed-release mechanism remained an unfinished prototype.
+  </p>
+
   <div class="media-grid two drone-hero">
+    <figure class="figure-card drone-flight-card">
+      <video autoplay muted loop playsinline controls preload="metadata" poster="assets/drone_indoor_flight_poster.jpg"
+             aria-label="Indoor flight test of the DJI quadcopter carrying the printed payload">
+        <source src="assets/drone_indoor_flight_clip.mp4" type="video/mp4">
+        Your browser does not support this video.
+      </video>
+      <figcaption><strong>Indoor flight test.</strong> The complete aircraft flew with the printed payload attached.</figcaption>
+    </figure>
     <figure class="figure-card drone-cad-card">
       <img src="assets/dronee29Cadrender.png"
-           alt="CAD render of drone seed-dispersal attachment mounted under a quadcopter">
-      <figcaption><strong>Integrated CAD.</strong> ABS-printed hopper/body, mounting interface, and service-access geometry.</figcaption>
-    </figure>
-    <figure class="figure-card drone-flight-card">
-      <img src="assets/drone_flight_photo.jpg"
-           alt="Indoor flight test with the seed-dispersal attachment mounted">
-      <figcaption><strong>Loaded flight validation.</strong> Complete attachment mounted under the DJI quadcopter during indoor testing.</figcaption>
+           alt="CAD render of the printed drone payload housing">
+      <figcaption><strong>Design CAD.</strong> Printed hopper/body, mounting interface, and service-access geometry.</figcaption>
     </figure>
   </div>
 
@@ -671,8 +679,8 @@
         External payloads can alter an aircraft’s mass distribution, aerodynamics, stability, and controllability,
         so the attachment had to be engineered as part of the flight vehicle.
         On a four-person team, I owned mounting placement, aerodynamic outer geometry, maintenance access,
-        and DfAM for a 418 g ABS-printed seed-dispersal attachment, then validated retention and aircraft integration
-        on a DJI quadcopter through loaded flight testing.
+        and DfAM for the ABS-printed payload. Indoor flight testing showed the aircraft could carry the attachment;
+        reliable seed release was not achieved.
       </p>
       <p>
         I ran a 15 mph CFD study that predicted 3.94 N drag, 0.926 N lift, and −0.044 N side force.
