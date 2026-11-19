@@ -3,8 +3,8 @@
   <div class="portfolio-nav-links">
     <a href="#bwb">Aircraft</a>
     <a href="#experience">Robotics</a>
+    <a href="#aero-sae">Wing Hardware</a>
     <a href="#hycube">Space</a>
-    <a href="#rotorcraft">Research</a>
     <a href="#drone">Drone</a>
   </div>
 </nav>
@@ -15,10 +15,10 @@
   <div class="hero-copy">
     <p class="eyebrow">UC BERKELEY · MECHANICAL ENGINEERING ’28</p>
     <h1>Kevin Armstrong II</h1>
-    <p class="hero-title">Aircraft Aerodynamics · Design, Build &amp; Test · Flight Hardware.</p>
+    <p class="hero-title">Mechanical &amp; Product Design · Flight Hardware · Aerodynamics.</p>
     <p class="hero-summary">
-      I design, build, and test aircraft and flight hardware, using CFD, flow visualization,
-      and measured performance to guide each design iteration.
+      I take mechanical and flight hardware from CAD through fabrication, assembly, and test.
+      Analysis and measured results guide each design iteration.
     </p>
     <div class="hero-links">
       <a class="hero-link" href="https://app.notion.com/p/Zipline-Aerodynamics-Presentation-Kevin-Armstrong-II-3f1f045049e780f89fbadf1b7cc8d9f6"
@@ -67,31 +67,29 @@
       </div>
     </a>
 
-    <a class="featured-card" href="#hycube">
+    <a class="featured-card" href="#aero-sae">
       <div class="featured-card-media">
-        <img src="assets/HyCubeINAir.png"
-             alt="HyCUBE payload during high-altitude flight">
+        <img src="assets/aero_sae_aileron_cad.png"
+             alt="CAD assembly of upper-wing aileron ribs, spar, and hinge rod">
       </div>
       <div class="featured-card-copy">
-        <span class="card-kicker">AEROSPACE HARDWARE + TEST</span>
-        <h3>HyCUBE Reentry Vehicle</h3>
-        <p>Thermal instrumentation, calibration, payload integration, flight operations, recovery, and post-flight validation.</p>
-        <strong class="card-result">~90,000 ft flight</strong>
+        <span class="card-kicker">AIRCRAFT HARDWARE · CAD TO PROTOTYPE</span>
+        <h3>Aileron Design &amp; Fabrication</h3>
+        <p>Designed the aileron rib and hinge layout, then took the plywood parts through laser cutting and a physical dry fit.</p>
+        <strong class="card-result">CAD → laser-cut parts → dry fit</strong>
       </div>
     </a>
 
-    <a class="featured-card" href="#rotorcraft">
-      <div class="featured-card-media dark-media">
-        <video autoplay muted loop playsinline preload="metadata"
-               aria-label="Matched AH-1S recovery comparison">
-          <source src="assets/ah1s_matched_recovery_20s.mp4" type="video/mp4">
-        </video>
+    <a class="featured-card" href="#hycube">
+      <div class="featured-card-media">
+        <img src="assets/hycube_calibration_rig.jpeg"
+             alt="Thermocouple calibration bench with probes, heat source, and breadboard electronics">
       </div>
       <div class="featured-card-copy">
-        <span class="card-kicker">FLIGHT DYNAMICS + MODEL VALIDATION</span>
-        <h3>Learned Flight Dynamics</h3>
-        <p>Aerodynamic force/moment modeling, nonlinear 6-DOF simulation, local stability analysis, and controller-facing validation.</p>
-        <strong class="card-result">First-author paper accepted · IEEE Aerospace 2027</strong>
+        <span class="card-kicker">INSTRUMENTATION · BUILD + FLIGHT TEST</span>
+        <h3>HyCUBE Reentry Vehicle</h3>
+        <p>Built and calibrated thermocouple instrumentation, integrated the payload, and supported high-altitude flight validation.</p>
+        <strong class="card-result">Bench calibration → ~90,000 ft flight</strong>
       </div>
     </a>
 
@@ -414,6 +412,69 @@
   </div>
 </section>
 
+<section id="aero-sae" class="case-study compact-case aero-sae-case">
+  <header class="case-header">
+    <p class="eyebrow">AEROSPACE SAE AT BERKELEY · CURRENT AIRCRAFT</p>
+    <h2>Upper-Wing Aileron Design &amp; Fabrication</h2>
+    <p class="case-subtitle">CAD assembly · laser-cut plywood parts · prototype dry fit</p>
+  </header>
+
+  <div class="aero-sae-intro">
+    <div class="aero-sae-copy">
+      <p>
+        For this semester's aircraft, I am developing the upper-wing aileron hardware. I modeled
+        the rib profiles, spar, and hinge-rod layout in CAD, then took the plywood parts through
+        laser cutting and a physical dry fit to check the geometry and interfaces.
+      </p>
+      <p>The assembly is a working prototype; the hinge bearing, linkage, and final integration details are still being refined.</p>
+    </div>
+  </div>
+
+  <figure class="figure-card aero-sae-cad-hero">
+    <a href="assets/aero_sae_aileron_cad.png" target="_blank" rel="noopener noreferrer"
+       aria-label="Open full-size aileron assembly CAD view">
+      <img src="assets/aero_sae_aileron_cad.png" loading="lazy"
+           alt="CAD assembly showing upper-wing aileron ribs, main spar, and hinge rods">
+    </a>
+    <figcaption><strong>Assembly CAD.</strong> The aileron rib, spar, and pivot-rod layout before fabrication.</figcaption>
+  </figure>
+
+  <div class="aero-sae-build-grid">
+    <figure class="figure-card cad-detail">
+      <a href="assets/aero_sae_aileron_profile_cad.png" target="_blank" rel="noopener noreferrer"
+         aria-label="Open full-size CAD side profile">
+        <img src="assets/aero_sae_aileron_profile_cad.png" loading="lazy"
+             alt="CAD side view of the nested wing and aileron rib profiles">
+      </a>
+      <figcaption><strong>Rib profile.</strong> Side view of the wing and aileron shapes.</figcaption>
+    </figure>
+    <figure class="figure-card cad-detail">
+      <a href="assets/aero_sae_aileron_hinge_cad.png" target="_blank" rel="noopener noreferrer"
+         aria-label="Open full-size aileron hinge detail CAD view">
+        <img src="assets/aero_sae_aileron_hinge_cad.png" loading="lazy"
+             alt="Close CAD view of the aileron rib around the hinge-rod interface">
+      </a>
+      <figcaption><strong>Hinge interface.</strong> Draft geometry around the aileron pivot rod.</figcaption>
+    </figure>
+    <figure class="figure-card">
+      <a href="assets/aero_sae_aileron_laser_cut.jpg" target="_blank" rel="noopener noreferrer"
+         aria-label="Open full-size photo of laser-cut aileron pieces">
+        <img src="assets/aero_sae_aileron_laser_cut.jpg" loading="lazy"
+             alt="Laser-cut plywood wing and aileron rib pieces laid out on a cutting mat">
+      </a>
+      <figcaption><strong>Laser-cut parts.</strong> The CAD profiles translated into plywood hardware.</figcaption>
+    </figure>
+    <figure class="figure-card">
+      <a href="assets/aero_sae_aileron_dry_fit.jpeg" target="_blank" rel="noopener noreferrer"
+         aria-label="Open full-size photo of the aileron prototype dry fit">
+        <img src="assets/aero_sae_aileron_dry_fit.jpeg" loading="lazy"
+             alt="Laser-cut aileron ribs dry-fitted on support rods on the workshop floor">
+      </a>
+      <figcaption><strong>Physical dry fit.</strong> Cut ribs placed on the rods to inspect fit before final integration.</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section id="hycube" class="case-study compact-case">
   <header class="case-header">
     <div>
@@ -431,9 +492,9 @@
     </figure>
 
 <figure class="figure-card">
-  <img src="assets/hycube_mission_graphic.webp"
-       alt="HyCUBE mission profile showing balloon ascent, release, and reentry">
-  <figcaption><strong>Mission architecture.</strong> Balloon ascent, release, reentry experiment, and Iridium data return.</figcaption>
+  <img src="assets/hycube_calibration_rig.jpeg"
+       alt="Thermocouple calibration bench with probes, heat source, and Arduino-based breadboard electronics">
+  <figcaption><strong>Instrumented bench rig.</strong> Thermocouple probes, a controlled heat source, and the Arduino-based readout used for calibration.</figcaption>
 </figure>
 
   </div>
@@ -470,10 +531,10 @@
   </div>
 </div>
 
-<figure class="figure-card hycube-plot-card">
-  <img src="assets/hycube_validation_2up.png"
-       alt="HyCUBE thermocouple parity and temperature-error validation plots">
-  <figcaption><strong>Calibration validation.</strong> Parity and residual error across the 50–155°C probe-characterization range.</figcaption>
+<figure class="figure-card hycube-build-photo">
+  <img src="assets/hycube_soldering.jpeg"
+       alt="Kevin Armstrong soldering thermocouple readout electronics at the workbench">
+  <figcaption><strong>Hands-on instrumentation.</strong> Assembling and wiring the readout hardware before calibration.</figcaption>
 </figure>
 
 <figure class="figure-card hycube-ground-photo">
@@ -482,10 +543,10 @@
   <figcaption><strong>Preflight integration.</strong> Securing payload hardware before balloon release.</figcaption>
 </figure>
 
-<figure class="figure-card hycube-plot-card secondary">
-  <img src="assets/hycube_agreement_2up.png"
-       alt="HyCUBE agreement and sensitivity plots across thermocouple probe configurations">
-  <figcaption><strong>Agreement + sensitivity.</strong> Bias, limits of agreement, and fitted sensitivity across probe configurations.</figcaption>
+<figure class="figure-card hycube-plot-card">
+  <img src="assets/hycube_validation_2up.png"
+       alt="HyCUBE thermocouple parity and temperature-error validation plots">
+  <figcaption><strong>Calibration validation.</strong> Measured parity and residual error across the 50–155°C probe-characterization range.</figcaption>
 </figure>
 
   </div>
@@ -565,45 +626,6 @@
   </figcaption>
 </figure>
 
-  </div>
-</section>
-
-<section id="aero-sae" class="case-study compact-case aero-sae-case">
-  <header class="case-header">
-    <p class="eyebrow">AEROSPACE SAE AT BERKELEY</p>
-    <h2>Wing Rib Design &amp; Layout</h2>
-    <p class="case-subtitle">In progress: parametric rib layout and CAD reference geometry</p>
-  </header>
-
-  <div class="aero-sae-intro">
-    <div class="aero-sae-copy">
-      <p>
-        I am working on the rib design and layout for Aerospace SAE at Berkeley's current aircraft.
-        I built a parametric tool that converts the team's VLM lift distribution, wing planform, and CH10
-        reference profile into trial rib stations and 3D exterior contours. I use these outputs to develop
-        rib spacing and prepare reference geometry for wing CAD and structural design reviews.
-      </p>
-      <p>Rib-to-spar interfaces, attachment loads, and final sizing remain open before fabrication.</p>
-    </div>
-  </div>
-
-  <div class="media-grid two aero-sae-rib-grid">
-    <figure class="figure-card">
-      <a href="assets/aero_sae_rib_layout.png" target="_blank" rel="noopener noreferrer"
-         aria-label="Open full-size upper and lower wing rib layout">
-        <img src="assets/aero_sae_rib_layout.png"
-             alt="Trial spanwise rib station layout for the top and bottom wings">
-      </a>
-      <figcaption><strong>Rib station layout.</strong> Trial spacing across both exposed half-spans.</figcaption>
-    </figure>
-    <figure class="figure-card">
-      <a href="assets/aero_sae_rib_contours_3d.png" target="_blank" rel="noopener noreferrer"
-         aria-label="Open full-size 3D wing rib contour view">
-        <img src="assets/aero_sae_rib_contours_3d.png"
-             alt="Three-dimensional exterior rib contours for the top and bottom wings">
-      </a>
-      <figcaption><strong>3D rib contours.</strong> Reference geometry for sweep, stagger, and incidence.</figcaption>
-    </figure>
   </div>
 </section>
 

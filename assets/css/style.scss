@@ -299,6 +299,16 @@ body > header:first-child,
   transform-origin: 54% 48%;
 }
 
+.featured-card[href="#aero-sae"] .featured-card-media,
+.featured-card[href="#hycube"] .featured-card-media {
+  background: #f0f1f1;
+}
+
+.featured-card[href="#aero-sae"] .featured-card-media img,
+.featured-card[href="#hycube"] .featured-card-media img {
+  object-fit: contain;
+}
+
 .featured-card-media.standardbots-render {
   background: #172630;
 }
@@ -1145,6 +1155,12 @@ body > header:first-child,
   object-position: center 28%;
 }
 
+.hycube-build-photo img {
+  height: 315px;
+  object-fit: cover;
+  object-position: center 50%;
+}
+
 /* -------------------------
    Drone
    ------------------------- */
@@ -1184,10 +1200,30 @@ body > header:first-child,
   line-height: 1.65 !important;
 }
 
-.media-grid.two.aero-sae-rib-grid .figure-card img {
-  height: 315px;
+.aero-sae-cad-hero {
+  margin-bottom: 18px;
+}
+
+.aero-sae-cad-hero img {
+  height: 480px;
   object-fit: contain;
-  background: #fff;
+  background: #f0f1f1;
+}
+
+.aero-sae-build-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aero-sae-build-grid img {
+  height: 285px;
+  object-fit: cover;
+}
+
+.aero-sae-build-grid .cad-detail img {
+  object-fit: contain;
+  background: #f0f1f1;
 }
 
 .drone-copy p {
@@ -1274,7 +1310,8 @@ body > header:first-child,
 
   .standardbots-fixture-grid,
   .evidence-grid,
-  .media-grid.two {
+  .media-grid.two,
+  .aero-sae-build-grid {
     grid-template-columns: 1fr;
   }
 
